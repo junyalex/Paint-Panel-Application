@@ -44,7 +44,7 @@ public class PaintPanel extends Canvas implements EventHandler<MouseEvent>, Obse
 
         // "Circle", "Rectangle", "Square", "Squiggle", "Polyline"
         switch(this.mode){
-            case "Circle":
+            case "◯":
                 if(mouseEventType.equals(MouseEvent.MOUSE_PRESSED)) {
                     System.out.println("Started Circle");
                      Point centre = new Point(mouseEvent.getX(), mouseEvent.getY());
@@ -65,14 +65,14 @@ public class PaintPanel extends Canvas implements EventHandler<MouseEvent>, Obse
                 }
 
                 break;
-            case "Rectangle": break;
-            case "Square": break;
-            case "Squiggle":
+            case "▭": break;
+            case "□": break;
+            case "Squiggle (〜)":
                 if (mouseEventType.equals(MouseEvent.MOUSE_DRAGGED)) {
                     this.model.addPoint(new Point(mouseEvent.getX(), mouseEvent.getY()));
                 }
                 break;
-            case "Polyline": break;
+            case "Polyline (└───┐)": break;
             default: break;
         }
     }
