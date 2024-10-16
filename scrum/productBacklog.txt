@@ -217,14 +217,6 @@ I WANT   : To hover over the shape and have an icon indicating what shape
 SO THAT  :I can know what I'm clicking and place on canvas.
 --------------------------------------------------------------------------
 --------------------------------------------------------------------------
-
-TYPE     : BUG BUG1.001 : leerya41 : completed
-NAME     : Icons instead of text for drawing mode selection
-PRIORITY : 1
-ESTIMATE : (1 hour)    ACTUAL : 15 mins
-ISSUE    : Would be nice to have icons instead of "Circle", "Rectangle", ...
---------------------------------------------------------------------------
---------------------------------------------------------------------------
 TYPE     : BUG BUG1.002 : UTORID : NotStarted 
 NAME     : Drawing selection mode not indicated
 PRIORITY : 1
@@ -285,6 +277,14 @@ AS A     : user
 I WANT   : To click the center of the circle, drag, and release to specify
            a circle to be drawn in the current style.
 SO THAT  : I can add circles to my canvas
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+
+TYPE     : BUG BUG1.001 : leerya41 : completed
+NAME     : Icons instead of text for drawing mode selection
+PRIORITY : 1
+ESTIMATE : (1 hour)    ACTUAL : 15 mins
+ISSUE    : Would be nice to have icons instead of "Circle", "Rectangle", ...
 --------------------------------------------------------------------------
 
 # OMITTED USER STORIES/BUGS BELOW   ###########################################
