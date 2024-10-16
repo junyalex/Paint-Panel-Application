@@ -119,6 +119,82 @@ I WANT   : To be able to select the current line thickness, to be applied
 SO THAT  : 
 --------------------------------------------------------------------------
 --------------------------------------------------------------------------
+TYPE     : USER STORY US?.008 : leerya41 : NotStarted
+NAME     : add a selector mode
+PRIORITY : 3
+ESTIMATE : (1 hour, 2 hours, 4 hours, 1 day, 2 days, 4 days)    ACTUAL :
+AS A     : user
+I WANT   : To be able to select a existing shape on the board
+                Example:
+           		-select mode: select shape
+           		-click a shape and have it have an indicator approapraite to
+           		desired modification
+SO THAT  : I can implement user story 009-012 to modify the existing shape
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+TYPE     : USER STORY US?.009 : leerya41 : NotStarted
+NAME     : Move shape mode
+PRIORITY : 3
+ESTIMATE : (1 hour, 2 hours, 4 hours, 1 day, 2 days, 4 days)    ACTUAL :
+AS A     : user
+I WANT   : To be able to move an existing shape to a new location
+                Example:
+           		-select mode: select selecting mode
+           		-click on a shape and a indicator will appear that
+           		the shape is selected and ready to be moved
+           		-drag the shape to new location from its center
+           		-the shape will relocate to this new position
+           	results in a relocated shape
+SO THAT  :
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+TYPE     : USER STORY US?.010 : leerya41 : NotStarted
+NAME     : resize shape mode
+PRIORITY : 3
+ESTIMATE : (1 hour, 2 hours, 4 hours, 1 day, 2 days, 4 days)    ACTUAL :
+AS A     : user
+I WANT   : To be able to move an existing shape to a new location
+                Example:
+           		-select mode: select selecting mode
+           		-click on a shape and a indicator perhaps dotted outline will appear that
+           		the shape is selected and ready to be changed with dots on each direction
+           		it can be resized to
+           		-drag the shape to in any way you see fit to change modify the
+           		dimensions of the shape
+           		-the shape will resize according to the parameters of the resized area
+           	results in a resized shape
+SO THAT  :
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+TYPE     : USER STORY US?.011 : leerya41 : NotStarted
+NAME     : change shape color
+PRIORITY : 3
+ESTIMATE : (1 hour, 2 hours, 4 hours, 1 day, 2 days, 4 days)    ACTUAL :
+AS A     : user
+I WANT   : To be able to change the color of an existing shape
+                Example:
+           		-select mode: select selecting mode
+           		-select a shape
+           		-click the existing color mode
+           		-select color
+           	results in a selected shape being changed to new color
+SO THAT  :
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+TYPE     : USER STORY US?.012 : leerya41 : NotStarted
+NAME     : remove shape mode
+PRIORITY : 3
+ESTIMATE : (1 hour, 2 hours, 4 hours, 1 day, 2 days, 4 days)    ACTUAL :
+AS A     : user
+I WANT   : To be able to remove an existing shape
+                Example:
+           		-select mode: select selecting mode
+           		-select a shape
+           		-click the delete option
+           	results in a selected shape being removed
+SO THAT  :
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
 TYPE     : BUG BUG1.001 : UTORID : NotStarted 
 NAME     : Icons instead of text for drawing mode selection
 PRIORITY : 1
