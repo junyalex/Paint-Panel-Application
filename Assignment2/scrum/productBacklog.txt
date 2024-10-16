@@ -49,7 +49,7 @@ I WANT   : Similarly to Draw Circle Feedback, display the rectangle in mid const
 SO THAT  : I can see the rectangle I am about to build on release of the mouse button.
 --------------------------------------------------------------------------
 --------------------------------------------------------------------------
-TYPE     : USER STORY US?.005 : UTORID : NotStarted 
+TYPE     : USER STORY US?.005 : UTORID: NotStarted
 NAME     : Color selector
 PRIORITY : 3
 ESTIMATE : (1 hour, 2 hours, 4 hours, 1 day, 2 days, 4 days)    ACTUAL :
@@ -119,7 +119,7 @@ I WANT   : To be able to select the current line thickness, to be applied
 SO THAT  : 
 --------------------------------------------------------------------------
 --------------------------------------------------------------------------
-TYPE     : USER STORY US?.008 : leerya41 : NotStarted
+TYPE     : USER STORY US3.001 : leerya41 : NotStarted
 NAME     : add a selector mode
 PRIORITY : 5
 ESTIMATE : (2 hours)    ACTUAL :
@@ -127,12 +127,12 @@ AS A     : user
 I WANT   : To be able to select a existing shape on the board
                 Example:
            		-select mode: select shape
-           		-click a shape and have it have an indicator approapraite to
+           		-click a shape and have it have an indicator appropriate to
            		desired modification
 SO THAT  : I can implement user story 009-012 to modify the existing shape
 --------------------------------------------------------------------------
 --------------------------------------------------------------------------
-TYPE     : USER STORY US?.009 : leerya41 : NotStarted
+TYPE     : USER STORY US3.002 : leerya41 : NotStarted
 NAME     : Move shape mode
 PRIORITY : 6
 ESTIMATE : (4 hours)    ACTUAL :
@@ -148,7 +148,7 @@ I WANT   : To be able to move an existing shape to a new location
 SO THAT  :
 --------------------------------------------------------------------------
 --------------------------------------------------------------------------
-TYPE     : USER STORY US?.010 : leerya41 : NotStarted
+TYPE     : USER STORY US3.003 : leerya41 : NotStarted
 NAME     : resize shape mode
 PRIORITY : 6
 ESTIMATE : (4 hours)    ACTUAL :
@@ -166,7 +166,7 @@ I WANT   : To be able to move an existing shape to a new location
 SO THAT  :
 --------------------------------------------------------------------------
 --------------------------------------------------------------------------
-TYPE     : USER STORY US?.011 : leerya41 : NotStarted
+TYPE     : USER STORY US3.004 : leerya41 : NotStarted
 NAME     : change shape color
 PRIORITY : 6
 ESTIMATE : (4 hours)    ACTUAL :
@@ -181,7 +181,7 @@ I WANT   : To be able to change the color of an existing shape
 SO THAT  :
 --------------------------------------------------------------------------
 --------------------------------------------------------------------------
-TYPE     : USER STORY US?.012 : leerya41 : NotStarted
+TYPE     : USER STORY US3.005 : leerya41 : NotStarted
 NAME     : remove shape mode
 PRIORITY : 6
 ESTIMATE : (2 hour)    ACTUAL :
@@ -195,6 +195,29 @@ I WANT   : To be able to remove an existing shape
 SO THAT  :
 --------------------------------------------------------------------------
 --------------------------------------------------------------------------
+TYPE     : USER STORY US1.005 : mbagayaa : NotStarted
+NAME     : Draw Triangle
+PRIORITY : 6
+ESTIMATE : (2 hours)    ACTUAL :
+AS A     : user
+I WANT   : To place three dots on the canvas and have three lines join the
+           dots to create a triangle.
+
+SO THAT  :I can add triangles to my canvas
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+TYPE     : USER STORY US3.006 : mbagayaa : NotStarted
+NAME     : Hover over shape
+PRIORITY : 3
+ESTIMATE : (2 hours)    ACTUAL :
+AS A     : user
+I WANT   : To hover over the shape and have an icon indicating what shape
+           I'm about to select.
+
+SO THAT  :I can know what I'm clicking and place on canvas.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+
 TYPE     : BUG BUG1.001 : leerya41 : completed
 NAME     : Icons instead of text for drawing mode selection
 PRIORITY : 1
@@ -265,4 +288,4 @@ SO THAT  : I can add circles to my canvas
 --------------------------------------------------------------------------
 
 # OMITTED USER STORIES/BUGS BELOW   ###########################################
-
+--------------------------------------------------------------------------
