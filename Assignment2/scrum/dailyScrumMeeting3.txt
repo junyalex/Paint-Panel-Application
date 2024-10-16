@@ -14,6 +14,7 @@ Oct 15,2024
 Oct 16,2024
 	What I did yesterday: added A2.zip and members.txt
 	What I will do today: add 5 user stories and implement user story/bug with group
+	fix BUG1.001 to complete lab07
 	Obstacles I face: None
 
 Oct 17,2024
