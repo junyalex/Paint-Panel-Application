@@ -1,5 +1,5 @@
 # Fill in, commit and push each day.
-Member name:      email:     utorid:   
+Member name: Hojun Lee email: hoju.lee@mail.utoronto.ca     utorid: leehoju7
 
 Oct 14,2024
 	What I did yesterday:
@@ -8,11 +8,11 @@ Oct 14,2024
 
 Oct 15,2024
 	What I did yesterday:
-	What I will do today:
-	Obstacles I face:
+	What I will do today: added A2.zip and members.txt
+	Obstacles I face: No obstacles
 
 Oct 16,2024
-	What I did yesterday:
+	What I did yesterday: added A2.zip and members.txt
 	What I will do today:
 	Obstacles I face:
 
