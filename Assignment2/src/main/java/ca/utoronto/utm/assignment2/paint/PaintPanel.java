@@ -50,18 +50,21 @@ public class PaintPanel extends Canvas implements EventHandler<MouseEvent>, Obse
                      Point centre = new Point(mouseEvent.getX(), mouseEvent.getY());
                         this.circle=new Circle(centre, 0);
                 } else if (mouseEventType.equals(MouseEvent.MOUSE_DRAGGED)) {
-
+                    if(this.circle != null) {
+                        double deltaX = mouseEvent.getX() - this.circle.getCentre().x;
+                        double deltaY = mouseEvent.getY() - this.circle.getCentre().y;
+                        double radius = Math.sqrt(deltaX*deltaX + deltaY*deltaY);
+                        this.circle.setRadius(radius);
+                        this.model.addCircle(this.circle);
+                    }
                 } else if (mouseEventType.equals(MouseEvent.MOUSE_MOVED)) {
 
                 } else if (mouseEventType.equals(MouseEvent.MOUSE_RELEASED)) {
                     if(this.circle!=null){
-                                // Problematic notion of radius and centre!!
-                                double radius = Math.abs(this.circle.getCentre().x-mouseEvent.getX());
-                                this.circle.setRadius(radius);
-                                this.model.addCircle(this.circle);
-                                System.out.println("Added Circle");
-                                this.circle=null;
-                        }
+                        // Problematic notion of radius and centre!!
+                        System.out.println("Added Circle");
+                        this.circle=null;
+                    }
                 }
 
                 break;
@@ -76,9 +79,9 @@ public class PaintPanel extends Canvas implements EventHandler<MouseEvent>, Obse
             default: break;
         }
     }
+
     @Override
     public void update(Observable o, Object arg) {
-
                 GraphicsContext g2d = this.getGraphicsContext2D();
                 g2d.clearRect(0, 0, this.getWidth(), this.getHeight());
                 // Draw Lines
@@ -99,7 +102,7 @@ public class PaintPanel extends Canvas implements EventHandler<MouseEvent>, Obse
                         double x = c.getCentre().x;
                         double y = c.getCentre().y;
                         double radius = c.getRadius();
-                        g2d.fillOval(x, y, radius, radius);
+                        g2d.fillOval(x-radius, y-radius, radius*2, radius*2);
                 }
     }
 }
