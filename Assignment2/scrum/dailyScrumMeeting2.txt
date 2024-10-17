@@ -13,8 +13,8 @@ Oct 15,2024
 
 Oct 16,2024
 	What I did yesterday: added A2.zip and members.txt
-	What I will do today: work on BUG1.006
-	Obstacles I face:
+	What I will do today: add 2 user stories, fix BUG1.006 for lab07, group meeting
+	Obstacles I face: None
 
 Oct 17,2024
 	What I did yesterday:
