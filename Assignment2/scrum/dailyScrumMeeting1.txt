@@ -14,7 +14,7 @@ Oct 15,2024
 Oct 16,2024
 	What I did yesterday: added A2.zip and members.txt
 	What I will do today: work on BUG1.005
-	Obstacles I face:
+	Obstacles I face: Is there an way to use ScribblePanel in PaintPanel?
 
 Oct 17,2024
 	What I did yesterday:
