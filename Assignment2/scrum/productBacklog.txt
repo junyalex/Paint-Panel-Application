@@ -159,7 +159,11 @@ I WANT   : To be able to move an existing shape to a new location
            		dimensions of the shape
            		-the shape will resize according to the parameters of the resized area
            	results in a resized shape
+<<<<<<< Updated upstream
 SO THAT  : the user can modify the dimensions of a shape
+=======
+SO THAT  : the user can move an existing shape
+>>>>>>> Stashed changes
 --------------------------------------------------------------------------
 --------------------------------------------------------------------------
 TYPE     : USER STORY US3.004 : leerya41 : NotStarted
