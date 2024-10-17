@@ -217,6 +217,26 @@ I WANT   : To hover over the shape and have an icon indicating what shape
 SO THAT  :I can know what I'm clicking and place on canvas.
 --------------------------------------------------------------------------
 --------------------------------------------------------------------------
+TYPE     : USER STORY US2.001 : leehoju7 : NotStarted
+NAME     : Create text field
+PRIORITY : 2
+ESTIMATE : (2 hours)    ACTUAL :
+AS A     : user
+I WANT   : By dragging, users can create text field.
+then the text field will await user input
+SO THAT  : Users can write what they want on the screen.
+
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+TYPE     : USER STORY US3.007 : leehoju7 : NotStarted
+NAME     : Select text field and modify contents
+PRIORITY : 2
+ESTIMATE : (2 hours)    ACTUAL :
+AS A     : user
+I WANT   :  Users can select text field and modify contents
+SO THAT  :
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
 TYPE     : BUG BUG1.002 : UTORID : NotStarted 
 NAME     : Drawing selection mode not indicated
 PRIORITY : 1
