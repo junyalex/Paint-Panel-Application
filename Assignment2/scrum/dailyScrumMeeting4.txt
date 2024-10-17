@@ -1,5 +1,5 @@
 # Fill in, commit and push each day.
-Member name:      email:     utorid:   
+Member name:Alexia Mbagaya      email: alexia.mbagaya@mail.utoronto.ca    utorid:   mbagayaa
 
 Oct 14,2024
 	What I did yesterday:
@@ -7,14 +7,14 @@ Oct 14,2024
 	Obstacles I face:
 
 Oct 15,2024
-	What I did yesterday:
-	What I will do today:
-	Obstacles I face:
+	What I did yesterday:N/A
+	What I will do today:Join a group, pull assignment from repo update members.txt file
+	Obstacles I face:No obstacles
 
 Oct 16,2024
-	What I did yesterday:
-	What I will do today:
-	Obstacles I face:
+	What I did yesterday:Joined a group, pulled an assignment from repo updated members.txt file
+	What I will do today:Add two user stories and Fix BUG1.002
+	Obstacles I face: No obstacles
 
 Oct 17,2024
 	What I did yesterday:
