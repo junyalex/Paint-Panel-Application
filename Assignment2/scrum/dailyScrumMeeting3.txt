@@ -18,9 +18,11 @@ Oct 16,2024
 	Obstacles I face: None
 
 Oct 17,2024
-	What I did yesterday:
-	What I will do today:
-	Obstacles I face:
+	What I did yesterday: added 5 user stories and implemented user story/bug with group
+                         	fix BUG1.001 to complete lab07
+	What I will do today: finish square constructor implementation and added square user story
+	to sprint1 and product backlog
+	Obstacles I face: None
 
 Oct 18,2024
 	What I did yesterday:

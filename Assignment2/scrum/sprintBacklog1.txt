@@ -73,10 +73,10 @@ I WANT   : Similarly to Draw Circle Feedback, display the rectangle in mid const
 SO THAT  : I can see the rectangle I am about to build on release of the mouse button.
 --------------------------------------------------------------------------
 --------------------------------------------------------------------------
-TYPE     : USER STORY US1.006 : leerya41 : in-progress
+TYPE     : USER STORY US1.006 : leerya41 : completed
 NAME     : Draw Square
 PRIORITY : 2
-ESTIMATE : (1 hour)    ACTUAL :
+ESTIMATE : (1 hour)    ACTUAL : 30 mins
 AS A     : user
 I WANT   : To click on one corner of a square, drag, and release to
 		   specify dimensions of a square to be drawn in the current style.
