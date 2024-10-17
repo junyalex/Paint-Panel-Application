@@ -9,11 +9,13 @@ import javafx.scene.paint.Color;
 import java.util.ArrayList;
 import java.util.Observable;
 import java.util.Observer;
+import ca.utoronto.utm.assignment2.scribble.ScribblePanel;
 
 public class PaintPanel extends Canvas implements EventHandler<MouseEvent>, Observer {
     private String mode="Circle";
     private PaintModel model;
 
+    double start_x ,start_y; // instance used for saving first location of x,y when mouse clicked
     public Circle circle; // This is VERY UGLY, should somehow fix this!!
 
     public PaintPanel(PaintModel model) {
@@ -67,9 +69,20 @@ public class PaintPanel extends Canvas implements EventHandler<MouseEvent>, Obse
                 break;
             case "▭": break;
             case "□": break;
+
             case "Squiggle (〜)":
-                if (mouseEventType.equals(MouseEvent.MOUSE_DRAGGED)) {
-                    this.model.addPoint(new Point(mouseEvent.getX(), mouseEvent.getY()));
+                GraphicsContext gc = this.getGraphicsContext2D();
+                if (mouseEvent.getEventType() == MouseEvent.MOUSE_PRESSED){
+                    start_x = mouseEvent.getX();
+                    start_y = mouseEvent.getY();
+                }
+                else if (mouseEvent.getEventType() == MouseEvent.MOUSE_DRAGGED){
+                    double curx = mouseEvent.getX();
+                    double cury = mouseEvent.getY();
+
+                    gc.strokeLine(start_x, start_y, curx, cury);
+                    start_x = curx;
+                    start_y = cury;
                 }
                 break;
             case "Polyline (└───┐)": break;
