@@ -16,7 +16,8 @@ public class PaintPanel extends Canvas implements EventHandler<MouseEvent>, Obse
     private PaintModel model;
 
     double start_x ,start_y; // instance used for saving first location of x,y when mouse clicked
-    public Circle circle; // This is VERY UGLY, should somehow fix this!!
+    private Circle circle; // This is VERY UGLY, should somehow fix this!! (fixed)
+    private Square square;
 
     public PaintPanel(PaintModel model) {
         super(300, 300);
@@ -70,8 +71,32 @@ public class PaintPanel extends Canvas implements EventHandler<MouseEvent>, Obse
                 }
 
                 break;
+
             case "▭": break;
-            case "□": break;
+            case "□":
+                if(mouseEventType.equals(MouseEvent.MOUSE_PRESSED)) {
+                    System.out.println("Started Square");
+                    Point corner = new Point(mouseEvent.getX(), mouseEvent.getY());
+                    this.square=new Square(corner, 0);
+                } else if (mouseEventType.equals(MouseEvent.MOUSE_DRAGGED)) {
+                    if(this.square != null) {
+                        double deltaX = mouseEvent.getX() - this.square.getCorner().x;
+                        double deltaY = mouseEvent.getY() - this.square.getCorner().y;
+                        double dim = Math.sqrt(deltaX*deltaX + deltaY*deltaY);
+                        this.square.setDim(dim);
+                        this.model.addSquare(this.square);
+                    }
+                } else if (mouseEventType.equals(MouseEvent.MOUSE_MOVED)) {
+
+                } else if (mouseEventType.equals(MouseEvent.MOUSE_RELEASED)) {
+                    if(this.square!=null){
+                        // Problematic notion of radius and centre!!
+                        System.out.println("Added Square");
+                        this.square=null;
+                    }
+                }
+
+                break;
 
             case "Squiggle (〜)":
                 GraphicsContext gc = this.getGraphicsContext2D();
@@ -116,6 +141,17 @@ public class PaintPanel extends Canvas implements EventHandler<MouseEvent>, Obse
                         double y = c.getCentre().y;
                         double radius = c.getRadius();
                         g2d.fillOval(x-radius, y-radius, radius*2, radius*2);
+                }
+
+                // Draw Squares
+                ArrayList<Square> squares = this.model.getSquares();
+
+                g2d.setFill(Color.RED);
+                for(Square s: this.model.getSquares()){
+                    double x = s.getCorner().x;
+                    double y = s.getCorner().y;
+                    double dim = s.getDim();
+                    g2d.fillRect(x, y, dim, dim);
                 }
     }
 }
