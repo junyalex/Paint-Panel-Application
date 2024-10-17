@@ -145,7 +145,7 @@ I WANT   : To be able to move an existing shape to a new location
            		-drag the shape to new location from its center
            		-the shape will relocate to this new position
            	results in a relocated shape
-SO THAT  :
+SO THAT  : so the user can move an existing shape
 --------------------------------------------------------------------------
 --------------------------------------------------------------------------
 TYPE     : USER STORY US3.003 : leerya41 : NotStarted
@@ -163,7 +163,7 @@ I WANT   : To be able to move an existing shape to a new location
            		dimensions of the shape
            		-the shape will resize according to the parameters of the resized area
            	results in a resized shape
-SO THAT  :
+SO THAT  : the user can modify the dimensions of a shape
 --------------------------------------------------------------------------
 --------------------------------------------------------------------------
 TYPE     : USER STORY US3.004 : leerya41 : NotStarted
@@ -178,7 +178,7 @@ I WANT   : To be able to change the color of an existing shape
            		-click the existing color mode
            		-select color
            	results in a selected shape being changed to new color
-SO THAT  :
+SO THAT  : the user can modify shape color of existing shape
 --------------------------------------------------------------------------
 --------------------------------------------------------------------------
 TYPE     : USER STORY US3.005 : leerya41 : NotStarted
@@ -192,7 +192,7 @@ I WANT   : To be able to remove an existing shape
            		-select a shape
            		-click the delete option
            	results in a selected shape being removed
-SO THAT  :
+SO THAT  : so the user may remove an existing shape
 --------------------------------------------------------------------------
 --------------------------------------------------------------------------
 TYPE     : USER STORY US1.005 : mbagayaa : NotStarted
