@@ -57,7 +57,7 @@ SO THAT  : I can see the circle I am about to build on release of the mouse
 TYPE     : USER STORY US1.003 : leehoju7 : Completed
 NAME     : Draw Rectangle
 PRIORITY : 2
-ESTIMATE : 1 hour   ACTUAL :
+ESTIMATE : 1 hour   ACTUAL : 1
 AS A     : user
 I WANT   : To click on one corner of a rectangle, drag, and release to
                    specify two corners of a rectangle to be drawn in the current style.
@@ -67,7 +67,7 @@ SO THAT  : I can add rectangles to my canvas
 TYPE     : USER STORY US1.004 : leehoju7 : Completed
 NAME     : Draw Rectangle Feedback
 PRIORITY : 2
-ESTIMATE : (1 hour, 2 hours, 4 hours, 1 day, 2 days, 4 days)    ACTUAL :
+ESTIMATE : 1 hour   ACTUAL : 1
 AS A     : user
 I WANT   : Similarly to Draw Circle Feedback, display the rectangle in mid construction.
 SO THAT  : I can see the rectangle I am about to build on release of the mouse button.
