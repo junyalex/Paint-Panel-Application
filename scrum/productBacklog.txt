@@ -16,7 +16,7 @@
 # as appropriate.
 
 --------------------------------------------------------------------------
-TYPE     : USER STORY US1.003 : UTORID : NotStarted 
+TYPE     : USER STORY US1.003 : leehoju7 : In Progress
 NAME     : Draw Rectangle
 PRIORITY : 2
 ESTIMATE : (1 hour, 2 hours, 4 hours, 1 day, 2 days, 4 days)    ACTUAL :

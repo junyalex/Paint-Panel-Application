@@ -17,9 +17,9 @@ Oct 16,2024
 	Obstacles I face: Is there an way to use ScribblePanel in PaintPanel?
 
 Oct 17,2024
-	What I did yesterday:
-	What I will do today:
-	Obstacles I face:
+	What I did yesterday: Fixed Bug1.005
+	What I will do today: I am going to work on US1.003
+	Obstacles I face: No obstacles yet
 
 Oct 18,2024
 	What I did yesterday:
