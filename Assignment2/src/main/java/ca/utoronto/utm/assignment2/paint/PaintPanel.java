@@ -17,6 +17,7 @@ public class PaintPanel extends Canvas implements EventHandler<MouseEvent>, Obse
 
     double start_x ,start_y; // instance used for saving first location of x,y when mouse clicked
     private Circle circle; // This is VERY UGLY, should somehow fix this!! (fixed)
+    private Rectangle rectangle;
     //private Square square;
 
     public PaintPanel(PaintModel model) {
@@ -72,7 +73,23 @@ public class PaintPanel extends Canvas implements EventHandler<MouseEvent>, Obse
 
                 break;
 
-            case "▭": break;
+            case "▭": // Drag to draw Rectangle
+                if (mouseEventType.equals(MouseEvent.MOUSE_PRESSED)){
+                System.out.println("Started Rectangle");
+                Point corner1 = new Point(mouseEvent.getX(), mouseEvent.getY()); // left_top
+                Point corner2 = new Point(0, 0);   // right_bot
+                this.rectangle = new Rectangle(corner1, corner2);
+                } else if (mouseEventType.equals(MouseEvent.MOUSE_DRAGGED)){
+
+                    this.rectangle.setCorner2(new Point(mouseEvent.getX(), mouseEvent.getY()));
+
+                    this.model.addRectangle(this.rectangle);
+
+                } else if (mouseEventType.equals(MouseEvent.MOUSE_RELEASED)){
+                    this.rectangle.setCorner2(new Point(mouseEvent.getX(), mouseEvent.getY()));
+                    this.rectangle = null;
+                }
+
             case "□":
                 /*
                 if(mouseEventType.equals(MouseEvent.MOUSE_PRESSED)) {
@@ -144,6 +161,17 @@ public class PaintPanel extends Canvas implements EventHandler<MouseEvent>, Obse
                         double y = c.getCentre().y;
                         double radius = c.getRadius();
                         g2d.fillOval(x-radius, y-radius, radius*2, radius*2);
+                }
+
+                // Draw Rectangles
+                ArrayList<Rectangle> rectangles = this.model.getRectangles();
+                for(Rectangle r: this.model.getRectangles()){
+                    double corner_x = Math.min(r.getCorner1().getX(), r.getCorner2().getX());
+                    double corner_y = Math.min(r.getCorner1().getY(), r.getCorner2().getY());
+                    double width = r.getWidth();
+                    double height = r.getHeight();
+                    g2d.fillRect(corner_x, corner_y, width, height);
+
                 }
 
                 /*
