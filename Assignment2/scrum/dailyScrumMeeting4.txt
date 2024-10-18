@@ -17,9 +17,10 @@ Oct 16,2024
 	Obstacles I face: No obstacles
 
 Oct 17,2024
-	What I did yesterday:
-	What I will do today:
-	Obstacles I face:
+	What I did yesterday:Added two user stories and Fixed BUG1.002
+	What I will do today:Look through my colleagues work and make sure that I understand what's going on
+	whilst planning how I would better improve the project.
+	Obstacles I face:No obstacles
 
 Oct 18,2024
 	What I did yesterday:
