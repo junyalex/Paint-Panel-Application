@@ -17,9 +17,10 @@ Oct 16,2024
 	Obstacles I face: None
 
 Oct 17,2024
-	What I did yesterday:
-	What I will do today:
-	Obstacles I face:
+	What I did yesterday: add 2 user stories, fix BUG1.006 for lab07, group meeting
+	What I will do today: read through all the codes for the US and BUG in sprintBacklog1 that we
+	completed, and try to find if there is any error or any better algorithm to enhance our codes.
+	Obstacles I face: None
 
 Oct 18,2024
 	What I did yesterday:
