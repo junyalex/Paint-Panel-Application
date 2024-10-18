@@ -18,7 +18,7 @@ Oct 16,2024
 
 Oct 17,2024
 	What I did yesterday: Fixed Bug1.005
-	What I will do today: I am going to work on US1.003
+	What I will do today: I am going to work on US1.003, US1.004
 	Obstacles I face: No obstacles yet
 
 Oct 18,2024
