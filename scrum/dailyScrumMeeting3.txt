@@ -13,21 +13,24 @@ Oct 15,2024
 
 Oct 16,2024
 	What I did yesterday: added A2.zip and members.txt
-	What I will do today: add 5 user stories and implement user story/bug with group
-	fix BUG1.001 to complete lab07
+	What I will do today: add 5 user stories (1 big one broken into 5 parts)  and implemented
+	user story/bug with group fix BUG1.001 to complete lab07
 	Obstacles I face: None
 
 Oct 17,2024
-	What I did yesterday: added 5 user stories and implemented user story/bug with group
-                         	fix BUG1.001 to complete lab07
-	What I will do today: finish square constructor implementation (commented out since not part
-	of this weeks scrum) and added square user story to sprint1 and product backlog
+	What I did yesterday: added 5 user stories (1 big one broken into 5 parts) and
+	 implemented user story/bug with group fix BUG1.001 to complete lab07
+	What I will do today: add square user story finish square constructor
+	implementation (commented out since not part of this weeks scrum)
+	and added the square user story to product backlog
 	Obstacles I face: None
 
 Oct 18,2024
-	What I did yesterday:
-	What I will do today:
-	Obstacles I face:
+	What I did yesterday:added square user story finish square constructor
+    implementation (commented out since not part of this weeks scrum will release next week)
+    and added the square user story to product backlog
+	What I will do today: Begin brainstorming for scrum 2 next week as scrum 1 is complete
+	Obstacles I face: None
 
 Oct 19,2024
 	What I did yesterday:
