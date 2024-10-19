@@ -22,9 +22,9 @@ Oct 17,2024
 	Obstacles I face: No obstacles yet
 
 Oct 18,2024
-	What I did yesterday:
-	What I will do today:
-	Obstacles I face:
+	What I did yesterday: Implemented US1.003 & US1.004
+	What I will do today: Read through code and see if there is something to be fixed
+	Obstacles I face: No obstacles
 
 Oct 19,2024
 	What I did yesterday:
