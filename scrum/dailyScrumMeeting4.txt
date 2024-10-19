@@ -23,14 +23,15 @@ Oct 17,2024
 	Obstacles I face:No obstacles
 
 Oct 18,2024
-	What I did yesterday:
-	What I will do today:
-	Obstacles I face:
+	What I did yesterday:Looked through my colleagues work and made sure that I understood what is going on
+    whilst planning how I would better improve the project.
+	What I will do today: No work as I have to prepare for a midterm for another course.
+	Obstacles I face: No obstacles
 
 Oct 19,2024
-	What I did yesterday:
-	What I will do today:
-	Obstacles I face:
+	What I did yesterday: Didn't do any work as I had a midterm for another course the next day.
+	What I will do today: Continue looking through the code and brainstorming
+	Obstacles I face: No obstacles.
 
 Oct 20,2024
 	What I did yesterday:
