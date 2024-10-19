@@ -23,9 +23,11 @@ Oct 17,2024
 	Obstacles I face: None
 
 Oct 18,2024
-	What I did yesterday:
-	What I will do today:
-	Obstacles I face:
+	What I did yesterday:read through all the codes for the US and BUG in sprintBacklog1 that we
+    completed, and try to find if there is any error or any better algorithm to enhance our codes.
+	What I will do today: Getting ready for scrum 2 next week since we are done with scrum 1. Start
+	brainstorming with team.
+	Obstacles I face: None
 
 Oct 19,2024
 	What I did yesterday:
