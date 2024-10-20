@@ -33,9 +33,9 @@ Oct 18,2024
 	Obstacles I face: None
 
 Oct 19,2024
-	What I did yesterday:
-	What I will do today:
-	Obstacles I face:
+	What I did yesterday: Begin brainstorming for scrum 2 next week as scrum 1 is complete
+	What I will do today:Read through code and see if there is something to be fixed
+	Obstacles I face: None
 
 Oct 20,2024
 	What I did yesterday:
