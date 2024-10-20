@@ -38,10 +38,10 @@ DESIGN PATTERNS USED
 	the code. I see at least two that would greatly improve code. 
 		
 	Strategy:
-	Command: 
+	Command: We can use command design pattern in order to implement undo / redo functions
 	Singleton:
 	Composite:
-	Factory:
+	Factory: We can use factory design pattern to create shapes.
 	Builder:
 	Observer/Observable:
 	... (any others you find useful) ...
