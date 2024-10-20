@@ -27,9 +27,9 @@ Oct 18,2024
 	Obstacles I face: No obstacles
 
 Oct 19,2024
-	What I did yesterday:
-	What I will do today:
-	Obstacles I face:
+	What I did yesterday: Read current code and look for things to be fixed
+	What I will do today: Repeat what I did yesterday
+	Obstacles I face: No obstacles
 
 Oct 20,2024
 	What I did yesterday:
