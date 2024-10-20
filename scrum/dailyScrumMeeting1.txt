@@ -32,9 +32,9 @@ Oct 19,2024
 	Obstacles I face: No obstacles
 
 Oct 20,2024
-	What I did yesterday:
-	What I will do today:
-	Obstacles I face:
+	What I did yesterday: Review codes
+	What I will do today: edit architecture.txt and think about design patterns
+	Obstacles I face: What design patterns would be the best??
 
 Oct 21,2024
 	What I did yesterday:
