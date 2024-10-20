@@ -36,9 +36,10 @@ Oct 19,2024
 	Obstacles I face: None.
 
 Oct 20,2024
-	What I did yesterday:
-	What I will do today:
-	Obstacles I face:
+	What I did yesterday: Keep planning and brainstorming for sprint 2 next week.
+	What I will do today: Add some ideas in architecture.txt and read through codes to find if there
+	can be any improvement using better design pattern.
+	Obstacles I face: None.
 
 Oct 21,2024
 	What I did yesterday:
