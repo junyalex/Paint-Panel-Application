@@ -38,9 +38,9 @@ Oct 19,2024
 	Obstacles I face: None
 
 Oct 20,2024
-	What I did yesterday:
-	What I will do today:
-	Obstacles I face:
+	What I did yesterday: Read through code and see if there is something to be fixed
+	What I will do today: Polish user stories
+	Obstacles I face: None
 
 Oct 21,2024
 	What I did yesterday:
