@@ -37,6 +37,11 @@ pattern for each drawing mode, we can switch drawing
 modes dynamically based on user input. Moreover, we can switch modes
 without modifying the PainPanel. Thus, this can be one of the
 ways to fix the association between the ShapeChooser and the PainPanel.
+
+2.Observer pattern
+We could have the Shapechooser be an Observable and the Paintpanel be an observer.
+This  will ensure that changes to the list of shapes are automatically reflected on the canvas.
+This pattern allows for observers to be decoupled from the subject.
 ---------------------------------------------------------------------
 
 DESIGN PATTERNS USED
@@ -50,7 +55,8 @@ DESIGN PATTERNS USED
 	Composite:
 	Factory: We can use factory design pattern to create shapes.
 	Builder:
-	Observer/Observable:
+	Observer/Observable: We can use the Observable to track when
+	new shapes are added or modified.
 	... (any others you find useful) ...
 
 OTHER ARCHITECTURE DISCUSSIONS
