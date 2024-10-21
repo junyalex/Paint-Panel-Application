@@ -18,7 +18,7 @@ public class PaintPanel extends Canvas implements EventHandler<MouseEvent>, Obse
     double start_x ,start_y; // instance used for saving first location of x,y when mouse clicked
     private Circle circle; // This is VERY UGLY, should somehow fix this!! (fixed)
     private Rectangle rectangle;
-    //private Square square;
+    private Square square;
 
     public PaintPanel(PaintModel model) {
         super(300, 300);
@@ -91,7 +91,6 @@ public class PaintPanel extends Canvas implements EventHandler<MouseEvent>, Obse
                 }
 
             case "□":
-                /*
                 if(mouseEventType.equals(MouseEvent.MOUSE_PRESSED)) {
                     System.out.println("Started Square");
                     Point corner = new Point(mouseEvent.getX(), mouseEvent.getY());
@@ -113,8 +112,6 @@ public class PaintPanel extends Canvas implements EventHandler<MouseEvent>, Obse
                         this.square=null;
                     }
                 }
-
-                 */
 
                 break;
 
@@ -174,7 +171,6 @@ public class PaintPanel extends Canvas implements EventHandler<MouseEvent>, Obse
 
                 }
 
-                /*
                 // Draw Squares
                 ArrayList<Square> squares = this.model.getSquares();
 
@@ -185,6 +181,5 @@ public class PaintPanel extends Canvas implements EventHandler<MouseEvent>, Obse
                     double dim = s.getDim();
                     g2d.fillRect(x, y, dim, dim);
                 }
-                 */
     }
 }
