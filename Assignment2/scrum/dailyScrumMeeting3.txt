@@ -43,9 +43,9 @@ Oct 20,2024
 	Obstacles I face: None
 
 Oct 21,2024
-	What I did yesterday:
-	What I will do today:
-	Obstacles I face:
+	What I did yesterday: Polish user stories
+	What I will do today: Deployed my square implementation
+	Obstacles I face: None
 
 Oct 22,2024
 	What I did yesterday:

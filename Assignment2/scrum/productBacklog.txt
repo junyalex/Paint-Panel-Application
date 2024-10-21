@@ -86,16 +86,6 @@ I WANT   : To be able to select the current line thickness, to be applied
 SO THAT  : 
 --------------------------------------------------------------------------
 --------------------------------------------------------------------------
-TYPE     : USER STORY US?.010 : leerya41 : Done - To be deployed next week
-NAME     : Draw Square
-PRIORITY : 2
-ESTIMATE : (1 hour)    ACTUAL : 30 mins
-AS A     : user
-I WANT   : To click on one corner of a square, drag, and release to
-		   specify dimensions of a square to be drawn in the current style.
-SO THAT  : I can add square to my canvas
---------------------------------------------------------------------------
---------------------------------------------------------------------------
 TYPE     : USER STORY US3.001 : leerya41 : NotStarted
 NAME     : add a selector mode
 PRIORITY : 3
@@ -340,6 +330,16 @@ ESTIMATE : (1 hour, 2 hours, 4 hours, 1 day, 2 days, 4 days)    ACTUAL : 1
 AS A     : user
 I WANT   : Similarly to Draw Circle Feedback, display the rectangle in mid construction.
 SO THAT  : I can see the rectangle I am about to build on release of the mouse button.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+TYPE     : USER STORY US?.010 : leerya41 : Done
+NAME     : Draw Square
+PRIORITY : 2
+ESTIMATE : (1 hour)    ACTUAL : 30 mins
+AS A     : user
+I WANT   : To click on one corner of a square, drag, and release to
+		   specify dimensions of a square to be drawn in the current style.
+SO THAT  : I can add square to my canvas
 --------------------------------------------------------------------------
 # OMITTED USER STORIES/BUGS BELOW   ###########################################
 --------------------------------------------------------------------------
