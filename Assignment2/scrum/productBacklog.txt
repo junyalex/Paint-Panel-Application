@@ -103,10 +103,10 @@ ESTIMATE : (2 hours)    ACTUAL :
 AS A     : user
 I WANT   : To be able to select a existing shape on the board
                 Example:
-                -enter select mode
+                -select select mode
            		-click a shape and have it have an indicator appropriate to
            		indicate which shape is chosen
-           		-apply modifications based on other modes that will be implemented
+           		-apply modifications to shapes based on other modes that will be implemented
 SO THAT  : I can implement user story 3.002-005 to modify the existing shape
 --------------------------------------------------------------------------
 --------------------------------------------------------------------------
