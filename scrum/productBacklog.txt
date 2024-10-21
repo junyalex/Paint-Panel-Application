@@ -175,8 +175,8 @@ NAME     : Draw Triangle
 PRIORITY : 3
 ESTIMATE : (2 hours)    ACTUAL :
 AS A     : user
-I WANT   : To place three dots on the canvas and have three lines join the
-           dots to create a triangle.
+I WANT   : To click the corner of the triangle and drag so that I can place a triangle the canvas
+with the specified style.
 
 SO THAT  :I can add triangles to my canvas
 --------------------------------------------------------------------------

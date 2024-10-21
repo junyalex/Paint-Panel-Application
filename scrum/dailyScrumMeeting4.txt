@@ -37,7 +37,7 @@ Oct 20,2024
 	What I did yesterday: Looked at the code and brainstormed
 	What I will do today: Look at the architecture.txt file and add a few
 	architectures that I think could help.
-	Obstacles I face: Making the UML diagram
+	Obstacles I face: Creating the UML diagram
 
 Oct 21,2024
 	What I did yesterday:
