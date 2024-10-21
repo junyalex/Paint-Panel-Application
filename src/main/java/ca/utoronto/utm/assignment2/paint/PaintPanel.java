@@ -90,6 +90,8 @@ public class PaintPanel extends Canvas implements EventHandler<MouseEvent>, Obse
                     this.rectangle = null;
                 }
 
+                break;
+
             case "□":
                 if(mouseEventType.equals(MouseEvent.MOUSE_PRESSED)) {
                     System.out.println("Started Square");

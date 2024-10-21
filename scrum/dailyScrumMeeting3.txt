@@ -44,7 +44,7 @@ Oct 20,2024
 
 Oct 21,2024
 	What I did yesterday: Polish user stories
-	What I will do today: Deployed my square implementation
+	What I will do today: Deployed my square implementation and fixed rectangle bug
 	Obstacles I face: None
 
 Oct 22,2024
