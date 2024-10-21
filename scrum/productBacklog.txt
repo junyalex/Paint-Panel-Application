@@ -86,6 +86,16 @@ I WANT   : To be able to select the current line thickness, to be applied
 SO THAT  : 
 --------------------------------------------------------------------------
 --------------------------------------------------------------------------
+TYPE     : USER STORY US1.006 : leerya41 : Done - To be deployed next week
+NAME     : Draw Square
+PRIORITY : 2
+ESTIMATE : (1 hour)    ACTUAL : 30 mins
+AS A     : user
+I WANT   : To click on one corner of a square, drag, and release to
+		   specify dimensions of a square to be drawn in the current style.
+SO THAT  : I can add square to my canvas
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
 TYPE     : USER STORY US3.001 : leerya41 : NotStarted
 NAME     : add a selector mode
 PRIORITY : 3
@@ -93,10 +103,11 @@ ESTIMATE : (2 hours)    ACTUAL :
 AS A     : user
 I WANT   : To be able to select a existing shape on the board
                 Example:
-           		-select mode: select shape
+                -enter select mode
            		-click a shape and have it have an indicator appropriate to
-           		desired modification
-SO THAT  : I can implement user story 009-012 to modify the existing shape
+           		indicate which shape is chosen
+           		-apply modifications based on other modes that will be implemented
+SO THAT  : I can implement user story 3.002-005 to modify the existing shape
 --------------------------------------------------------------------------
 --------------------------------------------------------------------------
 TYPE     : USER STORY US3.002 : leerya41 : NotStarted
@@ -106,12 +117,10 @@ ESTIMATE : (4 hours)    ACTUAL :
 AS A     : user
 I WANT   : To be able to move an existing shape to a new location
                 Example:
-           		-select mode: select selecting mode
-           		-click on a shape and a indicator will appear that
-           		the shape is selected and ready to be moved
+           		-select desired shape using select mode and enter move mode
            		-drag the shape to new location from its center
-           		-the shape will relocate to this new position
-           	results in a relocated shape
+           		-the shape will relocate to new position when mouse is released
+           	results: in a relocated shape
 SO THAT  : so the user can move an existing shape
 --------------------------------------------------------------------------
 --------------------------------------------------------------------------
@@ -120,21 +129,18 @@ NAME     : resize shape mode
 PRIORITY : 3
 ESTIMATE : (4 hours)    ACTUAL :
 AS A     : user
-I WANT   : To be able to move an existing shape to a new location
+I WANT   : To be able to modify the dimensions of an existing shape
                 Example:
-           		-select mode: select selecting mode
-           		-click on a shape and a indicator perhaps dotted outline will appear that
+           		-select desired shape using select mode and enter resize mode
+           		-an indicator perhaps dotted outline will appear that
            		the shape is selected and ready to be changed with dots on each direction
            		it can be resized to
-           		-drag the shape to in any way you see fit to change modify the
+           		-drag the dots around the shape in any way you see fit to change modify the
            		dimensions of the shape
            		-the shape will resize according to the parameters of the resized area
-           	results in a resized shape
-<<<<<<< Updated upstream
+           	results: in a resized shape
 SO THAT  : the user can modify the dimensions of a shape
-=======
-SO THAT  : the user can move an existing shape
->>>>>>> Stashed changes
+
 --------------------------------------------------------------------------
 --------------------------------------------------------------------------
 TYPE     : USER STORY US3.004 : leerya41 : NotStarted
@@ -144,8 +150,7 @@ ESTIMATE : (4 hours)    ACTUAL :
 AS A     : user
 I WANT   : To be able to change the color of an existing shape
                 Example:
-           		-select mode: select selecting mode
-           		-select a shape
+           		-select desired shape using select mode
            		-click the existing color mode
            		-select color
            	results in a selected shape being changed to new color
@@ -159,8 +164,7 @@ ESTIMATE : (2 hour)    ACTUAL :
 AS A     : user
 I WANT   : To be able to remove an existing shape
                 Example:
-           		-select mode: select selecting mode
-           		-select a shape
+           		-select desired shape using select mode
            		-click the delete option
            	results in a selected shape being removed
 SO THAT  : so the user may remove an existing shape
@@ -317,16 +321,6 @@ I WANT   : As a user is specifying a Circle, during the drag, a 'current'
            the current dragged mouse position.
 SO THAT  : I can see the circle I am about to build on release of the mouse
            button.
---------------------------------------------------------------------------
---------------------------------------------------------------------------
-TYPE     : USER STORY US1.006 : leerya41 : Done - To be deployed next week
-NAME     : Draw Square
-PRIORITY : 2
-ESTIMATE : (1 hour)    ACTUAL : 30 mins
-AS A     : user
-I WANT   : To click on one corner of a square, drag, and release to
-		   specify dimensions of a square to be drawn in the current style.
-SO THAT  : I can add square to my canvas
 --------------------------------------------------------------------------
 --------------------------------------------------------------------------
 TYPE     : USER STORY US1.003 : leehoju7 : Completed
