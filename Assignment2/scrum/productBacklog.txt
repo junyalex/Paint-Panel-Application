@@ -86,7 +86,7 @@ I WANT   : To be able to select the current line thickness, to be applied
 SO THAT  : 
 --------------------------------------------------------------------------
 --------------------------------------------------------------------------
-TYPE     : USER STORY US1.006 : leerya41 : Done - To be deployed next week
+TYPE     : USER STORY US??.006 : leerya41 : Done - To be deployed next week
 NAME     : Draw Square
 PRIORITY : 2
 ESTIMATE : (1 hour)    ACTUAL : 30 mins
@@ -170,7 +170,7 @@ I WANT   : To be able to remove an existing shape
 SO THAT  : so the user may remove an existing shape
 --------------------------------------------------------------------------
 --------------------------------------------------------------------------
-TYPE     : USER STORY US1.005 : mbagayaa : NotStarted
+TYPE     : USER STORY US?.005 : mbagayaa : NotStarted
 NAME     : Draw Triangle
 PRIORITY : 3
 ESTIMATE : (2 hours)    ACTUAL :
