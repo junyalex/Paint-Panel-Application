@@ -1,7 +1,7 @@
 package ca.utoronto.utm.assignment2.paint;
 
 
-public class Circle {
+public class Circle extends Shape{
         private Point centre;
         private double radius;
 
