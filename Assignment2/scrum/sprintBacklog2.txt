@@ -29,7 +29,7 @@ finishing the drawing.
 SO THAT  :I can see the triangle I am about to build on release of the mouse button.
 --------------------------------------------------------------------------
 --------------------------------------------------------------------------
-TYPE     : USER STORY US2.003: UTORID : NotStarted
+TYPE     : USER STORY US2.003: chosun29 : In progress
 NAME     : Draw Oval
 PRIORITY : 3
 ESTIMATE : (2 hours)    ACTUAL :
