@@ -17,7 +17,7 @@ ISSUE    : Code is not modular and is difficult to expand. Need a better
            'if' blocks in the PaintPanel mouse event code.
 --------------------------------------------------------------------------
 --------------------------------------------------------------------------
-TYPE     : USER STORY US?.010 : leerya41 : Done
+TYPE     : USER STORY US2.010 : leerya41 : Done
 NAME     : Draw Square
 PRIORITY : 2
 ESTIMATE : (1 hour)    ACTUAL : 30 mins

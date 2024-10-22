@@ -332,7 +332,7 @@ I WANT   : Similarly to Draw Circle Feedback, display the rectangle in mid const
 SO THAT  : I can see the rectangle I am about to build on release of the mouse button.
 --------------------------------------------------------------------------
 --------------------------------------------------------------------------
-TYPE     : USER STORY US?.010 : leerya41 : Done
+TYPE     : USER STORY US2.010 : leerya41 : Done
 NAME     : Draw Square
 PRIORITY : 2
 ESTIMATE : (1 hour)    ACTUAL : 30 mins
