@@ -1,6 +1,6 @@
 package ca.utoronto.utm.assignment2.paint;
 
-public class Square {
+public class Square extends Shape {
     private Point corner;
     private double dim;
 
