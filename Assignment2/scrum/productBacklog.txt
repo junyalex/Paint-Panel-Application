@@ -86,7 +86,7 @@ I WANT   : To be able to select the current line thickness, to be applied
 SO THAT  : 
 --------------------------------------------------------------------------
 --------------------------------------------------------------------------
-TYPE     : USER STORY US3.001 : leerya41 : NotStarted
+TYPE     : USER STORY US?.0010 : leerya41 : NotStarted
 NAME     : add a selector mode
 PRIORITY : 3
 ESTIMATE : (2 hours)    ACTUAL :
@@ -100,7 +100,7 @@ I WANT   : To be able to select a existing shape on the board
 SO THAT  : I can implement user story 3.002-005 to modify the existing shape
 --------------------------------------------------------------------------
 --------------------------------------------------------------------------
-TYPE     : USER STORY US3.002 : leerya41 : NotStarted
+TYPE     : USER STORY US?.0011 : leerya41 : NotStarted
 NAME     : Move shape mode
 PRIORITY : 3
 ESTIMATE : (4 hours)    ACTUAL :
@@ -114,7 +114,7 @@ I WANT   : To be able to move an existing shape to a new location
 SO THAT  : so the user can move an existing shape
 --------------------------------------------------------------------------
 --------------------------------------------------------------------------
-TYPE     : USER STORY US3.003 : leerya41 : NotStarted
+TYPE     : USER STORY US?.0012 : leerya41 : NotStarted
 NAME     : resize shape mode
 PRIORITY : 3
 ESTIMATE : (4 hours)    ACTUAL :
@@ -133,7 +133,7 @@ SO THAT  : the user can modify the dimensions of a shape
 
 --------------------------------------------------------------------------
 --------------------------------------------------------------------------
-TYPE     : USER STORY US3.004 : leerya41 : NotStarted
+TYPE     : USER STORY US?.0013 : leerya41 : NotStarted
 NAME     : change shape color
 PRIORITY : 3
 ESTIMATE : (4 hours)    ACTUAL :
@@ -147,7 +147,7 @@ I WANT   : To be able to change the color of an existing shape
 SO THAT  : the user can modify shape color of existing shape
 --------------------------------------------------------------------------
 --------------------------------------------------------------------------
-TYPE     : USER STORY US3.005 : leerya41 : NotStarted
+TYPE     : USER STORY US?.0014 : leerya41 : NotStarted
 NAME     : remove shape mode
 PRIORITY : 3
 ESTIMATE : (2 hour)    ACTUAL :
@@ -160,18 +160,31 @@ I WANT   : To be able to remove an existing shape
 SO THAT  : so the user may remove an existing shape
 --------------------------------------------------------------------------
 --------------------------------------------------------------------------
-TYPE     : USER STORY US?.008 : mbagayaa : NotStarted
+TYPE     : USER STORY US2.001 : mbagayaa : NotStarted
 NAME     : Draw Triangle
 PRIORITY : 3
 ESTIMATE : (2 hours)    ACTUAL :
 AS A     : user
-I WANT   : To click the corner of the triangle and drag so that I can place a triangle the canvas
-with the specified style.
+I WANT   : To will click three points on the canvas and lines will be extended
+joining the three vertices creating  a triangle.
 
 SO THAT  :I can add triangles to my canvas
 --------------------------------------------------------------------------
 --------------------------------------------------------------------------
-TYPE     : USER STORY US3.006 : mbagayaa : NotStarted
+TYPE     : USER STORY US2.002 : mbagayaa : NotStarted
+NAME     : Draw Triangle Feedback
+PRIORITY : 3
+ESTIMATE : (2 hours)    ACTUAL :
+AS A     : user
+I WANT   : As a user is specifying a Triangle, during the drag of the shape
+a triangle should be on display. As the user is dragging, the 'current' state of
+the triangle changes in real time so that the desired triangle size can be seen before
+finishing the drawing.
+
+SO THAT  :I can see the triangle I am about to build on release of the mouse button.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+TYPE     : USER STORY US?.0015 : mbagayaa : NotStarted
 NAME     : Hover over shape
 PRIORITY : 3
 ESTIMATE : (2 hours)    ACTUAL :
@@ -182,7 +195,7 @@ I WANT   : To hover over the shape and have an icon indicating what shape
 SO THAT  :I can know what I'm clicking and place on canvas.
 --------------------------------------------------------------------------
 --------------------------------------------------------------------------
-TYPE     : USER STORY US2.001 : leehoju7 : NotStarted
+TYPE     : USER STORY US?.0016 : leehoju7 : NotStarted
 NAME     : Create text field
 PRIORITY : 3
 ESTIMATE : (2 hours)    ACTUAL :
@@ -193,7 +206,7 @@ SO THAT  : Users can write what they want on the screen.
 
 --------------------------------------------------------------------------
 --------------------------------------------------------------------------
-TYPE     : USER STORY US3.007 : leehoju7 : NotStarted
+TYPE     : USER STORY US?.0017 : leehoju7 : NotStarted
 NAME     : Select text field and modify contents
 PRIORITY : 3
 ESTIMATE : (2 hours)    ACTUAL :
@@ -202,7 +215,7 @@ I WANT   :  Users can select text field and modify contents
 SO THAT  :
 --------------------------------------------------------------------------
 --------------------------------------------------------------------------
-TYPE     : USER STORY US3.008 : chosun29 : NotStarted
+TYPE     : USER STORY US?.0018 : chosun29 : NotStarted
 NAME     : change text alignment
 PRIORITY : 3
 ESTIMATE : (3 hours)    ACTUAL :
@@ -215,7 +228,7 @@ I WANT   : To be able to select a existing text and change its alignment
 SO THAT  :
 --------------------------------------------------------------------------
 --------------------------------------------------------------------------
-TYPE     : USER STORY US3.009 : chosun29 : NotStarted
+TYPE     : USER STORY US?.0019 : chosun29 : NotStarted
 NAME     : change text font
 PRIORITY : 3
 ESTIMATE : (3 hours)    ACTUAL :
@@ -228,7 +241,32 @@ I WANT   : To be able to select a existing text and change its font
 SO THAT  :
 --------------------------------------------------------------------------
 --------------------------------------------------------------------------
-TYPE     : BUG BUG?.003 : UTORID : NotStarted 
+TYPE     : USER STORY US2.003: UTORID : NotStarted
+NAME     : Draw Oval
+PRIORITY : 3
+ESTIMATE : (2 hours)    ACTUAL :
+AS A     : user
+I WANT   :To click the centre of the oval and drag outwards either horizontally
+or vertically and release the oval onto the canvas to be drawn in the current
+style.
+
+SO THAT  :I can add ovals to my canvas
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+TYPE     : USER STORY US2.004 : mbagayaa : NotStarted
+NAME     : Draw Oval Feedback
+PRIORITY : 3
+ESTIMATE : (2 hours)    ACTUAL :
+AS A     : user
+I WANT   : As a user is specifying an Oval, during the drag of the shape
+an oval should be on display. As the user is dragging, the 'current' state of
+the oval changes in real time so that the desired oval size can be seen before
+finishing the drawing.
+
+SO THAT  :I can see the oval I am about to build on release of the mouse button.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+TYPE     : BUG BUG2.001 : UTORID : NotStarted
 NAME     : Architecture behind choosing selection mode is poor
 PRIORITY : 3
 ESTIMATE : (1 hour, 2 hours, 4 hours, 1 day, 2 days, 4 days)    ACTUAL :
@@ -332,7 +370,7 @@ I WANT   : Similarly to Draw Circle Feedback, display the rectangle in mid const
 SO THAT  : I can see the rectangle I am about to build on release of the mouse button.
 --------------------------------------------------------------------------
 --------------------------------------------------------------------------
-TYPE     : USER STORY US2.010 : leerya41 : Done
+TYPE     : USER STORY US2.005 : leerya41 : Done
 NAME     : Draw Square
 PRIORITY : 2
 ESTIMATE : (1 hour)    ACTUAL : 30 mins
@@ -340,6 +378,15 @@ AS A     : user
 I WANT   : To click on one corner of a square, drag, and release to
 		   specify dimensions of a square to be drawn in the current style.
 SO THAT  : I can add square to my canvas
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+TYPE     : USER STORY US2.006: leerya41 : Done
+NAME     : Draw Square Feedback
+PRIORITY : 2
+ESTIMATE : (1 hour, 2 hours, 4 hours, 1 day, 2 days, 4 days)    ACTUAL : 30
+AS A     : user
+I WANT   : Similarly to Draw Circle Feedback, display the square in mid-construction.
+SO THAT  : I can see the square I am about to build on release of the mouse button.
 --------------------------------------------------------------------------
 # OMITTED USER STORIES/BUGS BELOW   ###########################################
 --------------------------------------------------------------------------
