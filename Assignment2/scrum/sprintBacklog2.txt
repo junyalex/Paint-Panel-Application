@@ -73,7 +73,7 @@ I WANT   : Similarly to Draw Circle Feedback, display the square in mid-construc
 SO THAT  : I can see the square I am about to build on release of the mouse button.
 --------------------------------------------------------------------------
 --------------------------------------------------------------------------
-TYPE     : BUG BUG2.001 : UTORID : NotStarted
+TYPE     : BUG BUG2.001 : leehoju7 : In Progress
 NAME     : Architecture behind choosing selection mode is poor
 PRIORITY : 3
 ESTIMATE : (1 hour, 2 hours, 4 hours, 1 day, 2 days, 4 days)    ACTUAL :
