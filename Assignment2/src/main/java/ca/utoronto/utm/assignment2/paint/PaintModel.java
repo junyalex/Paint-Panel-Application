@@ -8,7 +8,7 @@ public class PaintModel extends Observable {
         private ArrayList<Circle> circles=new ArrayList<Circle>();
         private ArrayList<Rectangle> rectangles = new ArrayList<>();
         private ArrayList<Square> squares=new ArrayList<Square>();
-
+        private ArrayList<Scribble> scibbles = new ArrayList<>();
 
         public void addPoint(Point p){
                 this.points.add(p);
@@ -46,5 +46,14 @@ public class PaintModel extends Observable {
         }
         public ArrayList<Square> getSquares(){
                 return squares;
+        }
+        public void addScribble(Scribble s){
+                this.scibbles.add(s);
+                this.setChanged();
+                this.notifyObservers();
+        }
+
+        public ArrayList<Scribble> getScribbles(){
+                return scibbles;
         }
 }

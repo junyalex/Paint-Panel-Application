@@ -1,6 +1,6 @@
 package ca.utoronto.utm.assignment2.paint;
 
-public class Rectangle {
+public class Rectangle extends Shape{
 
     private Point corner1;
     private Point corner2;

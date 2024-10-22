@@ -5,7 +5,6 @@ import javafx.event.EventType;
 import javafx.scene.canvas.GraphicsContext;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.paint.Color;
-
 import java.util.ArrayList;
 import java.util.Observable;
 import java.util.Observer;
@@ -19,6 +18,7 @@ public class PaintPanel extends Canvas implements EventHandler<MouseEvent>, Obse
     private Circle circle; // This is VERY UGLY, should somehow fix this!! (fixed)
     private Rectangle rectangle;
     private Square square;
+    private Scribble scribble;
 
     public PaintPanel(PaintModel model) {
         super(300, 300);
@@ -120,17 +120,32 @@ public class PaintPanel extends Canvas implements EventHandler<MouseEvent>, Obse
             case "Squiggle (〜)":
                 GraphicsContext gc = this.getGraphicsContext2D();
                 if (mouseEvent.getEventType() == MouseEvent.MOUSE_PRESSED){
-                    start_x = mouseEvent.getX();
-                    start_y = mouseEvent.getY();
+                    Point startPoint = new Point(mouseEvent.getX(), mouseEvent.getY());
+                    ArrayList<Point> point_list = new ArrayList<>();
+                    point_list.add(startPoint);
+                    this.scribble = new Scribble(point_list);
                 }
                 else if (mouseEvent.getEventType() == MouseEvent.MOUSE_DRAGGED){
+                    ArrayList<Point> points = this.scribble.points;
                     double curx = mouseEvent.getX();
                     double cury = mouseEvent.getY();
+                    double lastx = points.getLast().x;
+                    double lasty = points.getLast().y;
 
-                    gc.strokeLine(start_x, start_y, curx, cury);
-                    start_x = curx;
-                    start_y = cury;
+
+                    gc.strokeLine(lastx, lasty, curx, cury);
+                    points.add(new Point(curx, cury));
                 }
+                else if (mouseEventType.equals(MouseEvent.MOUSE_RELEASED)) {
+                    double currx = mouseEvent.getX();
+                    double curry = mouseEvent.getY();
+
+                    this.scribble.points.add(new Point(currx, curry));
+                    Point p = this.scribble.getLastPoint();
+                    gc.strokeLine(p.x, p.y, currx, curry);
+                    this.model.addScribble(this.scribble);
+                    this.scribble = null;
+                    }
                 break;
             case "Polyline (└───┐)": break;
             default: break;
@@ -183,5 +198,21 @@ public class PaintPanel extends Canvas implements EventHandler<MouseEvent>, Obse
                     double dim = s.getDim();
                     g2d.fillRect(x, y, dim, dim);
                 }
+
+                // Draw scribbles
+                g2d.setFill(Color.GREEN);
+                ArrayList<Scribble> scribbles = new ArrayList<>();
+                for (Scribble s: this.model.getScribbles()){
+                    ArrayList<Point> points1 = s.points;
+
+                    for (int i = 0; i < points1.size() - 1 ; i++){
+                        Point p1 = points1.get(i);
+                        Point p2 = points1.get(i+1);
+
+                        g2d.strokeLine(p1.x, p1.y, p2.x, p2.y);
+                    }
+                }
+
+                }
     }
-}
+

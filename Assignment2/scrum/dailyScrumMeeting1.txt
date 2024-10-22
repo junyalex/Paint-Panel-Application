@@ -37,9 +37,9 @@ Oct 20,2024
 	Obstacles I face: What design patterns would be the best??
 
 Oct 21,2024
-	What I did yesterday:
-	What I will do today:
-	Obstacles I face:
+	What I did yesterday: Edit architecture.txt
+	What I will do today: Implement Scribble class and parent class Shape class
+	Obstacles I face: nothing
 
 Oct 22,2024
 	What I did yesterday:
