@@ -1,5 +1,7 @@
 package ca.utoronto.utm.assignment2.paint;
 
+import javafx.scene.canvas.GraphicsContext;
+
 public class Rectangle extends Shape{
 
     private Point corner1;
@@ -33,5 +35,4 @@ public class Rectangle extends Shape{
     public double getHeight() {
         return Math.abs(corner2.getY() - corner1.getY());
     }
-
 }

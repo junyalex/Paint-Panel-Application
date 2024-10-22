@@ -156,6 +156,18 @@ public class PaintPanel extends Canvas implements EventHandler<MouseEvent>, Obse
     public void update(Observable o, Object arg) {
                 GraphicsContext g2d = this.getGraphicsContext2D();
                 g2d.clearRect(0, 0, this.getWidth(), this.getHeight());
+                ArrayList<Shape> shapes = this.model.getShape();
+
+
+
+                // What we need to do /////////////////////////////////
+                for (Shape s : shapes){
+                    // printshape()
+                    // need to implement something to print all shapes by 1 code
+                    // instead of things at the bottom
+                }
+
+
                 // Draw Lines
                 ArrayList<Point> points = this.model.getPoints();
 
