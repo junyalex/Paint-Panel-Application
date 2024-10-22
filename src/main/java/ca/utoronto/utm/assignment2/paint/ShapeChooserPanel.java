@@ -16,7 +16,7 @@ public class ShapeChooserPanel extends GridPane implements EventHandler<ActionEv
 
                 this.view = view;
                 buttons = new ArrayList<>();
-                String[] buttonLabels = { "◯", "▭", "□", "Squiggle (〜)", "Polyline (└───┐)"};
+                String[] buttonLabels = { "◯", "▭", "□", "⬭", "Squiggle (〜)", "Polyline (└───┐)"};
 
                 int row = 0;
                 for (String label : buttonLabels) {
