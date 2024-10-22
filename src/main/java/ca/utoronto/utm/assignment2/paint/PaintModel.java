@@ -1,5 +1,6 @@
 package ca.utoronto.utm.assignment2.paint;
 
+import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.Observable;
 
@@ -9,6 +10,19 @@ public class PaintModel extends Observable {
         private ArrayList<Rectangle> rectangles = new ArrayList<>();
         private ArrayList<Square> squares=new ArrayList<Square>();
         private ArrayList<Scribble> scibbles = new ArrayList<>();
+        private ArrayList<Shape> shapes = new ArrayList<>();
+
+        public void addShape(Shape s){
+                shapes.add(s);
+        }
+
+        public ArrayList<Shape> getShape(){
+            return shapes;
+        }
+
+
+
+        //////////////////////////////Im leaving these to let the code run, but we can delete after///
 
         public void addPoint(Point p){
                 this.points.add(p);
