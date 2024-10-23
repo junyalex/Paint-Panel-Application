@@ -125,23 +125,7 @@ public class PaintPanel extends Canvas implements EventHandler<MouseEvent>, Obse
 //
 //                break;
 //
-//            case "▭": // Drag to draw Rectangle
-//                if (mouseEventType.equals(MouseEvent.MOUSE_PRESSED)){
-//                System.out.println("Started Rectangle");
-//                Point corner1 = new Point(mouseEvent.getX(), mouseEvent.getY()); // left_top
-//                Point corner2 = new Point(0, 0);   // right_bot
-//                this.rectangle = new Rectangle(corner1, corner2);
-//                } else if (mouseEventType.equals(MouseEvent.MOUSE_DRAGGED)){
 //
-//                    this.rectangle.setCorner2(new Point(mouseEvent.getX(), mouseEvent.getY()));
-//
-//                    this.model.addRectangle(this.rectangle);
-//                    this.model.addShape(this.rectangle);
-//
-//                } else if (mouseEventType.equals(MouseEvent.MOUSE_RELEASED)){
-//                    this.rectangle.setCorner2(new Point(mouseEvent.getX(), mouseEvent.getY()));
-//                    this.rectangle = null;
-//                }
 //
 //                break;
 //
@@ -170,36 +154,7 @@ public class PaintPanel extends Canvas implements EventHandler<MouseEvent>, Obse
 //
 //                break;
 //
-//            case "Squiggle (〜)":
-//                GraphicsContext gc = this.getGraphicsContext2D();
-//                if (mouseEvent.getEventType() == MouseEvent.MOUSE_PRESSED){
-//                    Point startPoint = new Point(mouseEvent.getX(), mouseEvent.getY());
-//                    ArrayList<Point> point_list = new ArrayList<>();
-//                    point_list.add(startPoint);
-//                    this.scribble = new Scribble(point_list);
-//                }
-//                else if (mouseEvent.getEventType() == MouseEvent.MOUSE_DRAGGED){
-//                    ArrayList<Point> points = this.scribble.points;
-//                    double curx = mouseEvent.getX();
-//                    double cury = mouseEvent.getY();
-//                    double lastx = points.getLast().x;
-//                    double lasty = points.getLast().y;
 //
-//
-//                    gc.strokeLine(lastx, lasty, curx, cury);
-//                    points.add(new Point(curx, cury));
-//                }
-//                else if (mouseEventType.equals(MouseEvent.MOUSE_RELEASED)) {
-//                    double currx = mouseEvent.getX();
-//                    double curry = mouseEvent.getY();
-//
-//                    this.scribble.points.add(new Point(currx, curry));
-//                    Point p = this.scribble.getLastPoint();
-//                    gc.strokeLine(p.x, p.y, currx, curry);
-//                    this.model.addScribble(this.scribble);
-//                    this.scribble = null;
-//                    }
-//                break;
 //            case "Polyline (└───┐)": break;
 //            default: break;
 //        }
@@ -253,15 +208,7 @@ public class PaintPanel extends Canvas implements EventHandler<MouseEvent>, Obse
 //                        g2d.fillOval(x-radius, y-radius, radius*2, radius*2);
 //                }
 //
-//                ArrayList<Rectangle> rectangles = this.model.getRectangles();
-//                for(Rectangle r: this.model.getRectangles()){
-//                    double corner_x = Math.min(r.getCorner1().getX(), r.getCorner2().getX());
-//                    double corner_y = Math.min(r.getCorner1().getY(), r.getCorner2().getY());
-//                    double width = r.getWidth();
-//                    double height = r.getHeight();
-//                    g2d.fillRect(corner_x, corner_y, width, height);
 //
-//                }
 //
 //                // Draw Squares
 //                ArrayList<Square> squares = this.model.getSquares();
@@ -274,19 +221,7 @@ public class PaintPanel extends Canvas implements EventHandler<MouseEvent>, Obse
 //                    g2d.fillRect(x, y, dim, dim);
 //                }
 //
-//                // Draw scribbles
-//                g2d.setFill(Color.GREEN);
-//                ArrayList<Scribble> scribbles = new ArrayList<>();
-//                for (Scribble s: this.model.getScribbles()){
-//                    ArrayList<Point> points1 = s.points;
 //
-//                    for (int i = 0; i < points1.size() - 1 ; i++){
-//                        Point p1 = points1.get(i);
-//                        Point p2 = points1.get(i+1);
-//
-//                        g2d.strokeLine(p1.x, p1.y, p2.x, p2.y);
-//                    }
-//                }
 
                 }
     }

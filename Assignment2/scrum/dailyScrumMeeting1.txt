@@ -47,9 +47,9 @@ Oct 22,2024
 	Obstacles I face: I have to think about the best architecture..
 
 Oct 23,2024
-	What I did yesterday:
-	What I will do today:
-	Obstacles I face:
+	What I did yesterday: Applied Strategy pattern
+	What I will do today: Apply Scribble to strategy pattern
+	Obstacles I face: nothing
 
 Oct 24,2024
 	What I did yesterday:
