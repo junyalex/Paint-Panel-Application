@@ -1,5 +1,7 @@
 package ca.utoronto.utm.assignment2.paint;
 
+import javafx.scene.canvas.GraphicsContext;
+
 public class Square extends Shape {
     private Point corner;
     private double dim;
@@ -23,5 +25,9 @@ public class Square extends Shape {
 
     public void setDim(double dim) {
         this.dim = dim;
+    }
+
+    public void draw(GraphicsContext g2d, PaintModel model){
+
     }
 }

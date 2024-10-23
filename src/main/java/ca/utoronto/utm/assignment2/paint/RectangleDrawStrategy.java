@@ -1,6 +1,7 @@
 package ca.utoronto.utm.assignment2.paint;
-import java.awt.event.MouseEvent;
 
+
+import javafx.scene.input.MouseEvent;
 
 public class RectangleDrawStrategy implements DrawStrategy{
 
