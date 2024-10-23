@@ -27,7 +27,5 @@ public class Square extends Shape {
         this.dim = dim;
     }
 
-    public void draw(GraphicsContext g2d, PaintModel model){
 
-    }
 }

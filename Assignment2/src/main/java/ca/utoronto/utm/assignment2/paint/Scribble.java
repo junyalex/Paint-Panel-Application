@@ -15,7 +15,4 @@ public class Scribble extends Shape {
         return this.points.getLast();
     }
 
-    public void draw(GraphicsContext g2d, PaintModel model){
-
-    }
 }
