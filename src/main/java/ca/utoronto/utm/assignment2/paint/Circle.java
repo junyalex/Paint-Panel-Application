@@ -29,7 +29,4 @@ public class Circle extends Shape{
         }
 
 
-        public void draw(GraphicsContext g2d, PaintModel model){
-
-        }
 }
