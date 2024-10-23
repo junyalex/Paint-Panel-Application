@@ -14,6 +14,8 @@ public class PaintModel extends Observable {
 
         public void addShape(Shape s){
                 shapes.add(s);
+                this.setChanged();
+                this.notifyObservers();
         }
 
         public ArrayList<Shape> getShape(){

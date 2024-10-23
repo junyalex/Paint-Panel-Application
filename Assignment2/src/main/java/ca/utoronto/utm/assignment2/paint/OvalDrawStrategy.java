@@ -1,5 +1,6 @@
 package ca.utoronto.utm.assignment2.paint;
 
+import javafx.scene.canvas.GraphicsContext;
 import javafx.scene.input.MouseEvent;
 
 public class OvalDrawStrategy implements DrawStrategy{
@@ -21,4 +22,6 @@ public class OvalDrawStrategy implements DrawStrategy{
     public void onMousePressed(MouseEvent e, PaintModel model) {
 
     }
+    @Override
+    public void draw(PaintModel model, GraphicsContext g2d) {}
 }
