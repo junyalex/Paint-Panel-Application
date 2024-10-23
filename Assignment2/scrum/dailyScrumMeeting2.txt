@@ -48,8 +48,9 @@ Oct 21,2024
 	Obstacles I face:
 
 Oct 22,2024
-	What I did yesterday:
-	What I will do today:
+	What I did yesterday: Have a meeting with the team and assigned tasks to each member for sprint 2.
+	What I will do today: Finish US2.003, and think about design pattern that can be applied to our project.
+	(maybe commend pattern?)
 	Obstacles I face:
 
 Oct 23,2024
