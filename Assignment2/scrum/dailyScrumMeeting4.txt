@@ -40,18 +40,20 @@ Oct 20,2024
 	Obstacles I face: Creating the UML diagram
 
 Oct 21,2024
-	What I did yesterday:
-	What I will do today:
-	Obstacles I face:
+	What I did yesterday:Looked at the architecture.txt file and added a few
+                         architectures that I think could help.
+	What I will do today: Try to figure out how to draw the UML diagram
+	Obstacles I face: Creating the UML diagram
 
 Oct 22,2024
-	What I did yesterday:
-	What I will do today:
-	Obstacles I face:
+	What I did yesterday: Tried to figure out how to draw the UML diagram
+	What I will do today: Attended a team meeting and I was appointed as Product Owner so , I  will create the UserStories and the
+	bugs that are required for Sprint Two.
+	Obstacles I face: No obstacles
 
 Oct 23,2024
-	What I did yesterday:
-	What I will do today:
+	What I did yesterday: Created the user stories and the bugs that are required to be done for Sprint 2.
+	What I will do today:Figure out the code and implement TriangleDrawStrategy
 	Obstacles I face:
 
 Oct 24,2024

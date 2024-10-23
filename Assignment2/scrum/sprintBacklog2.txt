@@ -5,7 +5,7 @@
 # Sprint 2 Oct 20-Oct 27, 2024
 # Sprint 2 Backlog UserStories go below
 --------------------------------------------------------------------------
-TYPE     : USER STORY US2.001 : mbagayaa : NotStarted
+TYPE     : USER STORY US2.001 : mbagayaa : InProgress
 NAME     : Draw Triangle
 PRIORITY : 3
 ESTIMATE : (2 hours)    ACTUAL :
@@ -16,7 +16,7 @@ joining the three vertices creating  a triangle.
 SO THAT  :I can add triangles to my canvas
 --------------------------------------------------------------------------
 --------------------------------------------------------------------------
-TYPE     : USER STORY US2.002 : mbagayaa : NotStarted
+TYPE     : USER STORY US2.002 : mbagayaa : InProgress
 NAME     : Draw Triangle Feedback
 PRIORITY : 3
 ESTIMATE : (2 hours)    ACTUAL :
@@ -41,7 +41,7 @@ style.
 SO THAT  :I can add ovals to my canvas
 --------------------------------------------------------------------------
 --------------------------------------------------------------------------
-TYPE     : USER STORY US2.004 : mbagayaa : NotStarted
+TYPE     : USER STORY US2.004 : chosun29 : NotStarted
 NAME     : Draw Oval Feedback
 PRIORITY : 3
 ESTIMATE : (2 hours)    ACTUAL :
