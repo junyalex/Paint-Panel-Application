@@ -217,31 +217,6 @@ I WANT   : To be able to select a existing text and change its font
 SO THAT  :
 --------------------------------------------------------------------------
 --------------------------------------------------------------------------
-TYPE     : USER STORY US2.003: UTORID : NotStarted
-NAME     : Draw Oval
-PRIORITY : 3
-ESTIMATE : (2 hours)    ACTUAL :
-AS A     : user
-I WANT   :To click the centre of the oval and drag outwards either horizontally
-or vertically and release the oval onto the canvas to be drawn in the current
-style.
-
-SO THAT  :I can add ovals to my canvas
---------------------------------------------------------------------------
---------------------------------------------------------------------------
-TYPE     : USER STORY US2.004 : UTORID : NotStarted
-NAME     : Draw Oval Feedback
-PRIORITY : 3
-ESTIMATE : (2 hours)    ACTUAL :
-AS A     : user
-I WANT   : As a user is specifying an Oval, during the drag of the shape
-an oval should be on display. As the user is dragging, the 'current' state of
-the oval changes in real time so that the desired oval size can be seen before
-finishing the drawing.
-
-SO THAT  :I can see the oval I am about to build on release of the mouse button.
---------------------------------------------------------------------------
---------------------------------------------------------------------------
 TYPE     : BUG BUG2.001 : leehoju7 : In Progress
 NAME     : Architecture behind choosing selection mode is poor
 PRIORITY : 3
@@ -387,6 +362,31 @@ the triangle changes in real time so that the desired triangle size can be seen 
 finishing the drawing.
 
 SO THAT  :I can see the triangle I am about to build on release of the mouse button.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+TYPE     : USER STORY US2.003: chosun29 : Completed
+NAME     : Draw Oval
+PRIORITY : 3
+ESTIMATE : (2 hours)    ACTUAL : 2 hours
+AS A     : user
+I WANT   :To click the centre of the oval and drag outwards either horizontally
+or vertically and release the oval onto the canvas to be drawn in the current
+style.
+
+SO THAT  :I can add ovals to my canvas
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+TYPE     : USER STORY US2.004 : chosun29 : Completed
+NAME     : Draw Oval Feedback
+PRIORITY : 3
+ESTIMATE : (2 hours)    ACTUAL : 2 hours
+AS A     : user
+I WANT   : As a user is specifying an Oval, during the drag of the shape
+an oval should be on display. As the user is dragging, the 'current' state of
+the oval changes in real time so that the desired oval size can be seen before
+finishing the drawing.
+
+SO THAT  :I can see the oval I am about to build on release of the mouse button.
 --------------------------------------------------------------------------
 # OMITTED USER STORIES/BUGS BELOW   ###########################################
 --------------------------------------------------------------------------

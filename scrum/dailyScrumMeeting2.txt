@@ -45,18 +45,19 @@ Oct 21,2024
 	What I did yesterday:  Add some ideas in architecture.txt and read through codes to find if there
     can be any improvement using better design pattern.
 	What I will do today: Have a meeting with the team and assigned tasks to each member for sprint 2.
-	Obstacles I face:
+	Obstacles I face: None.
 
 Oct 22,2024
 	What I did yesterday: Have a meeting with the team and assigned tasks to each member for sprint 2.
 	What I will do today: Finish US2.003, and think about design pattern that can be applied to our project.
 	(maybe commend pattern?)
-	Obstacles I face:
+	Obstacles I face: None.
 
 Oct 23,2024
-	What I did yesterday:
-	What I will do today:
-	Obstacles I face:
+	What I did yesterday: Oval and OvalDrawStrategy added. Modified Circle class into abstract class, added method in
+	PaintModel and change Update method in PaintModel
+	What I will do today: Implement Circle Strategy.
+	Obstacles I face: None.
 
 Oct 24,2024
 	What I did yesterday:
