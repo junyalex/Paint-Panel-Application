@@ -56,6 +56,10 @@ public class PaintPanel extends Canvas implements EventHandler<MouseEvent>, Obse
                 DrawStrategy scribble = new ScribbleDrawStrategy();
                 this.strategy = scribble;
                 break;
+            case "△":
+                DrawStrategy triangle = new TriangleDrawStrategy();
+                this.strategy = triangle;
+                break;
 
 
 

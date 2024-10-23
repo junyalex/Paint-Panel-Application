@@ -13,6 +13,7 @@ public class PaintModel extends Observable {
         private ArrayList<Scribble> scibbles = new ArrayList<>();
         private ArrayList<Shape> shapes = new ArrayList<>();
         private ArrayList<Oval> ovals = new ArrayList<Oval>();
+        private ArrayList<Triangle> triangles = new ArrayList<>();
 
         public void addShape(Shape s){
                 shapes.add(s);
