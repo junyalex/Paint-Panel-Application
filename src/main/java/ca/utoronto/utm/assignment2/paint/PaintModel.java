@@ -1,6 +1,7 @@
 package ca.utoronto.utm.assignment2.paint;
 
-import java.lang.reflect.Array;
+import javafx.scene.canvas.GraphicsContext;
+
 import java.util.ArrayList;
 import java.util.Observable;
 
@@ -11,6 +12,7 @@ public class PaintModel extends Observable {
         private ArrayList<Square> squares=new ArrayList<Square>();
         private ArrayList<Scribble> scibbles = new ArrayList<>();
         private ArrayList<Shape> shapes = new ArrayList<>();
+        private ArrayList<Oval> ovals = new ArrayList<Oval>();
 
         public void addShape(Shape s){
                 shapes.add(s);
@@ -20,6 +22,12 @@ public class PaintModel extends Observable {
 
         public ArrayList<Shape> getShape(){
             return shapes;
+        }
+
+        public void drawAllShapes(GraphicsContext g2d){
+                for(Shape s : shapes){
+                        s.getDrawStrategy().draw(s, g2d);
+                }
         }
 
 
@@ -44,6 +52,14 @@ public class PaintModel extends Observable {
                 return circles;
         }
 
+        public void addOval(Oval o){
+                this.ovals.add(o);
+                this.setChanged();
+                this.notifyObservers();
+        }
+        public ArrayList<Oval> getOval(){
+                return ovals;
+        }
 
         public void addRectangle(Rectangle r){
                 this.rectangles.add(r);

@@ -28,4 +28,8 @@ public class Square extends Shape {
     }
 
 
+    @Override
+    public DrawStrategy getDrawStrategy() {
+        return new SquareDrawStrategy();
+    }
 }

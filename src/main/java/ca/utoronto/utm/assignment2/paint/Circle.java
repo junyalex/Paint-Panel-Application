@@ -29,4 +29,8 @@ public class Circle extends Shape{
         }
 
 
+        @Override
+        public DrawStrategy getDrawStrategy() {
+                return new CircleDrawStrategy();
+        }
 }
