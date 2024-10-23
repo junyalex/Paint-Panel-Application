@@ -14,6 +14,9 @@ public class Scribble extends Shape {
     public Point getLastPoint(){
         return this.points.getLast();
     }
+    public ArrayList<Point> getPoints(){
+        return this.points;
+    }
 
     @Override
     public DrawStrategy getDrawStrategy() {
