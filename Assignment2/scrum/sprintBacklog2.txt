@@ -29,10 +29,10 @@ finishing the drawing.
 SO THAT  :I can see the triangle I am about to build on release of the mouse button.
 --------------------------------------------------------------------------
 --------------------------------------------------------------------------
-TYPE     : USER STORY US2.003: chosun29 : In progress
+TYPE     : USER STORY US2.003: chosun29 : Completed
 NAME     : Draw Oval
 PRIORITY : 3
-ESTIMATE : (2 hours)    ACTUAL :
+ESTIMATE : (2 hours)    ACTUAL : 2 hours
 AS A     : user
 I WANT   :To click the centre of the oval and drag outwards either horizontally
 or vertically and release the oval onto the canvas to be drawn in the current
@@ -41,10 +41,10 @@ style.
 SO THAT  :I can add ovals to my canvas
 --------------------------------------------------------------------------
 --------------------------------------------------------------------------
-TYPE     : USER STORY US2.004 : chosun29 : NotStarted
+TYPE     : USER STORY US2.004 : chosun29 : Completed
 NAME     : Draw Oval Feedback
 PRIORITY : 3
-ESTIMATE : (2 hours)    ACTUAL :
+ESTIMATE : (2 hours)    ACTUAL : 2 hours
 AS A     : user
 I WANT   : As a user is specifying an Oval, during the drag of the shape
 an oval should be on display. As the user is dragging, the 'current' state of
