@@ -47,14 +47,15 @@ Oct 21,2024
 
 Oct 22,2024
 	What I did yesterday: Tried to figure out how to draw the UML diagram
-	What I will do today: Attended a team meeting and I was appointed as Product Owner so , I  will create the UserStories and the
-	bugs that are required for Sprint Two.
+	What I will do today: Attended a team meeting and I was appointed as Product Owner so , I will create the UserStories and the
+	bugs that are required for Sprint Two and also work on creating Triangle.
 	Obstacles I face: No obstacles
 
 Oct 23,2024
 	What I did yesterday: Created the user stories and the bugs that are required to be done for Sprint 2.
-	What I will do today:Figure out the code and implement TriangleDrawStrategy
-	Obstacles I face:
+	What I will do today: Figure out the code with the Strategy Pattern that was used and implement TriangleDrawStrategy
+	Obstacles I face: I'm not sure if the orientation of the triangle matters but trying to draw in different directions
+	is the problem. I'm unable to do that.
 
 Oct 24,2024
 	What I did yesterday:

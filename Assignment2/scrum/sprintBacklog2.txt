@@ -8,7 +8,7 @@
 TYPE     : USER STORY US2.001 : mbagayaa : InProgress
 NAME     : Draw Triangle
 PRIORITY : 3
-ESTIMATE : (2 hours)    ACTUAL :
+ESTIMATE : (2 hours)    ACTUAL :1 hour
 AS A     : user
 I WANT   : To will click three points on the canvas and lines will be extended
 joining the three vertices creating  a triangle.
@@ -16,10 +16,10 @@ joining the three vertices creating  a triangle.
 SO THAT  :I can add triangles to my canvas
 --------------------------------------------------------------------------
 --------------------------------------------------------------------------
-TYPE     : USER STORY US2.002 : mbagayaa : InProgress
+TYPE     : USER STORY US2.002 : mbagayaa : Done
 NAME     : Draw Triangle Feedback
 PRIORITY : 3
-ESTIMATE : (2 hours)    ACTUAL :
+ESTIMATE : (2 hours)    ACTUAL : 2 days
 AS A     : user
 I WANT   : As a user is specifying a Triangle, during the drag of the shape
 a triangle should be on display. As the user is dragging, the 'current' state of
