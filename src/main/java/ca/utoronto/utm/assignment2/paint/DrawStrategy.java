@@ -8,5 +8,7 @@ public interface DrawStrategy {
     void onMousePressed(MouseEvent e,PaintModel model);
     void onMouseDragged(MouseEvent e,PaintModel model);
     void onMouseReleased(MouseEvent e,PaintModel model);
-    void draw(PaintModel model, GraphicsContext g2d);
+    //changed
+    //void draw(PaintModel model, GraphicsContext g2d);
+    void draw(Shape shape, GraphicsContext g2d);
 }
