@@ -48,9 +48,9 @@ Oct 21,2024
 	Obstacles I face: None
 
 Oct 22,2024
-	What I did yesterday:
-	What I will do today:
-	Obstacles I face:
+	What I did yesterday: Deployed my square implementation and fixed rectangle bug
+	What I will do today: Architecture discussions with team and modifying square implementation
+	Obstacles I face: Figuring out architecture
 
 Oct 23,2024
 	What I did yesterday:
