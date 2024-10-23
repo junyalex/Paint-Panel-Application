@@ -36,7 +36,5 @@ public class Rectangle extends Shape{
         return Math.abs(corner2.getY() - corner1.getY());
     }
 
-    public void draw(GraphicsContext g2d, PaintModel model){
 
-    }
 }

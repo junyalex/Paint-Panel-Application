@@ -7,9 +7,4 @@ public class Shape {
     public Shape() {
     }
 
-    // for printing Shapes when board updates.
-    public void draw(GraphicsContext g2d, PaintModel model){
-
-    }
-
 }
