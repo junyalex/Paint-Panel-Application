@@ -56,8 +56,11 @@ Oct 22,2024
 	Obstacles I face: Figuring out architecture
 
 Oct 23,2024
-	What I did yesterday:
-	What I will do today:
+	What I did yesterday:Architecture discussions, getting ready to possibly implement a command pattern
+    to help deal with poor handling of events as at the moment issue exists when dragging a shape and the arraylist
+    and also possibly a factory pattern that will initilizes the shapes objects to help with scalibility etc
+    and modifying square implementation
+	What I will do today: cleaned some branches from origin
 	Obstacles I face:
 
 Oct 24,2024
