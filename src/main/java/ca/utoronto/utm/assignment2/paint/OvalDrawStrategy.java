@@ -7,41 +7,35 @@ import javafx.scene.paint.Color;
 public class OvalDrawStrategy implements DrawStrategy {
     private Oval oval;
     private Point startPoint;
-    private Point endPoint;
-
-    public OvalDrawStrategy() {
-        super();
-    }
 
     @Override
     public void onMousePressed(MouseEvent e, PaintModel model) {
         System.out.println("Started Oval");
         startPoint = new Point(e.getX(), e.getY());
-        oval = new Oval(startPoint, 0, 0);
+        this.oval = new Oval(startPoint, 0, 0);
     }
 
     @Override
     public void onMouseDragged(MouseEvent e, PaintModel model) {
-        if (oval != null) {
+        if (this.oval != null) {
             double left = Math.min(startPoint.getX(), e.getX());
             double right = Math.max(startPoint.getX(), e.getX());
             double top = Math.min(startPoint.getY(), e.getY());
             double bottom = Math.max(startPoint.getY(), e.getY());
 
-            oval.setCentre(new Point((left + right) / 2, (top + bottom) / 2));
-            oval.setRadiusX((right - left) / 2);
-            oval.setRadiusY((bottom - top) / 2);
+            this.oval.setCentre(new Point((left + right) / 2, (top + bottom) / 2));
+            this.oval.setRadiusX((right - left) / 2);
+            this.oval.setRadiusY((bottom - top) / 2);
 
             model.addShape(this.oval);
         }
-
     }
 
     @Override
     public void onMouseReleased(MouseEvent e, PaintModel model) {
-        if (oval != null) {
+        if (this.oval != null) {
             model.addShape(this.oval);
-            oval = null;
+            this.oval = null;
         }
     }
 

@@ -41,15 +41,15 @@ public class Oval extends Shape {
         this.radiusY = radiusY;
     }
 
-    public DrawStrategy getDrawStrategy() {
-        return new OvalDrawStrategy();
-    }
-
     public Color getColor() {
         return color;
     }
 
     public void setColor(Color color) {
         this.color = color;
+    }
+
+    public DrawStrategy getDrawStrategy() {
+        return new OvalDrawStrategy();
     }
 }
