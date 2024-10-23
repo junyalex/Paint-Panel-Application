@@ -35,4 +35,8 @@ public class Rectangle extends Shape{
     public double getHeight() {
         return Math.abs(corner2.getY() - corner1.getY());
     }
+
+    public void draw(GraphicsContext g2d, PaintModel model){
+
+    }
 }

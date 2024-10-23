@@ -1,6 +1,8 @@
 package ca.utoronto.utm.assignment2.paint;
 
 
+import javafx.scene.canvas.GraphicsContext;
+
 public class Circle extends Shape{
         private Point centre;
         private double radius;
@@ -26,4 +28,8 @@ public class Circle extends Shape{
                 this.radius = radius;
         }
 
+
+        public void draw(GraphicsContext g2d, PaintModel model){
+
+        }
 }

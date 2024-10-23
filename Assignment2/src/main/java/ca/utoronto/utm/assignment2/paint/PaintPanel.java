@@ -13,6 +13,7 @@ import ca.utoronto.utm.assignment2.scribble.ScribblePanel;
 public class PaintPanel extends Canvas implements EventHandler<MouseEvent>, Observer {
     private String mode="Circle";
     private PaintModel model;
+    private DrawStrategy strategy;
 
     double start_x ,start_y; // instance used for saving first location of x,y when mouse clicked
     private Circle circle; // This is VERY UGLY, should somehow fix this!! (fixed)
@@ -34,9 +35,51 @@ public class PaintPanel extends Canvas implements EventHandler<MouseEvent>, Obse
     /**
      *  Controller aspect of this
      */
+//    public void setMode(String mode){
+//        switch(this.mode){
+//            case "◯":
+//                DrawStrategy circle = new CircleDrawStrategy();
+//                this.strategy = circle;
+//                this.mode=mode;
+//                System.out.println(this.mode);
+//                break;
+//            case "▭":
+//                DrawStrategy rectangle = new RectangleDrawStrategy();
+//                this.strategy = rectangle;
+//                this.mode=mode;
+//                System.out.println(this.mode);
+//                break;
+//            case "□":
+//                DrawStrategy square = new SquareDrawStrategy();
+//                this.strategy = square;
+//                this.mode=mode;
+//                System.out.println(this.mode);
+//                break;
+//            case "Squiggle (〜)":
+//                DrawStrategy scribble = new ScribbleDrawStrategy();
+//                this.strategy = scribble;
+//                this.mode=mode;
+//                System.out.println(this.mode);
+//                break;
+//        }
+//    }
+
+
+//    public void handle(MouseEvent mouseEvent){
+//        if(mouseEvent.getEventType() == MouseEvent.MOUSE_PRESSED) {
+//            this.strategy.onMousePressed(mouseEvent, this.model);
+//        }
+//        else if (mouseEvent.getEventType() == MouseEvent.MOUSE_RELEASED) {
+//            this.strategy.onMouseReleased(mouseEvent, this.model);
+//        }
+//        else if (mouseEvent.getEventType() == MouseEvent.MOUSE_DRAGGED) {
+//            this.strategy.onMouseDragged(mouseEvent, this.model);
+//        }
+//    }
+
     public void setMode(String mode){
         this.mode=mode;
-        System.out.println(this.mode);
+        System.out.println("mode = " + mode);
     }
 
     @Override
@@ -47,6 +90,9 @@ public class PaintPanel extends Canvas implements EventHandler<MouseEvent>, Obse
         EventType<MouseEvent> mouseEventType = (EventType<MouseEvent>) mouseEvent.getEventType();
 
         // "Circle", "Rectangle", "Square", "Squiggle", "Polyline"
+
+
+
         switch(this.mode){
             case "◯":
                 if(mouseEventType.equals(MouseEvent.MOUSE_PRESSED)) {
@@ -84,6 +130,7 @@ public class PaintPanel extends Canvas implements EventHandler<MouseEvent>, Obse
                     this.rectangle.setCorner2(new Point(mouseEvent.getX(), mouseEvent.getY()));
 
                     this.model.addRectangle(this.rectangle);
+                    this.model.addShape(this.rectangle);
 
                 } else if (mouseEventType.equals(MouseEvent.MOUSE_RELEASED)){
                     this.rectangle.setCorner2(new Point(mouseEvent.getX(), mouseEvent.getY()));
@@ -162,9 +209,7 @@ public class PaintPanel extends Canvas implements EventHandler<MouseEvent>, Obse
 
                 // What we need to do /////////////////////////////////
                 for (Shape s : shapes){
-                    // printshape()
-                    // need to implement something to print all shapes by 1 code
-                    // instead of things at the bottom
+                    s.draw(g2d, this.model);
                 }
 
 
@@ -189,7 +234,6 @@ public class PaintPanel extends Canvas implements EventHandler<MouseEvent>, Obse
                         g2d.fillOval(x-radius, y-radius, radius*2, radius*2);
                 }
 
-                // Draw Rectangles
                 ArrayList<Rectangle> rectangles = this.model.getRectangles();
                 for(Rectangle r: this.model.getRectangles()){
                     double corner_x = Math.min(r.getCorner1().getX(), r.getCorner2().getX());
