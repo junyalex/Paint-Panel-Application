@@ -25,7 +25,6 @@ public class TriangleDrawStrategy implements DrawStrategy {
 
     @Override
     public void onMouseDragged(MouseEvent e, PaintModel model) {
-        System.out.println("Drawing Triangle");
         if (triangle != null) {
 
             point2 = new Point(e.getX(), e.getY());
