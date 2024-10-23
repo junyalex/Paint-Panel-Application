@@ -23,5 +23,5 @@ public class TriangleDrawStrategy implements DrawStrategy {
 
     }
     @Override
-    public void draw(PaintModel model, GraphicsContext g2d) {}
+    public void draw(Shape shape, GraphicsContext g2d) {}
 }

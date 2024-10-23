@@ -41,6 +41,9 @@ public class PaintPanel extends Canvas implements EventHandler<MouseEvent>, Obse
                 DrawStrategy circle = new CircleDrawStrategy();
                 this.strategy = circle;
                 break;
+            case "⬭":
+                this.strategy = new OvalDrawStrategy();
+                break;
             case "▭":
                 DrawStrategy rectangle = new RectangleDrawStrategy();
                 this.strategy = rectangle;
@@ -53,6 +56,8 @@ public class PaintPanel extends Canvas implements EventHandler<MouseEvent>, Obse
                 DrawStrategy scribble = new ScribbleDrawStrategy();
                 this.strategy = scribble;
                 break;
+
+
 
         }
         this.mode = mode;
@@ -200,8 +205,10 @@ public class PaintPanel extends Canvas implements EventHandler<MouseEvent>, Obse
     public void update(Observable o, Object arg) {
 
                 GraphicsContext g2d = this.getGraphicsContext2D();
-                ArrayList<Shape> shapes = this.model.getShape();
-                this.strategy.draw(this.model, g2d);
+                g2d.clearRect(0, 0, this.getWidth(), this.getHeight());
+                //ArrayList<Shape> shapes = this.model.getShape();
+                this.model.drawAllShapes(g2d);
+                //this.strategy.draw(this.model, g2d);
 
 
                 // What we need to do /////////////////////////////////
