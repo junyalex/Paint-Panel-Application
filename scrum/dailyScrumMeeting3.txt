@@ -50,7 +50,8 @@ Oct 21,2024
 Oct 22,2024
 	What I did yesterday: Deployed my square implementation and fixed rectangle bug
 	What I will do today: Architecture discussions, getting ready to possibly implement a command strategy
-	to help deal with poor handling of events and modifying square implementation
+	to help deal with poor handling of events as at the moment issue exists when dragging a shape and the arraylist
+	and modifying square implementation
 	Obstacles I face: Figuring out architecture
 
 Oct 23,2024
