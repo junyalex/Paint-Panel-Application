@@ -15,4 +15,8 @@ public class Scribble extends Shape {
         return this.points.getLast();
     }
 
+    @Override
+    public DrawStrategy getDrawStrategy() {
+        return new ScribbleDrawStrategy();
+    }
 }

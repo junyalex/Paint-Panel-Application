@@ -37,4 +37,8 @@ public class Rectangle extends Shape{
     }
 
 
+    @Override
+    public DrawStrategy getDrawStrategy() {
+        return new RectangleDrawStrategy();
+    }
 }

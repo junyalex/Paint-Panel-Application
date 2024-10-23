@@ -3,6 +3,7 @@ package ca.utoronto.utm.assignment2.paint;
 
 import javafx.scene.canvas.GraphicsContext;
 import javafx.scene.input.MouseEvent;
+import javafx.scene.paint.Color;
 
 public class RectangleDrawStrategy implements DrawStrategy{
 
@@ -34,8 +35,11 @@ public class RectangleDrawStrategy implements DrawStrategy{
         this.rectangle = null;
     }
     @Override
-    public void draw(PaintModel model, GraphicsContext g2d) {
-        Rectangle r = (Rectangle )model.getShape().getLast();
+    public void draw(Shape shape, GraphicsContext g2d) {
+        //Rectangle r = (Rectangle )model.getShape().getLast();
+        Rectangle r = (Rectangle) shape;
+        //added
+        g2d.setFill(Color.BLACK);
         double corner_x = Math.min(r.getCorner1().getX(), r.getCorner2().getX());
         double corner_y = Math.min(r.getCorner1().getY(), r.getCorner2().getY());
         double width = r.getWidth();
