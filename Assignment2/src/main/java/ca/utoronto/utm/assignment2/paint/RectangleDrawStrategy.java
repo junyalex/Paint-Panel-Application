@@ -24,8 +24,7 @@ public class RectangleDrawStrategy implements DrawStrategy{
     @Override
     public void onMouseDragged(MouseEvent e, PaintModel model) {
         this.rectangle.setCorner2(new Point(e.getX(), e.getY()));
-        model.addShape(this.rectangle);
-        model.addRectangle(this.rectangle);
+        model.addShapeTemp(this.rectangle);
     }
 
     @Override

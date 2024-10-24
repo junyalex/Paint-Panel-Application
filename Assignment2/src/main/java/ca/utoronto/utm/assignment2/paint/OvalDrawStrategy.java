@@ -27,7 +27,7 @@ public class OvalDrawStrategy implements DrawStrategy {
             this.oval.setRadiusX((right - left) / 2);
             this.oval.setRadiusY((bottom - top) / 2);
 
-            model.addShape(this.oval);
+            model.addShapeTemp(this.oval);
         }
     }
 
