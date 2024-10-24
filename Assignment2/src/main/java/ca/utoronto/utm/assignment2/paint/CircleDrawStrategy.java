@@ -20,7 +20,8 @@ public class CircleDrawStrategy implements DrawStrategy{
             double deltaY = e.getY() - this.circle.getCentre().y;
             double radius = Math.sqrt(deltaX*deltaX + deltaY*deltaY);
             this.circle.setRadius(radius);
-            model.addShape(this.circle);
+
+            model.addShapeTemp(this.circle);
         }
     }
 
@@ -31,6 +32,7 @@ public class CircleDrawStrategy implements DrawStrategy{
             this.circle = null;
         }
     }
+
     @Override
     public void draw(Shape shape, GraphicsContext g2d) {
         Circle c = (Circle) shape;
