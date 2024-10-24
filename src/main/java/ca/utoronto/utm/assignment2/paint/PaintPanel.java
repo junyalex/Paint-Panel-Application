@@ -163,12 +163,12 @@ public class PaintPanel extends Canvas implements EventHandler<MouseEvent>, Obse
     @Override
     public void update(Observable o, Object arg) {
 
-                GraphicsContext g2d = this.getGraphicsContext2D();
-                g2d.clearRect(0, 0, this.getWidth(), this.getHeight());
-                ArrayList<Shape> shapes = this.model.getShape();
-                this.model.drawAllShapes(g2d);
-                this.model.drawAllTempShapes(g2d);
-                //this.strategy.draw(this.model, g2d);
+        GraphicsContext g2d = this.getGraphicsContext2D();
+        g2d.clearRect(0, 0, this.getWidth(), this.getHeight());
+        //ArrayList<Shape> shapes = this.model.getShape();
+        this.model.drawAllShapes(g2d);
+        this.model.drawAllTempShapes(g2d);
+        //this.strategy.draw(this.model, g2d);
 
 
                 // What we need to do /////////////////////////////////
@@ -195,19 +195,6 @@ public class PaintPanel extends Canvas implements EventHandler<MouseEvent>, Obse
 //                double width = r.getWidth();
 //                double height = r.getHeight();
 //                g2d.fillRect(corner_x, corner_y, width, height);
-
-
-
-//                // Draw Circles
-//                ArrayList<Circle> circles = this.model.getCircles();
-//
-//                g2d.setFill(Color.GREEN);
-//                for(Circle c: this.model.getCircles()){
-//                        double x = c.getCentre().x;
-//                        double y = c.getCentre().y;
-//                        double radius = c.getRadius();
-//                        g2d.fillOval(x-radius, y-radius, radius*2, radius*2);
-//                }
 //
 //
 //

@@ -7,13 +7,12 @@ import java.util.Observable;
 
 public class PaintModel extends Observable {
         private ArrayList<Point> points=new ArrayList<Point>();
-        private ArrayList<Circle> circles=new ArrayList<Circle>();
         private ArrayList<Rectangle> rectangles = new ArrayList<>();
         private ArrayList<Square> squares=new ArrayList<Square>();
         private ArrayList<Scribble> scibbles = new ArrayList<>();
-        private ArrayList<Shape> shapes = new ArrayList<>();
-        private ArrayList<Oval> ovals = new ArrayList<Oval>();
         private ArrayList<Triangle> triangles = new ArrayList<>();
+
+        private ArrayList<Shape> shapes = new ArrayList<>();
         private static ArrayList<Shape> temp_Shapes = new ArrayList<>();
 
         public void addShape(Shape s){
@@ -58,23 +57,23 @@ public class PaintModel extends Observable {
                 return points;
         }
 
-        public void addCircle(Circle c){
-                this.circles.add(c);
-                this.setChanged();
-                this.notifyObservers();
-        }
-        public ArrayList<Circle> getCircles(){
-                return circles;
-        }
-
-        public void addOval(Oval o){
-                this.ovals.add(o);
-                this.setChanged();
-                this.notifyObservers();
-        }
-        public ArrayList<Oval> getOval(){
-                return ovals;
-        }
+//        public void addCircle(Circle c){
+//                this.circles.add(c);
+//                this.setChanged();
+//                this.notifyObservers();
+//        }
+//        public ArrayList<Circle> getCircles(){
+//                return circles;
+//        }
+//
+//        public void addOval(Oval o){
+//                this.ovals.add(o);
+//                this.setChanged();
+//                this.notifyObservers();
+//        }
+//        public ArrayList<Oval> getOval(){
+//                return ovals;
+//        }
 
         public void addRectangle(Rectangle r){
                 this.rectangles.add(r);

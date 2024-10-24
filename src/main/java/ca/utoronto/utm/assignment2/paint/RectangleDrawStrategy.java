@@ -33,6 +33,7 @@ public class RectangleDrawStrategy implements DrawStrategy{
         model.addShape(this.rectangle);
         this.rectangle = null;
     }
+
     @Override
     public void draw(Shape shape, GraphicsContext g2d) {
         //Rectangle r = (Rectangle )model.getShape().getLast();
