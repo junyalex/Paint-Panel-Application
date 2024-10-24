@@ -33,7 +33,7 @@ public class TriangleDrawStrategy implements DrawStrategy {
             triangle.setPoint2(point2);
             triangle.setPoint3(point3);
 
-            model.addShape(triangle);
+            model.addShapeTemp(triangle);
         }
 
     }
