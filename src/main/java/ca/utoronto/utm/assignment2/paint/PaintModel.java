@@ -14,9 +14,16 @@ public class PaintModel extends Observable {
         private ArrayList<Shape> shapes = new ArrayList<>();
         private ArrayList<Oval> ovals = new ArrayList<Oval>();
         private ArrayList<Triangle> triangles = new ArrayList<>();
+        private static ArrayList<Shape> temp_Shapes = new ArrayList<>();
 
         public void addShape(Shape s){
                 shapes.add(s);
+                this.setChanged();
+                this.notifyObservers();
+        }
+
+        public void addShapeTemp(Shape s){
+                temp_Shapes.add(s);
                 this.setChanged();
                 this.notifyObservers();
         }
@@ -29,6 +36,13 @@ public class PaintModel extends Observable {
                 for(Shape s : shapes){
                         s.getDrawStrategy().draw(s, g2d);
                 }
+        }
+
+        public void drawAllTempShapes(GraphicsContext g2d){
+                for(Shape s : temp_Shapes){
+                        s.getDrawStrategy().draw(s, g2d);
+                }
+                temp_Shapes.clear();
         }
 
 
