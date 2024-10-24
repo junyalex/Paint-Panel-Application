@@ -60,9 +60,9 @@ Oct 23,2024
 	Obstacles I face: None.
 
 Oct 24,2024
-	What I did yesterday:
-	What I will do today:
-	Obstacles I face:
+	What I did yesterday: Implement Circle Strategy
+	What I will do today: Edit Circle Strategy (change it to add only final Circle to shape list)
+	Obstacles I face: None.
 
 Oct 25,2024
 	What I did yesterday:
