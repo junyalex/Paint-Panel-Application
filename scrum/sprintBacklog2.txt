@@ -54,7 +54,7 @@ finishing the drawing.
 SO THAT  :I can see the oval I am about to build on release of the mouse button.
 --------------------------------------------------------------------------
 --------------------------------------------------------------------------
-TYPE     : USER STORY US2.005 : leerya41 : Done
+TYPE     : USER STORY US2.005 : leerya41 : completed
 NAME     : Draw Square
 PRIORITY : 2
 ESTIMATE : (1 hour)    ACTUAL : 30 mins
@@ -64,7 +64,7 @@ I WANT   : To click on one corner of a square, drag, and release to
 SO THAT  : I can add square to my canvas
 --------------------------------------------------------------------------
 --------------------------------------------------------------------------
-TYPE     : USER STORY US2.006: leerya41 : Done
+TYPE     : USER STORY US2.006: leerya41 : completed
 NAME     : Draw Square Feedback
 PRIORITY : 2
 ESTIMATE : (1 hour, 2 hours, 4 hours, 1 day, 2 days, 4 days)    ACTUAL : 30
@@ -82,4 +82,15 @@ ISSUE    : Code is not modular and is difficult to expand. Need a better
            the drawing events. Consider some design patterns here.
            Refactor ShapeChooserPanel and PaintPanel to get rid of the
            'if' blocks in the PaintPanel mouse event code.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+TYPE     : BUG BUG2.002 : leerya41 : In Progress
+NAME     : Architecture behind handling drawing events is poor
+PRIORITY : 3
+ESTIMATE : (1 hour, 2 hours, 4 hours, 1 day, 2 days, 4 days)    ACTUAL :
+ISSUE    : Code is not modular and is difficult to expand. Need a better
+           architecture for handling the drawing events.
+           Consider some design patterns here.
+           (this is an extension of BUG2.001 which asked us to improve
+           the handling of the drawing events)
 --------------------------------------------------------------------------

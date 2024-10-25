@@ -228,6 +228,15 @@ ISSUE    : Code is not modular and is difficult to expand. Need a better
            'if' blocks in the PaintPanel mouse event code.
 --------------------------------------------------------------------------
 --------------------------------------------------------------------------
+TYPE     : BUG BUG2.002 : leerya41 : In Progress
+NAME     : Architecture behind handling drawing events is poor
+PRIORITY : 3
+ESTIMATE : (1 hour, 2 hours, 4 hours, 1 day, 2 days, 4 days)    ACTUAL :
+ISSUE    : Code is not modular and is difficult to expand. Need a better
+           architecture for handling the drawing events.
+           Consider some design patterns here.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
 TYPE     : BUG BUG?.004 : UTORID : NotStarted 
 NAME     : Architecture behind Model is poor
 PRIORITY : 3
@@ -321,7 +330,7 @@ I WANT   : Similarly to Draw Circle Feedback, display the rectangle in mid const
 SO THAT  : I can see the rectangle I am about to build on release of the mouse button.
 --------------------------------------------------------------------------
 --------------------------------------------------------------------------
-TYPE     : USER STORY US2.005 : leerya41 : Done
+TYPE     : USER STORY US2.005 : leerya41 : completed
 NAME     : Draw Square
 PRIORITY : 2
 ESTIMATE : (1 hour)    ACTUAL : 30 mins
@@ -331,7 +340,7 @@ I WANT   : To click on one corner of a square, drag, and release to
 SO THAT  : I can add square to my canvas
 --------------------------------------------------------------------------
 --------------------------------------------------------------------------
-TYPE     : USER STORY US2.006: leerya41 : Done
+TYPE     : USER STORY US2.006: leerya41 : completed
 NAME     : Draw Square Feedback
 PRIORITY : 2
 ESTIMATE : (1 hour, 2 hours, 4 hours, 1 day, 2 days, 4 days)    ACTUAL : 30
