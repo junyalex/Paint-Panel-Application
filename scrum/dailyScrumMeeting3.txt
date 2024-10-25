@@ -65,9 +65,10 @@ Oct 23,2024
 	Obstacles I face: Doctors and class so not alot of time to do what I wanted
 
 Oct 24,2024
-	What I did yesterday:
-	What I will do today:
-	Obstacles I face:
+	What I did yesterday:cleaned some branches from origin, added square strategy, but requires some logical changes
+    and will begin work on command pattern
+	What I will do today: Finish drafting on how to implment the command pattern
+	Obstacles I face: None
 
 Oct 25,2024
 	What I did yesterday:
