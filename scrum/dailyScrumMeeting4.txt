@@ -58,9 +58,10 @@ Oct 23,2024
 	is the problem. I'm unable to do that.
 
 Oct 24,2024
-	What I did yesterday:
-	What I will do today:
-	Obstacles I face:
+	What I did yesterday:  Figured out the code with the Strategy Pattern that was used and implemented TriangleDrawStrategy
+	What I will do today: Browse through the code and make sure everything is good whilst thinking of new ways we can
+	improve the code.
+	Obstacles I face:No obstacles
 
 Oct 25,2024
 	What I did yesterday:
