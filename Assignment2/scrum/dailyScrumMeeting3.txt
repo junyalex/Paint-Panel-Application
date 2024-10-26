@@ -71,9 +71,9 @@ Oct 24,2024
 	Obstacles I face: None
 
 Oct 25,2024
-	What I did yesterday:
-	What I will do today:
-	Obstacles I face:
+	What I did yesterday: Finish drafting on how to implment the command pattern
+	What I will do today: Begin first steps for command pattern
+	Obstacles I face: None
 
 Oct 26,2024
 	What I did yesterday:
