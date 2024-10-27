@@ -11,6 +11,6 @@ public class DrawCircleCommand implements Command {
 
     @Override
     public void execute() {
-        model.addShape(circle);  // Adds triangle to the model
+        model.addShape(circle);
     }
 }

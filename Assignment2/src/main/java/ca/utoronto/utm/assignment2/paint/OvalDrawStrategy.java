@@ -2,7 +2,6 @@ package ca.utoronto.utm.assignment2.paint;
 
 import javafx.scene.canvas.GraphicsContext;
 import javafx.scene.input.MouseEvent;
-import javafx.scene.paint.Color;
 
 public class OvalDrawStrategy implements DrawStrategy {
     private Oval oval;
@@ -26,7 +25,7 @@ public class OvalDrawStrategy implements DrawStrategy {
             this.oval.setCentre(new Point((left + right) / 2, (top + bottom) / 2));
             this.oval.setRadiusX((right - left) / 2);
             this.oval.setRadiusY((bottom - top) / 2);
-            model.addShapeTemp(this.oval);
+            model.addShapePreview(this.oval);
 
 
         }
