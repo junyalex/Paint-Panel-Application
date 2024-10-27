@@ -28,6 +28,7 @@ public class CircleDrawStrategy implements DrawStrategy{
     @Override
     public void onMouseReleased(MouseEvent e, PaintModel model) {
         if(this.circle != null) {
+            System.out.println("Created Circle");
             model.executeCommand(new DrawCircleCommand(model, circle));
             this.circle = null;
         }
