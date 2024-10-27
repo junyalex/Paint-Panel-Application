@@ -70,8 +70,8 @@ Oct 25,2024
 	Obstacles I face: None.
 
 Oct 26,2024
-	What I did yesterday:
-	What I will do today:
+	What I did yesterday: Review code and looked for any bugs
+	What I will do today: Review code
 	Obstacles I face:
 
 Oct 27,2024
