@@ -81,9 +81,9 @@ Oct 26,2024
 	Obstacles I face: None
 
 Oct 27,2024
-	What I did yesterday:
-	What I will do today:
-	Obstacles I face:
+	What I did yesterday: Complete command pattern
+	What I will do today: Merged command pattern, added 2 new user stories, polish code
+	Obstacles I face: None
 
 Oct 28,2024
 	What I did yesterday:
