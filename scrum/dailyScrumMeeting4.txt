@@ -64,19 +64,20 @@ Oct 24,2024
 	Obstacles I face:No obstacles
 
 Oct 25,2024
-	What I did yesterday:
-	What I will do today:
-	Obstacles I face:
+	What I did yesterday: Browsed through the code and made sure everything is good whilst I thought of ways that I
+	could improve the code.
+	What I will do today: Didn't do anything as I am studying for the midterm test.
+	Obstacles I face:No obstacles
 
 Oct 26,2024
-	What I did yesterday:
-	What I will do today:
-	Obstacles I face:
+	What I did yesterday: No work was done.
+	What I will do today:Look through the code and see if any changes were made by my team members.
+	Obstacles I face:No obstacles
 
 Oct 27,2024
-	What I did yesterday:
-	What I will do today:
-	Obstacles I face:
+	What I did yesterday: Looked through the code
+	What I will do today:Look at the Command design pattern that my colleague implemented and try to understand it.
+	Obstacles I face: No obstacles
 
 Oct 28,2024
 	What I did yesterday:
