@@ -29,7 +29,7 @@ public class ScribbleDrawStrategy implements DrawStrategy {
         double cury = e.getY();
 
         points.add(new Point(curx, cury));
-        model.executeCommand(new DrawScribbleCommand(model, scribble));
+        model.addShapePreview(this.scribble);
     }
 
     @Override
@@ -38,7 +38,7 @@ public class ScribbleDrawStrategy implements DrawStrategy {
         double curry = e.getY();
 
         this.scribble.points.add(new Point(currx, curry));
-        model.addShape(this.scribble);
+        model.executeCommand(new DrawScribbleCommand(model, scribble));
         this.scribble = null;
     }
     @Override

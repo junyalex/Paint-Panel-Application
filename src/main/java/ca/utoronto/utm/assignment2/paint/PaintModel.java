@@ -9,7 +9,7 @@ import java.util.Stack;
 public class PaintModel extends Observable {
         private Stack<Command> commandHistory = new Stack<>();
         private ArrayList<Shape> shapes = new ArrayList<>();
-        private ArrayList<Shape> temp_Shapes = new ArrayList<>();
+        private ArrayList<Shape> PreviewShapes = new ArrayList<>();
 
         public void executeCommand(Command command) {
                 command.execute();
@@ -18,14 +18,18 @@ public class PaintModel extends Observable {
                 notifyObservers();
         }
 
+        public Stack<Command> getCommandHistory() {
+                return commandHistory;
+        }
+
         public void addShape(Shape s){
                 shapes.add(s);
                 this.setChanged();
                 this.notifyObservers();
         }
 
-        public void addShapeTemp(Shape s){
-                temp_Shapes.add(s);
+        public void addShapePreview(Shape s){
+                PreviewShapes.add(s);
                 this.setChanged();
                 this.notifyObservers();
         }
@@ -35,10 +39,10 @@ public class PaintModel extends Observable {
                         shape.getDrawStrategy().draw(shape, g2d);
                 }
 
-                for (Shape tempShape : temp_Shapes) {
+                for (Shape tempShape : PreviewShapes) {
                         tempShape.getDrawStrategy().draw(tempShape, g2d);
                 }
-                temp_Shapes.clear();
+                PreviewShapes.clear();
         }
 
 
