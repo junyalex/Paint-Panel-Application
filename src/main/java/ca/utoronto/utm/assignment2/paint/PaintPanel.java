@@ -60,12 +60,8 @@ public class PaintPanel extends Canvas implements EventHandler<MouseEvent>, Obse
                 DrawStrategy triangle = new TriangleDrawStrategy();
                 this.strategy = triangle;
                 break;
-
-
-
         }
         this.mode = mode;
-        System.out.println(this.mode);
     }
 
     @Override
@@ -83,83 +79,6 @@ public class PaintPanel extends Canvas implements EventHandler<MouseEvent>, Obse
         }
     }
 
-//    public void setMode(String mode){
-//        this.mode=mode;
-//        System.out.println("mode = " + mode);
-//    }
-
-//    @Override
-//    public void handle(MouseEvent mouseEvent) {
-//        // Later when we learn about inner classes...
-//        // https://docs.oracle.com/javafx/2/events/DraggablePanelsExample.java.htm
-//
-//        EventType<MouseEvent> mouseEventType = (EventType<MouseEvent>) mouseEvent.getEventType();
-//
-//        // "Circle", "Rectangle", "Square", "Squiggle", "Polyline"
-//
-//
-//
-//        switch(this.mode){
-//            case "◯":
-//                if(mouseEventType.equals(MouseEvent.MOUSE_PRESSED)) {
-//                    System.out.println("Started Circle");
-//                     Point centre = new Point(mouseEvent.getX(), mouseEvent.getY());
-//                        this.circle=new Circle(centre, 0);
-//                } else if (mouseEventType.equals(MouseEvent.MOUSE_DRAGGED)) {
-//                    if(this.circle != null) {
-//                        double deltaX = mouseEvent.getX() - this.circle.getCentre().x;
-//                        double deltaY = mouseEvent.getY() - this.circle.getCentre().y;
-//                        double radius = Math.sqrt(deltaX*deltaX + deltaY*deltaY);
-//                        this.circle.setRadius(radius);
-//                        this.model.addCircle(this.circle);
-//                    }
-//                } else if (mouseEventType.equals(MouseEvent.MOUSE_MOVED)) {
-//
-//                } else if (mouseEventType.equals(MouseEvent.MOUSE_RELEASED)) {
-//                    if(this.circle!=null){
-//                        // Problematic notion of radius and centre!!
-//                        System.out.println("Added Circle");
-//                        this.circle=null;
-//                    }
-//                }
-//
-//                break;
-//
-//
-//
-//                break;
-//
-//            case "□":
-//                if(mouseEventType.equals(MouseEvent.MOUSE_PRESSED)) {
-//                    System.out.println("Started Square");
-//                    Point corner = new Point(mouseEvent.getX(), mouseEvent.getY());
-//                    this.square=new Square(corner, 0);
-//                } else if (mouseEventType.equals(MouseEvent.MOUSE_DRAGGED)) {
-//                    if(this.square != null) {
-//                        double deltaX = mouseEvent.getX() - this.square.getCorner().x;
-//                        double deltaY = mouseEvent.getY() - this.square.getCorner().y;
-//                        double dim = Math.sqrt(deltaX*deltaX + deltaY*deltaY);
-//                        this.square.setDim(dim);
-//                        this.model.addSquare(this.square);
-//                    }
-//                } else if (mouseEventType.equals(MouseEvent.MOUSE_MOVED)) {
-//
-//                } else if (mouseEventType.equals(MouseEvent.MOUSE_RELEASED)) {
-//                    if(this.square!=null){
-//                        // Problematic notion of radius and centre!!
-//                        System.out.println("Added Square");
-//                        this.square=null;
-//                    }
-//                }
-//
-//                break;
-//
-//
-//            case "Polyline (└───┐)": break;
-//            default: break;
-//        }
-//    }
-
     @Override
     public void update(Observable o, Object arg) {
 
@@ -170,45 +89,6 @@ public class PaintPanel extends Canvas implements EventHandler<MouseEvent>, Obse
         //this.strategy.draw(this.model, g2d);
 
 
-                // What we need to do /////////////////////////////////
-                //
-
-                // everything below is unneccessary here. All we have to do is print last Shape, and
-                // implement strategy.onmousereleased print it. and make sure u delete all previous
-                // shapes .
-                // Draw Lines
-
-
-//                ArrayList<Point> points = this.model.getPoints();
-//
-//                g2d.setFill(Color.RED);
-//                for(int i=0;i<points.size()-1; i++){
-//                        Point p1=points.get(i);
-//                        Point p2=points.get(i+1);
-//                        g2d.strokeLine(p1.x,p1.y,p2.x,p2.y);
-//                }
-//                ArrayList<Rectangle> rectangles = this.model.getRectangles();
-//                Rectangle r = rectangles.getLast();
-//                double corner_x = Math.min(r.getCorner1().getX(), r.getCorner2().getX());
-//                double corner_y = Math.min(r.getCorner1().getY(), r.getCorner2().getY());
-//                double width = r.getWidth();
-//                double height = r.getHeight();
-//                g2d.fillRect(corner_x, corner_y, width, height);
-//
-//
-//
-//                // Draw Squares
-//                ArrayList<Square> squares = this.model.getSquares();
-//
-//                g2d.setFill(Color.RED);
-//                for(Square s: this.model.getSquares()){
-//                    double x = s.getCorner().x;
-//                    double y = s.getCorner().y;
-//                    double dim = s.getDim();
-//                    g2d.fillRect(x, y, dim, dim);
-//                }
-//
-//
 
                 }
     }

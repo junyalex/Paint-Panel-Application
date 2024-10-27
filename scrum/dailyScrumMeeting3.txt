@@ -82,7 +82,8 @@ Oct 26,2024
 
 Oct 27,2024
 	What I did yesterday: Complete command pattern
-	What I will do today: Merged command pattern, added 2 new user stories, polish code
+	What I will do today: Merged command pattern, added 2 new user stories, polished square, removed
+	unnecessary comments, fixed bug with double print on selection mode, polish code
 	Obstacles I face: None
 
 Oct 28,2024
