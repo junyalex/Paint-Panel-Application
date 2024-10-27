@@ -36,6 +36,7 @@ public class OvalDrawStrategy implements DrawStrategy {
         if (this.oval != null) {
             model.executeCommand(new DrawOvalCommand(model, oval));
             this.oval = null;
+            System.out.println("Created Oval");
         }
     }
 
