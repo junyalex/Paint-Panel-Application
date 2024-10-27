@@ -26,15 +26,16 @@ public class OvalDrawStrategy implements DrawStrategy {
             this.oval.setCentre(new Point((left + right) / 2, (top + bottom) / 2));
             this.oval.setRadiusX((right - left) / 2);
             this.oval.setRadiusY((bottom - top) / 2);
-
             model.addShapeTemp(this.oval);
+
+
         }
     }
 
     @Override
     public void onMouseReleased(MouseEvent e, PaintModel model) {
         if (this.oval != null) {
-            model.addShape(this.oval);
+            model.executeCommand(new DrawOvalCommand(model, oval));
             this.oval = null;
         }
     }
