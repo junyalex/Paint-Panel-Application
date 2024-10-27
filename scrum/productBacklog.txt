@@ -217,6 +217,32 @@ I WANT   : To be able to select a existing text and change its font
 SO THAT  :
 --------------------------------------------------------------------------
 --------------------------------------------------------------------------
+TYPE     : USER STORY US?.0020 : leerya41 : NotStarted
+NAME     : undo
+PRIORITY : 3
+ESTIMATE : (5 minutes)    ACTUAL :
+AS A     : user
+I WANT   : To be able to undo previous change
+                Example:
+           		-click the undo button
+           		results in latest change being removed
+SO THAT  : I can remove my last change
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+TYPE     : USER STORY US?.0021 : leerya41 : NotStarted
+NAME     : redo
+PRIORITY : 3
+ESTIMATE : (5 minutes)    ACTUAL :
+AS A     : user
+I WANT   : To be able to undo an undo
+                Example:
+           		-click the redo button
+           		results in last undone change being recovered, but will not
+           		occur if any changes were made after the undo or if nothing has been
+           		undone
+SO THAT  : I can recover something lost by an undo
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
 TYPE     : BUG BUG2.002 : leerya41 : In Progress
 NAME     : Architecture behind handling drawing events is poor
 PRIORITY : 3
