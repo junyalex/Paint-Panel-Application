@@ -30,7 +30,7 @@ public class RectangleDrawStrategy implements DrawStrategy{
     @Override
     public void onMouseReleased(MouseEvent e, PaintModel model) {
         this.rectangle.setCorner2(new Point(e.getX(), e.getY()));
-        model.addShape(this.rectangle);
+        model.executeCommand(new DrawRectangleCommand(model, rectangle));
         this.rectangle = null;
     }
 

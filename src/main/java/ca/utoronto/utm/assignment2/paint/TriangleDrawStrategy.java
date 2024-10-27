@@ -20,6 +20,7 @@ public class TriangleDrawStrategy implements DrawStrategy {
         point2 = startPoint;
         point3 =startPoint;
         triangle = new Triangle(startPoint, point2, point3);
+        model.addShapeTemp(this.triangle);
 
     }
 
@@ -33,7 +34,7 @@ public class TriangleDrawStrategy implements DrawStrategy {
             triangle.setPoint2(point2);
             triangle.setPoint3(point3);
 
-            model.addShapeTemp(triangle);
+            model.addShapeTemp(this.triangle);
         }
 
     }
@@ -49,7 +50,7 @@ public class TriangleDrawStrategy implements DrawStrategy {
             triangle.setPoint2(point2);
             triangle.setPoint3(point3);
 
-            model.addShape(triangle);
+            model.executeCommand(new DrawTriangleCommand(model, triangle));
             triangle = null;
         }
 

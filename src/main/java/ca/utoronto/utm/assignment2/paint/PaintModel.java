@@ -4,8 +4,48 @@ import javafx.scene.canvas.GraphicsContext;
 
 import java.util.ArrayList;
 import java.util.Observable;
+import java.util.Stack;
 
 public class PaintModel extends Observable {
+        private Stack<Command> commandHistory = new Stack<>();
+        private ArrayList<Shape> shapes = new ArrayList<>();
+        private ArrayList<Shape> temp_Shapes = new ArrayList<>();
+
+        public void executeCommand(Command command) {
+                command.execute();
+                commandHistory.push(command);
+                setChanged();
+                notifyObservers();
+        }
+
+        public void addShape(Shape s){
+                shapes.add(s);
+                this.setChanged();
+                this.notifyObservers();
+        }
+
+        public void addShapeTemp(Shape s){
+                temp_Shapes.add(s);
+                this.setChanged();
+                this.notifyObservers();
+        }
+
+        public void drawAllShapes(GraphicsContext g2d) {
+                for (Shape shape : shapes) {
+                        shape.getDrawStrategy().draw(shape, g2d);
+                }
+
+                for (Shape tempShape : temp_Shapes) {
+                        tempShape.getDrawStrategy().draw(tempShape, g2d);
+                }
+                temp_Shapes.clear();
+        }
+
+
+
+
+
+        /* removing for command pattern
         private ArrayList<Point> points=new ArrayList<Point>();
         private ArrayList<Rectangle> rectangles = new ArrayList<>();
         private ArrayList<Square> squares=new ArrayList<Square>();
@@ -102,4 +142,5 @@ public class PaintModel extends Observable {
         public ArrayList<Scribble> getScribbles(){
                 return scibbles;
         }
+         */
 }

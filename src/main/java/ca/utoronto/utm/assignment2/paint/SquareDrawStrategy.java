@@ -26,8 +26,7 @@ public class SquareDrawStrategy implements DrawStrategy {
         double deltaY = e.getY() - this.square.getCorner().y;
         double dim = Math.sqrt(deltaX*deltaX + deltaY*deltaY);
         this.square.setDim(dim);
-        model.addShape(this.square);
-        model.addSquare(this.square);
+        model.addShapeTemp(this.square);
     }
 
     @Override
@@ -36,7 +35,7 @@ public class SquareDrawStrategy implements DrawStrategy {
         double deltaY = e.getY() - this.square.getCorner().y;
         double dim = Math.sqrt(deltaX*deltaX + deltaY*deltaY);
         this.square.setDim(dim);
-        model.addShape(this.square);
+        model.executeCommand(new DrawSquareCommand(model, square));
         this.square = null;
 
     }
