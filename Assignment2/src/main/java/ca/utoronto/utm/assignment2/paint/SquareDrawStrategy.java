@@ -5,7 +5,7 @@ import javafx.scene.input.MouseEvent;
 import javafx.scene.paint.Color;
 
 public class SquareDrawStrategy implements DrawStrategy {
-
+    private Point centerPoint;
     public Square square;
 
     public SquareDrawStrategy() {
@@ -15,36 +15,51 @@ public class SquareDrawStrategy implements DrawStrategy {
     @Override
     public void onMousePressed(MouseEvent e, PaintModel model) {
         System.out.println("Started Square");
-        Point corner1 = new Point(e.getX(), e.getY());
-        this.square = new Square(corner1, 0);
+        this.centerPoint = new Point(e.getX(), e.getY());
+        this.square = new Square(centerPoint, 0);
 
     }
 
     @Override
     public void onMouseDragged(MouseEvent e, PaintModel model) {
-        double deltaX = e.getX() - this.square.getCorner().x;
-        double deltaY = e.getY() - this.square.getCorner().y;
-        double dim = Math.sqrt(deltaX*deltaX + deltaY*deltaY);
+        double width = Math.abs(e.getX() - centerPoint.getX());
+        double height = Math.abs(e.getY() - centerPoint.getY());
+        double dim = Math.max(width, height);
+        this.square.setCorner(determineCenter(dim, e));
         this.square.setDim(dim);
         model.addShapePreview(this.square);
     }
 
+    private Point determineCenter(double dim, MouseEvent e) {
+        double x;
+        double y;
+        if (centerPoint.getX() <= e.getX()) {
+            x = centerPoint.getX();
+        } else {
+            x = centerPoint.getX() - dim;
+        }
+        if (centerPoint.getY() <= e.getY()) {
+            y = centerPoint.getY();
+        } else {
+            y = centerPoint.getY() - dim;
+        }
+        return new Point(x, y);
+    }
+
     @Override
     public void onMouseReleased(MouseEvent e, PaintModel model) {
-        double deltaX = e.getX() - this.square.getCorner().x;
-        double deltaY = e.getY() - this.square.getCorner().y;
-        double dim = Math.sqrt(deltaX*deltaX + deltaY*deltaY);
-        this.square.setDim(dim);
-        model.executeCommand(new DrawSquareCommand(model, square));
-        this.square = null;
-
+        if(this.square != null) {
+            System.out.println("Created Square");
+            model.executeCommand(new DrawSquareCommand(model, square));
+            this.square = null;
+        }
     }
     @Override
     public void draw(Shape shape, GraphicsContext g2d) {
         //Rectangle r = (Rectangle )model.getShape().getLast();
         Square s = (Square) shape;
         //added
-        g2d.setFill(Color.GREEN);
+        g2d.setFill(Color.ORANGE);
         double x = s.getCorner().x;
         double y = s.getCorner().y;
         double dim = s.getDim();
