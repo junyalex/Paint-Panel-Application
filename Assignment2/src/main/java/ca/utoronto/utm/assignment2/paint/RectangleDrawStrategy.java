@@ -32,6 +32,7 @@ public class RectangleDrawStrategy implements DrawStrategy{
         this.rectangle.setCorner2(new Point(e.getX(), e.getY()));
         model.executeCommand(new DrawRectangleCommand(model, rectangle));
         this.rectangle = null;
+        System.out.println("Created Rectangle");
     }
 
     @Override

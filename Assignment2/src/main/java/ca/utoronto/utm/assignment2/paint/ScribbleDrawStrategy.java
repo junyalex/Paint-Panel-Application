@@ -40,6 +40,7 @@ public class ScribbleDrawStrategy implements DrawStrategy {
         this.scribble.points.add(new Point(currx, curry));
         model.executeCommand(new DrawScribbleCommand(model, scribble));
         this.scribble = null;
+        System.out.println("Created Scribble");
     }
     @Override
     public void draw(Shape shape, GraphicsContext g2d) {
