@@ -20,15 +20,15 @@ public class CircleDrawStrategy implements DrawStrategy{
             double deltaY = e.getY() - this.circle.getCentre().y;
             double radius = Math.sqrt(deltaX*deltaX + deltaY*deltaY);
             this.circle.setRadius(radius);
+            model.addShapePreview(this.circle);
 
-            model.addShapeTemp(this.circle);
         }
     }
 
     @Override
     public void onMouseReleased(MouseEvent e, PaintModel model) {
         if(this.circle != null) {
-            model.addShape(this.circle);
+            model.executeCommand(new DrawCircleCommand(model, circle));
             this.circle = null;
         }
     }
