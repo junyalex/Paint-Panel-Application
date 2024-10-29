@@ -87,9 +87,11 @@ Oct 27,2024
 	Obstacles I face: None
 
 Oct 28,2024
-	What I did yesterday:
-	What I will do today:
-	Obstacles I face:
+	What I did yesterday:Merged command pattern, added 2 new user stories, polished square, removed
+    unnecessary comments, fixed bug with double print on selection mode, polish code
+	What I will do today: Await sprint 3 instructions while drafting design patterns to improve
+	scalability and increase cohesion and decrease coupling within code
+	Obstacles I face: None
 
 Oct 29,2024
 	What I did yesterday:
