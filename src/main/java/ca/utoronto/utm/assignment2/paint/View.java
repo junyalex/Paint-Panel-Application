@@ -98,6 +98,52 @@ public class View implements EventHandler<ActionEvent> {
 
                 menuBar.getMenus().add(menu);
 
+                menu.getItems().add(new SeparatorMenuItem());
+                menuItem = new MenuItem("Undo");
+                menuItem.setOnAction(this);
+                menu.getItems().add(menuItem);
+
+                menuItem = new MenuItem("Redo");
+                menuItem.setOnAction(this);
+                menu.getItems().add(menuItem);
+
+                // For color
+                menu = new Menu("Color");
+                ColorEventHandler colorEventHandler = new ColorEventHandler();
+                menuItem = new MenuItem("Red");
+                menuItem.setStyle("-fx-text-fill: red;");
+                menuItem.setOnAction(colorEventHandler);
+                menu.getItems().add(menuItem);
+
+                menuItem = new MenuItem("Orange");
+                menuItem.setStyle("-fx-text-fill: orange;");
+                menuItem.setOnAction(colorEventHandler);
+                menu.getItems().add(menuItem);
+
+                menuItem = new MenuItem("Yellow");
+                menuItem.setStyle("-fx-text-fill: goldenrod;");
+                menuItem.setOnAction(colorEventHandler);
+                menu.getItems().add(menuItem);
+
+                menuItem = new MenuItem("Green");
+                menuItem.setStyle("-fx-text-fill: green;");
+                menuItem.setOnAction(colorEventHandler);
+                menu.getItems().add(menuItem);
+
+
+                menuItem = new MenuItem("Blue");
+                menuItem.setStyle("-fx-text-fill: blue;");
+                menuItem.setOnAction(colorEventHandler);
+                menu.getItems().add(menuItem);
+
+
+
+                menuBar.getMenus().add(menu);
+
+
+
+
+
                 return menuBar;
         }
 
