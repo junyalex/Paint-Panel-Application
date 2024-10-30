@@ -85,8 +85,8 @@ Oct 28,2024
 	Obstacles I face:
 
 Oct 29,2024
-	What I did yesterday:
-	What I will do today:
+	What I did yesterday: Review Code
+	What I will do today: Have a meeting and talk about sprint3
 	Obstacles I face:
 
 Oct 30,2024
