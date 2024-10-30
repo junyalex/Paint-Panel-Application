@@ -43,7 +43,7 @@ ISSUE    : Having a list of different types of drawable things in the
            here.
 --------------------------------------------------------------------------
 --------------------------------------------------------------------------
-TYPE     : USER STORY US3.006 : chosun29 : InProcess
+TYPE     : USER STORY US3.006 : chosun29 : Completed
 NAME     : Fill style selector
 PRIORITY : 3
 ESTIMATE : 2 hours  ACTUAL : 2 hours
