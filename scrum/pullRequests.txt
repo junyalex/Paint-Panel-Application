@@ -3,4 +3,4 @@ Pull Requests:
 BUG3.004 author:leehoju7 puller:leerya41 status:Completed
 US3.007 author:leehoju7 puller:chosun29 status:Completed
 
-US3.006 author:chosun29 puller:? status:Waiting
+US3.006 author:chosun29 puller:leehoju7 status:Completed
