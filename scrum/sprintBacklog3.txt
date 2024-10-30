@@ -4,4 +4,42 @@
 
 # Sprint 3 Oct 27-Nov 03, 2024
 # Sprint 3 Backlog UserStories go below
+--------------------------------------------------------------------------
+TYPE     : USER STORY US?.0020 : leerya41 : NotStarted
+NAME     : undo
+PRIORITY : 3
+ESTIMATE : (5 minutes)    ACTUAL :
+AS A     : user
+I WANT   : To be able to undo previous change
+                Example:
+           		-click the undo button
+           		results in latest change being removed
+SO THAT  : I can remove my last change
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+TYPE     : USER STORY US?.0021 : leerya41 : NotStarted
+NAME     : redo
+PRIORITY : 3
+ESTIMATE : (5 minutes)    ACTUAL :
+AS A     : user
+I WANT   : To be able to undo an undo
+                Example:
+           		-click the redo button
+           		results in last undone change being recovered, but will not
+           		occur if any changes were made after the undo or if nothing has been
+           		undone
+SO THAT  : I can recover something lost by an undo
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+TYPE     : BUG BUG?.004 : UTORID : NotStarted
+NAME     : Architecture behind Model is poor
+PRIORITY : 3
+ESTIMATE : (1 hour, 2 hours, 4 hours, 1 day, 2 days, 4 days)    ACTUAL :
+ISSUE    : Having a list of different types of drawable things in the
+           model is cumbersome. In fact, it is currently incorrect, with
+           Squiggle's not drawing properly. Need to re-architect the Model
+           so that it is more flexible, and easier to work with.
+           Consider some design patterns, or change of responsibility
+           here.
+--------------------------------------------------------------------------
 
