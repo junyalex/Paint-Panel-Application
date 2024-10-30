@@ -20,6 +20,7 @@ public class ScribbleDrawStrategy implements DrawStrategy {
         ArrayList<Point> point_list = new ArrayList<>();
         point_list.add(startPoint);
         this.scribble = new Scribble(point_list);
+        this.scribble.setColor(PaintPanel.color);
     }
 
     @Override
@@ -45,7 +46,7 @@ public class ScribbleDrawStrategy implements DrawStrategy {
     @Override
     public void draw(Shape shape, GraphicsContext g2d) {
         Scribble scribble = (Scribble) shape;
-        g2d.setFill(Color.GREEN);
+        g2d.setStroke(scribble.getColor());
         ArrayList<Point> points = scribble.getPoints();
             for (int i = 0; i < points.size() - 1 ; i++){
                 Point p1 = points.get(i);

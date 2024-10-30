@@ -20,6 +20,7 @@ public class TriangleDrawStrategy implements DrawStrategy {
         point2 = startPoint;
         point3 =startPoint;
         triangle = new Triangle(startPoint, point2, point3);
+        triangle.setColor(PaintPanel.color);
         model.addShapePreview(this.triangle);
 
     }
