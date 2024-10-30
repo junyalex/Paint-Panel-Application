@@ -2,6 +2,9 @@ package ca.utoronto.utm.assignment2.paint;
 
 import javafx.scene.canvas.GraphicsContext;
 import javafx.scene.input.MouseEvent;
+import javafx.scene.paint.Color;
+
+import java.util.HashMap;
 
 public interface DrawStrategy {
 

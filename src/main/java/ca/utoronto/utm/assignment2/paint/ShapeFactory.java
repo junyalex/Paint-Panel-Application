@@ -1,10 +1,20 @@
 package ca.utoronto.utm.assignment2.paint;
 
+import javafx.scene.paint.Color;
+
 import java.util.HashMap;
 
 public class ShapeFactory {
 
     public static HashMap<String, DrawStrategy> shapes = new HashMap<>();
+
+    public static final HashMap<String, Color> colors = new HashMap<>() {{
+        put("Red", Color.RED);
+        put("Orange", Color.ORANGE);
+        put("Yellow", Color.GOLDENROD);
+        put("Green", Color.GREEN);
+        put("Blue", Color.BLUE);
+    }};
 
     static {
         shapes.put("◯", new CircleDrawStrategy());

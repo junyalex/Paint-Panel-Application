@@ -12,6 +12,7 @@ public class OvalDrawStrategy implements DrawStrategy {
         System.out.println("Started Oval");
         startPoint = new Point(e.getX(), e.getY());
         this.oval = new Oval(startPoint, 0, 0);
+        this.oval.setColor(PaintPanel.color);
     }
 
     @Override

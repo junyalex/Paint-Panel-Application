@@ -17,7 +17,7 @@ public class SquareDrawStrategy implements DrawStrategy {
         System.out.println("Started Square");
         this.centerPoint = new Point(e.getX(), e.getY());
         this.square = new Square(centerPoint, 0);
-
+        this.square.setColor(PaintPanel.color);
     }
 
     @Override
@@ -59,7 +59,7 @@ public class SquareDrawStrategy implements DrawStrategy {
         //Rectangle r = (Rectangle )model.getShape().getLast();
         Square s = (Square) shape;
         //added
-        g2d.setFill(Color.ORANGE);
+        g2d.setFill(s.getColor());
         double x = s.getCorner().x;
         double y = s.getCorner().y;
         double dim = s.getDim();

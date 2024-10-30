@@ -8,13 +8,11 @@ public class Oval extends Shape {
     private Point centre;
     private double radiusX;
     private double radiusY;
-    private Color color;
 
     public Oval(Point centre, double radiusX, double radiusY) {
         this.centre = centre;
         this.radiusX = radiusX;
         this.radiusY = radiusY;
-        this.color = Color.GREEN;
     }
 
     public Point getCentre() {
@@ -39,14 +37,6 @@ public class Oval extends Shape {
 
     public void setRadiusY(double radiusY) {
         this.radiusY = radiusY;
-    }
-
-    public Color getColor() {
-        return color;
-    }
-
-    public void setColor(Color color) {
-        this.color = color;
     }
 
     public DrawStrategy getDrawStrategy() {
