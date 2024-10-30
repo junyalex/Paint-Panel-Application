@@ -57,13 +57,18 @@ public class TriangleDrawStrategy implements DrawStrategy {
 
     }
     @Override
-    public void draw(Shape shape, GraphicsContext g2d) {
+    public void draw(Shape shape, GraphicsContext g2d, String currStyle) {
         Triangle t = (Triangle) shape;
 
         double[] xPoints = { t.getPoint1().getX(), t.getPoint2().getX(), t.getPoint3().getX() };
         double[] yPoints = { t.getPoint1().getY(), t.getPoint2().getY(), t.getPoint3().getY() };
 
         g2d.setFill(t.getColor());
-        g2d.fillPolygon(xPoints, yPoints, 3);
+        if(currStyle.equals("Outlined")){
+            g2d.strokePolygon(xPoints, yPoints, 3);
+        }
+        else if(currStyle.equals("Filled")) {
+            g2d.fillPolygon(xPoints, yPoints, 3);
+        }
     }
 }
