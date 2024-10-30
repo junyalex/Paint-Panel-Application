@@ -44,8 +44,9 @@ public class OvalDrawStrategy implements DrawStrategy {
     @Override
     public void draw(Shape shape, GraphicsContext g2d, String currStyle) {
         Oval o = (Oval) shape;
-        g2d.setFill(o.getColor());
+
         if(currStyle.equals("Outlined")) {
+            g2d.setStroke(o.getColor());
             g2d.strokeOval(
                     o.getCentre().getX() - o.getRadiusX(),
                     o.getCentre().getY() - o.getRadiusY(),
@@ -54,6 +55,7 @@ public class OvalDrawStrategy implements DrawStrategy {
             );
         }
         else if (currStyle.equals("Filled")) {
+            g2d.setFill(o.getColor());
             g2d.fillOval(
                     o.getCentre().getX() - o.getRadiusX(),
                     o.getCentre().getY() - o.getRadiusY(),
