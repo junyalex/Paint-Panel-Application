@@ -16,10 +16,10 @@
 # as appropriate.
 
 --------------------------------------------------------------------------
-TYPE     : USER STORY US?.007 : UTORID: NotStarted
+TYPE     : USER STORY US3.007 : leehoju7: In Progress
 NAME     : Color selector
 PRIORITY : 3
-ESTIMATE : (1 hour, 2 hours, 4 hours, 1 day, 2 days, 4 days)    ACTUAL :
+ESTIMATE : 1 day   ACTUAL : 1 day
 AS A     : user
 I WANT   : To be able to select the current drawing color, to be applied
            to subsequent shapes. Example: 
@@ -36,7 +36,7 @@ I WANT   : To be able to select the current drawing color, to be applied
            		draw a squiggle
            	results in two red circles and a red rectangle as well as
            	two green rectangles and a green squiggle
-SO THAT  :
+SO THAT  : Users can select the color before they draw
 --------------------------------------------------------------------------
 --------------------------------------------------------------------------
 TYPE     : USER STORY US3.006 : chosun29 : NotStarted
