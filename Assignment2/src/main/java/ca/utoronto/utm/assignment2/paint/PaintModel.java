@@ -36,11 +36,13 @@ public class PaintModel extends Observable {
 
         public void drawAllShapes(GraphicsContext g2d) {
                 for (Shape shape : shapes) {
-                        shape.getDrawStrategy().draw(shape, g2d);
+                        String currStyle = shape.getFillStyle();
+                        shape.getDrawStrategy().draw(shape, g2d, currStyle);
                 }
 
                 for (Shape tempShape : PreviewShapes) {
-                        tempShape.getDrawStrategy().draw(tempShape, g2d);
+                        String currStyle = tempShape.getFillStyle();
+                        tempShape.getDrawStrategy().draw(tempShape, g2d, currStyle);
                 }
                 PreviewShapes.clear();
         }

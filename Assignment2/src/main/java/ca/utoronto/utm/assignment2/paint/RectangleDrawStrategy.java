@@ -37,7 +37,7 @@ public class RectangleDrawStrategy implements DrawStrategy{
     }
 
     @Override
-    public void draw(Shape shape, GraphicsContext g2d) {
+    public void draw(Shape shape, GraphicsContext g2d, String currStyle) {
         //Rectangle r = (Rectangle )model.getShape().getLast();
         Rectangle r = (Rectangle) shape;
         //added
@@ -46,7 +46,12 @@ public class RectangleDrawStrategy implements DrawStrategy{
         double corner_y = Math.min(r.getCorner1().getY(), r.getCorner2().getY());
         double width = r.getWidth();
         double height = r.getHeight();
-        g2d.fillRect(corner_x, corner_y, width, height);
+        if(currStyle.equals("Outlined")){
+            g2d.strokeRect(corner_x, corner_y, width, height);
+        }
+        else if(currStyle.equals("Filled")) {
+            g2d.fillRect(corner_x, corner_y, width, height);
+        }
     }
 
 }

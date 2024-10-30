@@ -130,17 +130,30 @@ public class View implements EventHandler<ActionEvent> {
                 menuItem.setOnAction(colorEventHandler);
                 menu.getItems().add(menuItem);
 
-
                 menuItem = new MenuItem("Blue");
                 menuItem.setStyle("-fx-text-fill: blue;");
                 menuItem.setOnAction(colorEventHandler);
                 menu.getItems().add(menuItem);
 
-
-
                 menuBar.getMenus().add(menu);
 
 
+                // Style Selector
+                menu = new Menu("Sytle");
+                FillStyleEventHandler fillStyleEventHandler = new FillStyleEventHandler();
+
+                Menu fillStyle = new Menu("Fill Style");
+                MenuItem filledStyle = new MenuItem("Filled");
+                filledStyle.setOnAction(fillStyleEventHandler);
+                MenuItem outlinedStyle = new MenuItem("Outlined");
+                outlinedStyle.setOnAction(fillStyleEventHandler);
+                fillStyle.getItems().addAll(filledStyle, outlinedStyle);
+
+                Menu thicknessStyle = new Menu("Thickness");
+                // you can add each thickness menu here
+                menu.getItems().addAll(fillStyle, thicknessStyle);
+
+                menuBar.getMenus().add(menu);
 
 
 
