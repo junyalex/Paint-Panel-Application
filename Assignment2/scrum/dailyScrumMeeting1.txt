@@ -82,9 +82,9 @@ Oct 29,2024
 	Obstacles I face: Should consider how to implement Factory pattern
 
 Oct 30,2024
-	What I did yesterday:
-	What I will do today:
-	Obstacles I face:
+	What I did yesterday: finished US3.006
+	What I will do today: review code and merge teammate's code
+	Obstacles I face: nothing
 
 Oct 31,2024
 	What I did yesterday:
