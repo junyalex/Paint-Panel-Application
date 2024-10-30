@@ -72,14 +72,14 @@ Oct 27,2024
 	Obstacles I face: nothing
 
 Oct 28,2024
-	What I did yesterday:
-	What I will do today:
-	Obstacles I face:
+	What I did yesterday: review code
+	What I will do today: review code
+	Obstacles I face: nothing
 
 Oct 29,2024
-	What I did yesterday:
-	What I will do today:
-	Obstacles I face:
+	What I did yesterday: edit BUG3.004
+	What I will do today: edit BUG3.004
+	Obstacles I face: Should consider how to implement Factory pattern
 
 Oct 30,2024
 	What I did yesterday:
