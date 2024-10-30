@@ -14,17 +14,13 @@ public class PaintPanel extends Canvas implements EventHandler<MouseEvent>, Obse
     private String mode="Circle";
     private PaintModel model;
     private DrawStrategy strategy;
-
-    double start_x ,start_y; // instance used for saving first location of x,y when mouse clicked
-    private Circle circle; // This is VERY UGLY, should somehow fix this!! (fixed)
-    private Rectangle rectangle;
-    private Square square;
-    private Scribble scribble;
+    private ShapeFactory shapeFactory;
 
     public PaintPanel(PaintModel model) {
         super(300, 300);
         this.model=model;
         this.model.addObserver(this);
+        this.shapeFactory = new ShapeFactory();
 
         this.addEventHandler(MouseEvent.MOUSE_PRESSED, this);
         this.addEventHandler(MouseEvent.MOUSE_RELEASED, this);
@@ -36,31 +32,7 @@ public class PaintPanel extends Canvas implements EventHandler<MouseEvent>, Obse
      *  Controller aspect of this
      */
     public void setMode(String mode){
-        switch(mode){
-            case "◯":
-                DrawStrategy circle = new CircleDrawStrategy();
-                this.strategy = circle;
-                break;
-            case "⬭":
-                this.strategy = new OvalDrawStrategy();
-                break;
-            case "▭":
-                DrawStrategy rectangle = new RectangleDrawStrategy();
-                this.strategy = rectangle;
-                break;
-            case "□":
-                DrawStrategy square = new SquareDrawStrategy();
-                this.strategy = square;
-                break;
-            case "Squiggle (〜)":
-                DrawStrategy scribble = new ScribbleDrawStrategy();
-                this.strategy = scribble;
-                break;
-            case "△":
-                DrawStrategy triangle = new TriangleDrawStrategy();
-                this.strategy = triangle;
-                break;
-        }
+        this.strategy = shapeFactory.makeStrategy(mode);
         this.mode = mode;
     }
 
