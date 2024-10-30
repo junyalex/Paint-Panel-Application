@@ -11,6 +11,7 @@ public class CircleDrawStrategy implements DrawStrategy{
         System.out.println("Started Circle");
         Point centre = new Point(e.getX(), e.getY());
         this.circle = new Circle(centre, 0);
+        this.circle.setColor(PaintPanel.color);
     }
 
     @Override
@@ -37,11 +38,11 @@ public class CircleDrawStrategy implements DrawStrategy{
     @Override
     public void draw(Shape shape, GraphicsContext g2d) {
         Circle c = (Circle) shape;
-        g2d.setStroke(c.getColor());
+        g2d.setFill(c.getColor());
         double x = c.getCentre().x;
         double y = c.getCentre().y;
         double radius = c.getRadius();
-        g2d.strokeOval(x-radius, y-radius, radius*2, radius*2);
+        g2d.fillOval(x-radius, y-radius, radius*2, radius*2);
 
     }
 }
