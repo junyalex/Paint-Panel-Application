@@ -55,14 +55,18 @@ public class SquareDrawStrategy implements DrawStrategy {
         }
     }
     @Override
-    public void draw(Shape shape, GraphicsContext g2d) {
-        //Rectangle r = (Rectangle )model.getShape().getLast();
+    public void draw(Shape shape, GraphicsContext g2d, String currStyle) {
         Square s = (Square) shape;
-        //added
-        g2d.setFill(s.getColor());
         double x = s.getCorner().x;
         double y = s.getCorner().y;
         double dim = s.getDim();
-        g2d.fillRect(x, y, dim, dim);
+        if(currStyle.equals("Outlined")) {
+            g2d.setStroke(s.getColor());
+            g2d.strokeRect(x, y, dim, dim);
+        }
+        else if(currStyle.equals("Filled")) {
+            g2d.setFill(s.getColor());
+            g2d.fillRect(x, y, dim, dim);
+        }
     }
 }

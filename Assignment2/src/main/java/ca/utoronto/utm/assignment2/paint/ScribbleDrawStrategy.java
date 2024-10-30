@@ -44,7 +44,7 @@ public class ScribbleDrawStrategy implements DrawStrategy {
         System.out.println("Created Scribble");
     }
     @Override
-    public void draw(Shape shape, GraphicsContext g2d) {
+    public void draw(Shape shape, GraphicsContext g2d, String currStyle) {
         Scribble scribble = (Scribble) shape;
         g2d.setStroke(scribble.getColor());
         ArrayList<Point> points = scribble.getPoints();
