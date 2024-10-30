@@ -72,27 +72,27 @@ Oct 25,2024
 Oct 26,2024
 	What I did yesterday: Review code and looked for any bugs
 	What I will do today: Review code
-	Obstacles I face:
+	Obstacles I face: None.
 
 Oct 27,2024
 	What I did yesterday: Review updated design pattern
 	What I will do today: Review code
-	Obstacles I face:
+	Obstacles I face: None.
 
 Oct 28,2024
 	What I did yesterday: Review Code
 	What I will do today: Review code
-	Obstacles I face:
+	Obstacles I face: None.
 
 Oct 29,2024
 	What I did yesterday: Review Code
 	What I will do today: Have a meeting and talk about sprint3
-	Obstacles I face:
+	Obstacles I face: None.
 
 Oct 30,2024
-	What I did yesterday:
-	What I will do today:
-	Obstacles I face:
+	What I did yesterday: Have a meeting and talk about sprint3
+	What I will do today: completed US3.006
+	Obstacles I face: None.
 
 Oct 31,2024
 	What I did yesterday:
