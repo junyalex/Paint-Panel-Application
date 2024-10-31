@@ -15,7 +15,7 @@
 #     NotStarted,InProgress, Incomplete,Complete
 # as appropriate.
 --------------------------------------------------------------------------
-TYPE     : USER STORY US?.009 : UTORID : NotStarted
+TYPE     : USER STORY US?.009 : leerya41 : NotStarted
 NAME     : Line thickness selector
 PRIORITY : 3
 ESTIMATE : (1 hour, 2 hours, 4 hours, 1 day, 2 days, 4 days)    ACTUAL :
