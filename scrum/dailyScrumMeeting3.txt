@@ -97,12 +97,12 @@ Oct 29,2024
 	What I did yesterday: Await sprint 3 instructions while drafting design patterns to improve
     scalability and increase cohesion and decrease coupling within code
 	What I will do today: Met with team to discuss sprint 3 and plan
-	Obstacles I face:
+	Obstacles I face: None
 
 Oct 30,2024
-	What I did yesterday:
-	What I will do today:
-	Obstacles I face:
+	What I did yesterday: Met with team to discuss sprint 3 and plan
+	What I will do today: Begin work on redo undo and refactoring of command pattern and line thickness selector
+	Obstacles I face: None
 
 Oct 31,2024
 	What I did yesterday:
