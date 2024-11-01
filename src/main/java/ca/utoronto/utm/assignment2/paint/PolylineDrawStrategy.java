@@ -17,30 +17,33 @@ public class PolylineDrawStrategy implements DrawStrategy {
     @Override
     public void onMousePressed(MouseEvent e, PaintModel model) {
         System.out.println("Started Polyline");
-        points.clear();
         points.add(new Point(e.getX(), e.getY()));
         this.polyline = new Polyline(points);
         this.polyline.setColor(PaintPanel.color);
     }
 
     @Override
-    public void onMouseDragged(MouseEvent e, PaintModel model){
-        points.add(new Point(e.getX(), e.getY()));
-        model.addShapePreview(this.polyline);
+    public void onMouseDragged(MouseEvent e, PaintModel model) {
+        if (this.polyline != null) {
+            points.add(new Point(e.getX(), e.getY()));
+            model.addShapePreview(this.polyline);
+        }
     }
 
     @Override
-    public void onMouseReleased(MouseEvent e, PaintModel model){
-        System.out.println("Created Polyline");
-        points.add(new Point(e.getX(), e.getY()));
-        model.executeCommand(new DrawPolylineCommand(model, polyline));
-        this.polyline = null;
+    public void onMouseReleased(MouseEvent e, PaintModel model) {
+        if (this.polyline != null) {
+            System.out.println("Created Polyline");
+            points.add(new Point(e.getX(), e.getY()));
+            model.executeCommand(new DrawPolylineCommand(model, polyline));
+            this.polyline = null;
+        }
     }
 
     @Override
     public void draw(Shape shape, GraphicsContext g2d, String currStyle){
         Polyline p = (Polyline) shape;
-        List<Point> points = polyline.getPoints();
+        List<Point> points = p.getPoints();
 
         for(int i =0; i < points.size() - 1; i++){
             Point p1 = points.get(i);
