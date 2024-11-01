@@ -15,6 +15,7 @@ public class PaintModel extends Observable {
         public void executeCommand(Command command) {
                 command.execute();
                 commandHistory.push(command);
+                undoHistory.clear();
                 setChanged();
                 notifyObservers();
         }
@@ -24,6 +25,16 @@ public class PaintModel extends Observable {
                         Command last = commandHistory.pop();
                         last.undo();
                         undoHistory.push(last);
+                        setChanged();
+                        notifyObservers();
+                }
+        }
+
+        public void redo() {
+                if (!undoHistory.isEmpty()) {
+                        Command last = undoHistory.pop();
+                        last.execute();
+                        commandHistory.push(last);
                         setChanged();
                         notifyObservers();
                 }
