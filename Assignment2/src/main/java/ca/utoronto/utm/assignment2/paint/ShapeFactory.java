@@ -23,7 +23,7 @@ public class ShapeFactory {
         shapes.put("⬭", new OvalDrawStrategy());
         shapes.put("△", new TriangleDrawStrategy());
         shapes.put("Squiggle (〜)", new ScribbleDrawStrategy());
-        // shapes.put("Polyline (└───┐)", new PolylineDrawStrategy());
+        shapes.put("Polyline (└───┐)", new PolylineDrawStrategy());
     }
 
     public DrawStrategy makeStrategy(String s){

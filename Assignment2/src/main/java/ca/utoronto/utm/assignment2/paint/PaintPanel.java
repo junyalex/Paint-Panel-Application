@@ -18,7 +18,7 @@ public class PaintPanel extends Canvas implements EventHandler<MouseEvent>, Obse
     public static Color color = Color.RED;
 
     public PaintPanel(PaintModel model) {
-        super(300, 300);
+        super(500, 500);
         this.model=model;
         this.model.addObserver(this);
         this.shapeFactory = new ShapeFactory();
