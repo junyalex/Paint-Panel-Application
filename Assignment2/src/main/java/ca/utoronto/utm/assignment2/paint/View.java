@@ -130,7 +130,7 @@ public class View implements EventHandler<ActionEvent> {
 
 
                 // Style Selector
-                menu = new Menu("Sytle");
+                menu = new Menu("Style");
                 FillStyleEventHandler fillStyleEventHandler = new FillStyleEventHandler();
 
                 Menu fillStyle = new Menu("Fill Style");
