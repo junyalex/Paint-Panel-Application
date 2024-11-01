@@ -13,4 +13,10 @@ public class DrawCircleCommand implements Command {
     public void execute() {
         model.addShape(circle);
     }
+
+    @Override
+    public void undo() {
+        model.removeShape();
+    }
+
 }

@@ -13,4 +13,9 @@ public class DrawScribbleCommand implements Command {
     public void execute() {
         model.addShape(scribble);
     }
+
+    @Override
+    public void undo() {
+        model.removeShape();
+    }
 }

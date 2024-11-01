@@ -13,4 +13,9 @@ public class DrawOvalCommand implements Command {
     public void execute() {
         model.addShape(oval);
     }
+
+    @Override
+    public void undo() {
+        model.removeShape();
+    }
 }

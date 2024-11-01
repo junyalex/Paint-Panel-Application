@@ -89,7 +89,7 @@ public class View implements EventHandler<ActionEvent> {
 
                 menu.getItems().add(new SeparatorMenuItem());
                 menuItem = new MenuItem("Undo");
-                menuItem.setOnAction(this);
+                menuItem.setOnAction(new undoEventHandler(this.paintModel));
                 menu.getItems().add(menuItem);
 
                 menuItem = new MenuItem("Redo");
@@ -97,15 +97,6 @@ public class View implements EventHandler<ActionEvent> {
                 menu.getItems().add(menuItem);
 
                 menuBar.getMenus().add(menu);
-
-                menu.getItems().add(new SeparatorMenuItem());
-                menuItem = new MenuItem("Undo");
-                menuItem.setOnAction(this);
-                menu.getItems().add(menuItem);
-
-                menuItem = new MenuItem("Redo");
-                menuItem.setOnAction(this);
-                menu.getItems().add(menuItem);
 
                 // For color
                 menu = new Menu("Color");

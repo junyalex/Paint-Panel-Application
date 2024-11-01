@@ -13,4 +13,9 @@ public class DrawSquareCommand implements Command {
     public void execute() {
         model.addShape(square);
     }
+
+    @Override
+    public void undo() {
+        model.removeShape();
+    }
 }
