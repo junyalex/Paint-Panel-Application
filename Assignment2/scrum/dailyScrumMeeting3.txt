@@ -105,9 +105,10 @@ Oct 30,2024
 	Obstacles I face: None
 
 Oct 31,2024
-	What I did yesterday:
-	What I will do today:
-	Obstacles I face:
+	What I did yesterday: Begin work on redo undo and refactoring of command pattern and line thickness selector
+	What I will do today: finish work on redo undo and continue refactoring of command pattern and
+	line thickness selector
+	Obstacles I face: None
 
 Nov 1,2024
 	What I did yesterday:
