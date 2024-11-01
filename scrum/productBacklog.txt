@@ -15,6 +15,16 @@
 #     NotStarted,InProgress, Incomplete,Complete
 # as appropriate.
 --------------------------------------------------------------------------
+TYPE     : BUG BUG3.005 : mbagayaa : NotStarted
+NAME     : Polyline Draw Functionality Not Working as Expected
+PRIORITY : 2
+ESTIMATE : (1 day)   ACTUAL :
+ISSUE    : The polyline drawing feature does not work correctly. When
+           attempting to draw a polyline, the polyline instead draws a scribble.
+           We will need to implement a class that handles the polyline.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+
 TYPE     : USER STORY US?.009 : leerya41 : NotStarted
 NAME     : Line thickness selector
 PRIORITY : 3

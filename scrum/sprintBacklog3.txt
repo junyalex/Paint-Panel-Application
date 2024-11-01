@@ -5,7 +5,7 @@
 # Sprint 3 Oct 27-Nov 03, 2024
 # Sprint 3 Backlog UserStories go below
 --------------------------------------------------------------------------
-TYPE     : USER STORY US?.0020 : leerya41 : awaiting pull req
+TYPE     : USER STORY US3.0020 : leerya41 : Completed
 NAME     : undo
 PRIORITY : 3
 ESTIMATE : (5 minutes)    ACTUAL : 10 mins
@@ -17,7 +17,7 @@ I WANT   : To be able to undo previous change
 SO THAT  : I can remove my last change
 --------------------------------------------------------------------------
 --------------------------------------------------------------------------
-TYPE     : USER STORY US?.0021 : leerya41 : awaiting pull req
+TYPE     : USER STORY US3.0021 : leerya41 : awaiting pull req
 NAME     : redo
 PRIORITY : 3
 ESTIMATE : (5 minutes)    ACTUAL : 5 mins
@@ -89,7 +89,7 @@ I WANT   : To be able to select the current drawing color, to be applied
 SO THAT  : Users can select the color before they draw
 --------------------------------------------------------------------------
 --------------------------------------------------------------------------
-TYPE     : USER STORY US?.009 : leerya41 : NotStarted
+TYPE     : USER STORY US3.008 : leerya41 : NotStarted
 NAME     : Line thickness selector
 PRIORITY : 3
 ESTIMATE : (1 hour, 2 hours, 4 hours, 1 day, 2 days, 4 days)    ACTUAL :
@@ -111,4 +111,13 @@ I WANT   : To be able to select the current line thickness, to be applied
            	results in two thinly outlined circles and a thinly outlined
            	rectangle as well as two thickly outlined rectangles and a thick squiggle
 SO THAT  :
+--------------------------------------------------------------------------
+TYPE     : BUG BUG3.005 : mbagayaa : NotStarted
+NAME     : Polyline Draw Functionality Not Working as Expected
+PRIORITY : 2
+ESTIMATE : (1 day)   ACTUAL :
+ISSUE    : The polyline drawing feature does not work correctly. When
+           attempting to draw a polyline, the polyline instead draws a scribble.
+           We will need to implement a class that handles the polyline.
+--------------------------------------------------------------------------
 --------------------------------------------------------------------------
