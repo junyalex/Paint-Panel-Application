@@ -5,10 +5,10 @@
 # Sprint 3 Oct 27-Nov 03, 2024
 # Sprint 3 Backlog UserStories go below
 --------------------------------------------------------------------------
-TYPE     : USER STORY US?.0020 : leerya41 : NotStarted
+TYPE     : USER STORY US?.0020 : leerya41 : awaiting pull req
 NAME     : undo
 PRIORITY : 3
-ESTIMATE : (5 minutes)    ACTUAL :
+ESTIMATE : (5 minutes)    ACTUAL : 10 mins
 AS A     : user
 I WANT   : To be able to undo previous change
                 Example:
@@ -17,10 +17,10 @@ I WANT   : To be able to undo previous change
 SO THAT  : I can remove my last change
 --------------------------------------------------------------------------
 --------------------------------------------------------------------------
-TYPE     : USER STORY US?.0021 : leerya41 : NotStarted
+TYPE     : USER STORY US?.0021 : leerya41 : awaiting pull req
 NAME     : redo
 PRIORITY : 3
-ESTIMATE : (5 minutes)    ACTUAL :
+ESTIMATE : (5 minutes)    ACTUAL : 5 mins
 AS A     : user
 I WANT   : To be able to undo an undo
                 Example:
