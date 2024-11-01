@@ -13,4 +13,9 @@ public class DrawRectangleCommand implements Command {
     public void execute() {
         model.addShape(rectangle);
     }
+
+    @Override
+    public void undo() {
+        model.removeShape();
+    }
 }

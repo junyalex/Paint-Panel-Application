@@ -8,6 +8,7 @@ import java.util.Stack;
 
 public class PaintModel extends Observable {
         private Stack<Command> commandHistory = new Stack<>();
+        private Stack<Command> undoHistory = new Stack<>();
         private ArrayList<Shape> shapes = new ArrayList<>();
         private ArrayList<Shape> PreviewShapes = new ArrayList<>();
 
@@ -18,12 +19,24 @@ public class PaintModel extends Observable {
                 notifyObservers();
         }
 
-        public Stack<Command> getCommandHistory() {
-                return commandHistory;
+        public void undo() {
+                if (!commandHistory.isEmpty()) {
+                        Command last = commandHistory.pop();
+                        last.undo();
+                        undoHistory.push(last);
+                        setChanged();
+                        notifyObservers();
+                }
         }
 
         public void addShape(Shape s){
                 shapes.add(s);
+                this.setChanged();
+                this.notifyObservers();
+        }
+
+        public void removeShape( ){
+                shapes.removeLast();
                 this.setChanged();
                 this.notifyObservers();
         }

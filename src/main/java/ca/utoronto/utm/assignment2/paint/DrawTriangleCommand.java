@@ -13,4 +13,9 @@ public class DrawTriangleCommand implements Command {
     public void execute() {
         model.addShape(triangle);  // Adds circle to the model
     }
+
+    @Override
+    public void undo() {
+        model.removeShape();
+    }
 }
