@@ -80,24 +80,24 @@ Oct 27,2024
 	Obstacles I face: No obstacles
 
 Oct 28,2024
-	What I did yesterday:
-	What I will do today:
-	Obstacles I face:
+	What I did yesterday: Looked at the command design pattern that my colleague had implemented
+	What I will do today: No work as the instructions for sprint 3 haven't been posted.
+	Obstacles I face:No obstacles
 
 Oct 29,2024
-	What I did yesterday:
-	What I will do today:
-	Obstacles I face:
+	What I did yesterday:No work as the instructions for sprint 3 hadn't been posted
+	What I will do today: Have a meeting with my colleagues and talk about what we will do for sprint 3
+	Obstacles I face:No obstacles
 
 Oct 30,2024
-	What I did yesterday:
-	What I will do today:
-	Obstacles I face:
+	What I did yesterday:Meeting with colleagues
+	What I will do today:Think about how I'll implement the polyline class and polyline drawing strategy
+	Obstacles I face:No obstacles
 
 Oct 31,2024
-	What I did yesterday:
-	What I will do today:
-	Obstacles I face:
+	What I did yesterday: Thought about how I'll manage the polyline class
+	What I will do today: Do a pull request and merge into the master, start working on the polyline class
+	Obstacles I face:No obstacles
 
 Nov 1,2024
 	What I did yesterday:
