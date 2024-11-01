@@ -6,4 +6,5 @@ US3.007 author:leehoju7 puller:chosun29 status:Completed
 US3.006 author:chosun29 puller:leehoju7 status:Completed
 
 US3.0020/undofunction/RL author: leerya41 puller:mbagayaa status:Completed
-US3.0021/redofunction/RL author: leerya41 puller: tbd status: requested
+US3.0021/redofunction/RL author: leerya41 puller: mbagayaa status: Completed
+BUG3.005  author:mbagayaa  puller: UTORID  status: Waiting
