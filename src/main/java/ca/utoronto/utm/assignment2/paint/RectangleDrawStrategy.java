@@ -20,6 +20,7 @@ public class RectangleDrawStrategy implements DrawStrategy{
         Point corner2 = new Point(0, 0);   // right_bot
         this.rectangle = new Rectangle(corner1, corner2);
         this.rectangle.setColor(PaintPanel.color);
+        this.rectangle.setThickness(PaintPanel.thickness);
     }
 
     @Override
@@ -48,6 +49,7 @@ public class RectangleDrawStrategy implements DrawStrategy{
         double height = r.getHeight();
         if(currStyle.equals("Outlined")){
             g2d.setStroke(r.getColor());
+            g2d.setLineWidth(r.getThickness());
             g2d.strokeRect(corner_x, corner_y, width, height);
         }
         else if(currStyle.equals("Filled")) {

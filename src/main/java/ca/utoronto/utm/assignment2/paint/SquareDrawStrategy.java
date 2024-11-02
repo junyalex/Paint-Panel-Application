@@ -18,6 +18,7 @@ public class SquareDrawStrategy implements DrawStrategy {
         this.centerPoint = new Point(e.getX(), e.getY());
         this.square = new Square(centerPoint, 0);
         this.square.setColor(PaintPanel.color);
+        this.square.setThickness(PaintPanel.thickness);
     }
 
     @Override
@@ -62,6 +63,7 @@ public class SquareDrawStrategy implements DrawStrategy {
         double dim = s.getDim();
         if(currStyle.equals("Outlined")) {
             g2d.setStroke(s.getColor());
+            g2d.setLineWidth(s.getThickness());
             g2d.strokeRect(x, y, dim, dim);
         }
         else if(currStyle.equals("Filled")) {

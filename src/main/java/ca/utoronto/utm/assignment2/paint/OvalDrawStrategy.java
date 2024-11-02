@@ -13,6 +13,8 @@ public class OvalDrawStrategy implements DrawStrategy {
         startPoint = new Point(e.getX(), e.getY());
         this.oval = new Oval(startPoint, 0, 0);
         this.oval.setColor(PaintPanel.color);
+        this.oval.setThickness(PaintPanel.thickness);
+        this.oval.setThickness(PaintPanel.thickness);
     }
 
     @Override
@@ -47,6 +49,7 @@ public class OvalDrawStrategy implements DrawStrategy {
 
         if(currStyle.equals("Outlined")) {
             g2d.setStroke(o.getColor());
+            g2d.setLineWidth(o.getThickness());
             g2d.strokeOval(
                     o.getCentre().getX() - o.getRadiusX(),
                     o.getCentre().getY() - o.getRadiusY(),
