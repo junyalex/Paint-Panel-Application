@@ -25,10 +25,10 @@ ISSUE    : The polyline drawing feature does not work correctly. When
 --------------------------------------------------------------------------
 --------------------------------------------------------------------------
 
-TYPE     : USER STORY US?.009 : leerya41 : NotStarted
+TYPE     : USER STORY US3.009 : leehoju7 : In Progress
 NAME     : Line thickness selector
 PRIORITY : 3
-ESTIMATE : (1 hour, 2 hours, 4 hours, 1 day, 2 days, 4 days)    ACTUAL :
+ESTIMATE : 1 hour    ACTUAL :
 AS A     : user
 I WANT   : To be able to select the current line thickness, to be applied
            to subsequent shapes. Example:
@@ -46,7 +46,7 @@ I WANT   : To be able to select the current line thickness, to be applied
            		draw a squiggle
            	results in two thinly outlined circles and a thinly outlined 
            	rectangle as well as two thickly outlined rectangles and a thick squiggle
-SO THAT  : 
+SO THAT  :  User can choose thickness
 --------------------------------------------------------------------------
 --------------------------------------------------------------------------
 TYPE     : USER STORY US?.0010 : leerya41 : NotStarted
