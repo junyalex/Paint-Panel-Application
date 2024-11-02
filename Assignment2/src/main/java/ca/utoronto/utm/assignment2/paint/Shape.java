@@ -6,6 +6,7 @@ import javafx.scene.paint.Color;
 public abstract class Shape {
     private Color color;
     private final String fillStyle;
+    private int thickness;
 
     public Shape(){
         fillStyle = FillStyleManager.getInstance().getStyle();
@@ -21,5 +22,12 @@ public abstract class Shape {
 
     public void setColor(Color color) {
         this.color = color;
+    }
+
+    public void setThickness(int thickness) {
+        this.thickness = thickness;
+    }
+    public int getThickness() {
+        return this.thickness;
     }
 }
