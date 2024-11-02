@@ -11,7 +11,7 @@ import java.util.Observer;
 import ca.utoronto.utm.assignment2.scribble.ScribblePanel;
 
 public class PaintPanel extends Canvas implements EventHandler<MouseEvent>, Observer {
-    private String mode="Circle";
+    private static String mode="Circle";
     private PaintModel model;
     private DrawStrategy strategy;
     private ShapeFactory shapeFactory;
@@ -35,6 +35,10 @@ public class PaintPanel extends Canvas implements EventHandler<MouseEvent>, Obse
     public void setMode(String mode){
         this.strategy = shapeFactory.makeStrategy(mode);
         this.mode = mode;
+    }
+
+    public static String getMode(){
+        return mode;
     }
 
     @Override
