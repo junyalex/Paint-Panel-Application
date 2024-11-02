@@ -100,9 +100,9 @@ Oct 31,2024
 	Obstacles I face: None.
 
 Nov 1,2024
-	What I did yesterday:
-	What I will do today:
-	Obstacles I face:
+	What I did yesterday: read through updated code
+	What I will do today: review pullRequest from leehoju7 (US3.009)
+	Obstacles I face: None.
 
 Nov 2,2024
 	What I did yesterday:
