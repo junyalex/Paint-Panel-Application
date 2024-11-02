@@ -12,6 +12,7 @@ public class CircleDrawStrategy implements DrawStrategy{
         Point centre = new Point(e.getX(), e.getY());
         this.circle = new Circle(centre, 0);
         this.circle.setColor(PaintPanel.color);
+        this.circle.setThickness(PaintPanel.thickness);
     }
 
     @Override
@@ -44,6 +45,7 @@ public class CircleDrawStrategy implements DrawStrategy{
         double radius = c.getRadius();
         if(currStyle.equals("Outlined")){
             g2d.setStroke(c.getColor());
+            g2d.setLineWidth(c.getThickness());
             g2d.strokeOval(x - radius, y - radius, radius * 2, radius * 2);
         }
         else if(currStyle.equals("Filled")) {
