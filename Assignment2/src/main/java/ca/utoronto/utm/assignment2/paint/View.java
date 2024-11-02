@@ -142,6 +142,51 @@ public class View implements EventHandler<ActionEvent> {
 
                 Menu thicknessStyle = new Menu("Thickness");
                 // you can add each thickness menu here
+                ThicknessEventHandler thicknessEventHandler = new ThicknessEventHandler();
+                menuItem = new MenuItem("1");
+                menuItem.setOnAction(thicknessEventHandler);
+                thicknessStyle.getItems().add(menuItem);
+
+                menuItem = new MenuItem("2");
+                menuItem.setOnAction(thicknessEventHandler);
+                thicknessStyle.getItems().add(menuItem);
+
+                menuItem = new MenuItem("3");
+                menuItem.setOnAction(thicknessEventHandler);
+                thicknessStyle.getItems().add(menuItem);
+
+                menuItem = new MenuItem("4");
+                menuItem.setOnAction(thicknessEventHandler);
+                thicknessStyle.getItems().add(menuItem);
+
+                menuItem = new MenuItem("5");
+                menuItem.setOnAction(thicknessEventHandler);
+                thicknessStyle.getItems().add(menuItem);
+
+                menuItem = new MenuItem("6");
+                menuItem.setOnAction(thicknessEventHandler);
+                thicknessStyle.getItems().add(menuItem);
+
+                menuItem = new MenuItem("7");
+                menuItem.setOnAction(thicknessEventHandler);
+                thicknessStyle.getItems().add(menuItem);
+
+                menuItem = new MenuItem("8");
+                menuItem.setOnAction(thicknessEventHandler);
+                thicknessStyle.getItems().add(menuItem);
+
+                menuItem = new MenuItem("9");
+                menuItem.setOnAction(thicknessEventHandler);
+                thicknessStyle.getItems().add(menuItem);
+
+                menuItem = new MenuItem("10");
+                menuItem.setOnAction(thicknessEventHandler);
+                thicknessStyle.getItems().add(menuItem);
+
+
+
+
+
                 menu.getItems().addAll(fillStyle, thicknessStyle);
 
                 menuBar.getMenus().add(menu);

@@ -21,6 +21,7 @@ public class TriangleDrawStrategy implements DrawStrategy {
         point3 =startPoint;
         triangle = new Triangle(startPoint, point2, point3);
         triangle.setColor(PaintPanel.color);
+        this.triangle.setThickness(PaintPanel.thickness);
         model.addShapePreview(this.triangle);
 
     }
@@ -66,6 +67,7 @@ public class TriangleDrawStrategy implements DrawStrategy {
 
         if(currStyle.equals("Outlined")){
             g2d.setStroke(t.getColor());
+            g2d.setLineWidth(t.getThickness());
             g2d.strokePolygon(xPoints, yPoints, 3);
         }
         else if(currStyle.equals("Filled")) {
