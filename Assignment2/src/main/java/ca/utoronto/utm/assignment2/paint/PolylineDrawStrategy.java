@@ -30,6 +30,7 @@ public class PolylineDrawStrategy implements DrawStrategy {
     @Override
     public void onMouseDragged(MouseEvent e, PaintModel model) {
         if (this.polyline != null) {
+            this.polyline.getPoints().removeLast();
             this.polyline.getPoints().add(new Point(e.getX(), e.getY()));
             model.addShapePreview(this.polyline);
         }
@@ -42,7 +43,7 @@ public class PolylineDrawStrategy implements DrawStrategy {
             this.polyline.getPoints().add(new Point(e.getX(), e.getY()));
             Polyline.last_points.add(new Point(e.getX(), e.getY()));
             model.executeCommand(new DrawPolylineCommand(model, polyline));
-            this.polyline = null;
+
         }
     }
 
