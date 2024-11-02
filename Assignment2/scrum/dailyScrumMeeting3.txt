@@ -96,7 +96,8 @@ Oct 28,2024
 Oct 29,2024
 	What I did yesterday: Await sprint 3 instructions while drafting design patterns to improve
     scalability and increase cohesion and decrease coupling within code
-	What I will do today: Met with team to discuss sprint 3 and plan
+	What I will do today: Met with team to discuss sprint 3 and plan and review pull request from
+	leehoju7, (BUG3.004)
 	Obstacles I face: None
 
 Oct 30,2024
