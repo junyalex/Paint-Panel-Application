@@ -67,7 +67,7 @@ SO THAT  : I can add square to my canvas
 TYPE     : USER STORY US2.006: leerya41 : completed
 NAME     : Draw Square Feedback
 PRIORITY : 2
-ESTIMATE : (1 hour, 2 hours, 4 hours, 1 day, 2 days, 4 days)    ACTUAL : 30
+ESTIMATE : (1 hour)    ACTUAL : 30
 AS A     : user
 I WANT   : Similarly to Draw Circle Feedback, display the square in mid-construction.
 SO THAT  : I can see the square I am about to build on release of the mouse button.
@@ -87,10 +87,10 @@ ISSUE    : Code is not modular and is difficult to expand. Need a better
 TYPE     : BUG BUG2.002 : leerya41 : completed
 NAME     : Architecture behind handling drawing events is poor
 PRIORITY : 3
-ESTIMATE : (1 hour, 2 hours, 4 hours, 1 day, 2 days, 4 days)    ACTUAL :
+ESTIMATE : 1 day    ACTUAL : 1 day
 ISSUE    : Code is not modular and is difficult to expand. Need a better
            architecture for handling the drawing events.
            Consider some design patterns here.
            (this is an extension of BUG2.001 which asked us to improve
-           the handling of the drawing events)
+           the handling of the drawing events through a command pattern)
 --------------------------------------------------------------------------

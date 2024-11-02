@@ -112,13 +112,13 @@ Oct 31,2024
 
 Nov 1,2024
 	What I did yesterday:finish work on redo undo and continue refactoring of command pattern
-	What I will do today: continue refactoring command
+	What I will do today: review (BUG3.005) and continue refactoring command
 	Obstacles I face: None
 
 Nov 2,2024
-	What I did yesterday:
-	What I will do today:
-	Obstacles I face:
+	What I did yesterday: review (BUG3.005) and continue refactoring command
+	What I will do today: review (BUG3.005_leehoju7) and merge and begin selector mode then refactor command pattern
+	Obstacles I face: None
 
 Nov 3,2024
 	What I did yesterday:
