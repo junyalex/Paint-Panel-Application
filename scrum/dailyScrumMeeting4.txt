@@ -100,9 +100,9 @@ Oct 31,2024
 	Obstacles I face:No obstacles
 
 Nov 1,2024
-	What I did yesterday:
-	What I will do today:
-	Obstacles I face:
+	What I did yesterday:Started working on the polyline class
+	What I will do today:Continue working on the polyline class
+	Obstacles I face: The undo and redo function isn't working.
 
 Nov 2,2024
 	What I did yesterday:

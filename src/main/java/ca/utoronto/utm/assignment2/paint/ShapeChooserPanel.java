@@ -35,6 +35,11 @@ public class ShapeChooserPanel extends GridPane implements EventHandler<ActionEv
                 Button clickedButton = (Button) event.getSource();
                 String command = clickedButton.getText();
 
+                if (!PaintPanel.getMode().equals("Squiggle (〜)") || !command.equals("Squiggle")) {
+                    Polyline.newPoly = true;
+                } else {Polyline.newPoly = false;}
+
+
                 for(Button button: buttons){
                         button.setStyle("");
                 }
