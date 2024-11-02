@@ -20,6 +20,8 @@ public class PolylineDrawStrategy implements DrawStrategy {
         Polyline.newPoly = false;
 
         this.polyline = new Polyline();
+        this.polyline.setColor(PaintPanel.color);
+        this.polyline.setThickness(PaintPanel.thickness);
         this.polyline.getPoints().add(new Point(e.getX(), e.getY()));
         if (!Polyline.last_points.isEmpty()) {
             this.polyline.getPoints().add(Polyline.last_points.get(Polyline.last_points.size() - 1));
@@ -52,7 +54,7 @@ public class PolylineDrawStrategy implements DrawStrategy {
         Polyline p = (Polyline) shape;
         ArrayList<Point> points = p.getPoints();
         g2d.setStroke(p.getColor());
-
+        g2d.setLineWidth(p.getThickness());
         for(int i = 0; i < points.size() - 1; i++) {
             Point p1 = points.get(i);
             if(p1 == null) continue;
