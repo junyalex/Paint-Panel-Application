@@ -101,12 +101,12 @@ Oct 31,2024
 
 Nov 1,2024
 	What I did yesterday: read through updated code
-	What I will do today: review pullRequest from leehoju7 (US3.009)
+	What I will do today: completed pullRequest from leehoju7 (US3.009)
 	Obstacles I face: None.
 
 Nov 2,2024
-	What I did yesterday:
-	What I will do today:
+	What I did yesterday: completed pullRequest from leehoju7 (US3.009)
+	What I will do today: BUG3.005_thickness pullRequest completed and code review
 	Obstacles I face:
 
 Nov 3,2024
