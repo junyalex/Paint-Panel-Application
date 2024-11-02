@@ -10,12 +10,13 @@ public class DrawPolylineCommand implements Command {
     }
 
     @Override
-    public void execute(){
+    public void execute() {
         model.addShape(polyline);
     }
 
     @Override
     public void undo(){
+        Polyline.last_points.removeLast();
         model.removeShape();
     }
 }
