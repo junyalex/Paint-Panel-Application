@@ -122,3 +122,17 @@ I WANT   : To be able to select the current line thickness, to be applied
            	rectangle as well as two thickly outlined rectangles and a thick squiggle
 SO THAT  :  User can choose thickness
 --------------------------------------------------------------------------
+--------------------------------------------------------------------------
+TYPE     : USER STORY US?.0010 : leerya41 : in-progress
+NAME     : add a selector mode
+PRIORITY : 3
+ESTIMATE : (2 hours)    ACTUAL :
+AS A     : user
+I WANT   : To be able to select a existing shape on the board
+                Example:
+                -select select mode
+           		-click a shape and have it have an indicator appropriate to
+           		indicate which shape is chosen
+           		-apply modifications to shapes based on other modes that will be implemented
+SO THAT  : I can implement user story 3.002-005 to modify the existing shape
+--------------------------------------------------------------------------

@@ -121,9 +121,9 @@ Nov 2,2024
 	Obstacles I face: None
 
 Nov 3,2024
-	What I did yesterday:
-	What I will do today:
-	Obstacles I face:
+	What I did yesterday: review (BUG3.005_leehoju7) and merge and begin selector mode then refactor command pattern
+	What I will do today: finish selector mode
+	Obstacles I face: None
 
 Nov 4,2024
 	What I did yesterday:
