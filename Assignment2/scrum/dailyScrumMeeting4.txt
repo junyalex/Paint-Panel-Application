@@ -105,9 +105,10 @@ Nov 1,2024
 	Obstacles I face: The undo and redo function isn't working.
 
 Nov 2,2024
-	What I did yesterday:
-	What I will do today:
-	Obstacles I face:
+	What I did yesterday: Worked on the implementation of the polyline class
+	What I will do today: Looked through the code and see the changes that my colleagues did to implement the strategies
+	and clean up the file folders
+	Obstacles I face:no obstacles
 
 Nov 3,2024
 	What I did yesterday:
