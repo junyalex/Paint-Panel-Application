@@ -17,7 +17,7 @@ I WANT   : To be able to undo previous change
 SO THAT  : I can remove my last change
 --------------------------------------------------------------------------
 --------------------------------------------------------------------------
-TYPE     : USER STORY US3.0021 : leerya41 : awaiting pull req
+TYPE     : USER STORY US3.0021 : leerya41 : Completed
 NAME     : redo
 PRIORITY : 3
 ESTIMATE : (5 minutes)    ACTUAL : 5 mins
@@ -89,20 +89,20 @@ I WANT   : To be able to select the current drawing color, to be applied
 SO THAT  : Users can select the color before they draw
 --------------------------------------------------------------------------
 --------------------------------------------------------------------------
-TYPE     : BUG BUG3.005 : mbagayaa : NotStarted
+TYPE     : BUG BUG3.005 : mbagayaa, leehoju7 : Completed
 NAME     : Polyline Draw Functionality Not Working as Expected
 PRIORITY : 2
-ESTIMATE : (1 day)   ACTUAL :
+ESTIMATE : 1 day   ACTUAL : 1 day
 ISSUE    : The polyline drawing feature does not work correctly. When
            attempting to draw a polyline, the polyline instead draws a scribble.
            We will need to implement a class that handles the polyline.
 --------------------------------------------------------------------------
 --------------------------------------------------------------------------
 
-TYPE     : USER STORY US3.009 : leehoju7 : In Progress
+TYPE     : USER STORY US3.009 : leehoju7 : Completed
 NAME     : Line thickness selector
 PRIORITY : 3
-ESTIMATE : 1 hour    ACTUAL :
+ESTIMATE : 1 hour    ACTUAL : 1 hour
 AS A     : user
 I WANT   : To be able to select the current line thickness, to be applied
            to subsequent shapes. Example:
