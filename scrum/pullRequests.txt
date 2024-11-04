@@ -12,4 +12,4 @@ BUG3.005  author:mbagayaa  puller: UTORID  status: Waiting
 US3.009 author : leehoju7 puller: chosun29 status: Completed
 BUG3.005_thickness author : leehoju7 puller : chosun29 status : Completed
 
-US3.0010/selectormode/RL author: leerya41 pull: tbd status: waiting
+US3.0010/selectormode/RL author: leerya41 puller : leehoju7 status: In Progress
