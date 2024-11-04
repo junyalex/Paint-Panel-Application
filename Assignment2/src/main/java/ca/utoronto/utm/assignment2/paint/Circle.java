@@ -28,6 +28,13 @@ public class Circle extends Shape{
         public void setRadius(double radius) {
                 this.radius = radius;
         }
+
+        @Override
+        public boolean contains(Point point){
+                double distance = Math.sqrt(Math.pow(point.x - centre.x, 2) + Math.pow(point.y - centre.y, 2));
+                return distance <= radius;
+        }
+
         @Override
         public DrawStrategy getDrawStrategy() {
                 return new CircleDrawStrategy();

@@ -12,6 +12,10 @@ public class PaintModel extends Observable {
         private ArrayList<Shape> shapes = new ArrayList<>();
         private ArrayList<Shape> PreviewShapes = new ArrayList<>();
 
+        public ArrayList<Shape> getShapes() {
+                return shapes;
+        }
+
         public void executeCommand(Command command) {
                 command.execute();
                 commandHistory.push(command);

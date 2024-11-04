@@ -34,6 +34,11 @@ public class PaintPanel extends Canvas implements EventHandler<MouseEvent>, Obse
      *  Controller aspect of this
      */
     public void setMode(String mode){
+        if (mode.equals("select")) {
+            this.mode = "select";
+            this.strategy = new SelectStrategy(this.model);
+            return;
+        }
         this.strategy = shapeFactory.makeStrategy(mode);
         this.mode = mode;
     }
