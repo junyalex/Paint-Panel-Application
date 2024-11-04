@@ -30,4 +30,6 @@ public abstract class Shape {
     public int getThickness() {
         return this.thickness;
     }
+
+    public abstract boolean contains(Point selectPoint);
 }

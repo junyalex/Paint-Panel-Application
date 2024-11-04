@@ -37,6 +37,13 @@ public class Rectangle extends Shape{
         return Math.abs(corner2.getY() - corner1.getY());
     }
 
+    @Override
+    public boolean contains(Point selectPoint) {
+        boolean X = corner1.x < selectPoint.x && selectPoint.x < corner2.x;
+        boolean Y = corner1.y < selectPoint.y && selectPoint.y < corner2.y;
+        return (X && Y);
+    }
+
 
     @Override
     public DrawStrategy getDrawStrategy() {

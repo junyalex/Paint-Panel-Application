@@ -19,6 +19,22 @@ public class Scribble extends Shape {
     }
 
     @Override
+    public boolean contains(Point selectPoint) {
+        double offset = 3;
+
+        for (Point point : points) {
+            double X = point.x - selectPoint.x;
+            double Y = point.y - selectPoint.y;
+            double distance = Math.sqrt(Math.pow(X, 2) + Math.pow(Y, 2));
+
+            if (distance <= offset) {
+                return true;
+            }
+        }
+        return false;
+    }
+
+    @Override
     public DrawStrategy getDrawStrategy() {
         return new ScribbleDrawStrategy();
     }
