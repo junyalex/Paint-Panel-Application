@@ -49,6 +49,24 @@ public class Triangle extends Shape{
         this.color = color;
     }
 
+
+    //using area approach
+    @Override
+    public boolean contains(Point selectPoint) {
+        double area = area(point1, point2, point3);
+        double area1 = area(selectPoint, point2, point3);
+        double area2 = area(point1, selectPoint, point3);
+        double area3 = area(point1, point2, selectPoint);
+        return Math.abs(area - (area1 + area2 + area3)) < 0.1;
+    }
+
+    private double area(Point p1, Point p2, Point p3) {
+        double A1 = p1.getX() * (p2.getY() - p3.getY());
+        double A2 = p2.getX() * (p3.getY() - p1.getY());
+        double A3 = p3.getX() * (p1.getY() - p2.getY());
+        return Math.abs((A1 + A2 + A3) / 2.0);
+    }
+
     @Override
     public DrawStrategy getDrawStrategy() {
         return new TriangleDrawStrategy();
