@@ -39,6 +39,15 @@ public class Oval extends Shape {
         this.radiusY = radiusY;
     }
 
+    //based on ellipse equation
+    @Override
+    public boolean contains(Point point){
+        double X = (point.x - centre.x) / radiusX;
+        double Y = (point.y - centre.y) / radiusY;
+        return (Math.pow(X, 2) + Math.pow(Y, 2)) <= 1;
+    }
+
+    @Override
     public DrawStrategy getDrawStrategy() {
         return new OvalDrawStrategy();
     }

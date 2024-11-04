@@ -27,6 +27,12 @@ public class Square extends Shape {
         this.dim = dim;
     }
 
+    @Override
+    public boolean contains(Point selectPoint) {
+        boolean X = corner.x < selectPoint.x && selectPoint.x < corner.x + dim;
+        boolean Y = corner.y < selectPoint.y && selectPoint.y < corner.y + dim;
+        return (X && Y);
+    }
 
     @Override
     public DrawStrategy getDrawStrategy() {
