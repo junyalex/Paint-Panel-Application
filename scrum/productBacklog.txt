@@ -14,19 +14,18 @@
 # Please change the status of the user story/bug to 
 #     NotStarted,InProgress, Incomplete,Complete
 # as appropriate.
+
 --------------------------------------------------------------------------
-TYPE     : USER STORY US?.0010 : leerya41 : NotStarted
-NAME     : add a selector mode
+TYPE     : USER STORY US?.002 : leerya41 : NotStarted
+NAME     : Highlight selected Shape
 PRIORITY : 3
-ESTIMATE : (2 hours)    ACTUAL :
+ESTIMATE : (1 hours)    ACTUAL :
 AS A     : user
-I WANT   : To be able to select a existing shape on the board
-                Example:
-                -select select mode
-           		-click a shape and have it have an indicator appropriate to
-           		indicate which shape is chosen
-           		-apply modifications to shapes based on other modes that will be implemented
-SO THAT  : I can implement user story 3.002-005 to modify the existing shape
+I WANT   : -select selection mode
+           - click a shape
+           - the shape will be highlighted to indicate it has been selected
+
+SO THAT  :I can see what shape I have selected
 --------------------------------------------------------------------------
 --------------------------------------------------------------------------
 TYPE     : USER STORY US?.0011 : leerya41 : NotStarted
@@ -433,6 +432,22 @@ I WANT   : To be able to select the current line thickness, to be applied
            	results in two thinly outlined circles and a thinly outlined
            	rectangle as well as two thickly outlined rectangles and a thick squiggle
 SO THAT  :  User can choose thickness
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+TYPE     : USER STORY US3.0010 : leerya41 : NotStarted
+NAME     : add a selector mode
+PRIORITY : 3
+ESTIMATE : (2 hours)    ACTUAL : 4 hours
+AS A     : user
+I WANT   : To be able to select a existing shape on the board
+                Example:
+                -select select mode
+           		-click a shape and have it have an indicator appropriate to
+           		indicate which shape is chosen
+           		-apply modifications to shapes based on other modes that will be implemented
+SO THAT  : I can implement user story Move shape mode, resize shape mode
+change shape color, remove shape mode, Hover over shape and Highlight selected Shape
+ to modify the existing shape
 --------------------------------------------------------------------------
 --------------------------------------------------------------------------
 # OMITTED USER STORIES/BUGS BELOW   ###########################################
