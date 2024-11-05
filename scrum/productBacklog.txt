@@ -16,7 +16,7 @@
 # as appropriate.
 
 --------------------------------------------------------------------------
-TYPE     : USER STORY US?.002 : leerya41 : NotStarted
+TYPE     : USER STORY US?.0022 : leerya41 : NotStarted
 NAME     : Highlight selected Shape
 PRIORITY : 3
 ESTIMATE : (1 hours)    ACTUAL :
