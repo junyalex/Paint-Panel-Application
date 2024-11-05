@@ -115,9 +115,9 @@ Nov 3,2024
 	Obstacles I face: None.
 
 Nov 4,2024
-	What I did yesterday:
-	What I will do today:
-	Obstacles I face:
+	What I did yesterday: review code
+	What I will do today: try to change some writing based on feedback
+	Obstacles I face: None.
 
 Nov 5,2024
 	What I did yesterday:
