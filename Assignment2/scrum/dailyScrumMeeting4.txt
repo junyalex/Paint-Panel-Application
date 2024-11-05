@@ -116,9 +116,10 @@ Nov 3,2024
 	Obstacles I face: No obstacles
 
 Nov 4,2024
-	What I did yesterday:
-	What I will do today:
-	Obstacles I face:
+	What I did yesterday:Looked at the new changes added
+	What I will do today:Read the instructions on sprint 4 and see
+	what should be done.
+	Obstacles I face: No obstacles
 
 Nov 5,2024
 	What I did yesterday:
