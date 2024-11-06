@@ -42,25 +42,6 @@ I WANT   : To be able to move an existing shape to a new location
 SO THAT  : so the user can move an existing shape
 --------------------------------------------------------------------------
 --------------------------------------------------------------------------
-TYPE     : USER STORY US?.0012 : leerya41 : NotStarted
-NAME     : resize shape mode
-PRIORITY : 3
-ESTIMATE : (4 hours)    ACTUAL :
-AS A     : user
-I WANT   : To be able to modify the dimensions of an existing shape
-                Example:
-           		-select desired shape using select mode and enter resize mode
-           		-an indicator perhaps dotted outline will appear that
-           		the shape is selected and ready to be changed with dots on each direction
-           		it can be resized to
-           		-drag the dots around the shape in any way you see fit to change modify the
-           		dimensions of the shape
-           		-the shape will resize according to the parameters of the resized area
-           	results: in a resized shape
-SO THAT  : the user can modify the dimensions of a shape
-
---------------------------------------------------------------------------
---------------------------------------------------------------------------
 TYPE     : USER STORY US?.0013 : leerya41 : NotStarted
 NAME     : change shape color
 PRIORITY : 3
@@ -451,4 +432,23 @@ change shape color, remove shape mode, Hover over shape and Highlight selected S
 --------------------------------------------------------------------------
 --------------------------------------------------------------------------
 # OMITTED USER STORIES/BUGS BELOW   ###########################################
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+TYPE     : USER STORY US?.0012 : leerya41 : NotStarted
+NAME     : resize shape mode
+PRIORITY : 3
+ESTIMATE : (4 hours)    ACTUAL :
+AS A     : user
+I WANT   : To be able to modify the dimensions of an existing shape
+                Example:
+           		-select desired shape using select mode and enter resize mode
+           		-an indicator perhaps dotted outline will appear that
+           		the shape is selected and ready to be changed with dots on each direction
+           		it can be resized to
+           		-drag the dots around the shape in any way you see fit to change modify the
+           		dimensions of the shape
+           		-the shape will resize according to the parameters of the resized area
+           	results: in a resized shape
+SO THAT  : the user can modify the dimensions of a shape
+
 --------------------------------------------------------------------------
