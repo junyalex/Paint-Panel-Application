@@ -135,6 +135,58 @@ I WANT   : most of features to be appear on start screen ( shapes , color, thick
 SO THAT  : Users can access to features easily
 --------------------------------------------------------------------------
 --------------------------------------------------------------------------
+TYPE     : BUG BUG4.002 : mbagayaa : In progress
+NAME     : Canvas Size
+PRIORITY : 2
+ESTIMATE : 4 hours    ACTUAL :
+ISSUE    : The drawable area of the canvas is too small and
+           it doesn't dynamically change with the increase of the window size. Need to
+           implement the canvas that is flexible and is able to change its size with
+           changes in the window size.
+
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+TYPE     : USER STORY US4.003 : UTORID : NotStarted
+NAME     : Change Shape Colour
+PRIORITY : 3
+ESTIMATE : 1 day    ACTUAL :
+ISSUE    : After having drawn a shape on the canvas a user is unable to
+          to change its colour. Need to implement the option of selecting
+          the existing shape on the canvas and modifying its colour.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+TYPE     : USER STORY US4.004 : leerya41 : NotStarted
+NAME     : add a selector mode
+PRIORITY : 1
+ESTIMATE : (2 hours)    ACTUAL : 4 hours
+AS A     : user
+I WANT   : To be able to select a existing shape on the board
+                Example:
+                -select mode
+           		-click a shape and have it have an indicator appropriate to
+           		indicate which shape is chosen
+           		-apply modifications to shapes based on other modes that will be implemented
+SO THAT  : I can implement user story Move shape mode, resize shape mode
+change shape color, remove shape mode, Hover over shape and Highlight selected Shape
+ to modify the existing shape
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+TYPE     : USER STORY US4.005 : UTORID : NotStarted
+NAME     : Cut, Copy and Paste
+PRIORITY : 3
+ESTIMATE : 1 day    ACTUAL :
+SO THAT  : User can move or duplicate shapes without redrawing them. The cut option
+removes a selected shape from the canvas, the copy option makes a temporary copy of the shape
+and the paste option allows for the copied shape to be placed on the canvas.
+--------------------------------------------------------------------------
+TYPE     : USER STORY US4.006 : UTORID : NotStarted
+NAME     : New, Open, and Save
+PRIORITY : 3
+ESTIMATE : 1 day    ACTUAL :
+SO THAT  : User can be able to start a new canvas,save the current canvas that they are working on and
+           reopen it later without losing it.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
 # COMPLETED USER STORIES/BUGS BELOW ###########################################
 --------------------------------------------------------------------------
 --------------------------------------------------------------------------
