@@ -123,7 +123,7 @@ I WANT   : To be able to select the current line thickness, to be applied
 SO THAT  :  User can choose thickness
 --------------------------------------------------------------------------
 --------------------------------------------------------------------------
-TYPE     : USER STORY US3.0010 : leerya41 : NotStarted
+TYPE     : USER STORY US3.0010 : leerya41 : Completed
 NAME     : add a selector mode
 PRIORITY : 3
 ESTIMATE : (2 hours)    ACTUAL : 4 hours
