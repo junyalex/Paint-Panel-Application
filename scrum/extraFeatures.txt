@@ -1,13 +1,13 @@
 (replicate sections below for each feature you want to highlight)
 --------------------------------------------------------------------------------
-FeatureName: (name)
+FeatureName: Undo / Redo
 
 Description: 
-	(describe the feature)
+	Users can undo / redo shapes they draw by selecting Edit -> Undo / Redo
 
 
 Reference: 
-	(list of the BUG/US involved in creating this feature)
+	US3.0020, US3.0021
 --------------------------------------------------------------------------------
 FeatureName: (name)
 
