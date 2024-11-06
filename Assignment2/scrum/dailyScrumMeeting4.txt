@@ -122,14 +122,14 @@ Nov 4,2024
 	Obstacles I face: No obstacles
 
 Nov 5,2024
-	What I did yesterday:
-	What I will do today:
-	Obstacles I face:
+	What I did yesterday:Looked at the new changes added
+	What I will do today:Have a meeting with my colleagues and discuss what needs to be done for sprint 4.
+	Obstacles I face: No obstacles
 
 Nov 6,2024
-	What I did yesterday:
-	What I will do today:
-	Obstacles I face:
+	What I did yesterday: Had a meeting with my colleagues
+	What I will do today: Add user stories to sprint 4 and the product backlog, start working on US 4.002.
+	Obstacles I face:No obstacles
 
 Nov 7,2024
 	What I did yesterday:

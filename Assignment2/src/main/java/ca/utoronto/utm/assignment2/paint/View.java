@@ -9,24 +9,36 @@ import javafx.scene.control.MenuBar;
 import javafx.scene.control.MenuItem;
 import javafx.scene.control.SeparatorMenuItem;
 import javafx.scene.layout.BorderPane;
+import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
+import javafx.geometry.Insets;
 
 public class View implements EventHandler<ActionEvent> {
 
         private PaintModel paintModel;
         private PaintPanel paintPanel;
         private ShapeChooserPanel shapeChooserPanel;
+        private UndoRedoPanel undoRedoPanel;
+        private ColorChooserPanel colorChooserPanel;
+        private FunctionChooserPanel functionChooserPanel;
 
         public View(PaintModel model, Stage stage) {
             this.paintModel = model;
-
+            this.undoRedoPanel = new UndoRedoPanel(this);
             this.paintPanel = new PaintPanel(this.paintModel);
+            this.colorChooserPanel = new ColorChooserPanel(this);
             this.shapeChooserPanel = new ShapeChooserPanel(this);
+            this.functionChooserPanel = new FunctionChooserPanel(this);
 
+            VBox vBox = new VBox(10);
+            vBox.getChildren().addAll(this.functionChooserPanel, this.shapeChooserPanel,
+                    this.undoRedoPanel, this.colorChooserPanel);
+            vBox.setPadding(new Insets(5, 5, 5, 5));
             BorderPane root = new BorderPane();
             root.setTop(createMenuBar());
             root.setCenter(this.paintPanel);
-            root.setLeft(this.shapeChooserPanel);
+            root.setLeft(vBox);
+
             Scene scene = new Scene(root);
             stage.setScene(scene);
             stage.setTitle("Paint");
@@ -85,45 +97,6 @@ public class View implements EventHandler<ActionEvent> {
 
                 menuItem = new MenuItem("Paste");
                 menuItem.setOnAction(this);
-                menu.getItems().add(menuItem);
-
-                menu.getItems().add(new SeparatorMenuItem());
-                menuItem = new MenuItem("Undo");
-                menuItem.setOnAction(new undoEventHandler(this.paintModel));
-                menu.getItems().add(menuItem);
-
-                menuItem = new MenuItem("Redo");
-                menuItem.setOnAction(new redoEventHandler(this.paintModel));
-                menu.getItems().add(menuItem);
-
-                menuBar.getMenus().add(menu);
-
-                // For color
-                menu = new Menu("Color");
-                ColorEventHandler colorEventHandler = new ColorEventHandler();
-                menuItem = new MenuItem("Red");
-                menuItem.setStyle("-fx-text-fill: red;");
-                menuItem.setOnAction(colorEventHandler);
-                menu.getItems().add(menuItem);
-
-                menuItem = new MenuItem("Orange");
-                menuItem.setStyle("-fx-text-fill: orange;");
-                menuItem.setOnAction(colorEventHandler);
-                menu.getItems().add(menuItem);
-
-                menuItem = new MenuItem("Yellow");
-                menuItem.setStyle("-fx-text-fill: goldenrod;");
-                menuItem.setOnAction(colorEventHandler);
-                menu.getItems().add(menuItem);
-
-                menuItem = new MenuItem("Green");
-                menuItem.setStyle("-fx-text-fill: green;");
-                menuItem.setOnAction(colorEventHandler);
-                menu.getItems().add(menuItem);
-
-                menuItem = new MenuItem("Blue");
-                menuItem.setStyle("-fx-text-fill: blue;");
-                menuItem.setOnAction(colorEventHandler);
                 menu.getItems().add(menuItem);
 
                 menuBar.getMenus().add(menu);
