@@ -126,6 +126,15 @@ I WANT   : To be able to select a existing text and change its font
 SO THAT  :
 --------------------------------------------------------------------------
 --------------------------------------------------------------------------
+TYPE     : USER STORY US4.001 : leehoju7 : In Progress
+NAME     : change UI
+PRIORITY : 3
+ESTIMATE : (3 hours)    ACTUAL :
+AS A     : user
+I WANT   : most of features to be appear on start screen ( shapes , color, thickness, undo, redo)
+SO THAT  : Users can access to features easily
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
 # COMPLETED USER STORIES/BUGS BELOW ###########################################
 --------------------------------------------------------------------------
 --------------------------------------------------------------------------

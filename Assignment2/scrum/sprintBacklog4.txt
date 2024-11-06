@@ -4,4 +4,12 @@
 
 # Sprint 4 Nov 10-Nov 10, 2024
 # Sprint 4 Backlog UserStories go below
-
+--------------------------------------------------------------------------
+TYPE     : USER STORY US4.001 : leehoju7 : In Progress
+NAME     : change UI
+PRIORITY : 3
+ESTIMATE : (3 hours)    ACTUAL : 3
+AS A     : user
+I WANT   : Most features to appear on start screen ( shapes , color, thickness, undo, redo)
+SO THAT  : Users can access to features easily
+--------------------------------------------------------------------------
