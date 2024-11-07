@@ -28,20 +28,6 @@ I WANT   : -select selection mode
 SO THAT  :I can see what shape I have selected
 --------------------------------------------------------------------------
 --------------------------------------------------------------------------
-TYPE     : USER STORY US?.0011 : leerya41 : NotStarted
-NAME     : Move shape mode
-PRIORITY : 3
-ESTIMATE : (4 hours)    ACTUAL :
-AS A     : user
-I WANT   : To be able to move an existing shape to a new location
-                Example:
-           		-select desired shape using select mode and enter move mode
-           		-drag the shape to new location from its center
-           		-the shape will relocate to new position when mouse is released
-           	results: in a relocated shape
-SO THAT  : so the user can move an existing shape
---------------------------------------------------------------------------
---------------------------------------------------------------------------
 TYPE     : USER STORY US?.0013 : leerya41 : NotStarted
 NAME     : change shape color
 PRIORITY : 3
@@ -155,20 +141,16 @@ ISSUE    : After having drawn a shape on the canvas a user is unable to
           the existing shape on the canvas and modifying its colour.
 --------------------------------------------------------------------------
 --------------------------------------------------------------------------
-TYPE     : USER STORY US4.004 : leerya41 : NotStarted
-NAME     : add a selector mode
-PRIORITY : 1
-ESTIMATE : (2 hours)    ACTUAL : 4 hours
-AS A     : user
-I WANT   : To be able to select a existing shape on the board
-                Example:
-                -select mode
-           		-click a shape and have it have an indicator appropriate to
-           		indicate which shape is chosen
-           		-apply modifications to shapes based on other modes that will be implemented
-SO THAT  : I can implement user story Move shape mode, resize shape mode
-change shape color, remove shape mode, Hover over shape and Highlight selected Shape
- to modify the existing shape
+TYPE     : USER STORY US4.004 : leehoju7 : In Progress
+NAME     : Move shape
+PRIORITY : 3
+ESTIMATE : 1 day    ACTUAL :
+AS A     : userqq
+I WANT   : -select desired shape using select mode and enter move mode
+           -drag the shape to new location from its center
+           -the shape will relocate to new position when mouse is released
+                      	results: in a relocated shape
+SO THAT  : Users can move shapes to wherever they want.
 --------------------------------------------------------------------------
 --------------------------------------------------------------------------
 TYPE     : USER STORY US4.005 : UTORID : NotStarted
@@ -185,6 +167,15 @@ PRIORITY : 3
 ESTIMATE : 1 day    ACTUAL :
 SO THAT  : User can be able to start a new canvas,save the current canvas that they are working on and
            reopen it later without losing it.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+TYPE     : USER STORY US4.007 : leehoju7 : In Progress
+NAME     : Move shape
+PRIORITY : 3
+ESTIMATE : 1 day    ACTUAL : 1 day
+AS A     : user
+I WANT   : Users can move selected shape by dragging them.
+SO THAT  : Users can move shapes to wherever they want.
 --------------------------------------------------------------------------
 --------------------------------------------------------------------------
 # COMPLETED USER STORIES/BUGS BELOW ###########################################
@@ -476,7 +467,7 @@ I WANT   : To be able to select the current line thickness, to be applied
 SO THAT  :  User can choose thickness
 --------------------------------------------------------------------------
 --------------------------------------------------------------------------
-TYPE     : USER STORY US3.0010 : leerya41 : NotStarted
+TYPE     : USER STORY US3.0010 : leerya41 : Completed
 NAME     : add a selector mode
 PRIORITY : 3
 ESTIMATE : (2 hours)    ACTUAL : 4 hours
