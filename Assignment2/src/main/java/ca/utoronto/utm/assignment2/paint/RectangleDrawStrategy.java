@@ -39,23 +39,31 @@ public class RectangleDrawStrategy implements DrawStrategy{
 
     @Override
     public void draw(Shape shape, GraphicsContext g2d, String currStyle) {
-        //Rectangle r = (Rectangle )model.getShape().getLast();
         Rectangle r = (Rectangle) shape;
-        //added
 
         double corner_x = Math.min(r.getCorner1().getX(), r.getCorner2().getX());
         double corner_y = Math.min(r.getCorner1().getY(), r.getCorner2().getY());
         double width = r.getWidth();
         double height = r.getHeight();
-        if(currStyle.equals("Outlined")){
+
+        if(r.getFillStyle().equals("Outlined")){
+            if(r.isSelected()){g2d.setLineDashes(5, r.getThickness() * 2);}
             g2d.setStroke(r.getColor());
             g2d.setLineWidth(r.getThickness());
             g2d.strokeRect(corner_x, corner_y, width, height);
         }
-        else if(currStyle.equals("Filled")) {
+        else if(r.getFillStyle().equals("Filled")) {
             g2d.setFill(r.getColor());
             g2d.fillRect(corner_x, corner_y, width, height);
+
+            if(r.isSelected()){
+                g2d.setLineDashes(5, 5);
+                g2d.setStroke(r.getColor().darker());
+                g2d.setLineWidth(3);
+                g2d.strokeRect(corner_x, corner_y, width, height);
+            }
         }
+        g2d.setLineDashes();
     }
 
 }
