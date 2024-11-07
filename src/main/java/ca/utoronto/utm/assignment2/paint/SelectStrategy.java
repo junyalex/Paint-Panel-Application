@@ -6,46 +6,64 @@ import javafx.scene.input.MouseEvent;
 
 import java.util.ArrayList;
 
-public class SelectStrategy implements DrawStrategy{
+public class SelectStrategy implements DrawStrategy {
     private PaintModel model;
-    private Point SelectPoint;
     private ArrayList<Shape> shapes;
-    private SelectMode currSelectMode;
+    private boolean dragging = false;
+    private Shape selectedShape = null;
+    private SelectMode mode;
+    private Point currPoint;
+    private Point initialPoint;
+    private Point originalPoint;
 
     public SelectStrategy(PaintModel model) {
         super();
         this.model = model;
         shapes = model.getShapes();
+        this.mode = SelectMode.getInstance();
     }
 
     @Override
     public void onMousePressed(MouseEvent e, PaintModel model) {
-        SelectPoint = new Point(e.getX(), e.getY());
-        boolean contains = false;
-        for (int index = shapes.size()-1; index >=0 && !contains; index--) {
-            Shape shape = shapes.get(index);
-            if (shape.contains(SelectPoint)) {
+        this.selectedShape = SelectMode.getSelectedShape();
+
+        // if selectedShape & and clicked above the shape -> dragging mode
+        if (this.selectedShape != null && this.selectedShape.contains(currPoint)) {
+            dragging = true;
+            return;
+        }
+
+        // if there is no selectedShape, then select it
+        for (Shape shape : shapes) {
+            if (shape.contains(currPoint)) {
                 SelectMode.setSelectedShape(shape, model);
+                this.selectedShape = shape;
                 System.out.println("Shape selected: " + shape);
-                contains = true;
                 break;
             }
-        }
-        if (!contains) {
-            System.out.println("No valid shape selected");
-            SelectMode.clearSelection(model);
+
         }
     }
 
-    @Override
-    public void onMouseDragged(MouseEvent e, PaintModel model) {
-    }
+        @Override
+        public void onMouseDragged (MouseEvent e, PaintModel model) {
+            if (dragging && this.selectedShape != null) {
 
-    @Override
-    public void onMouseReleased(MouseEvent e, PaintModel model) {
-    }
 
-    @Override
-    public void draw(Shape shape, GraphicsContext g2d, String currStyle) {
-    }
-}
+            }
+        }
+
+            @Override
+            public void onMouseReleased (MouseEvent e, PaintModel model){
+                if (selectedShape != null && dragging) {
+
+
+                }
+
+
+            }
+
+            @Override
+            public void draw (Shape shape, GraphicsContext g2d, String currStyle){
+            }
+        }
