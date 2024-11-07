@@ -11,6 +11,7 @@ public class PaintModel extends Observable {
         private Stack<Command> undoHistory = new Stack<>();
         private ArrayList<Shape> shapes = new ArrayList<>();
         private ArrayList<Shape> PreviewShapes = new ArrayList<>();
+        private  Shape selectedShape;
 
         public ArrayList<Shape> getShapes() {
                 return shapes;
@@ -58,6 +59,12 @@ public class PaintModel extends Observable {
 
         public void addShapePreview(Shape s){
                 PreviewShapes.add(s);
+                this.setChanged();
+                this.notifyObservers();
+        }
+
+        public void setSelectedShape(Shape s){
+                this.selectedShape = s;
                 this.setChanged();
                 this.notifyObservers();
         }

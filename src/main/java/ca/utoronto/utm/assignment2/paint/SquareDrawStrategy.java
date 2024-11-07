@@ -62,6 +62,8 @@ public class SquareDrawStrategy implements DrawStrategy {
         double y = s.getCorner().y;
         double dim = s.getDim();
         if(currStyle.equals("Outlined")) {
+            if(s.isSelected()){g2d.setLineDashes(5, s.getThickness() * 2);}
+
             g2d.setStroke(s.getColor());
             g2d.setLineWidth(s.getThickness());
             g2d.strokeRect(x, y, dim, dim);
@@ -69,6 +71,14 @@ public class SquareDrawStrategy implements DrawStrategy {
         else if(currStyle.equals("Filled")) {
             g2d.setFill(s.getColor());
             g2d.fillRect(x, y, dim, dim);
+
+            if(s.isSelected()){
+                g2d.setLineDashes(5, 5);
+                g2d.setStroke(s.getColor().darker());
+                g2d.setLineWidth(3);
+                g2d.strokeRect(x, y, dim, dim);
+            }
         }
+        g2d.setLineDashes();
     }
 }

@@ -10,6 +10,7 @@ public class Triangle extends Shape{
     private Color color;
 
     public Triangle(Point point1, Point point2, Point point3) {
+        super();
         this.point1 = point1;
         this.point2 = point2;
         this.point3 = point3;

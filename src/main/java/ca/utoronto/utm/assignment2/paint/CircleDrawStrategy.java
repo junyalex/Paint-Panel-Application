@@ -43,7 +43,9 @@ public class CircleDrawStrategy implements DrawStrategy{
         double x = c.getCentre().x;
         double y = c.getCentre().y;
         double radius = c.getRadius();
+
         if(currStyle.equals("Outlined")){
+            if(c.isSelected()){g2d.setLineDashes(5, c.getThickness() * 2);}
             g2d.setStroke(c.getColor());
             g2d.setLineWidth(c.getThickness());
             g2d.strokeOval(x - radius, y - radius, radius * 2, radius * 2);
@@ -51,6 +53,14 @@ public class CircleDrawStrategy implements DrawStrategy{
         else if(currStyle.equals("Filled")) {
             g2d.setFill(c.getColor());
             g2d.fillOval(x - radius, y - radius, radius * 2, radius * 2);
+
+            if(c.isSelected()){
+                g2d.setLineDashes(5, 5);
+                g2d.setStroke(c.getColor().darker());
+                g2d.setLineWidth(3);
+                g2d.strokeOval(x - radius, y - radius, radius * 2, radius * 2);
+            }
         }
+        g2d.setLineDashes();
     }
 }

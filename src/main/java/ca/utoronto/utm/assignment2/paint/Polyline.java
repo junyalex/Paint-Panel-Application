@@ -9,6 +9,7 @@ public class Polyline extends Shape{
     public static Boolean newPoly = true;
 
     public Polyline(){
+        super();
         this.points = new ArrayList<>();
     }
 
@@ -22,7 +23,7 @@ public class Polyline extends Shape{
 
     @Override
     public boolean contains(Point selectPoint) {
-        double offset = 3;
+        double offset = this.getThickness()/2;
 
         for (int i = 0; i < points.size() - 1; i++) {
             Point p1 = points.get(i);

@@ -7,6 +7,7 @@ public class Square extends Shape {
     private double dim;
 
     public Square(Point corner, int dim){
+        super();
         this.corner = corner;
         this.dim = dim;
     }

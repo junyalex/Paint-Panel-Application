@@ -53,8 +53,21 @@ public class PolylineDrawStrategy implements DrawStrategy {
     public void draw(Shape shape, GraphicsContext g2d, String currStyle){
         Polyline p = (Polyline) shape;
         ArrayList<Point> points = p.getPoints();
+
+        if(p.isSelected()){
+            g2d.setLineWidth(p.getThickness() + 5);
+            g2d.setStroke(p.getColor().darker());
+
+            for (int i = 0; i < points.size() - 1; i++) {
+                Point p1 = points.get(i);
+                Point p2 = points.get(i + 1);
+                g2d.strokeLine(p1.x, p1.y, p2.x, p2.y);
+            }
+        }
+
         g2d.setStroke(p.getColor());
         g2d.setLineWidth(p.getThickness());
+
         for(int i = 0; i < points.size() - 1; i++) {
             Point p1 = points.get(i);
             if(p1 == null) continue;
@@ -62,7 +75,5 @@ public class PolylineDrawStrategy implements DrawStrategy {
             if(p2 == null) continue;
             g2d.strokeLine(p1.getX(), p1.getY(), p2.getX(), p2.getY());
         }
-
-
     }
 }
