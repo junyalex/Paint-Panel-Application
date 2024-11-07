@@ -9,7 +9,7 @@ import javafx.scene.layout.VBox;
 
 import java.util.ArrayList;
 
-public class FunctionChooserPanel  extends GridPane implements EventHandler<ActionEvent> {
+public class FunctionChooserPanel  extends VBox implements EventHandler<ActionEvent> {
 
     private View view;
     private Button highlightedButton = null;
@@ -18,10 +18,6 @@ public class FunctionChooserPanel  extends GridPane implements EventHandler<Acti
 
     public FunctionChooserPanel(View view) {
         this.view = view;
-
-        Button select = new Button("Select");
-        select.setStyle("-fx-font-size: 8px;");
-        buttons.add(select);
         Button copy = new Button("\uD83D\uDCCB");
         buttons.add(copy);
         Button cut = new Button("✂");
@@ -30,39 +26,25 @@ public class FunctionChooserPanel  extends GridPane implements EventHandler<Acti
         buttons.add(paste);
 
         for (Button button : buttons) {
-            button.setMinWidth(33);
-            button.setMinHeight(33);
-            button.setMaxWidth(33);
-            button.setMaxHeight(33);
+            button.setMinWidth(30);
+            button.setMinHeight(30);
+            button.setMaxWidth(30);
+            button.setMaxHeight(30);
             button.setOnAction(this);
             button.setPadding(new Insets(0));
         }
-        this.add(select, 0, 0);
-        this.add(copy, 1, 0);
-        this.add(paste, 0, 1);
-        this.add(cut, 1, 1);
-
+        this.getChildren().addAll(copy, cut, paste);
     }
 
     @Override
     public void handle(ActionEvent event) {
         Button clickedButton = (Button) event.getSource();
-        String text=  clickedButton.getText();
 
         if (lastButton != null) {
-            if (lastButton.getText().equals("Select")) {
-                lastButton.setStyle("-fx-font-size: 8px;");
-            } else {
-                lastButton.setStyle("");
-            }
+            lastButton.setStyle("");
         }
 
-        if (text.equals("Select")) {
-            clickedButton.setStyle("-fx-background-color: lightgreen; -fx-font-size: 8px;");
-        } else {
-            clickedButton.setStyle("-fx-background-color: lightgreen;");
-        }
-
+        clickedButton.setStyle("-fx-background-color: lightgreen;");
         lastButton = clickedButton;
     }
 }

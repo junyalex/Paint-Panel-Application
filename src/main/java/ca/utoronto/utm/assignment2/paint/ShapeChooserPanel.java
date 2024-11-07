@@ -18,6 +18,12 @@ public class ShapeChooserPanel extends GridPane implements EventHandler<ActionEv
                 buttons = new ArrayList<>();
                 String[] buttonLabels = {"◯", "ㅁ", "□", "⬭","△", "〜", "ㄴ"};
 
+                Button select = new Button("Select");
+                select.setMinSize(60, 30);  // 두 버튼 크기만큼
+                this.add(select, 0, 0, 2, 1);  // 2칸을 차지하도록
+                buttons.add(select);
+                select.setOnAction(this);
+
                 for (int i = 0; i < buttonLabels.length; i++) {
                         Button button = new Button(buttonLabels[i]);
                         button.setMinSize(30, 30);
