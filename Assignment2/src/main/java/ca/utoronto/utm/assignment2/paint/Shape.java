@@ -7,9 +7,11 @@ public abstract class Shape {
     private Color color;
     private final String fillStyle;
     private int thickness;
+    private boolean selected;
 
     public Shape(){
         fillStyle = FillStyleManager.getInstance().getStyle();
+        this.selected = false;
     }
 
     public abstract DrawStrategy getDrawStrategy();
@@ -30,6 +32,10 @@ public abstract class Shape {
     public int getThickness() {
         return this.thickness;
     }
+
+    public boolean isSelected() {return this.selected;}
+
+    public void setSelected(boolean selected) {this.selected = selected;}
 
     public abstract boolean contains(Point selectPoint);
 }

@@ -64,8 +64,9 @@ public class TriangleDrawStrategy implements DrawStrategy {
         double[] xPoints = { t.getPoint1().getX(), t.getPoint2().getX(), t.getPoint3().getX() };
         double[] yPoints = { t.getPoint1().getY(), t.getPoint2().getY(), t.getPoint3().getY() };
 
-
         if(currStyle.equals("Outlined")){
+            if(t.isSelected()){g2d.setLineDashes(5, t.getThickness() * 2);}
+
             g2d.setStroke(t.getColor());
             g2d.setLineWidth(t.getThickness());
             g2d.strokePolygon(xPoints, yPoints, 3);
@@ -73,6 +74,14 @@ public class TriangleDrawStrategy implements DrawStrategy {
         else if(currStyle.equals("Filled")) {
             g2d.setFill(t.getColor());
             g2d.fillPolygon(xPoints, yPoints, 3);
+
+            if(t.isSelected()){
+                g2d.setLineDashes(5, 5);
+                g2d.setStroke(t.getColor().darker());
+                g2d.setLineWidth(3);
+                g2d.strokePolygon(xPoints, yPoints, 3);
+            }
         }
+        g2d.setLineDashes();
     }
 }

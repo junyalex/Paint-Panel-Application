@@ -9,8 +9,10 @@ public class Rectangle extends Shape{
     private Point corner2;
 
     public Rectangle(Point corner1, Point corner2) {
+        super();
         this.corner1 = corner1;
         this.corner2 = corner2;
+        this.setSelected(false);
     }
 
     public Point getCorner1() {

@@ -47,14 +47,29 @@ public class ScribbleDrawStrategy implements DrawStrategy {
     @Override
     public void draw(Shape shape, GraphicsContext g2d, String currStyle) {
         Scribble scribble = (Scribble) shape;
-        g2d.setLineWidth(scribble.getThickness());
-        g2d.setStroke(scribble.getColor());
         ArrayList<Point> points = scribble.getPoints();
-            for (int i = 0; i < points.size() - 1 ; i++){
+
+        if(scribble.isSelected()){
+            g2d.setLineWidth(scribble.getThickness() + 5);
+            g2d.setStroke(scribble.getColor().darker());
+
+            for (int i = 0; i < points.size() - 1; i++) {
                 Point p1 = points.get(i);
-                Point p2 = points.get(i+1);
+                Point p2 = points.get(i + 1);
                 g2d.strokeLine(p1.x, p1.y, p2.x, p2.y);
             }
         }
+
+        g2d.setLineWidth(scribble.getThickness());
+        g2d.setStroke(scribble.getColor());
+
+        for (int i = 0; i < points.size() - 1 ; i++){
+            Point p1 = points.get(i);
+            Point p2 = points.get(i+1);
+
+            g2d.strokeLine(p1.x, p1.y, p2.x, p2.y);
+        }
     }
+
+}
 

@@ -3,6 +3,8 @@ package ca.utoronto.utm.assignment2.paint;
 import javafx.scene.canvas.GraphicsContext;
 import javafx.scene.input.MouseEvent;
 
+import java.awt.*;
+
 public class OvalDrawStrategy implements DrawStrategy {
     private Oval oval;
     private Point startPoint;
@@ -47,7 +49,9 @@ public class OvalDrawStrategy implements DrawStrategy {
     public void draw(Shape shape, GraphicsContext g2d, String currStyle) {
         Oval o = (Oval) shape;
 
-        if(currStyle.equals("Outlined")) {
+        if(o.getFillStyle().equals("Outlined")) {
+            if(o.isSelected()){g2d.setLineDashes(5, o.getThickness() * 2);}
+
             g2d.setStroke(o.getColor());
             g2d.setLineWidth(o.getThickness());
             g2d.strokeOval(
@@ -57,7 +61,7 @@ public class OvalDrawStrategy implements DrawStrategy {
                     o.getRadiusY() * 2
             );
         }
-        else if (currStyle.equals("Filled")) {
+        else if (o.getFillStyle().equals("Filled")) {
             g2d.setFill(o.getColor());
             g2d.fillOval(
                     o.getCentre().getX() - o.getRadiusX(),
@@ -65,6 +69,18 @@ public class OvalDrawStrategy implements DrawStrategy {
                     o.getRadiusX() * 2,
                     o.getRadiusY() * 2
             );
+            if(o.isSelected()){
+                g2d.setLineDashes(5, 5);
+                g2d.setStroke(o.getColor().darker());
+                g2d.setLineWidth(3);
+                g2d.strokeOval(
+                        o.getCentre().getX() - o.getRadiusX(),
+                        o.getCentre().getY() - o.getRadiusY(),
+                        o.getRadiusX() * 2,
+                        o.getRadiusY() * 2
+                );
+            }
         }
+        g2d.setLineDashes();
     }
 }

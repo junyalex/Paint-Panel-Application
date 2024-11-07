@@ -1,14 +1,16 @@
 package ca.utoronto.utm.assignment2.paint;
 
+import javafx.beans.Observable;
 import javafx.scene.canvas.GraphicsContext;
 import javafx.scene.input.MouseEvent;
 
 import java.util.ArrayList;
 
-public class SelectStrategy implements DrawStrategy {
+public class SelectStrategy implements DrawStrategy{
     private PaintModel model;
     private Point SelectPoint;
     private ArrayList<Shape> shapes;
+    private SelectMode currSelectMode;
 
     public SelectStrategy(PaintModel model) {
         super();
@@ -20,10 +22,10 @@ public class SelectStrategy implements DrawStrategy {
     public void onMousePressed(MouseEvent e, PaintModel model) {
         SelectPoint = new Point(e.getX(), e.getY());
         boolean contains = false;
-        for (int index = 0; index < shapes.size() && !contains; index++) {
+        for (int index = shapes.size()-1; index >=0 && !contains; index--) {
             Shape shape = shapes.get(index);
             if (shape.contains(SelectPoint)) {
-                new SelectMode(shape);
+                SelectMode.setSelectedShape(shape, model);
                 System.out.println("Shape selected: " + shape);
                 contains = true;
                 break;
@@ -31,7 +33,7 @@ public class SelectStrategy implements DrawStrategy {
         }
         if (!contains) {
             System.out.println("No valid shape selected");
-            SelectMode.clearSelection();
+            SelectMode.clearSelection(model);
         }
     }
 
