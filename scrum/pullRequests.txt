@@ -14,4 +14,6 @@ BUG3.005_thickness author : leehoju7 puller : chosun29 status : Completed
 
 US3.0010/selectormode/RL author: leerya41 puller : leehoju7 status: Completed
 
-US4.001 author : leehoju7 puller : chosun29 status Waiting
+US4.001 author : leehoju7 puller : chosun29 status: In Progress
+
+US3.0010 author : chosun29 puller : leehoju7 status: Waiting
