@@ -46,7 +46,8 @@ public class Circle extends Shape{
 
         @Override
         public void move(double x , double y){
-
+                this.centre.x += x;
+                this.centre.y += y;
         }
 
 }

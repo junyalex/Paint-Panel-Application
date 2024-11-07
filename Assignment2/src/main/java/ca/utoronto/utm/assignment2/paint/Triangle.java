@@ -72,5 +72,15 @@ public class Triangle extends Shape{
     public DrawStrategy getDrawStrategy() {
         return new TriangleDrawStrategy();
     }
+
+    @Override
+    public void move(double x , double y){
+        this.point1.setX(this.point1.getX() +x);
+        this.point1.setY(this.point1.getY() +y);
+        this.point2.setX(this.point2.getX() +x);
+        this.point2.setY(this.point2.getY() +y);
+        this.point3.setX(this.point3.getX() +x);
+        this.point3.setY(this.point3.getY() +y);
+    }
 }
 
