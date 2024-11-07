@@ -26,6 +26,8 @@ public class SelectStrategy implements DrawStrategy {
     @Override
     public void onMousePressed(MouseEvent e, PaintModel model) {
         this.selectedShape = SelectMode.getSelectedShape();
+        initialPoint = new Point(e.getX(), e.getY());
+        currPoint = new Point(e.getX(), e.getY());
 
         // if selectedShape & and clicked above the shape -> dragging mode
         if (this.selectedShape != null && this.selectedShape.contains(currPoint)) {
@@ -48,7 +50,14 @@ public class SelectStrategy implements DrawStrategy {
         @Override
         public void onMouseDragged (MouseEvent e, PaintModel model) {
             if (dragging && this.selectedShape != null) {
+                double deltaX = e.getX() - currPoint.x;
+                double deltaY = e.getY() - currPoint.y;
 
+                this.selectedShape.move(deltaX, deltaY);
+
+                model.addShapePreview(this.selectedShape);
+
+                currPoint = new Point(e.getX(), e.getY());
 
             }
         }
@@ -57,9 +66,11 @@ public class SelectStrategy implements DrawStrategy {
             public void onMouseReleased (MouseEvent e, PaintModel model){
                 if (selectedShape != null && dragging) {
 
-
+                    dragging = false;
                 }
-
+                dragging = false;
+                currPoint = null;
+                initialPoint = null;
 
             }
 

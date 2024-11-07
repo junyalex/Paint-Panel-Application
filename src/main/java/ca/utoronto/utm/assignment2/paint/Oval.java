@@ -64,4 +64,10 @@ public class Oval extends Shape {
     public DrawStrategy getDrawStrategy() {
         return new OvalDrawStrategy();
     }
+
+    @Override
+    public void move(double x, double y) {
+            this.centre.x += x;
+            this.centre.y += y;
+        }
 }
