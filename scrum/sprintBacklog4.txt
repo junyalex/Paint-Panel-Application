@@ -42,7 +42,7 @@ AS A     : user
 I WANT   : -select desired shape using select mode and enter move mode
            -drag the shape to new location from its center
            -the shape will relocate to new position when mouse is released
-                      	results: in a relocated shape
+                         results: in a relocated shape
 SO THAT  : Users can move shapes to wherever they want.
 --------------------------------------------------------------------------
 --------------------------------------------------------------------------

@@ -60,7 +60,7 @@ PRIORITY : 2
 ESTIMATE : (1 hour)    ACTUAL : 30 mins
 AS A     : user
 I WANT   : To click on one corner of a square, drag, and release to
-		   specify dimensions of a square to be drawn in the current style.
+         specify dimensions of a square to be drawn in the current style.
 SO THAT  : I can add square to my canvas
 --------------------------------------------------------------------------
 --------------------------------------------------------------------------

@@ -35,10 +35,10 @@ ESTIMATE : (4 hours)    ACTUAL :
 AS A     : user
 I WANT   : To be able to change the color of an existing shape
                 Example:
-           		-select desired shape using select mode
-           		-click the existing color mode
-           		-select color
-           	results in a selected shape being changed to new color
+                 -select desired shape using select mode
+                 -click the existing color mode
+                 -select color
+              results in a selected shape being changed to new color
 SO THAT  : the user can modify shape color of existing shape
 --------------------------------------------------------------------------
 --------------------------------------------------------------------------
@@ -49,9 +49,9 @@ ESTIMATE : (2 hour)    ACTUAL :
 AS A     : user
 I WANT   : To be able to remove an existing shape
                 Example:
-           		-select desired shape using select mode
-           		-click the delete option
-           	results in a selected shape being removed
+                 -select desired shape using select mode
+                 -click the delete option
+              results in a selected shape being removed
 SO THAT  : so the user may remove an existing shape
 --------------------------------------------------------------------------
 --------------------------------------------------------------------------
@@ -93,9 +93,9 @@ ESTIMATE : (3 hours)    ACTUAL :
 AS A     : user
 I WANT   : To be able to select a existing text and change its alignment
                 Example:
-           		-select mode -> select text
-           		-click the text and click alignment and choose which way
-			  you want to align
+                 -select mode -> select text
+                 -click the text and click alignment and choose which way
+           you want to align
 SO THAT  :
 --------------------------------------------------------------------------
 --------------------------------------------------------------------------
@@ -106,9 +106,9 @@ ESTIMATE : (3 hours)    ACTUAL :
 AS A     : user
 I WANT   : To be able to select a existing text and change its font
                 Example:
-           		-select mode -> select text
-           		-click the text and click font and choose which font
-			  you want to change into
+                 -select mode -> select text
+                 -click the text and click font and choose which font
+           you want to change into
 SO THAT  :
 --------------------------------------------------------------------------
 --------------------------------------------------------------------------
@@ -149,7 +149,7 @@ AS A     : userqq
 I WANT   : -select desired shape using select mode and enter move mode
            -drag the shape to new location from its center
            -the shape will relocate to new position when mouse is released
-                      	results: in a relocated shape
+                         results: in a relocated shape
 SO THAT  : Users can move shapes to wherever they want.
 --------------------------------------------------------------------------
 --------------------------------------------------------------------------
@@ -204,7 +204,7 @@ NAME     : Squiggle is broken
 PRIORITY : 1
 ESTIMATE : (1 hour, 2 hours, 4 hours, 1 day, 2 days, 4 days)    ACTUAL :
 ISSUE    : Squiggles are connected to each other by a straight line. Each drag
-		   of the mouse should be a separate squiggle. Possibly
+         of the mouse should be a separate squiggle. Possibly
            the issue is with the representation of the squiggles in the Model.
 --------------------------------------------------------------------------
 --------------------------------------------------------------------------
@@ -246,7 +246,7 @@ PRIORITY : 2
 ESTIMATE : (1 hour, 2 hours, 4 hours, 1 day, 2 days, 4 days)    ACTUAL : 1
 AS A     : user
 I WANT   : To click on one corner of a rectangle, drag, and release to
-		   specify two corners of a rectangle to be drawn in the current style.
+         specify two corners of a rectangle to be drawn in the current style.
 SO THAT  : I can add rectangles to my canvas
 --------------------------------------------------------------------------
 --------------------------------------------------------------------------
@@ -265,7 +265,7 @@ PRIORITY : 2
 ESTIMATE : (1 hour)    ACTUAL : 30 mins
 AS A     : user
 I WANT   : To click on one corner of a square, drag, and release to
-		   specify dimensions of a square to be drawn in the current style.
+         specify dimensions of a square to be drawn in the current style.
 SO THAT  : I can add square to my canvas
 --------------------------------------------------------------------------
 --------------------------------------------------------------------------
@@ -368,19 +368,19 @@ ESTIMATE : 1 day   ACTUAL : 1 day
 AS A     : user
 I WANT   : To be able to select the current drawing color, to be applied
            to subsequent shapes. Example:
-           		selects color red
-           		mode circle
-           		draw a circle
-           		draw a circle
-           		mode rectangle
-           		draw a rectangle
-           		select color green
-           		draw a rectangle
-           		draw a rectangle
-           		select mode squiggle
-           		draw a squiggle
-           	results in two red circles and a red rectangle as well as
-           	two green rectangles and a green squiggle
+                 selects color red
+                 mode circle
+                 draw a circle
+                 draw a circle
+                 mode rectangle
+                 draw a rectangle
+                 select color green
+                 draw a rectangle
+                 draw a rectangle
+                 select mode squiggle
+                 draw a squiggle
+              results in two red circles and a red rectangle as well as
+              two green rectangles and a green squiggle
 SO THAT  : Users can select the color before they draw
 --------------------------------------------------------------------------
 --------------------------------------------------------------------------
@@ -391,19 +391,19 @@ ESTIMATE : 2 hours    ACTUAL : 2 hours
 AS A     : user
 I WANT   : To be able to select the current drawing style (filled or outline), to be applied
            to subsequent shapes. Example:
-           		selects fill style solid
-           		mode circle
-           		draw a circle
-           		draw a circle
-           		mode rectangle
-           		draw a rectangle
-           		select fill
-           		draw a rectangle
-           		draw a rectangle
-           		select mode squiggle
-           		draw a squiggle
-           	results in two solid circles and a solid rectangle as well as
-           	two outlined rectangles and a squiggle
+                 selects fill style solid
+                 mode circle
+                 draw a circle
+                 draw a circle
+                 mode rectangle
+                 draw a rectangle
+                 select fill
+                 draw a rectangle
+                 draw a rectangle
+                 select mode squiggle
+                 draw a squiggle
+              results in two solid circles and a solid rectangle as well as
+              two outlined rectangles and a squiggle
 SO THAT  : User can select drawing style
 --------------------------------------------------------------------------
 --------------------------------------------------------------------------
@@ -414,8 +414,8 @@ ESTIMATE : (5 minutes)    ACTUAL : 10 mins
 AS A     : user
 I WANT   : To be able to undo previous change
                 Example:
-           		-click the undo button
-           		results in latest change being removed
+                 -click the undo button
+                 results in latest change being removed
 SO THAT  : I can remove my last change
 --------------------------------------------------------------------------
 --------------------------------------------------------------------------
@@ -426,10 +426,10 @@ ESTIMATE : (5 minutes)    ACTUAL : 5 mins
 AS A     : user
 I WANT   : To be able to undo an undo
                 Example:
-           		-click the redo button
-           		results in last undone change being recovered, but will not
-           		occur if any changes were made after the undo or if nothing has been
-           		undone
+                 -click the redo button
+                 results in last undone change being recovered, but will not
+                 occur if any changes were made after the undo or if nothing has been
+                 undone
 SO THAT  : I can recover something lost by an undo
 --------------------------------------------------------------------------
 --------------------------------------------------------------------------
@@ -450,20 +450,20 @@ ESTIMATE : 1 hour    ACTUAL : 1 hour
 AS A     : user
 I WANT   : To be able to select the current line thickness, to be applied
            to subsequent shapes. Example:
-           		select fill style outline
-           		selects line thickness 1
-           		mode circle
-           		draw a circle
-           		draw a circle
-           		mode rectangle
-           		draw a rectangle
-           		select line thickness 9
-           		draw a rectangle
-           		draw a rectangle
-           		select mode squiggle
-           		draw a squiggle
-           	results in two thinly outlined circles and a thinly outlined
-           	rectangle as well as two thickly outlined rectangles and a thick squiggle
+                 select fill style outline
+                 selects line thickness 1
+                 mode circle
+                 draw a circle
+                 draw a circle
+                 mode rectangle
+                 draw a rectangle
+                 select line thickness 9
+                 draw a rectangle
+                 draw a rectangle
+                 select mode squiggle
+                 draw a squiggle
+              results in two thinly outlined circles and a thinly outlined
+              rectangle as well as two thickly outlined rectangles and a thick squiggle
 SO THAT  :  User can choose thickness
 --------------------------------------------------------------------------
 --------------------------------------------------------------------------
@@ -475,9 +475,9 @@ AS A     : user
 I WANT   : To be able to select a existing shape on the board
                 Example:
                 -select select mode
-           		-click a shape and have it have an indicator appropriate to
-           		indicate which shape is chosen
-           		-apply modifications to shapes based on other modes that will be implemented
+                 -click a shape and have it have an indicator appropriate to
+                 indicate which shape is chosen
+                 -apply modifications to shapes based on other modes that will be implemented
 SO THAT  : I can implement user story Move shape mode, resize shape mode
 change shape color, remove shape mode, Hover over shape and Highlight selected Shape
  to modify the existing shape
@@ -493,14 +493,14 @@ ESTIMATE : (4 hours)    ACTUAL :
 AS A     : user
 I WANT   : To be able to modify the dimensions of an existing shape
                 Example:
-           		-select desired shape using select mode and enter resize mode
-           		-an indicator perhaps dotted outline will appear that
-           		the shape is selected and ready to be changed with dots on each direction
-           		it can be resized to
-           		-drag the dots around the shape in any way you see fit to change modify the
-           		dimensions of the shape
-           		-the shape will resize according to the parameters of the resized area
-           	results: in a resized shape
+                 -select desired shape using select mode and enter resize mode
+                 -an indicator perhaps dotted outline will appear that
+                 the shape is selected and ready to be changed with dots on each direction
+                 it can be resized to
+                 -drag the dots around the shape in any way you see fit to change modify the
+                 dimensions of the shape
+                 -the shape will resize according to the parameters of the resized area
+              results: in a resized shape
 SO THAT  : the user can modify the dimensions of a shape
 
 --------------------------------------------------------------------------
