@@ -120,18 +120,18 @@ Nov 4,2024
 	Obstacles I face: None.
 
 Nov 5,2024
-	What I did yesterday:
-	What I will do today:
-	Obstacles I face:
+	What I did yesterday: try to change some writing based on feedback
+	What I will do today: have a meeting about sprint 4
+	Obstacles I face: None.
 
 Nov 6,2024
-	What I did yesterday:
-	What I will do today:
-	Obstacles I face:
+	What I did yesterday: have a meeting about sprint 4
+	What I will do today: start working on US3.0010 (selecting shape)
+	Obstacles I face: None.
 
 Nov 7,2024
-	What I did yesterday:
-	What I will do today:
+	What I did yesterday: start working on US3.0010 (selecting shape)
+	What I will do today: finishing
 	Obstacles I face:
 
 Nov 8,2024
