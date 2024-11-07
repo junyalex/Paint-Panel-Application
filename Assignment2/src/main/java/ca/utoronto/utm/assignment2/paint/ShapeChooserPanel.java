@@ -16,15 +16,24 @@ public class ShapeChooserPanel extends GridPane implements EventHandler<ActionEv
 
                 this.view = view;
                 buttons = new ArrayList<>();
-                String[] buttonLabels = { "select", "◯", "▭", "□", "⬭","△", "Squiggle (〜)", "Polyline (└───┐)"};
+                String[] buttonLabels = {"◯", "ㅁ", "□", "⬭","△", "〜", "ㄴ"};
 
-                int row = 0;
-                for (String label : buttonLabels) {
-                        Button button = new Button(label);
-                        button.setMinWidth(100);
-                        this.add(button, 0, row);
+                Button select = new Button("select");
+                select.setMinSize(60, 30);
+                this.add(select, 0, 0, 2, 1);
+                buttons.add(select);
+                select.setOnAction(this);
+
+                for (int i = 0; i < buttonLabels.length; i++) {
+                        Button button = new Button(buttonLabels[i]);
+                        button.setMinSize(30, 30);
+                        button.setMaxSize(30, 30);
+
+                        int row = (i/2) + 1;
+                        int col = i % 2; // 0 or 1
+
+                        this.add(button, col, row);
                         buttons.add(button);
-                        row++;
                         button.setOnAction(this);
                 }
         }
@@ -35,7 +44,8 @@ public class ShapeChooserPanel extends GridPane implements EventHandler<ActionEv
                 Button clickedButton = (Button) event.getSource();
                 String command = clickedButton.getText();
 
-                if (!PaintPanel.getMode().equals("Squiggle (〜)") || !command.equals("Squiggle")) {
+
+                if (!PaintPanel.getMode().equals("〜") || !command.equals("〜")) {
                     Polyline.newPoly = true;
                 } else {Polyline.newPoly = false;}
 

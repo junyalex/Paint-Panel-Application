@@ -17,6 +17,8 @@ public class PaintPanel extends Canvas implements EventHandler<MouseEvent>, Obse
     private ShapeFactory shapeFactory;
     public static Color color = Color.RED;
     public static int thickness = 1;
+    public static boolean shape_selected = false;
+    public static boolean function_selected = false;
 
     public PaintPanel(PaintModel model) {
         super(500, 500);
