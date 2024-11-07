@@ -5,7 +5,7 @@
 # Sprint 4 Nov 10-Nov 10, 2024
 # Sprint 4 Backlog UserStories go below
 --------------------------------------------------------------------------
-TYPE     : USER STORY US4.001 : leehoju7 : In Progress
+TYPE     : USER STORY US4.001 : leehoju7 : Completed
 NAME     : change UI
 PRIORITY : 3
 ESTIMATE : (3 hours)    ACTUAL : 3
