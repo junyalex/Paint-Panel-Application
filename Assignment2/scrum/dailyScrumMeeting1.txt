@@ -122,9 +122,9 @@ Nov 6,2024
 	Obstacles I face: nothing
 
 Nov 7,2024
-	What I did yesterday:
-	What I will do today:
-	Obstacles I face:
+	What I did yesterday: review code
+	What I will do today: review code
+	Obstacles I face: nothing
 
 Nov 8,2024
 	What I did yesterday:
