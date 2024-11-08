@@ -135,9 +135,9 @@ Nov 7,2024
 	Obstacles I face: None
 
 Nov 8,2024
-	What I did yesterday:
-	What I will do today:
-	Obstacles I face:
+	What I did yesterday: finished US3.0010 and start working US4.003 (change color of selected shape)
+	What I will do today: Keep working US4.003
+	Obstacles I face: None.
 
 Nov 9,2024
 	What I did yesterday:
