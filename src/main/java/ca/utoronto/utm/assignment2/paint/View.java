@@ -26,7 +26,7 @@ public class View implements EventHandler<ActionEvent> {
             this.paintModel = model;
             this.undoRedoPanel = new UndoRedoPanel(this);
             this.paintPanel = new PaintPanel(this.paintModel);
-            this.colorChooserPanel = new ColorChooserPanel(this);
+            this.colorChooserPanel = new ColorChooserPanel(this, this.paintModel);
             this.shapeChooserPanel = new ShapeChooserPanel(this);
             this.functionChooserPanel = new FunctionChooserPanel(this);
 
