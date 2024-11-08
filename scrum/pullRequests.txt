@@ -15,4 +15,3 @@ BUG3.005_thickness author : leehoju7 puller : chosun29 status : Completed
 US4.001 author : leehoju7 puller : chosun29 status: Completed
 
 US3.0010 author : chosun29 puller : leehoju7 status: Completed
-US4.004 author : leehoju7 puller : chosun29 status: Waiting
