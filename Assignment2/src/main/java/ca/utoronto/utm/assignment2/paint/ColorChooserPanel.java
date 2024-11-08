@@ -16,9 +16,11 @@ public class ColorChooserPanel extends GridPane {
 
 private View view;
     private ArrayList<Button> buttons;
+    private PaintModel model;
 
-    public ColorChooserPanel(View view) {
+    public ColorChooserPanel(View view, PaintModel model) {
         this.view = view;
+        this.model = model;
         buttons = new ArrayList<>();
 
         Button red = new Button("Red");
@@ -48,7 +50,7 @@ private View view;
             button.setMinSize(30, 30);
             button.setMaxSize(30, 30);
             buttons.add(button);
-            button.setOnAction(new ColorEventHandler());
+            button.setOnAction(new ColorEventHandler(this.model));
         }
 
         this.setHgap(5);

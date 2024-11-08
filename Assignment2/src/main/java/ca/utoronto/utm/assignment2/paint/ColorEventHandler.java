@@ -9,8 +9,10 @@ import javafx.event.ActionEvent;
     public class ColorEventHandler implements EventHandler<ActionEvent> {
 
         private static Button last = null;
+        private PaintModel model;
 
-        public ColorEventHandler() {
+        public ColorEventHandler(PaintModel model) {
+            this.model = model;
         }
 
         @Override
@@ -27,5 +29,9 @@ import javafx.event.ActionEvent;
             last = button;
             PaintPanel.color = ShapeFactory.colors.get(button.getText());
 
+            if(SelectMode.getSelectedShape() != null) {
+                SelectMode.getSelectedShape().setColor(PaintPanel.color);
+                model.setSelectedShape(SelectMode.getSelectedShape());
+            }
         }
     }
