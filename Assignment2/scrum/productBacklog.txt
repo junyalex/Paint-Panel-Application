@@ -77,18 +77,6 @@ ISSUE    : The drawable area of the canvas is too small and
 
 --------------------------------------------------------------------------
 --------------------------------------------------------------------------
-TYPE     : USER STORY US4.004 : leehoju7 : In Progress
-NAME     : Move shape
-PRIORITY : 3
-ESTIMATE : 1 day    ACTUAL :
-AS A     : userqq
-I WANT   : -select desired shape using select mode and enter move mode
-           -drag the shape to new location from its center
-           -the shape will relocate to new position when mouse is released
-                         results: in a relocated shape
-SO THAT  : Users can move shapes to wherever they want.
---------------------------------------------------------------------------
---------------------------------------------------------------------------
 TYPE     : USER STORY US4.005 : UTORID : NotStarted
 NAME     : Cut, Copy and Paste
 PRIORITY : 3
@@ -96,23 +84,6 @@ ESTIMATE : 1 day    ACTUAL :
 SO THAT  : User can move or duplicate shapes without redrawing them. The cut option
 removes a selected shape from the canvas, the copy option makes a temporary copy of the shape
 and the paste option allows for the copied shape to be placed on the canvas.
---------------------------------------------------------------------------
-TYPE     : USER STORY US4.006 : UTORID : NotStarted
-NAME     : New, Open, and Save
-PRIORITY : 3
-ESTIMATE : 1 day    ACTUAL :
-SO THAT  : User can be able to start a new canvas,save the current canvas that they are working on and
-           reopen it later without losing it.
---------------------------------------------------------------------------
---------------------------------------------------------------------------
-TYPE     : USER STORY US4.007 : leehoju7 : In Progress
-NAME     : Move shape
-PRIORITY : 3
-ESTIMATE : 1 day    ACTUAL : 1 day
-AS A     : user
-I WANT   : Users can move selected shape by dragging them.
-SO THAT  : Users can move shapes to wherever they want.
---------------------------------------------------------------------------
 --------------------------------------------------------------------------
 # COMPLETED USER STORIES/BUGS BELOW ###########################################
 --------------------------------------------------------------------------
@@ -437,6 +408,17 @@ ISSUE    : After having drawn a shape on the canvas a user is unable to
           the existing shape on the canvas and modifying its colour.
 --------------------------------------------------------------------------
 --------------------------------------------------------------------------
+TYPE     : USER STORY US4.004 : leehoju7 : Completed
+NAME     : Move shape
+PRIORITY : 3
+ESTIMATE : 1 day    ACTUAL : 2 days
+I WANT   : -select desired shape using select mode and enter move mode
+           -drag the shape to new location from its center
+           -the shape will relocate to new position when mouse is released
+                         results: in a relocated shape
+SO THAT  : Users can move shapes to wherever they want.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
 # OMITTED USER STORIES/BUGS BELOW   ###########################################
 --------------------------------------------------------------------------
 --------------------------------------------------------------------------
@@ -503,4 +485,12 @@ I WANT   : To be able to select a existing text and change its font
                  -click the text and click font and choose which font
            you want to change into
 SO THAT  :
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+TYPE     : USER STORY US4.006 : UTORID : NotStarted
+NAME     : New, Open, and Save
+PRIORITY : 3
+ESTIMATE : 1 day    ACTUAL :
+SO THAT  : User can be able to start a new canvas,save the current canvas that they are working on and
+           reopen it later without losing it.
 --------------------------------------------------------------------------

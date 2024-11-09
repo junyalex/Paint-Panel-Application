@@ -50,10 +50,10 @@ ISSUE    : After having drawn a shape on the canvas a user is unable to
            the existing shape on the canvas and modifying its colour.
 --------------------------------------------------------------------------
 --------------------------------------------------------------------------
-TYPE     : USER STORY US4.004 : leehoju7 : In Progress
+TYPE     : USER STORY US4.004 : leehoju7 : Completed
 NAME     : Move shape
 PRIORITY : 3
-ESTIMATE : 1 day    ACTUAL :
+ESTIMATE : 1 day    ACTUAL : 2 days
 AS A     : user
 I WANT   : -select desired shape using select mode and enter move mode
            -drag the shape to new location from its center
