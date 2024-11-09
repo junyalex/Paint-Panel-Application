@@ -28,9 +28,7 @@ Purpose:
        implement the StarDrawStrategy.
        - DIP : Shape only depends on DrawStrategy interface , instead of concrete strategies.
 UML:
-	(include a UML or refer to one included in the finalArchitecture directory)
-	(make it easy on us, and organize the diagram so that it looks like the
-	reference pattern).
+	Strategy.uml in finalArchitecture.
 
 Classes:
 	- Context: PaintPanel
@@ -60,9 +58,7 @@ Purpose:
 
 
 UML:
-	(include a UML or refer to one included in the finalArchitecture directory)
-	(make it easy on us, and organize the diagram so that it looks like the
-	reference pattern).
+	Factory.uml in finalArchitecture.
 
 Classes:
 
@@ -99,14 +95,12 @@ Purpose:
 	handling execution, undo, and redo operations.
 	OCP  : New type of commands can be added by creating new concrete command class.
 UML:
-	(include a UML or refer to one included in the finalArchitecture directory)
-	(make it easy on us, and organize the diagram so that it looks like the
-	reference pattern).
+	Command.uml in finalArchitecture.
 
 Classes:
 	Command - Command
 
-	Invoker - PaintModel, UndoRedoPanel
+	Invoker - PaintModel, undoEventHandler, redoEventHandler
 
 ConcreteCommand
 - DrawCircleCommand
