@@ -6,46 +6,85 @@ import javafx.scene.input.MouseEvent;
 
 import java.util.ArrayList;
 
-public class SelectStrategy implements DrawStrategy{
+public class SelectStrategy implements DrawStrategy {
     private PaintModel model;
-    private Point SelectPoint;
     private ArrayList<Shape> shapes;
-    private SelectMode currSelectMode;
+    private boolean dragging = false;
+    private Shape selectedShape = null;
+    private SelectMode mode;
+    private Point currPoint;
+    private Point initialPoint;
+    private Point originalPoint;
 
     public SelectStrategy(PaintModel model) {
         super();
         this.model = model;
         shapes = model.getShapes();
+        this.mode = SelectMode.getInstance();
     }
 
     @Override
     public void onMousePressed(MouseEvent e, PaintModel model) {
-        SelectPoint = new Point(e.getX(), e.getY());
+        this.selectedShape = SelectMode.getSelectedShape();
+        this.initialPoint = new Point(e.getX(), e.getY());
+        currPoint = new Point(e.getX(), e.getY());
         boolean contains = false;
-        for (int index = shapes.size()-1; index >=0 && !contains; index--) {
+
+        // if there is no selectedShape, then select it
+        for (int index = shapes.size() - 1; index >= 0 && !contains; index--) {
             Shape shape = shapes.get(index);
-            if (shape.contains(SelectPoint)) {
-                SelectMode.setSelectedShape(shape, model);
-                System.out.println("Shape selected: " + shape);
-                contains = true;
+            if (shape.contains(currPoint)) {
+
+                if (shape == this.selectedShape) {
+                    dragging = true;
+                    contains = true;
+                }
+
+                else {
+                    dragging = false;
+                    SelectMode.setSelectedShape(shape, model);
+                    this.selectedShape = shape;
+                    System.out.println("Shape selected: " + shape);
+                    contains = true;
+                    break;
+                }
                 break;
             }
         }
-        if (!contains) {
+        if (!contains){
             System.out.println("No valid shape selected");
             SelectMode.clearSelection(model);
         }
     }
 
-    @Override
-    public void onMouseDragged(MouseEvent e, PaintModel model) {
-    }
+        @Override
+        public void onMouseDragged (MouseEvent e, PaintModel model) {
+            if (dragging && this.selectedShape != null) {
+                double deltaX = e.getX() - currPoint.x;
+                double deltaY = e.getY() - currPoint.y;
 
-    @Override
-    public void onMouseReleased(MouseEvent e, PaintModel model) {
-    }
+                this.selectedShape.move(deltaX, deltaY);
 
-    @Override
-    public void draw(Shape shape, GraphicsContext g2d, String currStyle) {
-    }
-}
+                model.addShapePreview(this.selectedShape);
+
+                currPoint = new Point(e.getX(), e.getY());
+
+            }
+        }
+
+            @Override
+            public void onMouseReleased (MouseEvent e, PaintModel model){
+                if (selectedShape != null && dragging) {
+
+                    dragging = false;
+                }
+                dragging = false;
+                currPoint = null;
+                initialPoint = null;
+
+            }
+
+            @Override
+            public void draw (Shape shape, GraphicsContext g2d, String currStyle){
+            }
+        }

@@ -51,4 +51,13 @@ public class Rectangle extends Shape{
     public DrawStrategy getDrawStrategy() {
         return new RectangleDrawStrategy();
     }
+
+    @Override
+    public void move(double x, double y ){
+        corner1.setX(corner1.getX() + x);
+        corner1.setY(corner1.getY() + y);
+        corner2.setX(corner2.getX() + x);
+        corner2.setY(corner2.getY() + y);
+    }
+
 }

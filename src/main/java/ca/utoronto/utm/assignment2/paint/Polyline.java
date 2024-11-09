@@ -78,5 +78,12 @@ public class Polyline extends Shape{
         return new PolylineDrawStrategy();
     }
 
+    @Override
+    public void move(double x, double y){
+        for (Point point : points) {
+            point.x += x;
+            point.y += y;
+        }
 
+    }
 }
