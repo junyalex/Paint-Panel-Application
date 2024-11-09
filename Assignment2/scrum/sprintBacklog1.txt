@@ -50,7 +50,7 @@ I WANT   : As a user is specifying a Circle, during the drag, a 'current'
            circle changes in real time so that a circle is drawn with
            centre at users initial circle click, with radius out to
            the current dragged mouse position.
-SO THAT  : I can see the circle I am about to build on release of the mouse
+SO THAT  : Users can see the circle they are about to build on release of the mouse
            button.
 --------------------------------------------------------------------------
 --------------------------------------------------------------------------
@@ -61,7 +61,7 @@ ESTIMATE : 1 hour   ACTUAL : 1
 AS A     : user
 I WANT   : To click on one corner of a rectangle, drag, and release to
                    specify two corners of a rectangle to be drawn in the current style.
-SO THAT  : I can add rectangles to my canvas
+SO THAT  : Users can add rectangles to my canvas
 --------------------------------------------------------------------------
 --------------------------------------------------------------------------
 TYPE     : USER STORY US1.004 : leehoju7 : Completed
@@ -69,6 +69,6 @@ NAME     : Draw Rectangle Feedback
 PRIORITY : 2
 ESTIMATE : 1 hour   ACTUAL : 1
 AS A     : user
-I WANT   : Similarly to Draw Circle Feedback, display the rectangle in mid construction.
-SO THAT  : I can see the rectangle I am about to build on release of the mouse button.
+I WANT   : Similarly to Draw Circle Feedback, display the rectangle in middle of the construction.
+SO THAT  : Users can see the rectangle they are about to build on release of the mouse button.
 --------------------------------------------------------------------------
