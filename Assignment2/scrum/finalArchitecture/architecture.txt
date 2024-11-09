@@ -54,7 +54,7 @@ Pattern Name: Factory
 Reference:
 	http://www.oodesign.com/factory-pattern.html
 Purpose:
-	SRP : ShapeFactory class has the single responsibility of creating Strategy objects 			needed for the draw.
+	SRP : ShapeFactory class has the single responsibility of creating Strategy objects for drawing			needed for the draw.
 	OCP : By using factory pattern, new strategy of a shape class can be added
 		without modifying PaintPanel class. Before factory pattern was used, there 			were 	if statements for every shapes selected, but by using factory pattern, 			code 	became concise.
 
@@ -95,9 +95,9 @@ Pattern Name: Command Pattern
 Reference:
 	https://www.oodesign.com/command-pattern
 Purpose:
-	SRP : Each command class has a single responsibility of handling events of executes,
-		undo and redo.
-	OCP  : New type of commands can be added by creating new concrete command 			class without modifying existing code.
+	SRP : Each command class has a single responsibility of
+	handling execution, undo, and redo operations.
+	OCP  : New type of commands can be added by creating new concrete command class.
 UML:
 	(include a UML or refer to one included in the finalArchitecture directory)
 	(make it easy on us, and organize the diagram so that it looks like the
