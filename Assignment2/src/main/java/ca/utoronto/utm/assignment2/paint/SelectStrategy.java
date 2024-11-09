@@ -37,14 +37,18 @@ public class SelectStrategy implements DrawStrategy {
 
                 if (shape == this.selectedShape) {
                     dragging = true;
+                    contains = true;
                 }
 
-                else {SelectMode.setSelectedShape(shape, model);
-                this.selectedShape = shape;
-                System.out.println("Shape selected: " + shape);
-                contains = true;
-                break;
+                else {
+                    dragging = false;
+                    SelectMode.setSelectedShape(shape, model);
+                    this.selectedShape = shape;
+                    System.out.println("Shape selected: " + shape);
+                    contains = true;
+                    break;
                 }
+                break;
             }
         }
         if (!contains){
