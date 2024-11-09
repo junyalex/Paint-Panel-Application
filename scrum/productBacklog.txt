@@ -123,15 +123,6 @@ ISSUE    : The drawable area of the canvas is too small and
 
 --------------------------------------------------------------------------
 --------------------------------------------------------------------------
-TYPE     : USER STORY US4.003 : chosun29 : In Progress
-NAME     : Change Shape Colour
-PRIORITY : 3
-ESTIMATE : 1 day    ACTUAL :
-ISSUE    : After having drawn a shape on the canvas a user is unable to
-          to change its colour. Need to implement the option of selecting
-          the existing shape on the canvas and modifying its colour.
---------------------------------------------------------------------------
---------------------------------------------------------------------------
 TYPE     : USER STORY US4.004 : leehoju7 : In Progress
 NAME     : Move shape
 PRIORITY : 3
@@ -481,6 +472,15 @@ ESTIMATE : (3 hours)    ACTUAL : 3 hours
 AS A     : user
 I WANT   : most of features to be appear on start screen ( shapes , color, thickness, undo, redo)
 SO THAT  : Users can access to features easily
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+TYPE     : USER STORY US4.003 : chosun29 : Completed
+NAME     : Change Shape Colour
+PRIORITY : 3
+ESTIMATE : 1 day    ACTUAL : 1 hour
+ISSUE    : After having drawn a shape on the canvas a user is unable to
+          to change its colour. Need to implement the option of selecting
+          the existing shape on the canvas and modifying its colour.
 --------------------------------------------------------------------------
 --------------------------------------------------------------------------
 # OMITTED USER STORIES/BUGS BELOW   ###########################################
