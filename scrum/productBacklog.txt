@@ -148,27 +148,27 @@ ESTIMATE : (1 hour)    ACTUAL : 30 mins
 AS A     : user
 I WANT   : To click on one corner of a square, drag, and release to
          specify dimensions of a square to be drawn in the current style.
-SO THAT  : I can add square to my canvas
+SO THAT  : User can add square to my canvas
 --------------------------------------------------------------------------
 --------------------------------------------------------------------------
 TYPE     : USER STORY US2.006: leerya41 : completed
 NAME     : Draw Square Feedback
 PRIORITY : 2
-ESTIMATE : (1 hour, 2 hours, 4 hours, 1 day, 2 days, 4 days)    ACTUAL : 30
+ESTIMATE : (1 hour)    ACTUAL : 30
 AS A     : user
 I WANT   : Similarly to Draw Circle Feedback, display the square in mid-construction.
-SO THAT  : I can see the square I am about to build on release of the mouse button.
+SO THAT  : Users can see the square they are about to build on release of the mouse button.
 --------------------------------------------------------------------------
 --------------------------------------------------------------------------
 TYPE     : USER STORY US2.001 : mbagayaa : Completed
 NAME     : Draw Triangle
 PRIORITY : 3
-ESTIMATE : (2 hours)    ACTUAL : 1 hour
+ESTIMATE : (2 hours)    ACTUAL :1 hour
 AS A     : user
 I WANT   : To will click three points on the canvas and lines will be extended
 joining the three vertices creating  a triangle.
 
-SO THAT  :I can add triangles to my canvas
+SO THAT  : Users can add triangles to my canvas
 --------------------------------------------------------------------------
 --------------------------------------------------------------------------
 TYPE     : USER STORY US2.002 : mbagayaa : Completed
@@ -181,7 +181,7 @@ a triangle should be on display. As the user is dragging, the 'current' state of
 the triangle changes in real time so that the desired triangle size can be seen before
 finishing the drawing.
 
-SO THAT  :I can see the triangle I am about to build on release of the mouse button.
+SO THAT  :Users can see the triangle they are about to build on release of the mouse button.
 --------------------------------------------------------------------------
 --------------------------------------------------------------------------
 TYPE     : USER STORY US2.003: chosun29 : Completed
@@ -193,7 +193,7 @@ I WANT   :To click the centre of the oval and drag outwards either horizontally
 or vertically and release the oval onto the canvas to be drawn in the current
 style.
 
-SO THAT  :I can add ovals to my canvas
+SO THAT  : Users can add ovals to their canvas
 --------------------------------------------------------------------------
 --------------------------------------------------------------------------
 TYPE     : USER STORY US2.004 : chosun29 : Completed
@@ -206,7 +206,7 @@ an oval should be on display. As the user is dragging, the 'current' state of
 the oval changes in real time so that the desired oval size can be seen before
 finishing the drawing.
 
-SO THAT  :I can see the oval I am about to build on release of the mouse button.
+SO THAT  : Users can see the oval they are about to build on release of the mouse button.
 --------------------------------------------------------------------------
 --------------------------------------------------------------------------
 TYPE     : BUG BUG2.003: leehoju7 : completed
