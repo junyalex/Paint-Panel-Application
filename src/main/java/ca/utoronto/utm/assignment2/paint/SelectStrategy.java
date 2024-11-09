@@ -37,7 +37,8 @@ public class SelectStrategy implements DrawStrategy {
         }
 
         // if there is no selectedShape, then select it
-        for (Shape shape : shapes) {
+        for (int index = shapes.size() - 1; index >= 0 && !contains; index--) {
+            Shape shape = shapes.get(index);
             if (shape.contains(currPoint)) {
                 SelectMode.setSelectedShape(shape, model);
                 this.selectedShape = shape;
