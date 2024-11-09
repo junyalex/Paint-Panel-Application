@@ -28,6 +28,7 @@ public class SelectStrategy implements DrawStrategy {
         this.selectedShape = SelectMode.getSelectedShape();
         initialPoint = new Point(e.getX(), e.getY());
         currPoint = new Point(e.getX(), e.getY());
+        boolean contains = false;
 
         // if selectedShape & and clicked above the shape -> dragging mode
         if (this.selectedShape != null && this.selectedShape.contains(currPoint)) {
@@ -41,9 +42,13 @@ public class SelectStrategy implements DrawStrategy {
                 SelectMode.setSelectedShape(shape, model);
                 this.selectedShape = shape;
                 System.out.println("Shape selected: " + shape);
+                contains = true;
                 break;
             }
-
+        }
+        if (!contains){
+            System.out.println("No valid shape selected");
+            SelectMode.clearSelection(model);
         }
     }
 
