@@ -90,7 +90,46 @@ Usage:
 	it allows us to simply add new strategy class to factory class without modifying
         the PaintPanel class.
 --------------------------------------------------------------------------------
+Name: Hojun Lee
+Pattern Name: Command Pattern
+Reference:
+	https://www.oodesign.com/command-pattern
+Purpose:
+	SRP : Each command class has a single responsibility of handling events of executes,
+		undo and redo.
+	OCP  : New type of commands can be added by creating new concrete command 			class without modifying existing code.
+UML:
+	(include a UML or refer to one included in the finalArchitecture directory)
+	(make it easy on us, and organize the diagram so that it looks like the
+	reference pattern).
 
+Classes:
+	Command - Command
+
+	Invoker - PaintModel, UndoRedoPanel
+
+ConcreteCommand
+- DrawCircleCommand
+- DrawOvalCommand
+- DrawPolylineCommand
+- DrawRectangleCommand
+- DrawScribbleCommand
+- DrawSquareCommand
+- DrawTriangleCommand
+- MoveShapeCommand
+
+
+Receiver
+- Shape
+- PaintModel
+
+Client
+- DrawStrategy
+
+Usage:
+	In order to create a sequence of commands that are executed by users, command
+	pattern is used. Also, it allows us to implement undo / redo function by using
+	command pattern.
 
 --------------------------------------------------------------------------------
 --------------------------------------------------------------------------------
