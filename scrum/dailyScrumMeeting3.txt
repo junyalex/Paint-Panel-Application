@@ -131,52 +131,7 @@ Nov 4,2024
 	Obstacles I face: None
 
 Nov 5,2024
-	What I did yesterday:
-	What I will do today:
-	Obstacles I face:
-
-Nov 6,2024
-	What I did yesterday:
-	What I will do today:
-	Obstacles I face:
-
-Nov 7,2024
-	What I did yesterday:
-	What I will do today:
-	Obstacles I face:
-
-Nov 8,2024
-	What I did yesterday:
-	What I will do today:
-	Obstacles I face:
-
-Nov 9,2024
-	What I did yesterday:
-	What I will do today:
-	Obstacles I face:
-
-Nov 10,2024
-	What I did yesterday:
-	What I will do today:
-	Obstacles I face:
-
-Nov 11,2024
-	What I did yesterday:
-	What I will do today:
-	Obstacles I face:
-
-Nov 12,2024
-	What I did yesterday:
-	What I will do today:
-	Obstacles I face:
-
-Nov 13,2024
-	What I did yesterday:
-	What I will do today:
-	Obstacles I face:
-
-Nov 14,2024
-	What I did yesterday:
-	What I will do today:
-	Obstacles I face:
+	What I did yesterday: Dropped course
+	What I will do today: Dropped course
+	Obstacles I face: Dropped course
 
