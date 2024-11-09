@@ -33,7 +33,7 @@ UML:
 	reference pattern).
 
 Classes:
-	- Context: Shape
+	- Context: PaintPanel
     - Strategy: DrawStrategy
     - ConcreteStrategies:
       - CircleDrawStrategy
