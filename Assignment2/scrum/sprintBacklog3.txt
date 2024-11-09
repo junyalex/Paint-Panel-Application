@@ -8,19 +8,19 @@
 TYPE     : USER STORY US3.0020 : leerya41 : Completed
 NAME     : undo
 PRIORITY : 3
-ESTIMATE : (5 minutes)    ACTUAL : 10 mins
+ESTIMATE : 5 minutes    ACTUAL : 10 minutes
 AS A     : user
 I WANT   : To be able to undo previous change
                 Example:
            		-click the undo button
            		results in latest change being removed
-SO THAT  : I can remove my last change
+SO THAT  : Users can remove their last change that is made.
 --------------------------------------------------------------------------
 --------------------------------------------------------------------------
 TYPE     : USER STORY US3.0021 : leerya41 : Completed
 NAME     : redo
 PRIORITY : 3
-ESTIMATE : (5 minutes)    ACTUAL : 5 mins
+ESTIMATE : 5 minutes   ACTUAL : 5 minutes
 AS A     : user
 I WANT   : To be able to undo an undo
                 Example:
@@ -28,7 +28,7 @@ I WANT   : To be able to undo an undo
            		results in last undone change being recovered, but will not
            		occur if any changes were made after the undo or if nothing has been
            		undone
-SO THAT  : I can recover something lost by an undo
+SO THAT  : Users can recover something lost by an undo
 --------------------------------------------------------------------------
 --------------------------------------------------------------------------
 TYPE     : BUG BUG3.004 : leehoju7 : Completed
@@ -63,7 +63,7 @@ I WANT   : To be able to select the current drawing style (filled or outline), t
            		draw a squiggle
            	results in two solid circles and a solid rectangle as well as
            	two outlined rectangles and a squiggle
-SO THAT  :
+SO THAT   : User can select drawing style
 --------------------------------------------------------------------------
 --------------------------------------------------------------------------
 TYPE     : USER STORY US3.007 : leehoju7: Completed
@@ -123,7 +123,7 @@ I WANT   : To be able to select the current line thickness, to be applied
 SO THAT  :  User can choose thickness
 --------------------------------------------------------------------------
 --------------------------------------------------------------------------
-TYPE     : USER STORY US3.0010 : leerya41 : Completed
+TYPE     : USER STORY US3.0010 : chosun29 : Completed
 NAME     : add a selector mode
 PRIORITY : 3
 ESTIMATE : (2 hours)    ACTUAL : 4 hours
@@ -134,7 +134,7 @@ I WANT   : To be able to select a existing shape on the board
            		-click a shape and have it have an indicator appropriate to
            		indicate which shape is chosen
            		-apply modifications to shapes based on other modes that will be implemented
-SO THAT  : I can implement user story Move shape mode, resize shape mode
+SO THAT  : Teammates can implement user story Move shape mode, resize shape mode
 change shape color, remove shape mode, Hover over shape and Highlight selected Shape
  to modify the existing shape
 --------------------------------------------------------------------------
