@@ -35,13 +35,13 @@ is clearly wrong with it. Can you come up with a better architecture?
 Each shape can have its own drawing logic. Therefore, using Strategy
 pattern for each drawing mode, we can switch drawing
 modes dynamically based on user input. Moreover, we can switch modes
-without modifying the PainPanel. Thus, this can be one of the
-ways to fix the association between the ShapeChooser and the PainPanel.
+without modifying the PaintPanel. Thus, this can be one of the
+ways to fix the association between the ShapeChooser and the PaintPanel.
 
 2.Observer pattern
-We could have the Shapechooser be an Observable and the Paintpanel be an observer.
-This  will ensure that changes to the list of shapes are automatically reflected on the canvas.
-This pattern allows for observers to be decoupled from the subject.
+The PaintModel (Observable) class notifies PaintPanel (Observer) whenever there is any modification
+to the model. This let users observe any modification to the model and are able to see the changes
+through the PaintPanel.
 ---------------------------------------------------------------------
 
 DESIGN PATTERNS USED
