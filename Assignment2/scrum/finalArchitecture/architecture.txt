@@ -18,7 +18,7 @@
 Name: Hojun Lee
 Pattern Name: Strategy
 Reference:
-	https://en.wikipedia.org/wiki/Strategy_pattern
+	https://www.oodesign.com/strategy-pattern/
 Purpose:
        - SRP : Used strategy pattern to separates Shape and codes for drawing.
        Shape only contains the information of the object shape, and shape does not know
@@ -43,6 +43,7 @@ Classes:
       - PolylineDrawStrategy
       - ScribbleDrawStrategy
       - SquareDrawStrategy
+
 
 Usage:
 	By using strategy pattern, drawing methods are separated for each shapes in different
