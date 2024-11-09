@@ -93,7 +93,7 @@ ISSUE    : Squiggles are connected to each other by a straight line. Each drag
 TYPE     : BUG BUG1.002 : mbagayaa: Completed
 NAME     : Drawing selection mode not indicated
 PRIORITY : 1
-ESTIMATE : (1 hour, 2 hours, 4 hours, 1 day, 2 days, 4 days)    ACTUAL : 2 hours
+ESTIMATE : 2 hours    ACTUAL : 2 hours
 ISSUE    : Currently, you can't tell which mode "Circle", "Rectangle", ...
            is currently selected. Is there a way
            to highlight the currently selected mode?
@@ -102,7 +102,7 @@ ISSUE    : Currently, you can't tell which mode "Circle", "Rectangle", ...
 TYPE     : BUG BUG1.006 : chosun29 : Completed
 NAME     : Circle drawing is broken
 PRIORITY : 1
-ESTIMATE : (1 hour, 2 hours, 4 hours, 1 day, 2 days, 4 days)    ACTUAL :
+ESTIMATE : 1 hour   ACTUAL : 1 hour
 ISSUE    : The first click should specify the center of the circle, with
            a drag for the radius. This is not the case in the current
            implementation.
@@ -111,7 +111,7 @@ ISSUE    : The first click should specify the center of the circle, with
 TYPE     : USER STORY US1.002 : chosun29 : Completed
 NAME     : Draw Circle Feedback
 PRIORITY : 2
-ESTIMATE : (1 hour, 2 hours, 4 hours, 1 day, 2 days, 4 days)    ACTUAL :
+ESTIMATE : 1 hour    ACTUAL : 1 hour
 AS A     : user
 I WANT   : As a user is specifying a Circle, during the drag, a 'current'
            circle should be on display. As the user drags, the 'current'
@@ -125,7 +125,7 @@ SO THAT  : Users can see the circle they are about to build on release of the mo
 TYPE     : USER STORY US1.003 : leehoju7 : Completed
 NAME     : Draw Rectangle
 PRIORITY : 2
-ESTIMATE : 1 hour   ACTUAL : 1
+ESTIMATE : 1 hour   ACTUAL : 1 hour
 AS A     : user
 I WANT   : To click on one corner of a rectangle, drag, and release to
                    specify two corners of a rectangle to be drawn in the current style.
@@ -135,7 +135,7 @@ SO THAT  : Users can add rectangles to my canvas
 TYPE     : USER STORY US1.004 : leehoju7 : Completed
 NAME     : Draw Rectangle Feedback
 PRIORITY : 2
-ESTIMATE : 1 hour   ACTUAL : 1
+ESTIMATE : 1 hour   ACTUAL : 1 hour
 AS A     : user
 I WANT   : Similarly to Draw Circle Feedback, display the rectangle in middle of the construction.
 SO THAT  : Users can see the rectangle they are about to build on release of the mouse button.
@@ -144,7 +144,7 @@ SO THAT  : Users can see the rectangle they are about to build on release of the
 TYPE     : USER STORY US2.005 : leerya41 : completed
 NAME     : Draw Square
 PRIORITY : 2
-ESTIMATE : (1 hour)    ACTUAL : 30 mins
+ESTIMATE : 1 hour    ACTUAL : 30 minutes
 AS A     : user
 I WANT   : To click on one corner of a square, drag, and release to
          specify dimensions of a square to be drawn in the current style.
@@ -154,7 +154,7 @@ SO THAT  : User can add square to my canvas
 TYPE     : USER STORY US2.006: leerya41 : completed
 NAME     : Draw Square Feedback
 PRIORITY : 2
-ESTIMATE : (1 hour)    ACTUAL : 30
+ESTIMATE : 1 hour    ACTUAL : 30 minutes
 AS A     : user
 I WANT   : Similarly to Draw Circle Feedback, display the square in mid-construction.
 SO THAT  : Users can see the square they are about to build on release of the mouse button.
@@ -163,7 +163,7 @@ SO THAT  : Users can see the square they are about to build on release of the mo
 TYPE     : USER STORY US2.001 : mbagayaa : Completed
 NAME     : Draw Triangle
 PRIORITY : 3
-ESTIMATE : (2 hours)    ACTUAL :1 hour
+ESTIMATE : 2 hours    ACTUAL :1 hour
 AS A     : user
 I WANT   : To will click three points on the canvas and lines will be extended
 joining the three vertices creating  a triangle.
@@ -174,7 +174,7 @@ SO THAT  : Users can add triangles to my canvas
 TYPE     : USER STORY US2.002 : mbagayaa : Completed
 NAME     : Draw Triangle Feedback
 PRIORITY : 3
-ESTIMATE : (2 hours)    ACTUAL : 2 days
+ESTIMATE : 2 hours    ACTUAL : 2 days
 AS A     : user
 I WANT   : As a user is specifying a Triangle, during the drag of the shape
 a triangle should be on display. As the user is dragging, the 'current' state of
@@ -187,7 +187,7 @@ SO THAT  :Users can see the triangle they are about to build on release of the m
 TYPE     : USER STORY US2.003: chosun29 : Completed
 NAME     : Draw Oval
 PRIORITY : 3
-ESTIMATE : (2 hours)    ACTUAL : 2 hours
+ESTIMATE : 2 hours    ACTUAL : 2 hours
 AS A     : user
 I WANT   :To click the centre of the oval and drag outwards either horizontally
 or vertically and release the oval onto the canvas to be drawn in the current
@@ -199,7 +199,7 @@ SO THAT  : Users can add ovals to their canvas
 TYPE     : USER STORY US2.004 : chosun29 : Completed
 NAME     : Draw Oval Feedback
 PRIORITY : 3
-ESTIMATE : (2 hours)    ACTUAL : 2 hours
+ESTIMATE : 2 hours    ACTUAL : 2 hours
 AS A     : user
 I WANT   : As a user is specifying an Oval, during the drag of the shape
 an oval should be on display. As the user is dragging, the 'current' state of
@@ -234,7 +234,7 @@ ISSUE    : Code is not modular and is difficult to expand. Need a better
 TYPE     : BUG BUG3.004 : leehoju7 : Completed
 NAME     : Architecture behind Model is poor
 PRIORITY : 3
-ESTIMATE : 1 day    ACTUAL : 1
+ESTIMATE : 1 day    ACTUAL : 1 day
 ISSUE    : Having a list of different types of drawable things in the
            model is cumbersome. In fact, it is currently incorrect, with
            Squiggle's not drawing properly. Need to re-architect the Model
@@ -352,7 +352,7 @@ SO THAT  :  User can choose thickness
 TYPE     : USER STORY US3.0010 : chosun29 : Completed
 NAME     : add a selector mode
 PRIORITY : 3
-ESTIMATE : (2 hours)    ACTUAL : 4 hours
+ESTIMATE : 2 hours    ACTUAL : 4 hours
 AS A     : user
 I WANT   : To be able to select a existing shape on the board
                 Example:
@@ -368,7 +368,7 @@ change shape color, remove shape mode, Hover over shape and Highlight selected S
 TYPE     : USER STORY US3.0022 : chosun29 : Completed
 NAME     : Highlight selected Shape
 PRIORITY : 3
-ESTIMATE : (1 hours)    ACTUAL :
+ESTIMATE : 1 hour    ACTUAL : 1 hour
 AS A     : user
 I WANT   : -select selection mode
            - click a shape
@@ -380,7 +380,7 @@ SO THAT  :I can see what shape I have selected
 TYPE     : USER STORY US4.001 : leehoju7 : Completed
 NAME     : change UI
 PRIORITY : 3
-ESTIMATE : (3 hours)    ACTUAL : 3 hours
+ESTIMATE : 3 hours   ACTUAL : 3 hours
 AS A     : user
 I WANT   : most of features to be appear on start screen ( shapes , color, thickness, undo, redo)
 SO THAT  : Users can access to features easily

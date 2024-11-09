@@ -8,7 +8,7 @@
 TYPE     : USER STORY US4.001 : leehoju7 : Completed
 NAME     : change UI
 PRIORITY : 3
-ESTIMATE : (3 hours)    ACTUAL : 3
+ESTIMATE : 3 hours    ACTUAL : 3 hours
 AS A     : user
 I WANT   : Most features to appear on start screen ( shapes , color, thickness, undo, redo)
 SO THAT  : Users can access to features easily
