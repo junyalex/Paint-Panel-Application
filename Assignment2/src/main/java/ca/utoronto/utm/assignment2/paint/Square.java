@@ -39,4 +39,10 @@ public class Square extends Shape {
     public DrawStrategy getDrawStrategy() {
         return new SquareDrawStrategy();
     }
+
+    @Override
+    public void move(double x , double y){
+        corner.x += x;
+        corner.y += y;
+    }
 }

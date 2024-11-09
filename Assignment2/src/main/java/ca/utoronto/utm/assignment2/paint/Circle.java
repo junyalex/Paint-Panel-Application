@@ -8,10 +8,13 @@ public class Circle extends Shape{
         private Point centre;
         private double radius;
 
+
         public Circle(Point centre, int radius){
                 super();
                 this.centre = centre;
                 this.radius = radius;
+                pointsHistory.add(new Point(centre.x,centre.y));
+                current = 0;
         }
 
         public Point getCentre() {
@@ -40,4 +43,11 @@ public class Circle extends Shape{
         public DrawStrategy getDrawStrategy() {
                 return new CircleDrawStrategy();
         }
+
+        @Override
+        public void move(double x , double y){
+                this.centre.x += x;
+                this.centre.y += y;
+        }
+
 }
