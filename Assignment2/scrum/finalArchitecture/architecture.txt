@@ -48,8 +48,47 @@ Classes:
 Usage:
 	By using strategy pattern, drawing methods are separated for each shapes in different
 	classes which makes the code precise, and allows programmers to add new drawing strategy.
-
 --------------------------------------------------------------------------------
+Name: Hojun Lee
+Pattern Name: Factory
+Reference:
+	http://www.oodesign.com/factory-pattern.html
+Purpose:
+	SRP : ShapeFactory class has the single responsibility of creating Strategy objects 			needed for the draw.
+	OCP : By using factory pattern, new strategy of a shape class can be added
+		without modifying PaintPanel class. Before factory pattern was used, there 			were 	if statements for every shapes selected, but by using factory pattern, 			code 	became concise.
+
+
+UML:
+	(include a UML or refer to one included in the finalArchitecture directory)
+	(make it easy on us, and organize the diagram so that it looks like the
+	reference pattern).
+
+Classes:
+
+	Factory :
+	-ShapeFactory
+	Client:
+	-PaintPanel
+
+	Product:
+	-DrawStrategy
+
+	Concrete Product :
+      - CircleDrawStrategy
+      - OvalDrawStrategy
+      - RectangleDrawStrategy
+      - TriangleDrawStrategy
+      - PolylineDrawStrategy
+      - ScribbleDrawStrategy
+      - SquareDrawStrategy
+
+
+
+Usage:
+	By using Factory pattern, when there is new strategy class to be added,
+	it allows us to simply add new strategy class to factory class without modifying
+        the PaintPanel class.
 --------------------------------------------------------------------------------
 
 
