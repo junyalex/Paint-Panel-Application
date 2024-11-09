@@ -26,25 +26,25 @@ public class SelectStrategy implements DrawStrategy {
     @Override
     public void onMousePressed(MouseEvent e, PaintModel model) {
         this.selectedShape = SelectMode.getSelectedShape();
-        initialPoint = new Point(e.getX(), e.getY());
+        this.initialPoint = new Point(e.getX(), e.getY());
         currPoint = new Point(e.getX(), e.getY());
         boolean contains = false;
-
-        // if selectedShape & and clicked above the shape -> dragging mode
-        if (this.selectedShape != null && this.selectedShape.contains(currPoint)) {
-            dragging = true;
-            return;
-        }
 
         // if there is no selectedShape, then select it
         for (int index = shapes.size() - 1; index >= 0 && !contains; index--) {
             Shape shape = shapes.get(index);
             if (shape.contains(currPoint)) {
-                SelectMode.setSelectedShape(shape, model);
+
+                if (shape == this.selectedShape) {
+                    dragging = true;
+                }
+
+                else {SelectMode.setSelectedShape(shape, model);
                 this.selectedShape = shape;
                 System.out.println("Shape selected: " + shape);
                 contains = true;
                 break;
+                }
             }
         }
         if (!contains){
