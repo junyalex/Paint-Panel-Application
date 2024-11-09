@@ -49,7 +49,7 @@ ISSUE    : The drawable area of the canvas is too small and
            it doesn't dynamically change with the increase of the window size. Need to
            implement the canvas that is flexible and is able to change its size with
            changes in the window size.
-
+SO THAT  : Users can expand the canvas by dragging the window.
 --------------------------------------------------------------------------
 --------------------------------------------------------------------------
 TYPE     : USER STORY US4.005 : UTORID : NotStarted
