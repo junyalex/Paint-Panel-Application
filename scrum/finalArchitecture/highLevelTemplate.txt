@@ -115,7 +115,7 @@ Example: for changing fill style (let drawing shape is Oval):
         View.java -> FillStyleEventHandler.java (handle()) -> FillStyleManager.java (setStyle())
 
     User draw Oval shape with changed fill style:
-    Based on "Drawing shapes", Oval.java will be added to "shapes" Arraylist in PaintModel.java, using addShape() ->
-    PaintPanel.java (update())  ->  PaintModel.java (drawAllShapes()) ->  Shape.java (getFillStyle()) ->
-    Oval.java (getDrawStrategy()) -> OvalDrawStrategy (draw())
+        Based on "Drawing shapes", Oval.java will be added to "shapes" Arraylist in PaintModel.java, using addShape() ->
+        PaintPanel.java (update())  ->  PaintModel.java (drawAllShapes()) ->  Shape.java (getFillStyle()) ->
+        Oval.java (getDrawStrategy()) -> OvalDrawStrategy (draw())
 --------------------------------------------------------------------------------
