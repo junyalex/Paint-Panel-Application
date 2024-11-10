@@ -82,5 +82,13 @@ public class Triangle extends Shape{
         this.point3.setX(this.point3.getX() +x);
         this.point3.setY(this.point3.getY() +y);
     }
+    @Override
+    public Shape clone(){
+        Shape clone = new Triangle(this.point1, this.point2, this.point3);
+        clone.setColor(this.getColor());
+        clone.setThickness(this.getThickness());
+        clone.setFillStyle(this.getFillStyle());
+        return clone;
+    }
 }
 
