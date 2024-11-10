@@ -178,9 +178,7 @@ Purpose:
     Using singleton pattern, we can save the memory since only one instance of FillStyleManager is ever created.
 
 UML:
-	(include a UML or refer to one included in the finalArchitecture directory)
-	(make it easy on us, and organize the diagram so that it looks like the
-	reference pattern).
+	SingletonPattern.uml in finalArchitecture.
 
 Classes:
     - FillStyleManager
