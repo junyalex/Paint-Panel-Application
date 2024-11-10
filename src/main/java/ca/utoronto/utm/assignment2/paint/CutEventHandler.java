@@ -14,7 +14,9 @@ public class CutEventHandler implements EventHandler<ActionEvent> {
     public void handle(ActionEvent event) {
         Shape shape = model.getSelectedShape();
 
-
-
+        if (shape != null) {
+            Command command = new CutCommand(model, shape);
+            model.executeCommand(command);
+        }
     }
 }
