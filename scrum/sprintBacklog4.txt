@@ -8,7 +8,7 @@
 TYPE     : USER STORY US4.001 : leehoju7 : Completed
 NAME     : change UI
 PRIORITY : 3
-ESTIMATE : (3 hours)    ACTUAL : 3
+ESTIMATE : 3 hours    ACTUAL : 3 hours
 AS A     : user
 I WANT   : Most features to appear on start screen ( shapes , color, thickness, undo, redo)
 SO THAT  : Users can access to features easily
@@ -22,23 +22,7 @@ ISSUE    : The drawable area of the canvas is too small and
            it doesn't dynamically change with the increase of the window size. Need to
            implement the canvas that is flexible and is able to change its size with
            changes in the window size.
-
---------------------------------------------------------------------------
---------------------------------------------------------------------------
-TYPE     : USER STORY US3.0010 : chosun29 : Completed
-NAME     : add a selector mode
-PRIORITY : 3
-ESTIMATE : (2 hours)    ACTUAL : 2 days
-AS A     : user
-I WANT   : To be able to select a existing shape on the board
-                Example:
-                -select select mode
-                 -click a shape and have it have an indicator appropriate to
-                 indicate which shape is chosen
-                 -apply modifications to shapes based on other modes that will be implemented
-SO THAT  : I can implement user story Move shape mode, resize shape mode
-change shape color, remove shape mode, Hover over shape and Highlight selected Shape
- to modify the existing shape
+SO THAT  : Users can expand the canvas by dragging the window.
 --------------------------------------------------------------------------
 --------------------------------------------------------------------------
 TYPE     : USER STORY US4.003 : chosun29 : Completed

@@ -18,7 +18,7 @@
 Name: Hojun Lee
 Pattern Name: Strategy
 Reference:
-	https://en.wikipedia.org/wiki/Strategy_pattern
+	https://www.oodesign.com/strategy-pattern/
 Purpose:
        - SRP : Used strategy pattern to separates Shape and codes for drawing.
        Shape only contains the information of the object shape, and shape does not know
@@ -28,12 +28,10 @@ Purpose:
        implement the StarDrawStrategy.
        - DIP : Shape only depends on DrawStrategy interface , instead of concrete strategies.
 UML:
-	(include a UML or refer to one included in the finalArchitecture directory)
-	(make it easy on us, and organize the diagram so that it looks like the
-	reference pattern).
+	Strategy.uml in finalArchitecture.
 
 Classes:
-	- Context: Shape
+	- Context: PaintPanel
     - Strategy: DrawStrategy
     - ConcreteStrategies:
       - CircleDrawStrategy
@@ -44,18 +42,153 @@ Classes:
       - ScribbleDrawStrategy
       - SquareDrawStrategy
 
+
 Usage:
 	By using strategy pattern, drawing methods are separated for each shapes in different
 	classes which makes the code precise, and allows programmers to add new drawing strategy.
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+Name: Hojun Lee
+Pattern Name: Factory
+Reference:
+	http://www.oodesign.com/factory-pattern.html
+Purpose:
+	SRP : ShapeFactory class has the single responsibility of creating Strategy objects for drawing	needed for the draw.
+	OCP : By using factory pattern, new strategy of a shape class can be added
+		without modifying PaintPanel class. Before factory pattern was used, there were if statements for every shapes
+		selected, but by using factory pattern, code became concise.
+
+UML:
+	Factory.uml in finalArchitecture.
+
+Classes:
+	Factory :
+	-ShapeFactory
+	Client:
+	-PaintPanel
+
+	Product:
+	-DrawStrategy
+
+	Concrete Product :
+      - CircleDrawStrategy
+      - OvalDrawStrategy
+      - RectangleDrawStrategy
+      - TriangleDrawStrategy
+      - PolylineDrawStrategy
+      - ScribbleDrawStrategy
+      - SquareDrawStrategy
+
+Usage:
+	By using Factory pattern, when there is new strategy class to be added,
+	it allows us to simply add new strategy class to factory class without modifying
+        the PaintPanel class.
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+Name: Hojun Lee
+Pattern Name: Command Pattern
+Reference:
+	https://www.oodesign.com/command-pattern
+Purpose:
+	SRP : Each command class has a single responsibility of
+	handling execution, undo, and redo operations.
+	OCP  : New type of commands can be added by creating new concrete command class.
+UML:
+	Command.uml in finalArchitecture.
+
+Classes:
+	Command - Command
+
+	Invoker - PaintModel, undoEventHandler, redoEventHandler
+
+ConcreteCommand
+- DrawCircleCommand
+- DrawOvalCommand
+- DrawPolylineCommand
+- DrawRectangleCommand
+- DrawScribbleCommand
+- DrawSquareCommand
+- DrawTriangleCommand
+- MoveShapeCommand
+
+
+Receiver
+- Shape
+- PaintModel
+
+Client
+- DrawStrategy
+
+Usage:
+	In order to create a sequence of commands that are executed by users, command
+	pattern is used. Also, it allows us to implement undo / redo function by using
+	command pattern.
 
 --------------------------------------------------------------------------------
 --------------------------------------------------------------------------------
+Name: Sungmin Cho
+Pattern Name: Observer/Observable
+Reference:
+	https://en.wikipedia.org/wiki/Observer_pattern
+Purpose:
+       - Encapsulation :
+       In PaintModel(observable), the observer pattern was used to notify PainPanel(observer)
+       everytime the state of the model changes. Since PaintModel notifies PainPanel using setChanged() and
+       notifyObservers(), we can prevent the exposure of implementations or code structures. Thus, by using observer
+       pattern, we can maintain the encapsulation of internal details of PaintModel.
 
---------------------------------------------------------------------------------
---------------------------------------------------------------------------------
+       - Single Responsibility Principle (SRP):
+       PainModel is responsible only for modeling the state of the paint. Furthermore, PainPanel is only responsible
+       for drawing shapes on the screen based on state of the paint model. By using Observer pattern, PaintPanel
+       automatically updates the changes of the state and PaintModel doesn't have to know how PainPanel displays
+       changes.
 
+       - Open/Closed Principle (OCP):
+       By using Observer pattern, we can add any numbers of observers (ex. another type of view) without modifying
+       PaintModel class. Thus, PaintModel is opened for extension but closed for modification.
+
+UML:
+	ObserverPattern.uml in finalArchitecture.
+
+Classes:
+	- Observer: PaintPanel
+    - Observable: PaintModel
+
+Usage:
+	Automatically updates the UI whenever user makes an input and changes the state of the PaintModel. By doing
+	so, we can keep the synchronization between model and view. Moreover, using observer pattern,
+	we can have better code maintainability by clearly dividing responsibilities of the model and the view.
 --------------------------------------------------------------------------------
 --------------------------------------------------------------------------------
+Name: Sungmin Cho
+Pattern Name: Singleton Pattern
+Reference:
+	https://en.wikipedia.org/wiki/Singleton_pattern
+Purpose:
+    - Single Responsibility Principle (SRP):
+    FillStyleManager has single responsibility of managing current fill style. By using
+    singleton pattern, it ensures there is only one instance that handle each responsibility.
+
+    - Centralized Control:
+    Once fill style is set, it should be fixed for any drawing in paint until user changes the style. Using
+    singleton pattern, no matter where you need information about current fill style, you can always interact with
+    same instance of FillStyleManager.
+
+    - Memory Efficiency:
+    Using singleton pattern, we can save the memory since only one instance of FillStyleManager is ever created.
+
+UML:
+	(include a UML or refer to one included in the finalArchitecture directory)
+	(make it easy on us, and organize the diagram so that it looks like the
+	reference pattern).
+
+Classes:
+    - FillStyleManager
+
+Usage:
+	By using singleton pattern, we do not have to keep track of multiple instances for current fill style.
+	Furthermore, it ensures global access to current fill style. Therefore, whenever the style changes by the user,
+	the changed style will be applied to further drawing of the user.
 
 --------------------------------------------------------------------------------
 
