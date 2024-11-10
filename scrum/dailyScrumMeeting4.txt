@@ -132,19 +132,20 @@ Nov 6,2024
 	Obstacles I face:No obstacles
 
 Nov 7,2024
-	What I did yesterday:
-	What I will do today:
-	Obstacles I face:
+	What I did yesterday:Added user Stories to Sprint 4, product backlog, started working on the resizing
+	of the canvas
+	What I will do today: Figure out how to implement the tasks I was given
+	Obstacles I face:No obstacles
 
 Nov 8,2024
-	What I did yesterday:
-	What I will do today:
-	Obstacles I face:
+	What I did yesterday:Figured out how to implement the tasks that I was given
+	What I will do today:No work as I was preparing for a midterm the next day
+	Obstacles I face:No obstacles
 
 Nov 9,2024
-	What I did yesterday:
-	What I will do today:
-	Obstacles I face:
+	What I did yesterday:No work as I had a midterm the next day
+	What I will do today: Finish working on the canvas resizing (BUG4.002) and do cut, copy and paste.
+	Obstacles I face: No obstacles
 
 Nov 10,2024
 	What I did yesterday:
