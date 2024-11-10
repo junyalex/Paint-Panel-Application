@@ -78,3 +78,44 @@ Example: for undo / redo  :
     DrawTriangleCommand, etc.) UndoRedoPanel.java,  undoEventHandler, redoEventHandler,
     DrawStrategy.
 --------------------------------------------------------------------------------
+New Drawing Mode: Change fill style
+Description:
+
+    Change fill style functionality is implemented through a singleton pattern, which allows the user to draw
+    shapes with the style that the user selected, until they change it to another style.
+
+Implementation:
+
+    You can change the fill style from the "Style" menu which is on the right side of the menu bar at the top of
+    the Paint app. From the "Style" menu, go to "Fill style", and there are two styles you can change which are
+    "Filled" and "Outlined".
+
+    FillStyleEventHandler:
+        The UI of the "Fill style" menu is implemented in the View class. When the user changes the style from the
+        "Fill style" menu, FillStyleEventHandler retrieves which style the user selected, and updates the currentStyle
+        of the FillStyleManager instance (using setStyle() method).
+
+    FillStyleManager:
+        This class is implemented based on a singleton pattern. Whenever a Shape class object is created,
+        the Shape class constructor retrieves the current style from the FillStyleManager singleton
+        instance (using the getStyle() method) and set it as a fillStyle of the Shape object. The default style is
+        set to "Outlined" in FillStyleManger.
+
+        Based on the fillStyle of the Shape object, each shape's draw strategy will draw the shape based on the current
+        fillStyle of the shape. Shape class is the superclass of all shapes(oval, circle, rectangle, etc.). Thus,
+        each shape will be drawn based on the current fill style set by the user, and this will remain the same
+        until the user changes the fill style.
+
+    By using a singleton pattern for FillStyleManager, a single instance of the class allows the fill style to be
+    consistently accessed and modified globally.
+
+
+Example: for changing fill style (let drawing shape is Oval):
+    User changed fill style:
+        View.java -> FillStyleEventHandler.java (handle()) -> FillStyleManager.java (setStyle())
+
+    User draw Oval shape with changed fill style:
+    Based on "Drawing shapes", Oval.java will be added to "shapes" Arraylist in PaintModel.java, using addShape() ->
+    PaintPanel.java (update())  ->  PaintModel.java (drawAllShapes()) ->  Shape.java (getFillStyle()) ->
+    Oval.java (getDrawStrategy()) -> OvalDrawStrategy (draw())
+--------------------------------------------------------------------------------
