@@ -22,6 +22,10 @@ public class View implements EventHandler<ActionEvent> {
         private UndoRedoPanel undoRedoPanel;
         private ColorChooserPanel colorChooserPanel;
 
+        private CopyEventHandler copyEventHandler = new CopyEventHandler();
+        private PasteEventHandler pasteEventHandler = new PasteEventHandler();
+        private CutEventHandler cutEventHandler = new CutEventHandler();
+
         public View(PaintModel model, Stage stage) {
             this.paintModel = model;
             this.undoRedoPanel = new UndoRedoPanel(this);
@@ -97,15 +101,15 @@ public class View implements EventHandler<ActionEvent> {
                 menu = new Menu("Edit");
 
                 menuItem = new MenuItem("Cut");
-                menuItem.setOnAction(this);
+                menuItem.setOnAction(cutEventHandler);
                 menu.getItems().add(menuItem);
 
                 menuItem = new MenuItem("Copy");
-                menuItem.setOnAction(this);
+                menuItem.setOnAction(copyEventHandler);
                 menu.getItems().add(menuItem);
 
                 menuItem = new MenuItem("Paste");
-                menuItem.setOnAction(this);
+                menuItem.setOnAction(pasteEventHandler);
                 menu.getItems().add(menuItem);
 
                 menuBar.getMenus().add(menu);
@@ -164,10 +168,6 @@ public class View implements EventHandler<ActionEvent> {
                 menuItem = new MenuItem("10");
                 menuItem.setOnAction(thicknessEventHandler);
                 thicknessStyle.getItems().add(menuItem);
-
-
-
-
 
                 menu.getItems().addAll(fillStyle, thicknessStyle);
 
