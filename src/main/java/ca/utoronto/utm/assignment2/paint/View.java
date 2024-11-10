@@ -22,9 +22,9 @@ public class View implements EventHandler<ActionEvent> {
         private UndoRedoPanel undoRedoPanel;
         private ColorChooserPanel colorChooserPanel;
 
-        private CopyEventHandler copyEventHandler = new CopyEventHandler();
-        private PasteEventHandler pasteEventHandler = new PasteEventHandler();
-        private CutEventHandler cutEventHandler = new CutEventHandler();
+        private CopyEventHandler copyEventHandler = new CopyEventHandler(paintModel);
+        private PasteEventHandler pasteEventHandler = new PasteEventHandler(paintModel);
+        private CutEventHandler cutEventHandler = new CutEventHandler(paintModel);
 
         public View(PaintModel model, Stage stage) {
             this.paintModel = model;
