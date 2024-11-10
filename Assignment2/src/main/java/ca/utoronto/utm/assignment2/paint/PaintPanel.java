@@ -1,9 +1,12 @@
 package ca.utoronto.utm.assignment2.paint;
+import javafx.beans.value.ChangeListener;
+import javafx.beans.value.ObservableValue;
 import javafx.scene.canvas.Canvas;
 import javafx.event.EventHandler;
 import javafx.event.EventType;
 import javafx.scene.canvas.GraphicsContext;
 import javafx.scene.input.MouseEvent;
+import javafx.scene.layout.StackPane;
 import javafx.scene.paint.Color;
 import java.util.ArrayList;
 import java.util.Observable;
@@ -26,11 +29,16 @@ public class PaintPanel extends Canvas implements EventHandler<MouseEvent>, Obse
         this.model.addObserver(this);
         this.shapeFactory = new ShapeFactory();
 
+
         this.addEventHandler(MouseEvent.MOUSE_PRESSED, this);
         this.addEventHandler(MouseEvent.MOUSE_RELEASED, this);
         this.addEventHandler(MouseEvent.MOUSE_MOVED, this);
         this.addEventHandler(MouseEvent.MOUSE_CLICKED, this);
         this.addEventHandler(MouseEvent.MOUSE_DRAGGED, this);
+
+        this.widthProperty().addListener((observable, oldValue, newValue) -> resizeCanvas());
+        this.heightProperty().addListener((observable, oldValue, newValue) -> resizeCanvas());
+
     }
     /**
      *  Controller aspect of this
@@ -70,5 +78,11 @@ public class PaintPanel extends Canvas implements EventHandler<MouseEvent>, Obse
         g2d.clearRect(0, 0, this.getWidth(), this.getHeight());
         this.model.drawAllShapes(g2d);
         }
+
+    public void resizeCanvas(){
+       GraphicsContext g2d = this.getGraphicsContext2D();
+       g2d.clearRect(0, 0, this.getWidth(), this.getHeight());
+        this.model.drawAllShapes(g2d);
+    }
     }
 
