@@ -12,6 +12,9 @@ public class CutEventHandler implements EventHandler<ActionEvent> {
     }
     @Override
     public void handle(ActionEvent event) {
+        Shape shape = model.getSelectedShape();
+
+
 
     }
 }
