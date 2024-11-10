@@ -148,9 +148,9 @@ Nov 9,2024
 	Obstacles I face: No obstacles
 
 Nov 10,2024
-	What I did yesterday:
-	What I will do today:
-	Obstacles I face:
+	What I did yesterday: Started working on cut, copy and paste
+	What I will do today: Continue working on cut, copy and paste
+	Obstacles I face: The cut copy and paste are not working as expected and they are not accounting for all cases
 
 Nov 11,2024
 	What I did yesterday:
