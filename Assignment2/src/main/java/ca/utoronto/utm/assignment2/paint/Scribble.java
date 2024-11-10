@@ -68,4 +68,12 @@ public class Scribble extends Shape {
             point.y += y;
         }
     }
+    @Override
+    public Shape clone(){
+        Shape clone = new Scribble(this.points);
+        clone.setColor(this.getColor());
+        clone.setThickness(this.getThickness());
+        clone.setFillStyle(this.getFillStyle());
+        return clone;
+    }
 }

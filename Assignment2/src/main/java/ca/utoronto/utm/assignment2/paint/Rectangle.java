@@ -60,4 +60,13 @@ public class Rectangle extends Shape{
         corner2.setY(corner2.getY() + y);
     }
 
+    @Override
+    public Shape clone(){
+        Shape clone = new Rectangle(this.corner1, this.corner2);
+        clone.setColor(this.getColor());
+        clone.setThickness(this.getThickness());
+        clone.setFillStyle(this.getFillStyle());
+        return clone;
+    }
+
 }
