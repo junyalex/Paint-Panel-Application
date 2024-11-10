@@ -1,6 +1,6 @@
 package ca.utoronto.utm.assignment2.paint;
 
-public class CutCommand implements Commandq{
+public class CutCommand implements Command{
     @Override
     public void execute() {
 
