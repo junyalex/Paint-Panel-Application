@@ -7,7 +7,7 @@ import java.util.ArrayList;
 
 public abstract class Shape {
     private Color color;
-    private final String fillStyle;
+    private String fillStyle;
     private int thickness;
     private boolean selected;
     protected ArrayList<Point> pointsHistory = new ArrayList<>();
@@ -26,6 +26,9 @@ public abstract class Shape {
 
     public String getFillStyle() {
         return this.fillStyle;
+    }
+    public void setFillStyle(String style){
+        this.fillStyle = style;
     }
 
     public void setColor(Color color) {
@@ -51,7 +54,10 @@ public abstract class Shape {
     public abstract boolean contains(Point selectPoint);
 
     public void move(double deltaX, double deltaY) {
+    }
 
+    public Shape clone(){
+        return this;
     }
 
 
