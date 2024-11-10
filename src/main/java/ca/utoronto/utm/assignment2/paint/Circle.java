@@ -50,8 +50,12 @@ public class Circle extends Shape{
                 this.centre.y += y;
         }
 
+        @Override
         public Shape clone(){
                 Shape clone = new Circle(this.getCentre(), this.getRadius());
+                clone.setColor(this.getColor());
+                clone.setThickness(this.getThickness());
+                clone.setFillStyle(this.getFillStyle());
                 return clone;
         }
 
