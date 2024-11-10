@@ -9,7 +9,7 @@ public class Circle extends Shape{
         private double radius;
 
 
-        public Circle(Point centre, int radius){
+        public Circle(Point centre, double radius){
                 super();
                 this.centre = centre;
                 this.radius = radius;
@@ -49,5 +49,11 @@ public class Circle extends Shape{
                 this.centre.x += x;
                 this.centre.y += y;
         }
+
+        public Shape clone(){
+                Shape clone = new Circle(this.getCentre(), this.getRadius());
+                return clone;
+        }
+
 
 }
