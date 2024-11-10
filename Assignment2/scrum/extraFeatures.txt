@@ -1,21 +1,91 @@
 (replicate sections below for each feature you want to highlight)
 --------------------------------------------------------------------------------
-FeatureName: Undo / Redo
+FeatureName: Select color
 
 Description: 
-	Users can undo / redo shapes they draw by selecting Edit -> Undo / Redo
+	Users can select the color before they draw. There are 6 colors in total they can choose.
+	Red, Orange, Yellow, Green, Blue and Black.
+
+Reference: 
+	US3.007
+--------------------------------------------------------------------------------
+FeatureName: Fill Style selector
+
+Description: 
+	Users can select 2 modes of drawing. Filled, and outlined. User can change the settings by
+	clicking Style -> Fill Style from top of the menu bar.
 
 
 Reference: 
+	US3.006
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+FeatureName: Undo, Redo
+
+Description:
+	Users can delete & restore the shapes they have drawn by clicking undo & redo buttons on
+	the left side of the canvas. Button with an arrow heading left is undo button, and
+	arrow heading right is redo button.
+
+
+Reference:
 	US3.0020, US3.0021
 --------------------------------------------------------------------------------
-FeatureName: (name)
-
-Description: 
-	(describe the feature)
-
-
-Reference: 
-	(list of the BUG/US involved in creating this feature)
 --------------------------------------------------------------------------------
-...
+FeatureName: Draw Polyline
+
+Description:
+    There was a polyline button but was not implemented which is fixed.
+	Users can now draw a poly line that helps users to draw straight lines. Users can select the
+	button "ㄴ" on the left side of the screen, and draw the polyline by dragging.
+
+
+Reference:
+	BUG3.005
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+FeatureName: Thickness Selector
+
+Description:
+    Users can select the thickness of the shape they want to draw. Users can select thickness
+    from 1 to 10, by clicking Style -> Thickness on the top of the menu bar.
+
+
+Reference:
+	US3.009
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+FeatureName: Select Shape
+
+Description:
+	In order to modify the shape that is already drawn, users have to select the shape
+	to indicate which shape they want to modify. Users can click "select" button on the left of
+	the canvas, and can select shape by clicking it.
+
+	Selected shapes are highlighted to let users know which shape is selected.
+	Selected shapes are rendered with dashed lines, while lines are covered with a bold stroke outline.
+
+Reference:
+	US3.0010, US3.0022
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+FeatureName: Change color on existing shape.
+
+Description:
+	Users can change color of shape that is already drawn. Users can change color by
+	selecting shape, and then click one of the buttons filled with colors to choose the color they want.
+
+
+Reference:
+	US4.003
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+FeatureName: Move shape
+
+Description:
+	Users can move shape that is already drawn on the canvas. This can be done by selecting shape,
+	and then drag it to wherever they want within the canvas boundaries.
+
+Reference:
+	US4.004
+--------------------------------------------------------------------------------

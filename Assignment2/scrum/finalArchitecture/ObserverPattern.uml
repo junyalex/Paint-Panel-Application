@@ -3,20 +3,19 @@
   <ID>JAVA</ID>
   <OriginalElement>ca.utoronto.utm.assignment2.paint.PaintPanel</OriginalElement>
   <nodes>
-    <node x="-51.5" y="550.0">ca.utoronto.utm.assignment2.paint.PaintPanel</node>
-    <node x="-68.5" y="-14.0">ca.utoronto.utm.assignment2.paint.PaintModel</node>
+    <node x="-52.0" y="486.4568052249931">ca.utoronto.utm.assignment2.paint.PaintPanel</node>
+    <node x="-69.0" y="-14.0">ca.utoronto.utm.assignment2.paint.PaintModel</node>
   </nodes>
   <notes />
   <edges>
     <edge source="ca.utoronto.utm.assignment2.paint.PaintPanel" target="ca.utoronto.utm.assignment2.paint.PaintModel" relationship="TO_ONE">
-      <point x="0.0" y="-81.0" />
-      <point x="0.0" y="165.0" />
+      <point x="0.0" y="-68.5" />
+      <point x="0.0" y="152.5" />
     </edge>
   </edges>
-  <settings layout="Hierarchic Compact" zoom="0.794775703429454" showDependencies="true" x="93.78637733222524" y="341.4957881951185" />
+  <settings layout="Hierarchic Compact" zoom="0.7751195505104712" showDependencies="true" x="100.73154127690304" y="314.5401640421691" />
   <SelectedNodes />
   <Categories>
-    <Category>Constructors</Category>
     <Category>Fields</Category>
     <Category>Methods</Category>
     <Category>Properties</Category>

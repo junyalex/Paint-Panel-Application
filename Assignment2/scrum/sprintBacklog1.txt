@@ -9,14 +9,14 @@
 TYPE     : BUG BUG1.001 : leerya41 : completed
 NAME     : Icons instead of text for drawing mode selection
 PRIORITY : 1 
-ESTIMATE : (1 hour)    ACTUAL : 15 mins
+ESTIMATE : 1 hour    ACTUAL : 15 minutes
 ISSUE    : Would be nice to have icons instead of "Circle", "Rectangle", ...
 --------------------------------------------------------------------------
 --------------------------------------------------------------------------
 TYPE     : BUG BUG1.002 : mbagayaa : completed
 NAME     : Drawing selection mode not indicated
 PRIORITY : 1
-ESTIMATE : (1 hour, 2 hours, 4 hours, 1 day, 2 days, 4 days)    ACTUAL :
+ESTIMATE : 2 hours     ACTUAL : 2 hours
 ISSUE    : Currently, you can't tell which mode "Circle", "Rectangle", ...
            is currently selected. Is there a way
            to highlight the currently selected mode?
@@ -34,7 +34,7 @@ ISSUE    : Squiggles are connected to each other by a straight line. Each drag
 TYPE     : BUG BUG1.006 : chosun29 : Completed
 NAME     : Circle drawing is broken
 PRIORITY : 1
-ESTIMATE : (1 hour, 2 hours, 4 hours, 1 day, 2 days, 4 days)    ACTUAL :
+ESTIMATE : 1 hour    ACTUAL : 1 hour
 ISSUE    : The first click should specify the center of the circle, with
            a drag for the radius. This is not the case in the current
            implementation.
@@ -43,32 +43,32 @@ ISSUE    : The first click should specify the center of the circle, with
 TYPE     : USER STORY US1.002 : chosun29 : Completed
 NAME     : Draw Circle Feedback
 PRIORITY : 2
-ESTIMATE : (1 hour, 2 hours, 4 hours, 1 day, 2 days, 4 days)    ACTUAL :
+ESTIMATE : 1 hour   ACTUAL : 1 hour
 AS A     : user
 I WANT   : As a user is specifying a Circle, during the drag, a 'current'
            circle should be on display. As the user drags, the 'current'
            circle changes in real time so that a circle is drawn with
            centre at users initial circle click, with radius out to
            the current dragged mouse position.
-SO THAT  : I can see the circle I am about to build on release of the mouse
+SO THAT  : Users can see the circle they are about to build on release of the mouse
            button.
 --------------------------------------------------------------------------
 --------------------------------------------------------------------------
 TYPE     : USER STORY US1.003 : leehoju7 : Completed
 NAME     : Draw Rectangle
 PRIORITY : 2
-ESTIMATE : 1 hour   ACTUAL : 1
+ESTIMATE : 1 hour   ACTUAL : 1 hour
 AS A     : user
 I WANT   : To click on one corner of a rectangle, drag, and release to
                    specify two corners of a rectangle to be drawn in the current style.
-SO THAT  : I can add rectangles to my canvas
+SO THAT  : Users can add rectangles to my canvas
 --------------------------------------------------------------------------
 --------------------------------------------------------------------------
 TYPE     : USER STORY US1.004 : leehoju7 : Completed
 NAME     : Draw Rectangle Feedback
 PRIORITY : 2
-ESTIMATE : 1 hour   ACTUAL : 1
+ESTIMATE : 1 hour   ACTUAL : 1 hour
 AS A     : user
-I WANT   : Similarly to Draw Circle Feedback, display the rectangle in mid construction.
-SO THAT  : I can see the rectangle I am about to build on release of the mouse button.
+I WANT   : Similarly to Draw Circle Feedback, display the rectangle in middle of the construction.
+SO THAT  : Users can see the rectangle they are about to build on release of the mouse button.
 --------------------------------------------------------------------------

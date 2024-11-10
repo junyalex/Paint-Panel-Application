@@ -1,36 +1,40 @@
 --------------------------------------------------------------------------------
-New Drawing Mode:
+New Drawing Mode: Drawing shapes
 Description:
-	(description of what the feature is and how it is tied to the architecture
-	application and the code...)
 
-	A drawing mode enables a user to naturally draw a shape on the screen. The 
-	drawing mode consists of an image icon appearing in the left button panel.
-	When the user clicks the image icon, the drawing mode is enabled. This means
-	that a strategy for handling user input for this drawing mode is installed.
+	Shape buttons are displayed on the left side of the canvas. Users can pick the shape
+	they would like to draw by clicking on one of the shape buttons.
 
-	At this point, all mouse events in ... 
+	When users click shape button, it selects the mode and a strategy for handling
+	user input for drawing mode is installed.
+
+	PaintPanel class handles 3 types of mouse events. Pressed, Dragged and Released.
+	When users trigger mouse events, with selected strategy, it draws the shape on the canvas
+	users can see it. By using observer pattern, whenever there is a modification to the
+	PaintModel (Observable), it notifies to PaintPanel (Observer) that there was a modification
+	to the model, PaintPanel updates itself and users can see the changes they have made which means
+	they can see the shape they have drawn through the screen.
 
 Implementation:
-	(inventory of ideas, required files, how they are tied to the architecture,
-		naming conventions (example: images/ButtonIconSquare.jpg, MHStrategySquare, ShapeSquare...)
 
-	To add a new drawing mode named X provide...
+	image icon: Image icons are displayed by Strings that users can recognize. Buttons that show
+	different types of shape are added to ShapeChooserPanel.
 
-	(list of aspects of code to touch to implement the new drawing mode)
+	Draw Strategy : Since different types of drawing technique is required for each shape,
+	Strategy pattern is used. Each shape has their own DrawStrategies when User chooses a shape,
+	it calls setMode() method in PaintPanel class. In setMode() method, it uses ShapeFactory class
+	which creates concrete classes of DrawStrategy class to create proper object of Strategy.
+	Once Strategy object is created, users can draw shapes by 3 steps.
 
-	image icon: Create a jpg image with dimensions 128x128, and place it
-		on display in the Button Panel, placed in images/ButtonIconX.jpg
-		(any special discussion...)
+	1 : Once mouse is pressed, it creates new Shape object.
 
-	MouseHandlerStrategy: 
-		describing how user events are used to build the PaintModel...
-		(any special discussion...)
-		
-	PaintShape:
-		 describing the attributes of the new shape as well as how it is drawn...
-		(any special discussion...)
+	2 : While users are dragging, in order to let them see the current status of shape so users can
+	    see how it is being drawn, shape will be added to PreviewShapes, which is an ArrayList.
 
-Example: 
-	(for example, a list of files involved in the implementation of the Square drawing mode)
+	3. When mouse is released, it adds to Shapes ArrayList, and shapes created while dragging
+	   gets deleted.
+
+Example: for drawing circle :
+    PaintModel.java, PaintPanel.java, DrawStrategy.java, RectangleDrawStrategy.java, ShapeFactory.java
+    SelectMode.java
 --------------------------------------------------------------------------------
