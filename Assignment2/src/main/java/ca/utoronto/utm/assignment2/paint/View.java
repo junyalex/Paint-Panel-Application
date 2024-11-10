@@ -9,6 +9,7 @@ import javafx.scene.control.MenuBar;
 import javafx.scene.control.MenuItem;
 import javafx.scene.control.SeparatorMenuItem;
 import javafx.scene.layout.BorderPane;
+import javafx.scene.layout.StackPane;
 import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
 import javafx.geometry.Insets;
@@ -34,12 +35,22 @@ public class View implements EventHandler<ActionEvent> {
             vBox.getChildren().addAll(this.functionChooserPanel, this.shapeChooserPanel,
                     this.undoRedoPanel, this.colorChooserPanel);
             vBox.setPadding(new Insets(5, 5, 5, 5));
+
             BorderPane root = new BorderPane();
             root.setTop(createMenuBar());
             root.setCenter(this.paintPanel);
             root.setLeft(vBox);
 
+            StackPane stackPane = new StackPane();
+            stackPane.getChildren().add(paintPanel);
+            paintPanel.widthProperty().bind(stackPane.widthProperty());
+            paintPanel.heightProperty().bind(stackPane.heightProperty());
+
+            root.setCenter(stackPane);
+
             Scene scene = new Scene(root);
+            stage.setWidth(800);
+            stage.setHeight(600);
             stage.setScene(scene);
             stage.setTitle("Paint");
             stage.show();
