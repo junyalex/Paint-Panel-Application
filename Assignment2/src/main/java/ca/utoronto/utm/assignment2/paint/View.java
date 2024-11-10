@@ -21,7 +21,6 @@ public class View implements EventHandler<ActionEvent> {
         private ShapeChooserPanel shapeChooserPanel;
         private UndoRedoPanel undoRedoPanel;
         private ColorChooserPanel colorChooserPanel;
-        private FunctionChooserPanel functionChooserPanel;
 
         public View(PaintModel model, Stage stage) {
             this.paintModel = model;
@@ -29,10 +28,9 @@ public class View implements EventHandler<ActionEvent> {
             this.paintPanel = new PaintPanel(this.paintModel);
             this.colorChooserPanel = new ColorChooserPanel(this, this.paintModel);
             this.shapeChooserPanel = new ShapeChooserPanel(this);
-            this.functionChooserPanel = new FunctionChooserPanel(this);
 
             VBox vBox = new VBox(10);
-            vBox.getChildren().addAll(this.functionChooserPanel, this.shapeChooserPanel,
+            vBox.getChildren().addAll(this.shapeChooserPanel,
                     this.undoRedoPanel, this.colorChooserPanel);
             vBox.setPadding(new Insets(5, 5, 5, 5));
 
