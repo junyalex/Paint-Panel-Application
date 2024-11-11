@@ -72,6 +72,10 @@ public class PaintModel extends Observable {
                 return this.selectedShape;
         }
 
+        public void setToBePasted(Shape s){
+                this.toBePasted = s;
+        }
+
         public void drawAllShapes(GraphicsContext g2d) {
                 for (Shape shape : shapes) {
                         String currStyle = shape.getFillStyle();
