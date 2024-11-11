@@ -5,11 +5,15 @@ public class CutCommand implements Command{
     private PaintModel model;
     private Shape shape;
     private Shape selectedShape;
+    private Shape cutteddShape;
+    private int cuttedIndex;
 
     public CutCommand(PaintModel model, Shape shape) {
         this.model = model;
         this.shape = shape;
         this.selectedShape = this.model.getSelectedShape();
+        this.cutteddShape = model.getSelectedShape();
+        this.cuttedIndex = model.getShapes().indexOf(this.cutteddShape);
     }
 
     @Override
@@ -22,7 +26,7 @@ public class CutCommand implements Command{
 
     @Override
     public void undo() {
-        this.model.addShape(this.selectedShape);
+        this.model.getShapes().add(this.cuttedIndex, this.cutteddShape);
         this.model.setSelectedShape(this.selectedShape);
     }
 }
