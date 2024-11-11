@@ -21,5 +21,7 @@ public class CutEventHandler implements EventHandler<ActionEvent> {
             model.executeCommand(command);
 
         }
+
+        System.out.println("Shape cut");
     }
 }

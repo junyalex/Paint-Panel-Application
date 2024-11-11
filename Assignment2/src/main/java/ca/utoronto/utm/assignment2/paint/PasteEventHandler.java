@@ -21,6 +21,7 @@ public class PasteEventHandler implements EventHandler<ActionEvent> {
             this.model.executeCommand(command);
         }
 
+        System.out.println("Shape pasted");
     }
 
 }
