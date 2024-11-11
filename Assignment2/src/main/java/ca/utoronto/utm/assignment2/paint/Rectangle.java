@@ -62,7 +62,8 @@ public class Rectangle extends Shape{
 
     @Override
     public Shape clone(){
-        Shape clone = new Rectangle(this.corner1, this.corner2);
+        Shape clone = new Rectangle(new Point(this.getCorner1().getX(), this.getCorner1().getY()),
+                new Point(this.getCorner2().getX(), this.getCorner2().getY()));
         clone.setColor(this.getColor());
         clone.setThickness(this.getThickness());
         clone.setFillStyle(this.getFillStyle());
