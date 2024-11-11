@@ -14,32 +14,6 @@
 # Please change the status of the user story/bug to 
 #     NotStarted,InProgress, Incomplete,Complete
 # as appropriate.
-
-
---------------------------------------------------------------------------
-TYPE     : USER STORY US?.0014 : leerya41 : NotStarted
-NAME     : remove shape mode
-PRIORITY : 3
-ESTIMATE : (2 hour)    ACTUAL :
-AS A     : user
-I WANT   : To be able to remove an existing shape
-                Example:
-                 -select desired shape using select mode
-                 -click the delete option
-              results in a selected shape being removed
-SO THAT  : so the user may remove an existing shape
---------------------------------------------------------------------------
---------------------------------------------------------------------------
-TYPE     : USER STORY US?.0015 : mbagayaa : NotStarted
-NAME     : Hover over shape
-PRIORITY : 3
-ESTIMATE : (2 hours)    ACTUAL :
-AS A     : user
-I WANT   : To hover over the shape and have an icon indicating what shape
-           I'm about to select.
-
-SO THAT  :I can know what I'm clicking and place on canvas.
---------------------------------------------------------------------------
 --------------------------------------------------------------------------
 TYPE     : BUG BUG4.002 : mbagayaa : In progress
 NAME     : Canvas Size
@@ -52,10 +26,10 @@ ISSUE    : The drawable area of the canvas is too small and
 SO THAT  : Users can expand the canvas by dragging the window.
 --------------------------------------------------------------------------
 --------------------------------------------------------------------------
-TYPE     : USER STORY US4.005 : UTORID : NotStarted
-NAME     : Cut, Copy and Paste
+TYPE     : USER STORY US4.005 : leehoju7 : In Progress
+NAME     : Remove, Cut, Copy and Paste
 PRIORITY : 3
-ESTIMATE : 1 day    ACTUAL :
+ESTIMATE : 3 hour     ACTUAL : 3 hour
 SO THAT  : User can move or duplicate shapes without redrawing them. The cut option
 removes a selected shape from the canvas, the copy option makes a temporary copy of the shape
 and the paste option allows for the copied shape to be placed on the canvas.
