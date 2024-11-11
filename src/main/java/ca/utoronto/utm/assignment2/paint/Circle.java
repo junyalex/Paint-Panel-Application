@@ -9,7 +9,7 @@ public class Circle extends Shape{
         private double radius;
 
 
-        public Circle(Point centre, int radius){
+        public Circle(Point centre, double radius){
                 super();
                 this.centre = centre;
                 this.radius = radius;
@@ -48,6 +48,19 @@ public class Circle extends Shape{
         public void move(double x , double y){
                 this.centre.x += x;
                 this.centre.y += y;
+        }
+
+        @Override
+        public Shape clone(){
+                Shape clone = new Circle(new Point(this.centre.x,this.centre.y),this.radius);
+                clone.setColor(this.getColor());
+                clone.setThickness(this.getThickness());
+                clone.setFillStyle(this.getFillStyle());
+                return clone;
+        }
+        @Override
+        public String toString() {
+                return "" + this.centre.x + "," + this.centre.y + "," + this.radius;
         }
 
 }

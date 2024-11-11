@@ -21,7 +21,10 @@ public class View implements EventHandler<ActionEvent> {
         private ShapeChooserPanel shapeChooserPanel;
         private UndoRedoPanel undoRedoPanel;
         private ColorChooserPanel colorChooserPanel;
-        private FunctionChooserPanel functionChooserPanel;
+
+        private CopyEventHandler copyEventHandler;
+        private PasteEventHandler pasteEventHandler;
+        private CutEventHandler cutEventHandler;
 
         public View(PaintModel model, Stage stage) {
             this.paintModel = model;
@@ -29,10 +32,12 @@ public class View implements EventHandler<ActionEvent> {
             this.paintPanel = new PaintPanel(this.paintModel);
             this.colorChooserPanel = new ColorChooserPanel(this, this.paintModel);
             this.shapeChooserPanel = new ShapeChooserPanel(this);
-            this.functionChooserPanel = new FunctionChooserPanel(this);
+            this.copyEventHandler = new CopyEventHandler(this.paintModel);
+            this.cutEventHandler = new CutEventHandler(this.paintModel);
+            this.pasteEventHandler = new PasteEventHandler(this.paintModel);
 
             VBox vBox = new VBox(10);
-            vBox.getChildren().addAll(this.functionChooserPanel, this.shapeChooserPanel,
+            vBox.getChildren().addAll(this.shapeChooserPanel,
                     this.undoRedoPanel, this.colorChooserPanel);
             vBox.setPadding(new Insets(5, 5, 5, 5));
 
@@ -99,15 +104,15 @@ public class View implements EventHandler<ActionEvent> {
                 menu = new Menu("Edit");
 
                 menuItem = new MenuItem("Cut");
-                menuItem.setOnAction(this);
+                menuItem.setOnAction(cutEventHandler);
                 menu.getItems().add(menuItem);
 
                 menuItem = new MenuItem("Copy");
-                menuItem.setOnAction(this);
+                menuItem.setOnAction(copyEventHandler);
                 menu.getItems().add(menuItem);
 
                 menuItem = new MenuItem("Paste");
-                menuItem.setOnAction(this);
+                menuItem.setOnAction(pasteEventHandler);
                 menu.getItems().add(menuItem);
 
                 menuBar.getMenus().add(menu);
@@ -166,10 +171,6 @@ public class View implements EventHandler<ActionEvent> {
                 menuItem = new MenuItem("10");
                 menuItem.setOnAction(thicknessEventHandler);
                 thicknessStyle.getItems().add(menuItem);
-
-
-
-
 
                 menu.getItems().addAll(fillStyle, thicknessStyle);
 
