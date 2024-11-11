@@ -70,4 +70,14 @@ public class Oval extends Shape {
             this.centre.x += x;
             this.centre.y += y;
         }
+
+    @Override
+    public Shape clone(){
+        Shape clone = new Oval(new Point(this.centre.getX(), this.centre.getY())
+                ,this.radiusX,this.radiusY);
+        clone.setColor(this.getColor());
+        clone.setThickness(this.getThickness());
+        clone.setSelected(this.isSelected());
+        return clone;
+    }
 }

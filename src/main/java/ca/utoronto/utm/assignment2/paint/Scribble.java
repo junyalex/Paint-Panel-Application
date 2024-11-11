@@ -2,6 +2,7 @@ package ca.utoronto.utm.assignment2.paint;
 
 import javafx.scene.canvas.GraphicsContext;
 
+import java.sql.Array;
 import java.util.ArrayList;
 
 public class Scribble extends Shape {
@@ -67,5 +68,17 @@ public class Scribble extends Shape {
             point.x += x;
             point.y += y;
         }
+    }
+    @Override
+    public Shape clone(){
+        ArrayList<Point> points = new ArrayList<>();
+        for (Point point : this.points) {
+            points.add(new Point(point.x, point.y));
+        }
+        Shape clone = new Scribble(points);
+        clone.setColor(this.getColor());
+        clone.setThickness(this.getThickness());
+        clone.setFillStyle(this.getFillStyle());
+        return clone;
     }
 }

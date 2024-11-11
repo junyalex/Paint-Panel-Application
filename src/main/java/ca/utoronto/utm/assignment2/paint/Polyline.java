@@ -86,4 +86,17 @@ public class Polyline extends Shape{
         }
 
     }
+    @Override
+    public Shape clone(){
+        Polyline clone = new Polyline();
+        ArrayList<Point> newPoints = new ArrayList<>();
+        for (Point p : this.points) {
+            newPoints.add(new Point(p.getX(), p.getY()));
+        }
+        clone.points = newPoints;
+        clone.setColor(this.getColor());
+        clone.setThickness(this.getThickness());
+        clone.setSelected(this.isSelected());
+        return clone;
+    }
 }
