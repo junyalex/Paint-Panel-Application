@@ -14,6 +14,12 @@ public class PasteEventHandler implements EventHandler<ActionEvent> {
 
     @Override
     public void handle(ActionEvent event) {
+        Shape toBePasted = this.model.getToBePasted();
+
+        if(toBePasted != null) {
+            Command command = new PasteCommand(this.model, toBePasted);
+            this.model.executeCommand(command);
+        }
 
     }
 
