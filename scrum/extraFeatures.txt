@@ -105,6 +105,8 @@ Description:
 
 	In order to paste, users need to cut or copy shape they are trying to paste, and then click
 	Edit -> copy button on the menubar.
+
+	Also, users can undo and redo these features.
 Reference:
 	US4.005fix
 --------------------------------------------------------------------------------
