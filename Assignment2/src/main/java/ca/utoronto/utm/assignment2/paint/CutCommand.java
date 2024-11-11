@@ -14,15 +14,15 @@ public class CutCommand implements Command{
 
     @Override
     public void execute() {
-        for (Shape s : model.getShapes()){
-            if(s.equals(selectedShape)){
-                
-            }
+        if (selectedShape != null) {
+            this.model.getShapes().remove(this.selectedShape);
+            this.model.setSelectedShape(this.selectedShape);
         }
     }
 
     @Override
     public void undo() {
-
+        this.model.addShape(this.selectedShape);
+        this.model.setSelectedShape(this.selectedShape);
     }
 }

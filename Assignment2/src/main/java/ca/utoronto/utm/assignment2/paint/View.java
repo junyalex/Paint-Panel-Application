@@ -22,9 +22,9 @@ public class View implements EventHandler<ActionEvent> {
         private UndoRedoPanel undoRedoPanel;
         private ColorChooserPanel colorChooserPanel;
 
-        private CopyEventHandler copyEventHandler = new CopyEventHandler(paintModel);
-        private PasteEventHandler pasteEventHandler = new PasteEventHandler(paintModel);
-        private CutEventHandler cutEventHandler = new CutEventHandler(paintModel);
+        private CopyEventHandler copyEventHandler;
+        private PasteEventHandler pasteEventHandler;
+        private CutEventHandler cutEventHandler;
 
         public View(PaintModel model, Stage stage) {
             this.paintModel = model;
@@ -32,6 +32,9 @@ public class View implements EventHandler<ActionEvent> {
             this.paintPanel = new PaintPanel(this.paintModel);
             this.colorChooserPanel = new ColorChooserPanel(this, this.paintModel);
             this.shapeChooserPanel = new ShapeChooserPanel(this);
+            this.copyEventHandler = new CopyEventHandler(this.paintModel);
+            this.cutEventHandler = new CutEventHandler(this.paintModel);
+            this.pasteEventHandler = new PasteEventHandler(this.paintModel);
 
             VBox vBox = new VBox(10);
             vBox.getChildren().addAll(this.shapeChooserPanel,
