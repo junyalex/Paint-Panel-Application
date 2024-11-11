@@ -13,6 +13,7 @@ public class PaintModel extends Observable {
         private ArrayList<Shape> PreviewShapes = new ArrayList<>();
         private Shape selectedShape = null;
         private Shape toBePasted = null;
+        public static int toBePastedStack = 5;
         public ArrayList<Shape> getShapes() {
                 return shapes;
         }
