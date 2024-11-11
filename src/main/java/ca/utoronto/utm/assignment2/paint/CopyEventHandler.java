@@ -16,5 +16,6 @@ public class CopyEventHandler implements EventHandler<ActionEvent>{
     public void handle(ActionEvent event) {
         model.executeCommand(new CopyCommand(this.model));
         System.out.println("Shape copied");
+        System.out.println(this.model.getSelectedShape());
     }
 }

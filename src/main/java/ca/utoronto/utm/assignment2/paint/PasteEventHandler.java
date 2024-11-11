@@ -6,7 +6,7 @@ import javafx.event.EventHandler;
 public class PasteEventHandler implements EventHandler<ActionEvent> {
 
     private PaintModel model;
-
+    private PaintPanel panel;
 
     public PasteEventHandler(PaintModel model) {
         this.model = model;
@@ -14,8 +14,8 @@ public class PasteEventHandler implements EventHandler<ActionEvent> {
 
     @Override
     public void handle(ActionEvent event) {
-        Shape toBePasted = this.model.getToBePasted();
-
+        Shape toBePasted = this.model.getToBePasted().clone();
+        System.out.println(toBePasted);
         if(toBePasted != null) {
             Command command = new PasteCommand(this.model, toBePasted);
             this.model.executeCommand(command);
