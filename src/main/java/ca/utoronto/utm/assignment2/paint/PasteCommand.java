@@ -12,14 +12,7 @@ public class PasteCommand implements Command {
 
     @Override
     public void execute() {
-        System.out.println("pasting");
-        
-        for(Shape s : this.model.getShapes()){
-            System.out.println("s = " + s);
 
-        }
-        
-        
         this.shape.move(PaintModel.toBePastedStack, PaintModel.toBePastedStack);
         this.model.getShapes().add(this.shape);
     }
