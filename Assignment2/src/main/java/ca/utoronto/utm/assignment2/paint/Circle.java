@@ -52,12 +52,15 @@ public class Circle extends Shape{
 
         @Override
         public Shape clone(){
-                Shape clone = new Circle(this.getCentre(), this.getRadius());
+                Shape clone = new Circle(new Point(this.centre.x,this.centre.y),this.radius);
                 clone.setColor(this.getColor());
                 clone.setThickness(this.getThickness());
                 clone.setFillStyle(this.getFillStyle());
                 return clone;
         }
-
+        @Override
+        public String toString() {
+                return "" + this.centre.x + "," + this.centre.y + "," + this.radius;
+        }
 
 }
