@@ -115,9 +115,6 @@ public class View implements EventHandler<ActionEvent> {
                 menuItem.setOnAction(pasteEventHandler);
                 menu.getItems().add(menuItem);
 
-//                menuItem = new MenuItem("Clear");
-//                menuItem.setOnAction(paintModel.);
-
                 menuBar.getMenus().add(menu);
 
 
