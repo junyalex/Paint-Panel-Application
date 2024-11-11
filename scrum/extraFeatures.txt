@@ -89,3 +89,22 @@ Description:
 Reference:
 	US4.004
 --------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+FeatureName: Delete, Cut, Copy and Paste
+
+Description:
+	Users can remove, cut, copy and paste the shape that is already drawn.
+	In order to delete shape, users need to select shape they are trying to delete,
+	and then click 'delete' button on the left side of the canvas.
+
+	In order to cut, users need to select shape, and then click Edit -> cut button on the
+	menu bar.
+
+	In order to copy, users need to select shape, and then click Edit -> copy button on the
+	menu bar.
+
+	In order to paste, users need to cut or copy shape they are trying to paste, and then click
+	Edit -> copy button on the menubar.
+Reference:
+	US4.005fix
+--------------------------------------------------------------------------------
