@@ -46,7 +46,7 @@ public class ShapeChooserPanel extends GridPane implements EventHandler<ActionEv
                                         }
                                 }
                         }.start();
-                        SelectMode.deleteSelectedShape(view.getPaintModel());
+                        view.getPaintModel().executeCommand(new DeleteSelectedCommand(view.getPaintModel()));
                         System.out.println("Shape Deleted");
                 });
 
