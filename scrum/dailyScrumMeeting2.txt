@@ -132,7 +132,7 @@ Nov 6,2024
 Nov 7,2024
 	What I did yesterday: start working on US3.0010 (selecting shape)
 	What I will do today: finishing US3.0010
-	Obstacles I face: None
+	Obstacles I face: None.
 
 Nov 8,2024
 	What I did yesterday: finished US3.0010 and start working US4.003 (change color of selected shape)
@@ -142,12 +142,12 @@ Nov 8,2024
 Nov 9,2024
 	What I did yesterday: finished US4.003
 	What I will do today: write architecture.txt
-	Obstacles I face: None
+	Obstacles I face: None.
 
 Nov 10,2024
-	What I did yesterday:
-	What I will do today:
-	Obstacles I face:
+	What I did yesterday: write architecture.txt
+	What I will do today: fix US4.005
+	Obstacles I face: None.
 
 Nov 11,2024
 	What I did yesterday:
