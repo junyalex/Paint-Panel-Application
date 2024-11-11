@@ -18,4 +18,4 @@ US4.003 author : chosun29 puller : leehoju7 status: Completed
 US4.004 author : leehoju7 puller : chosun29 status: Completed
 
 BUG4.002 author: mbagayaa puller: leehoju7 status: Completed
-US4.005fix author : leehoju7 puller : chosun29 status : In Progress
+US4.005fix author : leehoju7 puller : chosun29 status : Completed
