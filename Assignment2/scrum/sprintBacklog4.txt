@@ -46,8 +46,8 @@ I WANT   : -select desired shape using select mode and enter move mode
 SO THAT  : Users can move shapes to wherever they want.
 --------------------------------------------------------------------------
 --------------------------------------------------------------------------
-TYPE     : USER STORY US4.005 : leehoju7 : In Progress
-NAME     : Remove, Cut, Copy and Paste
+TYPE     : USER STORY US4.005 : leehoju7 : Completed
+NAME     : Delete, Cut, Copy and Paste
 PRIORITY : 3
 ESTIMATE : 3 hour     ACTUAL : 3 hour
 SO THAT  : User can move or duplicate shapes without redrawing them. The cut option
