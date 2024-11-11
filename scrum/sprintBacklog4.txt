@@ -14,17 +14,6 @@ I WANT   : Most features to appear on start screen ( shapes , color, thickness, 
 SO THAT  : Users can access to features easily
 --------------------------------------------------------------------------
 --------------------------------------------------------------------------
-TYPE     : BUG BUG4.002 : mbagayaa : In progress
-NAME     : Canvas Size
-PRIORITY : 2
-ESTIMATE : 4 hours    ACTUAL :
-ISSUE    : The drawable area of the canvas is too small and
-           it doesn't dynamically change with the increase of the window size. Need to
-           implement the canvas that is flexible and is able to change its size with
-           changes in the window size.
-SO THAT  : Users can expand the canvas by dragging the window.
---------------------------------------------------------------------------
---------------------------------------------------------------------------
 TYPE     : USER STORY US4.003 : chosun29 : Completed
 NAME     : Change Shape Colour
 PRIORITY : 3
