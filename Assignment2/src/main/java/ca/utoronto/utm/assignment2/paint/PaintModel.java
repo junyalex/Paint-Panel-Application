@@ -75,6 +75,9 @@ public class PaintModel extends Observable {
         public void setToBePasted(Shape s){
                 this.toBePasted = s;
         }
+        public Shape getToBePasted(){
+                return this.toBePasted;
+        }
 
         public void drawAllShapes(GraphicsContext g2d) {
                 for (Shape shape : shapes) {
