@@ -47,7 +47,7 @@ public class Square extends Shape {
     }
     @Override
     public Shape clone(){
-        Shape clone = new Square(this.corner, this.dim);
+        Shape clone = new Square(new Point(this.corner.getX(), this.corner.getY()), this.dim);
         clone.setColor(this.getColor());
         clone.setThickness(this.getThickness());
         clone.setFillStyle(this.getFillStyle());
