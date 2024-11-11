@@ -374,7 +374,7 @@ SO THAT  : Users can move shapes to wherever they want.
 TYPE     : USER STORY US4.005 : leehoju7 : Completed
 NAME     : Delete, Cut, Copy and Paste
 PRIORITY : 3
-ESTIMATE : 3 hour     ACTUAL : 3 hour
+ESTIMATE : 3 hours     ACTUAL : 3 hours
 SO THAT  : User can move or duplicate shapes without redrawing them. The cut option
 removes a selected shape from the canvas, the copy option makes a temporary copy of the shape
 and the paste option allows for the copied shape to be placed on the canvas.
