@@ -11,8 +11,9 @@ public class PaintModel extends Observable {
         private Stack<Command> undoHistory = new Stack<>();
         private ArrayList<Shape> shapes = new ArrayList<>();
         private ArrayList<Shape> PreviewShapes = new ArrayList<>();
-        private  Shape selectedShape;
-
+        private Shape selectedShape = null;
+        private Shape toBePasted = null;
+        public static int toBePastedStack = 5;
         public ArrayList<Shape> getShapes() {
                 return shapes;
         }
@@ -67,6 +68,16 @@ public class PaintModel extends Observable {
                 this.selectedShape = s;
                 this.setChanged();
                 this.notifyObservers();
+        }
+        public Shape getSelectedShape(){
+                return this.selectedShape;
+        }
+
+        public void setToBePasted(Shape s){
+                this.toBePasted = s;
+        }
+        public Shape getToBePasted(){
+                return this.toBePasted;
         }
 
         public void drawAllShapes(GraphicsContext g2d) {

@@ -6,7 +6,7 @@ public class Square extends Shape {
     private Point corner;
     private double dim;
 
-    public Square(Point corner, int dim){
+    public Square(Point corner, double dim){
         super();
         this.corner = corner;
         this.dim = dim;
@@ -44,5 +44,13 @@ public class Square extends Shape {
     public void move(double x , double y){
         corner.x += x;
         corner.y += y;
+    }
+    @Override
+    public Shape clone(){
+        Shape clone = new Square(new Point(this.corner.getX(), this.corner.getY()), this.dim);
+        clone.setColor(this.getColor());
+        clone.setThickness(this.getThickness());
+        clone.setFillStyle(this.getFillStyle());
+        return clone;
     }
 }

@@ -33,4 +33,13 @@ public class SelectMode {
         selectedShape = null;
         model.setSelectedShape(null);
     }
+
+    public static void deleteSelectedShape(PaintModel model) {
+        if(selectedShape != null){
+            selectedShape.setSelected(false);
+            model.getShapes().remove(selectedShape);
+            selectedShape = null;
+            model.setSelectedShape(null);
+        }
+    }
 }
