@@ -13,6 +13,7 @@ public class PasteCommand implements Command {
     @Override
     public void execute() {
         PaintModel.toBePastedStack += 5;
+        SelectMode.setSelectedShape(this.shape, this.model);
         this.model.getShapes().add(this.shape);
     }
 

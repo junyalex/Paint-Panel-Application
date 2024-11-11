@@ -14,6 +14,7 @@ public class CopyEventHandler implements EventHandler<ActionEvent>{
 
     @Override
     public void handle(ActionEvent event) {
+        PaintModel.toBePastedStack = 5;
         model.executeCommand(new CopyCommand(this.model));
         System.out.println("Shape copied");
         System.out.println(this.model.getSelectedShape());

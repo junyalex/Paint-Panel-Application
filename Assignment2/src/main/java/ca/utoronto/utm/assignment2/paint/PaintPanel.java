@@ -84,5 +84,5 @@ public class PaintPanel extends Canvas implements EventHandler<MouseEvent>, Obse
        g2d.clearRect(0, 0, this.getWidth(), this.getHeight());
         this.model.drawAllShapes(g2d);
     }
-    }
+}
 
