@@ -5,10 +5,19 @@ import javafx.scene.input.MouseEvent;
 
 import java.awt.*;
 
+/**
+ *  The OvalDrawStrategy class implements the Draw Strategy interface
+ *      * to draw an oval shape on the canvas.
+ */
 public class OvalDrawStrategy implements DrawStrategy {
     private Oval oval;
     private Point startPoint;
 
+    /**
+     * Handles the mouse press events to initialize an oval drawing.
+      * @param e the mousevent contains the coordinates of where the mouse was pressed
+     * @param model this is used to update the state of the model
+     */
     @Override
     public void onMousePressed(MouseEvent e, PaintModel model) {
         System.out.println("Started Oval");
@@ -19,6 +28,11 @@ public class OvalDrawStrategy implements DrawStrategy {
         this.oval.setThickness(PaintPanel.thickness);
     }
 
+    /**
+     * Handles the drag events to update the radii of the oval.
+     * @param e The MouseEvent contains the coordinates of where the mouse was clicked.
+     * @param model This is used to update the preview of the shape.
+     */
     @Override
     public void onMouseDragged(MouseEvent e, PaintModel model) {
         if (this.oval != null) {
@@ -36,6 +50,12 @@ public class OvalDrawStrategy implements DrawStrategy {
         }
     }
 
+    /**
+     * Handles the mouse drag event to update the size and position of
+     * the oval.
+     * @param e The Mouse event containing the current coordinates
+     * @param model The Paintmodel that is used to update the preview of the shape.
+     */
     @Override
     public void onMouseReleased(MouseEvent e, PaintModel model) {
         if (this.oval != null) {
@@ -45,6 +65,13 @@ public class OvalDrawStrategy implements DrawStrategy {
         }
     }
 
+    /**
+     * Draws the oval on the provided GraphicsContext based on the
+     * current drawing style
+     * @param shape the shape to be drawn
+     * @param g2d the GraphicsContext used for drawing
+     * @param currStyle the current drawing style "outlined" or "Filled"
+     */
     @Override
     public void draw(Shape shape, GraphicsContext g2d, String currStyle) {
         Oval o = (Oval) shape;

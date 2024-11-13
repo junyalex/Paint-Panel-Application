@@ -4,6 +4,11 @@ import javafx.scene.canvas.GraphicsContext;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.paint.Color;
 
+/**
+ * This class implements the DrawStrategy interface to handle drawing a square shape
+ * on the canvas. It defines behavior for mouse events such as pressing, dragging, and releasing
+ * to create and draw a square.
+ */
 public class SquareDrawStrategy implements DrawStrategy {
     private Point centerPoint;
     public Square square;
@@ -12,6 +17,13 @@ public class SquareDrawStrategy implements DrawStrategy {
         super();
     }
 
+    /**
+     * Called when the mouse is pressed. Initializes the center point of the square and prepares
+     * for drawing by creating a square object with an initial dimension of 0.
+     *
+     * @param e the mouse event triggered by a mouse press
+     * @param model the PaintModel containing the shape previews
+     */
     @Override
     public void onMousePressed(MouseEvent e, PaintModel model) {
         System.out.println("Started Square");
@@ -21,6 +33,13 @@ public class SquareDrawStrategy implements DrawStrategy {
         this.square.setThickness(PaintPanel.thickness);
     }
 
+    /**
+     * Called when the mouse is dragged. Updates the square's dimensions based on the mouse drag
+     * position and refreshes the shape preview in the model.
+     *
+     * @param e the mouse event triggered by dragging the mouse
+     * @param model the PaintModel containing the shape previews
+     */
     @Override
     public void onMouseDragged(MouseEvent e, PaintModel model) {
         double width = Math.abs(e.getX() - centerPoint.getX());
@@ -31,6 +50,14 @@ public class SquareDrawStrategy implements DrawStrategy {
         model.addShapePreview(this.square);
     }
 
+    /**
+     * Determines the top-left corner point of the square based on the current mouse position.
+     * The square's size is adjusted to maintain a square shape.
+     *
+     * @param dim the dimension of the square (side length)
+     * @param e the mouse event triggered by dragging the mouse
+     * @return Point representing the top-left corner of the square
+     */
     private Point determineCenter(double dim, MouseEvent e) {
         double x;
         double y;
@@ -47,6 +74,13 @@ public class SquareDrawStrategy implements DrawStrategy {
         return new Point(x, y);
     }
 
+    /**
+     * Called when the mouse is released. Finalizes the square shape, commits it to the model,
+     * and clears the temporary square object.
+     *
+     * @param e the mouse event triggered by releasing the mouse
+     * @param model the PaintModel containing the shape previews
+     */
     @Override
     public void onMouseReleased(MouseEvent e, PaintModel model) {
         if(this.square != null) {
@@ -55,6 +89,16 @@ public class SquareDrawStrategy implements DrawStrategy {
             this.square = null;
         }
     }
+
+    /**
+     * Draws the square on the canvas using the provided graphics context. It supports two styles:
+     * "Outlined" and "Filled".
+     *
+     * @param shape the shape to draw (expected to be a Square)
+     * @param g2d the graphics context used to draw the shape
+     * @param currStyle the current style to use for drawing the square ("Outlined" or "Filled")
+     */
+
     @Override
     public void draw(Shape shape, GraphicsContext g2d, String currStyle) {
         Square s = (Square) shape;

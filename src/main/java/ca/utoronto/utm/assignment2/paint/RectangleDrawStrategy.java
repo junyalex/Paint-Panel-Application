@@ -5,14 +5,28 @@ import javafx.scene.canvas.GraphicsContext;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.paint.Color;
 
+/**
+ *The RectangleDrawStrategy class implements the DrawStrategy interface that
+ * handles the drawing logic for the rectangle. It handles the user mouse presses, drags and releases
+ * to create the rectangle.anc
+ */
 public class RectangleDrawStrategy implements DrawStrategy{
 
     public Rectangle rectangle;
 
+    /**
+     *  Implements the DrawStrategy interface to handle the drawing for the rectangle
+     */
     public RectangleDrawStrategy() {
         super();
     }
 
+    /**
+     * Handles the mouse press event to initiate the drawing of a
+     * rectangle
+     * @param e the MouseEvent contains the coordinates of where the mouse was clicked
+     * @param model the PaintModel to which the shape is added.
+     */
     @Override
     public void onMousePressed(MouseEvent e, PaintModel model) {
         System.out.println("Started Rectangle");
@@ -23,12 +37,24 @@ public class RectangleDrawStrategy implements DrawStrategy{
         this.rectangle.setThickness(PaintPanel.thickness);
     }
 
+    /**
+     * Handles the mouse drag event to update the rectangle height and width
+     * as the mouse is dragged.
+     * @param e the MouseEvent containing the current mouse coordinates
+     * @param model the PaintModel for updating the preview of the rectangle
+     */
     @Override
     public void onMouseDragged(MouseEvent e, PaintModel model) {
         this.rectangle.setCorner2(new Point(e.getX(), e.getY()));
         model.addShapePreview(this.rectangle);
     }
 
+    /**
+     * handles the mouse release event to finalize the drawing of the rectangle
+     * to add it to the model
+     * @param e the MouseEvent containing the coordinates where the mouse was released
+     * @param model the PaintModel for adding the completed rectangle.
+     */
     @Override
     public void onMouseReleased(MouseEvent e, PaintModel model) {
         this.rectangle.setCorner2(new Point(e.getX(), e.getY()));
@@ -36,6 +62,15 @@ public class RectangleDrawStrategy implements DrawStrategy{
         this.rectangle = null;
         System.out.println("Created Rectangle");
     }
+
+    /**
+     * Draws the rectangle on the provided GraphicsContext based on the
+     * current drawing style.
+     *
+     * @param shape the shape to be drawn, which is a rectangle
+     * @param g2d the GraphicsContext used for drawing
+     * @param currStyle the current drawing style "outlined" or "Filled"
+     */
 
     @Override
     public void draw(Shape shape, GraphicsContext g2d, String currStyle) {
