@@ -4,7 +4,11 @@ import javafx.scene.canvas.GraphicsContext;
 import javafx.scene.input.MouseEvent;
 import java.util.ArrayList;
 import java.util.List;
-
+/**
+ * This class implements the {@link DrawStrategy} interface to handle drawing a polyline
+ * (a connected series of line segments) on the canvas. It provides behavior for mouse events
+ * such as pressing, dragging, and releasing to create and draw a polyline.
+ */
 public class PolylineDrawStrategy implements DrawStrategy {
     private Polyline polyline;
 
@@ -13,6 +17,14 @@ public class PolylineDrawStrategy implements DrawStrategy {
         super();
     }
 
+    /**
+     * Called when the mouse is pressed. Initializes the polyline and prepares for drawing by
+     * adding the first point at the mouse location. It also adds the last point from a previous
+     * polyline if any exists.
+     *
+     * @param e the mouse event triggered by a mouse press
+     * @param model the PaintModel containing the shape previews
+     */
     @Override
     public void onMousePressed(MouseEvent e, PaintModel model) {
         System.out.println("Started Polyline");
@@ -29,6 +41,14 @@ public class PolylineDrawStrategy implements DrawStrategy {
         this.polyline.setColor(PaintPanel.color);
     }
 
+    /**
+     * Called when the mouse is dragged. Updates the polyline's points by removing the last
+     * point and adding a new point at the current mouse location. The shape preview is then
+     * refreshed in the model.
+     *
+     * @param e the mouse event triggered by dragging the mouse
+     * @param model the PaintModel containing the shape previews
+     */
     @Override
     public void onMouseDragged(MouseEvent e, PaintModel model) {
         if (this.polyline != null) {
@@ -38,6 +58,13 @@ public class PolylineDrawStrategy implements DrawStrategy {
         }
     }
 
+    /**
+     * Called when the mouse is released. Finalizes the polyline by adding the final point,
+     * saves the polyline's last point, and commits it to the model.
+     *
+     * @param e the mouse event triggered by releasing the mouse
+     * @param model the PaintModel containing the shape previews
+     */
     @Override
     public void onMouseReleased(MouseEvent e, PaintModel model) {
         if (this.polyline != null) {
@@ -49,6 +76,15 @@ public class PolylineDrawStrategy implements DrawStrategy {
         }
     }
 
+    /**
+     * Draws the polyline on the canvas using the provided graphics context. It draws the polyline
+     * using the specified color and thickness. If the polyline is selected, it draws a thicker,
+     * darker line.
+     *
+     * @param shape the shape to draw (expected to be a Polyline)
+     * @param g2d the graphics context used to draw the shape
+     * @param currStyle the current style to use for drawing the polyline
+     */
     @Override
     public void draw(Shape shape, GraphicsContext g2d, String currStyle){
         Polyline p = (Polyline) shape;

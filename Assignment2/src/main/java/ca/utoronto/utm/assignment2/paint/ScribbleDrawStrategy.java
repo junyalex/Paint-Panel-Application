@@ -6,6 +6,11 @@ import javafx.scene.paint.Color;
 
 import java.util.ArrayList;
 
+/**
+ * This class implements the {@link DrawStrategy} interface to handle drawing a scribble
+ * (a series of connected points or freehand drawing) on the canvas. It provides behavior
+ * for mouse events such as pressing, dragging, and releasing to create and draw a scribble.
+ */
 public class ScribbleDrawStrategy implements DrawStrategy {
 
     public Scribble scribble;
@@ -14,6 +19,13 @@ public class ScribbleDrawStrategy implements DrawStrategy {
         super();
     }
 
+    /**
+     * Called when the mouse is pressed. Initializes the scribble and starts a new line by
+     * adding the first point at the mouse location.
+     *
+     * @param e the mouse event triggered by a mouse press
+     * @param model the PaintModel containing the shape previews
+     */
     @Override
     public void onMousePressed(MouseEvent e, PaintModel model) {
         Point startPoint = new Point(e.getX(), e.getY());
@@ -24,6 +36,13 @@ public class ScribbleDrawStrategy implements DrawStrategy {
         this.scribble.setThickness(PaintPanel.thickness);
     }
 
+    /**
+     * Called when the mouse is dragged. Updates the scribble by adding the new mouse position
+     * as a point and refreshes the shape preview in the model.
+     *
+     * @param e the mouse event triggered by dragging the mouse
+     * @param model the PaintModel containing the shape previews
+     */
     @Override
     public void onMouseDragged(MouseEvent e, PaintModel model) {
         ArrayList<Point> points = this.scribble.points;
@@ -34,6 +53,13 @@ public class ScribbleDrawStrategy implements DrawStrategy {
         model.addShapePreview(this.scribble);
     }
 
+    /**
+     * Called when the mouse is released. Finalizes the scribble by adding the final point
+     * and commits the scribble to the model.
+     *
+     * @param e the mouse event triggered by releasing the mouse
+     * @param model the PaintModel containing the shape previews
+     */
     @Override
     public void onMouseReleased(MouseEvent e, PaintModel model) {
         double currx = e.getX();
@@ -44,6 +70,15 @@ public class ScribbleDrawStrategy implements DrawStrategy {
         this.scribble = null;
         System.out.println("Created Scribble");
     }
+    /**
+     * Draws the scribble on the canvas using the provided graphics context. It draws a
+     * series of connected lines between the points in the scribble. If the scribble is selected,
+     * a thicker, darker line is drawn.
+     *
+     * @param shape the shape to draw (expected to be a Scribble)
+     * @param g2d the graphics context used to draw the shape
+     * @param currStyle the current style to use for drawing the scribble
+     */
     @Override
     public void draw(Shape shape, GraphicsContext g2d, String currStyle) {
         Scribble scribble = (Scribble) shape;
