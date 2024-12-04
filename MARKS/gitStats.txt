@@ -1,0 +1,2231 @@
+--------------------------------------------------------------------
+ git branches 
+--------------------------------------------------------------------
+* a2marks
+  master
+  remotes/origin/BUG1.005
+  remotes/origin/BUG1.006
+  remotes/origin/BUG2.001
+  remotes/origin/BUG3.004
+  remotes/origin/BUG3.005
+  remotes/origin/BUG3.005_leehoju7
+  remotes/origin/BUG3.005_thickness
+  remotes/origin/BUG4.002
+  remotes/origin/FixingU2.001,US2.002
+  remotes/origin/FixingUS2.001
+  remotes/origin/HEAD -> origin/master
+  remotes/origin/Shape
+  remotes/origin/Sungmin-Cho
+  remotes/origin/US1.003
+  remotes/origin/US2.003
+  remotes/origin/US3.0010
+  remotes/origin/US3.0020/undofunction/RL
+  remotes/origin/US3.0021/redofunction/RL
+  remotes/origin/US3.006
+  remotes/origin/US3.007
+  remotes/origin/US3.009
+  remotes/origin/US4.001
+  remotes/origin/US4.003
+  remotes/origin/US4.004
+  remotes/origin/US4.005
+  remotes/origin/US4.005fix
+  remotes/origin/a2marks
+  remotes/origin/change/US2.005/RL
+  remotes/origin/change/US2.005/directionchange/RL
+  remotes/origin/fix/BUG1.002/indicatorOfShape/mbagayaa
+  remotes/origin/fix/BUG2.002/commandpattern/RL
+  remotes/origin/hojun
+  remotes/origin/master
+  remotes/origin/members/Hojun
+  remotes/origin/scrum
+  remotes/origin/test
+--------------------------------------------------------------------
+ git log --graph 
+--------------------------------------------------------------------
+* commit 7f37753f2b4d0f780fafe556082cef77b5b3e277
+| Author: leehoju7 <hoju.lee@mail.utoronto.ca>
+| Date:   Sun Nov 10 21:02:27 2024 -0500
+| 
+|     final version 2
+| 
+* commit 2c060d325ea0348e3eae79d4c707272af4c6ff65
+| Author: leehoju7 <hoju.lee@mail.utoronto.ca>
+| Date:   Sun Nov 10 21:01:04 2024 -0500
+| 
+|     final version
+| 
+* commit e7e344bbc510466893973473b65d36848a38521c
+| Author: leehoju7 <hoju.lee@mail.utoronto.ca>
+| Date:   Sun Nov 10 20:59:28 2024 -0500
+| 
+|     edit sprint
+| 
+* commit 37ab94f6cdec4ea95e57e89e395449cc92ec21fb
+| Author: leehoju7 <hoju.lee@mail.utoronto.ca>
+| Date:   Sun Nov 10 20:58:27 2024 -0500
+| 
+|     edit arc.txt
+|   
+*   commit 94c7acfccb2d52dca7b8f30fe2439a693d8e7451
+|\  Merge: c2e3c7c 7a6df90
+| | Author: leehoju7 <hoju.lee@mail.utoronto.ca>
+| | Date:   Sun Nov 10 20:57:12 2024 -0500
+| | 
+| |     Merge branch 'master' of https://mcsscm.utm.utoronto.ca:9999/git/207/24f/repo_a2_031
+| |   
+| *   commit 7a6df90514d7d1b652726d554441c917050c221d
+| |\  Merge: 18d2044 ae0cdb2
+| | | Author: chosun29 <sgmin.cho@mail.utoronto.ca>
+| | | Date:   Sun Nov 10 20:56:31 2024 -0500
+| | | 
+| | |     Merge branch 'master' of https://mcsscm.utm.utoronto.ca:9999/git/207/24f/repo_a2_031
+| | | 
+| * | commit 18d2044c01892cbf6d1766e53aaf43dcc4c55924
+| | | Author: chosun29 <sgmin.cho@mail.utoronto.ca>
+| | | Date:   Sun Nov 10 20:56:24 2024 -0500
+| | | 
+| | |     dailyscrum edited by sungmin
+| | | 
+* | | commit c2e3c7cbdc865f82cdb47fe20808f7429adcae55
+| |/  Author: leehoju7 <hoju.lee@mail.utoronto.ca>
+|/|   Date:   Sun Nov 10 20:57:04 2024 -0500
+| |   
+| |       edit scrum
+| | 
+* | commit ae0cdb292b8d70fc0f24bdac9f987516e9b1e0b0
+|/  Author: leehoju7 <hoju.lee@mail.utoronto.ca>
+|   Date:   Sun Nov 10 20:56:23 2024 -0500
+|   
+|       edit pull reqeust
+|   
+*   commit 6b6d1339b3ef67f446afcf1c8d1cf9ffdc564378
+|\  Merge: 490f0ac 984fd8c
+| | Author: leehoju7 <hoju.lee@mail.utoronto.ca>
+| | Date:   Sun Nov 10 20:54:19 2024 -0500
+| | 
+| |     merge conflict resolved
+| | 
+| * commit 984fd8c3ce10f01eb3dfa0f410eab6d0bb8bf3fb
+| | Author: chosun29 <sgmin.cho@mail.utoronto.ca>
+| | Date:   Sun Nov 10 20:51:19 2024 -0500
+| | 
+| |     pullRequest 4.005fix completed by sungmin
+| |   
+| *   commit 6fe3c55253eb8ac81283975bdc54e3e8f36ecccd
+| |\  Merge: b8938b9 88e2f5e
+| | | Author: chosun29 <sgmin.cho@mail.utoronto.ca>
+| | | Date:   Sun Nov 10 20:49:27 2024 -0500
+| | | 
+| | |     merge conflict resolved
+| | | 
+| | * commit 88e2f5ef568bdf4fcbea3dc67676237988fc5e07
+| | | Author: chosun29 <sgmin.cho@mail.utoronto.ca>
+| | | Date:   Sun Nov 10 20:40:44 2024 -0500
+| | | 
+| | |     nothing
+| | | 
+| | * commit 49c472b14e6e896eeef74cb5d8d36eb3b0d2cd01
+| | | Author: chosun29 <sgmin.cho@mail.utoronto.ca>
+| | | Date:   Sun Nov 10 20:39:46 2024 -0500
+| | | 
+| | |     fix paste
+| | | 
+| | * commit d229d50b2e9b1eb35ebb57302513ebc6bf0ab2c0
+| | | Author: leehoju7 <hoju.lee@mail.utoronto.ca>
+| | | Date:   Sun Nov 10 20:31:16 2024 -0500
+| | | 
+| | |     edit 5
+| | | 
+| | * commit c7c781f7dfc5b39d29ed0aba0a440a2aa62f04a4
+| | | Author: leehoju7 <hoju.lee@mail.utoronto.ca>
+| | | Date:   Sun Nov 10 20:23:29 2024 -0500
+| | | 
+| | |     edit move
+| | | 
+| | * commit db1cffb66a022026eaa7cd8b86be6c383b2d7325
+| | | Author: leehoju7 <hoju.lee@mail.utoronto.ca>
+| | | Date:   Sun Nov 10 20:14:47 2024 -0500
+| | | 
+| | |     paste all shapes
+| | | 
+| | * commit 3d6a69fef98e528c4c7918f2bbc5929dc08b17d1
+| | | Author: leehoju7 <hoju.lee@mail.utoronto.ca>
+| | | Date:   Sun Nov 10 20:07:20 2024 -0500
+| | | 
+| | |     fix bug paste
+| | | 
+| | * commit 4c38a87f23056461da6bbeccf073468f7271e9c0
+| | | Author: leehoju7 <hoju.lee@mail.utoronto.ca>
+| | | Date:   Sun Nov 10 19:55:31 2024 -0500
+| | | 
+| | |     bug paste
+| | | 
+| | * commit 38627b1942dec32d751d378e45629d3022c51ff7
+| | | Author: chosun29 <sgmin.cho@mail.utoronto.ca>
+| | | Date:   Sun Nov 10 19:29:07 2024 -0500
+| | | 
+| | |     print message added
+| | |   
+| | *   commit 541788b9f4d14506b1018666cfe18483d03b5406
+| | |\  Merge: d6abc03 9059f6e
+| | | | Author: leehoju7 <hoju.lee@mail.utoronto.ca>
+| | | | Date:   Sun Nov 10 19:26:18 2024 -0500
+| | | | 
+| | | |     Merge branch 'US4.005fix' of https://mcsscm.utm.utoronto.ca:9999/git/207/24f/repo_a2_031 into US4.005fix
+| | | | 
+| | | * commit 9059f6eeede800c2bbd9e2b5cc667c108d195974
+| | | | Author: chosun29 <sgmin.cho@mail.utoronto.ca>
+| | | | Date:   Sun Nov 10 19:25:42 2024 -0500
+| | | | 
+| | | |     copy completed
+| | | | 
+| | * | commit d6abc036f73bdbd0f5b60b068f51b1aadf796894
+| | |/  Author: leehoju7 <hoju.lee@mail.utoronto.ca>
+| | |   Date:   Sun Nov 10 19:26:09 2024 -0500
+| | |   
+| | |       edit paste
+| | | 
+| | * commit 089d078949ebc75c2c2d1905935cf3dd8fbbdbd5
+| | | Author: leehoju7 <hoju.lee@mail.utoronto.ca>
+| | | Date:   Sun Nov 10 19:19:32 2024 -0500
+| | | 
+| | |     edit scrum
+| | | 
+| | * commit 1c247e98b16bf60899bf79d914e7298295a1cf56
+| | | Author: chosun29 <sgmin.cho@mail.utoronto.ca>
+| | | Date:   Sun Nov 10 19:10:53 2024 -0500
+| | | 
+| | |     delete completed
+| | | 
+| | * commit 75ebf4f2d1e9fe0b767a85ccf4605a65bd2486f0
+| | | Author: leehoju7 <hoju.lee@mail.utoronto.ca>
+| | | Date:   Sun Nov 10 19:09:31 2024 -0500
+| | | 
+| | |     finished cut
+| | |   
+| | *   commit 2ef096a3b63c9f2e1f85bda193f51dfe06e26282
+| | |\  Merge: 7903379 7e3206b
+| | | | Author: leehoju7 <hoju.lee@mail.utoronto.ca>
+| | | | Date:   Sun Nov 10 18:49:11 2024 -0500
+| | | | 
+| | | |     Merge branch 'US4.005fix' of https://mcsscm.utm.utoronto.ca:9999/git/207/24f/repo_a2_031 into US4.005fix
+| | | |   
+| | | *   commit 7e3206be1a2e5cd528dce5f529aad14fef6ff522
+| | | |\  Merge: 4a6f12a ca10ced
+| | | | | Author: chosun29 <sgmin.cho@mail.utoronto.ca>
+| | | | | Date:   Sun Nov 10 18:48:43 2024 -0500
+| | | | | 
+| | | | |     Merge branch 'US4.005fix' of https://mcsscm.utm.utoronto.ca:9999/git/207/24f/repo_a2_031 into US4.005fix
+| | | | | 
+| | | * | commit 4a6f12a7ad5186cd1ab44336de56329f182bffc5
+| | | | | Author: chosun29 <sgmin.cho@mail.utoronto.ca>
+| | | | | Date:   Sun Nov 10 18:48:36 2024 -0500
+| | | | | 
+| | | | |     deleteShape 50%
+| | | | | 
+| | * | | commit 790337901680cf736c2b4024beaa3855ac6dacaa
+| | | |/  Author: leehoju7 <hoju.lee@mail.utoronto.ca>
+| | |/|   Date:   Sun Nov 10 18:48:58 2024 -0500
+| | | |   
+| | | |       edit
+| | | | 
+| | * | commit ca10cedf912fb3b03b574bcf1ab09453e68bd0c6
+| | | | Author: leehoju7 <hoju.lee@mail.utoronto.ca>
+| | | | Date:   Sun Nov 10 18:38:28 2024 -0500
+| | | | 
+| | | |     edit command
+| | | | 
+| | * | commit 48b3ccdf1a7519f5ad834650865c59185e123ca2
+| | | | Author: leehoju7 <hoju.lee@mail.utoronto.ca>
+| | | | Date:   Sun Nov 10 18:38:13 2024 -0500
+| | | | 
+| | | |     edit command
+| | | | 
+| | * | commit e2785d5d9a62d56cc4fd68c46c64809bcad33cef
+| | |/  Author: leehoju7 <hoju.lee@mail.utoronto.ca>
+| | |   Date:   Sun Nov 10 18:35:30 2024 -0500
+| | |   
+| | |       edit fix
+| | | 
+| | * commit bd01150d8a5c21f7eb0ee53a1ff2325969d8029a
+| | | Author: leehoju7 <hoju.lee@mail.utoronto.ca>
+| | | Date:   Sun Nov 10 18:28:26 2024 -0500
+| | | 
+| | |     edit
+| | | 
+| | * commit 3d6a515bc0fd43f61ea2fe3d7169d030f4ea2af2
+| | | Author: leehoju7 <hoju.lee@mail.utoronto.ca>
+| | | Date:   Sun Nov 10 18:23:34 2024 -0500
+| | | 
+| | |     edit clone
+| | | 
+| | * commit ec425fd3fc54c66526bf9c2793ac944bb948aaf3
+| | | Author: leehoju7 <hoju.lee@mail.utoronto.ca>
+| | | Date:   Sun Nov 10 18:11:45 2024 -0500
+| | | 
+| | |     edit circle
+| | | 
+| | * commit e158220178907a3dc4d819d45064fbb665fe05e6
+| | | Author: leehoju7 <hoju.lee@mail.utoronto.ca>
+| | | Date:   Sun Nov 10 18:05:50 2024 -0500
+| | | 
+| | |     edit litle
+| | | 
+| | * commit adad2265a7d63cb90181e0307a279351e6a199ad
+| | | Author: leehoju7 <hoju.lee@mail.utoronto.ca>
+| | | Date:   Sun Nov 10 17:45:22 2024 -0500
+| | | 
+| | |     edit buttons
+| | | 
+* | | commit 490f0accce2f64d2b555955d48b99265123fc1e6
+|/ /  Author: leehoju7 <hoju.lee@mail.utoronto.ca>
+| |   Date:   Sun Nov 10 20:52:36 2024 -0500
+| |   
+| |       edit extra feature
+| | 
+* | commit b8938b920ecf7f2b8ecaa6dd2e513bb25bd2a1f0
+| | Author: leehoju7 <hoju.lee@mail.utoronto.ca>
+| | Date:   Sun Nov 10 20:45:58 2024 -0500
+| | 
+| |     edit scrum
+| | 
+* | commit 2c2360dfa7f3c1ba0b1fcde38b0f2297c5e43db8
+|/  Author: mbagayaa <alexia.mbagaya@mail.utoronto.ca>
+|   Date:   Sun Nov 10 17:19:35 2024 -0500
+|   
+|       Updating dailyScrum and sprintBacklog4
+| 
+* commit a3ce8333ac251e31060f1564eecc07d09b45a340
+| Author: leehoju7 <hoju.lee@mail.utoronto.ca>
+| Date:   Sun Nov 10 17:16:14 2024 -0500
+| 
+|     edit scrum
+| 
+* commit efaace649521aa6c6afbe8f905c5321568faf1b7
+| Author: chosun29 <sgmin.cho@mail.utoronto.ca>
+| Date:   Sun Nov 10 16:30:58 2024 -0500
+| 
+|     changed
+| 
+* commit 0119d7ae3fd56c0cfd99a2cb223ddef304f9929c
+| Author: chosun29 <sgmin.cho@mail.utoronto.ca>
+| Date:   Sun Nov 10 16:24:11 2024 -0500
+| 
+|     highLevelTemplate.txt edited by sungmin
+| 
+* commit 661d013d54dcf6dd8faa4bce8c609b8b460470ff
+| Author: chosun29 <sgmin.cho@mail.utoronto.ca>
+| Date:   Sun Nov 10 10:02:27 2024 -0500
+| 
+|     dailySCrum edited by sungmin
+| 
+* commit e2ffbc755431b4e5ad75546593ba8d3046497521
+| Author: leehoju7 <hoju.lee@mail.utoronto.ca>
+| Date:   Sat Nov 9 21:13:08 2024 -0500
+| 
+|     edit pull request
+|   
+*   commit 41a03a201fa7c1a3f55f97083d95d7790615ed8d
+|\  Merge: 4ae7c1c 00ac734
+| | Author: leehoju7 <hoju.lee@mail.utoronto.ca>
+| | Date:   Sat Nov 9 21:12:47 2024 -0500
+| | 
+| |     Merge branch 'BUG4.002'
+| | 
+| * commit 00ac7342f2cbdc183fab449ec0ffb6bcf5ca0ebb
+| | Author: mbagayaa <alexia.mbagaya@mail.utoronto.ca>
+| | Date:   Sat Nov 9 20:45:46 2024 -0500
+| | 
+| |     Fixed BUG4.002 resizing of the Canvas/Window
+| | 
+* | commit 4ae7c1c0647d9a4b34227a280ba08b219e173b9e
+| | Author: leehoju7 <hoju.lee@mail.utoronto.ca>
+| | Date:   Sat Nov 9 21:11:08 2024 -0500
+| | 
+| |     edit pullreq
+| |   
+* |   commit 1f97e91b24f524a256b66d1190330677b65e0e0f
+|\ \  Merge: 1eccbd7 eb5df6d
+| | | Author: mbagayaa <alexia.mbagaya@mail.utoronto.ca>
+| | | Date:   Sat Nov 9 20:54:19 2024 -0500
+| | | 
+| | |     Merge branch 'master' of https://mcsscm.utm.utoronto.ca:9999/git/207/24f/repo_a2_031
+| | | 
+| * | commit eb5df6d440c1f37f4df0b8c5e7298a4991b10775
+| | | Author: chosun29 <sgmin.cho@mail.utoronto.ca>
+| | | Date:   Sat Nov 9 19:43:25 2024 -0500
+| | | 
+| | |     architecture.txt edited by sungmin
+| | | 
+| * | commit 13e8a92a6c8663fa72e8ffa94f09987c80a9b6b1
+| |\| Merge: 5c58cfe 663546d
+| | | Author: chosun29 <sgmin.cho@mail.utoronto.ca>
+| | | Date:   Sat Nov 9 19:42:13 2024 -0500
+| | | 
+| | |     Merge branch 'master' of https://mcsscm.utm.utoronto.ca:9999/git/207/24f/repo_a2_031
+| | | 
+| * | commit 5c58cfe292005c15c65bbb3334d4903d77a04e73
+| | | Author: chosun29 <sgmin.cho@mail.utoronto.ca>
+| | | Date:   Sat Nov 9 19:41:57 2024 -0500
+| | | 
+| | |     fianlArchitecture edited by sungmin
+| | |   
+| * |   commit d5c07ce0282da882205c77e714ab9f035c859b87
+| |\ \  Merge: b43d892 015bba4
+| | | | Author: chosun29 <sgmin.cho@mail.utoronto.ca>
+| | | | Date:   Sat Nov 9 19:24:47 2024 -0500
+| | | | 
+| | | |     merge conflict resolved
+| | | | 
+| * | | commit b43d892a5a37f23b21808e82e352f0d7c93f22c9
+| | | | Author: chosun29 <sgmin.cho@mail.utoronto.ca>
+| | | | Date:   Sat Nov 9 19:13:31 2024 -0500
+| | | | 
+| | | |     final architecture
+| | | | 
+* | | | commit 1eccbd75c060fa8fa56b300fa79601b074abc6b4
+| |_|/  Author: mbagayaa <alexia.mbagaya@mail.utoronto.ca>
+|/| |   Date:   Sat Nov 9 20:53:20 2024 -0500
+| | |   
+| | |       Updating txt.files
+| | | 
+* | | commit 663546d2e557176c906f1ed68378748bf520153e
+| |/  Author: leehoju7 <hoju.lee@mail.utoronto.ca>
+|/|   Date:   Sat Nov 9 19:33:57 2024 -0500
+| |   
+| |       edit highleveltemplate
+| | 
+* | commit 015bba4213009983357387218de5cf67f9507307
+| | Author: leehoju7 <hoju.lee@mail.utoronto.ca>
+| | Date:   Sat Nov 9 19:13:07 2024 -0500
+| | 
+| |     edit highLevelTemplate
+| | 
+* | commit 10f08c8cce8c451b8b58b86f06b3ff4fec6764c1
+| | Author: leehoju7 <hoju.lee@mail.utoronto.ca>
+| | Date:   Sat Nov 9 18:48:43 2024 -0500
+| | 
+| |     edit extrafeatures.txt
+| | 
+* | commit 2f71df0695bf354c7d0ff777d13f09bc8bbb3ab4
+| | Author: leehoju7 <hoju.lee@mail.utoronto.ca>
+| | Date:   Sat Nov 9 18:27:18 2024 -0500
+| | 
+| |     edit all sprints
+| | 
+* | commit a388f5ecff5e1e99d27bc216f4ef05712627e303
+| | Author: leehoju7 <hoju.lee@mail.utoronto.ca>
+| | Date:   Sat Nov 9 18:22:20 2024 -0500
+| | 
+| |     edit scrum 4
+| | 
+* | commit 6f9c4e09a37e4721ac6d07afed44873d57bc17ef
+| | Author: leehoju7 <hoju.lee@mail.utoronto.ca>
+| | Date:   Sat Nov 9 18:20:00 2024 -0500
+| | 
+| |     edit sprint3
+| | 
+* | commit d241a3d844157de06487bc6d3129362b923d58eb
+| | Author: leehoju7 <hoju.lee@mail.utoronto.ca>
+| | Date:   Sat Nov 9 18:15:42 2024 -0500
+| | 
+| |     edit sprintbacklog 2
+| | 
+* | commit 8f3d45298699b5315538e858122ba8dd0dac45ce
+| | Author: leehoju7 <hoju.lee@mail.utoronto.ca>
+| | Date:   Sat Nov 9 18:13:18 2024 -0500
+| | 
+| |     edit sprint 1 SO THAT
+| | 
+* | commit 6b9dc7751ba6ddc6c2eef468a4d2a02db24854bf
+| | Author: leehoju7 <hoju.lee@mail.utoronto.ca>
+| | Date:   Sat Nov 9 18:10:28 2024 -0500
+| | 
+| |     edit scrum
+| | 
+* | commit 37a142513755ae77584de3027384ba1ce09a4274
+| | Author: leehoju7 <hoju.lee@mail.utoronto.ca>
+| | Date:   Sat Nov 9 18:08:41 2024 -0500
+| | 
+| |     edit architecture.txt
+| | 
+* | commit 7ae46ceb20498dc90b3b0253d13601d39b909ce3
+| | Author: leehoju7 <hoju.lee@mail.utoronto.ca>
+| | Date:   Sat Nov 9 18:03:27 2024 -0500
+| | 
+| |     edit uml
+| | 
+* | commit bd9f77f702470e6e0fd104f1d9174f001d5c5686
+| | Author: leehoju7 <hoju.lee@mail.utoronto.ca>
+| | Date:   Sat Nov 9 17:55:03 2024 -0500
+| | 
+| |     added strategy.uml
+| | 
+* | commit 636f83aa2b7e87c310717039d6f50fe556301b24
+| | Author: leehoju7 <hoju.lee@mail.utoronto.ca>
+| | Date:   Sat Nov 9 17:47:36 2024 -0500
+| | 
+| |     edit arc
+| | 
+* | commit 83dc752918fccf1f6cc184538b5b6e90775c0060
+| | Author: leehoju7 <hoju.lee@mail.utoronto.ca>
+| | Date:   Sat Nov 9 17:43:52 2024 -0500
+| | 
+| |     edit architecture
+| | 
+* | commit 2897c9d5a5fdf0756cafa1e03f347d24c9582808
+| | Author: leehoju7 <hoju.lee@mail.utoronto.ca>
+| | Date:   Sat Nov 9 17:39:41 2024 -0500
+| | 
+| |     edit scrum
+| | 
+* | commit 6f8f59d7491c63b443f438624d7f8598ab32ae73
+| | Author: leehoju7 <hoju.lee@mail.utoronto.ca>
+| | Date:   Sat Nov 9 17:39:16 2024 -0500
+| | 
+| |     edit final architecture.txt
+| | 
+* | commit 9d4fddbb7ad30ab08314f5b0a15f0901e309647a
+| | Author: leehoju7 <hoju.lee@mail.utoronto.ca>
+| | Date:   Sat Nov 9 17:23:39 2024 -0500
+| | 
+| |     edit architecture.txt
+| | 
+* | commit 23b18379418eb1167c9dad5c2057750ad234e80d
+|/  Author: leehoju7 <hoju.lee@mail.utoronto.ca>
+|   Date:   Sat Nov 9 17:04:25 2024 -0500
+|   
+|       edit architecture.txt
+| 
+* commit bb6046fb96a05a49d46f4e8f3dc6e9fec7b87263
+| Author: chosun29 <sgmin.cho@mail.utoronto.ca>
+| Date:   Sat Nov 9 16:59:01 2024 -0500
+| 
+|     productBacklog changed
+| 
+* commit c255c1d1b7925f0f5cc360318987907b171922a6
+| Author: leehoju7 <hoju.lee@mail.utoronto.ca>
+| Date:   Sat Nov 9 16:54:31 2024 -0500
+| 
+|     edit scrum
+|   
+*   commit b1ccb50b8b63ffdef4d6e611af858ec78bdd24bd
+|\  Merge: 6428e0d 37adaf0
+| | Author: chosun29 <sgmin.cho@mail.utoronto.ca>
+| | Date:   Sat Nov 9 16:50:09 2024 -0500
+| | 
+| |     Merge branch 'master' of https://mcsscm.utm.utoronto.ca:9999/git/207/24f/repo_a2_031
+| | 
+| * commit 37adaf00499a04eabb422572e1ea6ef688294c48
+| | Author: leehoju7 <hoju.lee@mail.utoronto.ca>
+| | Date:   Sat Nov 9 16:45:32 2024 -0500
+| | 
+| |     edit scrum
+| | 
+* | commit 6428e0d2810b68798e48cbf82e9e991cc990a65c
+| | Author: chosun29 <sgmin.cho@mail.utoronto.ca>
+| | Date:   Sat Nov 9 16:49:54 2024 -0500
+| | 
+| |     US4.004 pullRequest completed by sungmin
+| |   
+* |   commit f438c722c8c052c7e120816bfa86463daeb818e9
+|\ \  Merge: 6178f9d 6978f17
+| |/  Author: chosun29 <sgmin.cho@mail.utoronto.ca>
+|/|   Date:   Sat Nov 9 16:46:31 2024 -0500
+| |   
+| |       merge conflict resolved
+| | 
+| * commit 6978f1738929b9862d768f3b11657c9f1f2271a3
+| | Author: leehoju7 <hoju.lee@mail.utoronto.ca>
+| | Date:   Sat Nov 9 16:38:08 2024 -0500
+| | 
+| |     edit scrum
+| | 
+| * commit 2aea5251993fcdf9f5cfe929c9ba928b5ac5f287
+| | Author: leehoju7 <hoju.lee@mail.utoronto.ca>
+| | Date:   Sat Nov 9 16:32:28 2024 -0500
+| | 
+| |     edited US4.004
+| | 
+| * commit cc40dacfc6a656f44a87b71353e04b82fdf8a126
+| | Author: leehoju7 <hoju.lee@mail.utoronto.ca>
+| | Date:   Sat Nov 9 16:19:24 2024 -0500
+| | 
+| |     edit US4.004
+| | 
+| * commit 84c8b718498a13235de5ee308a7dee62160b3764
+| | Author: leehoju7 <hoju.lee@mail.utoronto.ca>
+| | Date:   Sat Nov 9 16:08:36 2024 -0500
+| | 
+| |     edit scrum
+| | 
+| * commit 7e83823bc87773dab0897c32c28b2d6a9f80c82d
+| | Author: leehoju7 <hoju.lee@mail.utoronto.ca>
+| | Date:   Fri Nov 8 16:17:28 2024 -0500
+| | 
+| |     edit pull request
+| | 
+| * commit 573d4bd6f7c477488bded1a900689f860efd90ac
+| | Author: leehoju7 <hoju.lee@mail.utoronto.ca>
+| | Date:   Fri Nov 8 16:17:02 2024 -0500
+| | 
+| |     edit pull request added US4.004
+| | 
+| * commit f4fd7283945bec8cba4c7d2fd72a26d38d94bc3c
+| | Author: leehoju7 <hoju.lee@mail.utoronto.ca>
+| | Date:   Thu Nov 7 14:54:43 2024 -0500
+| | 
+| |     edited moving shape
+| | 
+| * commit bbda687657ccb9799800d638f4a84c1f56d5055e
+| | Author: leehoju7 <hoju.lee@mail.utoronto.ca>
+| | Date:   Thu Nov 7 14:33:09 2024 -0500
+| | 
+| |     edit 4.004
+| |   
+* |   commit 6178f9d4c58657ec38792b60c833b6ef15700923
+|\ \  Merge: 83c6d33 fad9cf4
+| | | Author: leehoju7 <hoju.lee@mail.utoronto.ca>
+| | | Date:   Sat Nov 9 16:16:15 2024 -0500
+| | | 
+| | |     Merge branch 'master' of https://mcsscm.utm.utoronto.ca:9999/git/207/24f/repo_a2_031
+| | | 
+| * | commit fad9cf4e43756403c8f64cadae0a2c5cc97d1246
+| | | Author: chosun29 <sgmin.cho@mail.utoronto.ca>
+| | | Date:   Sat Nov 9 16:10:57 2024 -0500
+| | | 
+| | |     pullRequest edited by sungmin
+| | | 
+* | | commit 83c6d335315bf66c99c8a0ad0e3cab23de44ac5b
+|/ /  Author: leehoju7 <hoju.lee@mail.utoronto.ca>
+| |   Date:   Sat Nov 9 16:14:21 2024 -0500
+| |   
+| |       edit scrum
+| |   
+* |   commit 42eac3d677a39774784f889b53beb6a7744b4a85
+|\ \  Merge: b357f37 be3a234
+| | | Author: leehoju7 <hoju.lee@mail.utoronto.ca>
+| | | Date:   Sat Nov 9 16:02:26 2024 -0500
+| | | 
+| | |     A
+| | |     Merge branch 'master' of https://mcsscm.utm.utoronto.ca:9999/git/207/24f/repo_a2_031
+| | |   
+| * |   commit be3a234bf1f89ffce0d2b5893f52ec6ee51555ce
+| |\ \  Merge: 24abfe3 a37805e
+| | | | Author: chosun29 <sgmin.cho@mail.utoronto.ca>
+| | | | Date:   Fri Nov 8 23:56:10 2024 -0500
+| | | | 
+| | | |     Merge branch 'master' of https://mcsscm.utm.utoronto.ca:9999/git/207/24f/repo_a2_031
+| | | | 
+| * | | commit 24abfe37abb6c67ebc446de8b49599f7c94415a9
+| | | | Author: chosun29 <sgmin.cho@mail.utoronto.ca>
+| | | | Date:   Fri Nov 8 23:54:20 2024 -0500
+| | | | 
+| | | |     dailyScrum, sprint4, productBacklog edited by sungmin
+| | | | 
+* | | | commit b357f37cd9b54679304a503a7650fb8c01457e10
+| |/ /  Author: leehoju7 <hoju.lee@mail.utoronto.ca>
+|/| |   Date:   Sat Nov 9 16:02:12 2024 -0500
+| | |   
+| | |       edit scrum
+| | | 
+* | | commit a37805e49d2207cd228d861b1244018c5bf406d3
+| | | Author: leehoju7 <hoju.lee@mail.utoronto.ca>
+| | | Date:   Fri Nov 8 16:17:48 2024 -0500
+| | | 
+| | |     edit pullrequest
+| | | 
+* | | commit 3bd10b4fbc9c972e2b42e0410579e2dbee36c821
+|/ /  Author: leehoju7 <hoju.lee@mail.utoronto.ca>
+| |   Date:   Fri Nov 8 16:14:35 2024 -0500
+| |   
+| |       edit pull request
+| |   
+* |   commit bd358029bf49d997a2d21ec4182cf4110d2c002b
+|\ \  Merge: dfebaf7 35278ad
+| | | Author: leehoju7 <hoju.lee@mail.utoronto.ca>
+| | | Date:   Fri Nov 8 16:13:43 2024 -0500
+| | | 
+| | |     resolved conflict
+| | | 
+| * | commit 35278ad032fa4ed9c5d95e9b047f9fe49363ddfb
+| | | Author: leehoju7 <hoju.lee@mail.utoronto.ca>
+| | | Date:   Fri Nov 8 16:12:24 2024 -0500
+| | | 
+| | |     checked US4.003
+| | | 
+| * | commit bd330a5f6d4a25ad3da2df404c4ea940947eae27
+| | | Author: chosun29 <sgmin.cho@mail.utoronto.ca>
+| | | Date:   Fri Nov 8 13:53:25 2024 -0500
+| | | 
+| | |     US4.003 pullRequest by sungmin
+| | | 
+* | | commit dfebaf77c96051e69fa8504941a92621893ea20b
+| | | Author: leehoju7 <hoju.lee@mail.utoronto.ca>
+| | | Date:   Fri Nov 8 15:13:04 2024 -0500
+| | | 
+| | |     edit pullrequest
+| | | 
+* | | commit 72efbc3820e07884646adaa3dafadf4dfe70fa31
+|/ /  Author: chosun29 <sgmin.cho@mail.utoronto.ca>
+| |   Date:   Fri Nov 8 15:11:54 2024 -0500
+| |   
+| |       pullRequest edited by sungmin
+| | 
+* | commit 0ce73d4004da484a44e4b59c107b8ee2bc423f5d
+| | Author: chosun29 <sgmin.cho@mail.utoronto.ca>
+| | Date:   Fri Nov 8 10:56:13 2024 -0500
+| | 
+| |     dailySCrum edited by sungmin
+| | 
+* | commit d2650700572817f3cb303f9c4665033ecfab28f1
+| | Author: chosun29 <sgmin.cho@mail.utoronto.ca>
+| | Date:   Fri Nov 8 10:54:57 2024 -0500
+| | 
+| |     dailyScrum by sungmin
+| | 
+* | commit 29b3b3e38999127b819b4605371de0c3ce06ac80
+| | Author: chosun29 <sgmin.cho@mail.utoronto.ca>
+| | Date:   Thu Nov 7 19:41:53 2024 -0500
+| | 
+| |     productBacklog edited by sungmin
+| |   
+* |   commit 4d80f9ffca4d7b5888369856245f08c8da849375
+|\ \  Merge: b83b0e3 6d85fac
+| | | Author: leehoju7 <hoju.lee@mail.utoronto.ca>
+| | | Date:   Thu Nov 7 19:40:09 2024 -0500
+| | | 
+| | |     Merge branch 'master' of https://mcsscm.utm.utoronto.ca:9999/git/207/24f/repo_a2_031
+| | | 
+| * | commit 6d85fac07f280ff49069167c1a210610f9745a77
+| |/  Author: chosun29 <sgmin.cho@mail.utoronto.ca>
+| |   Date:   Thu Nov 7 01:33:05 2024 -0500
+| |   
+| |       dailyScrum, productBacklog edited by sungmin
+| | 
+* | commit b83b0e3018f3fa3a00bb5c83e86b745ff7ba4598
+|/  Author: leehoju7 <hoju.lee@mail.utoronto.ca>
+|   Date:   Thu Nov 7 19:39:56 2024 -0500
+|   
+|       edit scrum
+| 
+* commit 9844444691c28e4443cab5d0747a298b8278025e
+| Author: leehoju7 <hoju.lee@mail.utoronto.ca>
+| Date:   Thu Nov 7 01:11:46 2024 -0500
+| 
+|     edit pull request
+|   
+*   commit 43d88df7fc1d4f96c7c6ba61b6954a29433042bd
+|\  Merge: 9e7654b 6abf41d
+| | Author: leehoju7 <hoju.lee@mail.utoronto.ca>
+| | Date:   Thu Nov 7 01:10:00 2024 -0500
+| | 
+| |     Merge branch 'US3.0010'
+| | 
+| * commit 6abf41de8e1dead6f3d136525b168e466c9a3318
+| | Author: leehoju7 <hoju.lee@mail.utoronto.ca>
+| | Date:   Thu Nov 7 00:55:32 2024 -0500
+| | 
+| |     edit arc
+| | 
+| * commit d365053bb0ada5680f556396344c1d5fab33e5ed
+| | Author: chosun29 <sgmin.cho@mail.utoronto.ca>
+| | Date:   Thu Nov 7 00:14:17 2024 -0500
+| | 
+| |     US3.0010 completed by sungmin
+| | 
+* | commit 9e7654b2d88c82a7a6a9dfde49a3cf8b528f9346
+| | Author: leehoju7 <hoju.lee@mail.utoronto.ca>
+| | Date:   Thu Nov 7 00:41:57 2024 -0500
+| | 
+| |     edit scrum
+| |   
+* |   commit 0d43343858660f4ae80a86ddc33aeb744f8d6b32
+|\ \  Merge: ec8e562 955ded6
+| | | Author: chosun29 <sgmin.cho@mail.utoronto.ca>
+| | | Date:   Thu Nov 7 00:34:43 2024 -0500
+| | | 
+| | |     resolve conflicts and pullRequest US4.001 completed by sungmin
+| | | 
+| * | commit 955ded6f33cfa999922aeab13439378f8a85b22c
+| | | Author: leehoju7 <hoju.lee@mail.utoronto.ca>
+| | | Date:   Wed Nov 6 22:18:42 2024 -0500
+| | | 
+| | |     edit select
+| | | 
+| * | commit d97ee5311b1bfabdf455a14d3c8b092be3007844
+| | | Author: leehoju7 <hoju.lee@mail.utoronto.ca>
+| | | Date:   Wed Nov 6 22:16:48 2024 -0500
+| | | 
+| | |     working on US4.001
+| | | 
+| * | commit 7dc5078f7bfe79753db9bc19731fe02341b5b44b
+| | | Author: Hojun Lee <hoju.lee@mail.utoronto.ca>
+| | | Date:   Wed Nov 6 17:04:15 2024 -0500
+| | | 
+| | |     commited panel
+| | | 
+* | | commit ec8e5622d4f4b20749569da39308e99a12c7555c
+| | | Author: chosun29 <sgmin.cho@mail.utoronto.ca>
+| | | Date:   Thu Nov 7 00:21:17 2024 -0500
+| | | 
+| | |     pullRequest edited by sungmin
+| | | 
+* | | commit 0633606dd2a24bffb1de222a40800984e7c4a2bd
+| | | Author: leehoju7 <hoju.lee@mail.utoronto.ca>
+| | | Date:   Wed Nov 6 22:39:35 2024 -0500
+| | | 
+| | |     edit scrum
+| | | 
+* | | commit fc7ca4a8d0bde28a1fd987bfc31690e9e4032177
+| | | Author: leehoju7 <hoju.lee@mail.utoronto.ca>
+| | | Date:   Wed Nov 6 22:21:56 2024 -0500
+| | | 
+| | |     edit pull request
+| | | 
+* | | commit 0e2238a6c5581e2ecbec10ed843b02174104c603
+| | | Author: leehoju7 <hoju.lee@mail.utoronto.ca>
+| | | Date:   Wed Nov 6 21:38:29 2024 -0500
+| | | 
+| | |     edit architecture.txt
+| | |   
+* | |   commit cbf99f128d07d0258579a4ad2fed96633afe0d3f
+|\ \ \  Merge: 00bdabe bae33e7
+| | | | Author: Hojun Lee <hoju.lee@mail.utoronto.ca>
+| | | | Date:   Wed Nov 6 17:17:12 2024 -0500
+| | | | 
+| | | |     Merge branch 'master' of https://mcsscm.utm.utoronto.ca:9999/git/207/24f/repo_a2_031
+| | | | 
+| * | | commit bae33e7928be80cbb9207c3f0dc393209a11f92e
+| |/ /  Author: mbagayaa <alexia.mbagaya@mail.utoronto.ca>
+| | |   Date:   Wed Nov 6 12:24:10 2024 -0500
+| | |   
+| | |       Updated SpringBacklog4.txt and ProductBacklog.txt
+| | | 
+* | | commit 00bdabeb6492acd0a11b636973800fd2bd0ba5a4
+|/ /  Author: Hojun Lee <hoju.lee@mail.utoronto.ca>
+| |   Date:   Wed Nov 6 17:16:57 2024 -0500
+| |   
+| |       edit scrum
+| | 
+* | commit c26cf1307fb18dcf4c7b324151985278e3d25311
+|/  Author: Hojun Lee <hoju.lee@mail.utoronto.ca>
+|   Date:   Tue Nov 5 22:29:49 2024 -0500
+|   
+|       edit scrum
+| 
+* commit 6ba848f155f1184e8be6de5676c24413ca83804b
+| Author: Hojun Lee <hoju.lee@mail.utoronto.ca>
+| Date:   Tue Nov 5 22:19:45 2024 -0500
+| 
+|     edit scrum
+| 
+* commit 2911b3673ffb725a271e7e2025c2cfb6f067e020
+| Author: Hojun Lee <hoju.lee@mail.utoronto.ca>
+| Date:   Tue Nov 5 22:16:18 2024 -0500
+| 
+|     edit scrum
+| 
+* commit 139160ba9fc95e0ed4dfd31a0a253cc7c9c67ee0
+| Author: mbagayaa <alexia.mbagaya@mail.utoronto.ca>
+| Date:   Tue Nov 5 13:58:42 2024 -0500
+| 
+|     mbagayaa Updated dailyScrumMeeting.txt4
+| 
+* commit 36b43118d88810940502f13038e6cb4b1bacfce1
+| Author: chosun29 <sgmin.cho@mail.utoronto.ca>
+| Date:   Mon Nov 4 23:56:08 2024 -0500
+| 
+|     dailyScrum edited by sungmin
+| 
+* commit 56e181ae25a37dcb75493028e9c5ea957fe6ccb7
+| Author: Hojun Lee <hoju.lee@mail.utoronto.ca>
+| Date:   Mon Nov 4 22:17:26 2024 -0500
+| 
+|     edit scrum
+| 
+* commit dc79fa5718219fecb892e43d6212121c59e8649d
+| Author: leerya41 <ryanlee.lee@mail.utoronto.ca>
+| Date:   Mon Nov 4 21:07:23 2024 -0500
+| 
+|     updates
+| 
+* commit 8b813e9206471a39ec9a006cafe4de2ae4a5e450
+| Author: MCS CSC207H5 <207@dh2010pc10.utm.utoronto.ca>
+| Date:   Mon Nov 4 18:32:45 2024 -0500
+| 
+|     Sprint 1 Writing feedback, extraFeatures.txt and finalArchitecture
+| 
+* commit 75fdbec6318d79d5ff2c033de1eb55705a119666
+| Author: mbagayaa <alexia.mbagaya@mail.utoronto.ca>
+| Date:   Mon Nov 4 11:56:25 2024 -0500
+| 
+|     Updated dailyScrumMeeting.txt4
+| 
+* commit 107e848fbd021b919a428b6f8831cff11d00106b
+| Author: Hojun Lee <hoju.lee@mail.utoronto.ca>
+| Date:   Mon Nov 4 10:25:23 2024 +0900
+| 
+|     edited pull request
+|   
+*   commit ff22329295ffe64b8ca74c6c2f0d6f960b1c100f
+|\  Merge: 712522d 6546dff
+| | Author: Hojun Lee <hoju.lee@mail.utoronto.ca>
+| | Date:   Mon Nov 4 10:24:40 2024 +0900
+| | 
+| |     Merge branch 'US3.0010/selectormode/RL'
+| | 
+| * commit 6546dff9783069be669f10c64f83a4285a48bd77
+| | Author: leerya41 <ryanlee.lee@mail.utoronto.ca>
+| | Date:   Sun Nov 3 20:05:03 2024 -0500
+| | 
+| |     done selector mode
+| | 
+* | commit 712522ddee8d0937496b1f53eafdc27385253d41
+| | Author: Hojun Lee <hoju.lee@mail.utoronto.ca>
+| | Date:   Mon Nov 4 10:20:21 2024 +0900
+| | 
+| |     edit scrum
+| |   
+* |   commit e25a479bac3a4aab6cbcaf4e0fa58c44fb72583e
+|\ \  Merge: 8900b25 a0b23e5
+| | | Author: leerya41 <ryanlee.lee@mail.utoronto.ca>
+| | | Date:   Sun Nov 3 20:11:57 2024 -0500
+| | | 
+| | |     Merge branch 'master' of https://mcsscm.utm.utoronto.ca:9999/git/207/24f/repo_a2_031
+| | |     update
+| | | 
+| * | commit a0b23e5f251f1efabf810ef947a24a05c1315d0b
+| |/  Author: chosun29 <sgmin.cho@mail.utoronto.ca>
+| |   Date:   Sun Nov 3 18:40:21 2024 -0500
+| |   
+| |       dailyscrum edited by sungmin
+| | 
+* | commit 8900b25064da9f24b1510539427ae29f4103d52c
+|/  Author: leerya41 <ryanlee.lee@mail.utoronto.ca>
+|   Date:   Sun Nov 3 20:11:31 2024 -0500
+|   
+|       update backlogs and pullreq
+| 
+* commit 8d2c866574b616509ba528c938f9e14f2cd8d262
+| Author: leerya41 <ryanlee.lee@mail.utoronto.ca>
+| Date:   Sun Nov 3 10:49:20 2024 -0500
+| 
+|     update
+| 
+* commit 6294772c6f1f8991b8e8d647a7da101b676ea575
+| Author: leerya41 <ryanlee.lee@mail.utoronto.ca>
+| Date:   Sun Nov 3 10:48:52 2024 -0500
+| 
+|     update scrum
+| 
+* commit 6b15d980f21fb9af2c483b24c1064bcaf3b1f3b4
+| Author: mbagayaa <alexia.mbagaya@mail.utoronto.ca>
+| Date:   Sat Nov 2 23:48:30 2024 -0400
+| 
+|     mbagayaa updated dailyScrumMeeting.txt4
+| 
+* commit ce6c12413e46de7909081d4a0cec116748463273
+| Author: Hojun Lee <hoju.lee@mail.utoronto.ca>
+| Date:   Sun Nov 3 09:55:34 2024 +0900
+| 
+|     edit scrum
+| 
+* commit cd19b6726d55ee4f7e000dd85d5443c5ca26b414
+| Author: chosun29 <sgmin.cho@mail.utoronto.ca>
+| Date:   Sat Nov 2 19:02:41 2024 -0400
+| 
+|     dailyScrum and pullRequest edited by sungmin
+|   
+*   commit ac32f8149e19c616257b0c724a2d1cc86e7ed949
+|\  Merge: b8be69e ddef1e4
+| | Author: chosun29 <sgmin.cho@mail.utoronto.ca>
+| | Date:   Sat Nov 2 18:59:58 2024 -0400
+| | 
+| |     Merge branch 'BUG3.005'
+| | 
+| * commit ddef1e4381367fcb408fa20716e540fb3d824177
+| | Author: Hojun Lee <hoju.lee@mail.utoronto.ca>
+| | Date:   Sun Nov 3 07:48:28 2024 +0900
+| | 
+| |     edit polyline
+| | 
+* | commit b8be69eb9a03853355981837202809f7e0bc1931
+| | Author: Hojun Lee <hoju.lee@mail.utoronto.ca>
+| | Date:   Sun Nov 3 07:50:00 2024 +0900
+| | 
+| |      edit pullreqeust
+| | 
+* | commit d92dede012408e2bd5a84fd076aaaca3a71a9f70
+|/  Author: Hojun Lee <hoju.lee@mail.utoronto.ca>
+|   Date:   Sun Nov 3 07:49:13 2024 +0900
+|   
+|       finished 3.005
+| 
+* commit e3a1aff72b30a52fd9820c5428eefaa35d65ccc4
+| Author: leerya41 <ryanlee.lee@mail.utoronto.ca>
+| Date:   Sat Nov 2 16:27:16 2024 -0400
+| 
+|     updates
+|   
+*   commit 6a59228c8b3874550b49431d7617641c31dd25b7
+|\  Merge: c3e344e c3aea47
+| | Author: leerya41 <ryanlee.lee@mail.utoronto.ca>
+| | Date:   Sat Nov 2 16:20:00 2024 -0400
+| | 
+| |     Merge branch 'bug3.005_leehoju7'
+| |     done polyline.
+| | 
+| * commit c3aea47aecd2d0ee8b3bd04f39f09b6f168a10b0
+| | Author: Hojun Lee <hoju.lee@mail.utoronto.ca>
+| | Date:   Sun Nov 3 04:22:59 2024 +0900
+| | 
+| |     edited polyline
+| | 
+| * commit 822835be2d7bbf35b7bec7a6c3045be63db4be59
+| | Author: Hojun Lee <hoju.lee@mail.utoronto.ca>
+| | Date:   Sat Nov 2 13:13:13 2024 +0900
+| | 
+| |     edit poly
+| | 
+| * commit 3f3b057a8f1481ea39c9df3d1e04f8ffa1086719
+| | Author: mbagayaa <alexia.mbagaya@mail.utoronto.ca>
+| | Date:   Fri Nov 1 19:03:31 2024 -0400
+| | 
+| |     Made changes to dailyScrumMeeting4
+| | 
+| * commit f484b1860f3ec9c0664c9083940ac47113ebff76
+| | Author: mbagayaa <alexia.mbagaya@mail.utoronto.ca>
+| | Date:   Fri Nov 1 18:59:20 2024 -0400
+| | 
+| |     Implemented drawing polyline.
+| |   
+| *   commit 74d156331ae1d602a29ace98a850de1b61b2599e
+| |\  Merge: 6706d1c 5e14f62
+| | | Author: mbagayaa <alexia.mbagaya@mail.utoronto.ca>
+| | | Date:   Fri Nov 1 17:44:35 2024 -0400
+| | | 
+| | |     Merge branch 'master' into BUG3.005
+| | | 
+| * | commit 6706d1cab4f9f4b6741cd42a3def5be705bbf946
+| | | Author: mbagayaa <alexia.mbagaya@mail.utoronto.ca>
+| | | Date:   Fri Nov 1 01:01:11 2024 -0400
+| | | 
+| | |     implemented Polyline
+| | | 
+* | | commit c3e344ea4f4d3d55bdc4a5bca73b702166302e84
+| | | Author: Hojun Lee <hoju.lee@mail.utoronto.ca>
+| | | Date:   Sun Nov 3 04:26:39 2024 +0900
+| | | 
+| | |     edit scrum & bug3.005
+| | | 
+* | | commit b3caa5d1c4f799714918fc564b73b14ab5b3724a
+| | | Author: leerya41 <ryanlee.lee@mail.utoronto.ca>
+| | | Date:   Sat Nov 2 00:31:33 2024 -0400
+| | | 
+| | |     update
+| | | 
+* | | commit 8f91df422c210af337ccacb45374572db038aad8
+| | | Author: chosun29 <sgmin.cho@mail.utoronto.ca>
+| | | Date:   Fri Nov 1 22:27:17 2024 -0400
+| | | 
+| | |     confirm US3.009 pull request, dailyscrum and pullRequest edited by sungmin
+| | |   
+* | |   commit 5cd100a98ef318cdef096b57793f05525a084c5e
+|\ \ \  Merge: 26c8603 3347297
+| | | | Author: chosun29 <sgmin.cho@mail.utoronto.ca>
+| | | | Date:   Fri Nov 1 22:25:26 2024 -0400
+| | | | 
+| | | |     Merge branch 'US3.009'
+| | | | 
+| * | | commit 33472978bb1b3410ef0e5a88dea8604b895d2894
+| | | | Author: Hojun Lee <hoju.lee@mail.utoronto.ca>
+| | | | Date:   Sat Nov 2 11:13:35 2024 +0900
+| | | | 
+| | | |     finish US3.009
+| | | |   
+* | | |   commit 26c86039201582be31eeb67c4f727a68aa38194b
+|\ \ \ \  Merge: b623d6a 56d6778
+| | | | | Author: Hojun Lee <hoju.lee@mail.utoronto.ca>
+| | | | | Date:   Sat Nov 2 11:20:24 2024 +0900
+| | | | | 
+| | | | |     Merge branch 'master' of https://mcsscm.utm.utoronto.ca:9999/git/207/24f/repo_a2_031
+| | | | | 
+| * | | | commit 56d67788788e32fd4596d29245a635334ffca548
+| | | | | Author: leerya41 <ryanlee.lee@mail.utoronto.ca>
+| | | | | Date:   Fri Nov 1 21:53:13 2024 -0400
+| | | | | 
+| | | | |     update
+| | | | | 
+* | | | | commit b623d6a3857e333d88abb94c6993131540b0e82c
+|/ / / /  Author: Hojun Lee <hoju.lee@mail.utoronto.ca>
+| | | |   Date:   Sat Nov 2 11:20:11 2024 +0900
+| | | |   
+| | | |       edit pullreqeust
+| | | | 
+* | | | commit 8d4d6efef4cec816126d631ac8201021dc7308d5
+|/ / /  Author: Hojun Lee <hoju.lee@mail.utoronto.ca>
+| | |   Date:   Sat Nov 2 10:45:34 2024 +0900
+| | |   
+| | |       edit scrum
+| | | 
+* | | commit 27b0cbde37a80974b18dcaecdfc42f09a7addc53
+| | | Author: Hojun Lee <hoju.lee@mail.utoronto.ca>
+| | | Date:   Sat Nov 2 10:34:57 2024 +0900
+| | | 
+| | |     edit code
+| | | 
+* | | commit 9fab5482c23a627c1ff8c10337416d5b1ea17900
+| |/  Author: leerya41 <ryanlee.lee@mail.utoronto.ca>
+|/|   Date:   Fri Nov 1 17:50:44 2024 -0400
+| |   
+| |       scrum update
+| | 
+* | commit 5e14f62142c383f04294f7ac1d966300b7e9e5a7
+| | Author: mbagayaa <alexia.mbagaya@mail.utoronto.ca>
+| | Date:   Fri Nov 1 17:38:23 2024 -0400
+| | 
+| |     Updated pull requests.txt
+| | 
+* | commit 2540fddbbe5426c589dcb91dd79cd416d9993b5a
+| | Author: mbagayaa <alexia.mbagaya@mail.utoronto.ca>
+| | Date:   Fri Nov 1 01:38:10 2024 -0400
+| | 
+| |     Updated pull requests
+| |   
+* |   commit c5de1676f61b83512b36317e0420eca7ac96743f
+|\ \  Merge: e2c05d0 ea3f7e7
+| |/  Author: mbagayaa <alexia.mbagaya@mail.utoronto.ca>
+|/|   Date:   Fri Nov 1 01:34:17 2024 -0400
+| |   
+| |       mbagayaa merging US3.0021 into master
+| | 
+| * commit ea3f7e70e5b46d2deb1df674c7d0410bf852a4ae
+| | Author: leerya41 <ryanlee.lee@mail.utoronto.ca>
+| | Date:   Thu Oct 31 22:59:10 2024 -0400
+| | 
+| |     small change
+| | 
+| * commit 04e80b92649111c0b11f15895cda8fa83aa48618
+| | Author: leerya41 <ryanlee.lee@mail.utoronto.ca>
+| | Date:   Thu Oct 31 22:56:53 2024 -0400
+| | 
+| |     completed redo
+| | 
+* | commit e2c05d03d8605b9cbfb7d52b0189df8fc633efeb
+| | Author: mbagayaa <alexia.mbagaya@mail.utoronto.ca>
+| | Date:   Thu Oct 31 23:40:14 2024 -0400
+| | 
+| |     mbagayaa Updated Sprint3 and productbacklog
+| | 
+* | commit 4d8b793e658263a69c5c2a6958abdf77254c6b29
+| | Author: mbagayaa <alexia.mbagaya@mail.utoronto.ca>
+| | Date:   Thu Oct 31 23:23:33 2024 -0400
+| | 
+| |     Updated pullRequests.txt
+| |   
+* |   commit 03f5904eb216d2870a4c10ffd19dc3d0b815ad96
+|\ \  Merge: 8cc9332 eace3da
+| | | Author: mbagayaa <alexia.mbagaya@mail.utoronto.ca>
+| | | Date:   Thu Oct 31 23:19:39 2024 -0400
+| | | 
+| | |     Merge branch 'master' of https://mcsscm.utm.utoronto.ca:9999/git/207/24f/repo_a2_031
+| | | 
+| * | commit eace3daf0fb9a379dd61f451f49ea6f21746068a
+| | | Author: chosun29 <sgmin.cho@mail.utoronto.ca>
+| | | Date:   Thu Oct 31 23:12:48 2024 -0400
+| | | 
+| | |     dailyscrum edited by sungmin
+| | | 
+| * | commit 33bd2be0189a5d474417fc2da6f773302355590a
+| | | Author: Hojun Lee <hoju.lee@mail.utoronto.ca>
+| | | Date:   Fri Nov 1 12:09:32 2024 +0900
+| | | 
+| | |     edit scrum
+| | | 
+* | | commit 8cc93321a30ac80c55bc1599f75883c6d5cf6ea1
+| | | Author: mbagayaa <alexia.mbagaya@mail.utoronto.ca>
+| | | Date:   Thu Oct 31 23:18:50 2024 -0400
+| | | 
+| | |     Updated dailyScrumMeeting4.txt
+| | | 
+* | | commit a65435bcafec28224986a941d45febc9e007b9b7
+|\| | Merge: 8a04480 378976c
+| |/  Author: mbagayaa <alexia.mbagaya@mail.utoronto.ca>
+|/|   Date:   Thu Oct 31 23:06:01 2024 -0400
+| |   
+| |       Fixed pull requests conflict
+| | 
+| * commit 378976cb8955a4561041c821744db07658e02702
+| | Author: leerya41 <ryanlee.lee@mail.utoronto.ca>
+| | Date:   Thu Oct 31 23:01:26 2024 -0400
+| | 
+| |     sprint
+| | 
+| * commit 8ac3baa38c8ddad02344937d20e6255837590960
+| | Author: leerya41 <ryanlee.lee@mail.utoronto.ca>
+| | Date:   Thu Oct 31 23:00:06 2024 -0400
+| | 
+| |     scrum backlog update
+| | 
+* | commit 8a0448021ec4b660fa16fbc9e7da737330bb3d30
+| | Author: leerya41 <ryanlee.lee@mail.utoronto.ca>
+| | Date:   Thu Oct 31 22:17:17 2024 -0400
+| | 
+| |     update pull and scrum
+| | 
+* | commit acdda38b35ec948409f3b10cb2a46cca9b6d77ae
+|/  Author: leerya41 <ryanlee.lee@mail.utoronto.ca>
+|   Date:   Thu Oct 31 22:15:36 2024 -0400
+|   
+|       complete undo
+| 
+* commit 9285bf12549d843b13858f5603b3dba0ab95917e
+| Author: leerya41 <ryanlee.lee@mail.utoronto.ca>
+| Date:   Wed Oct 30 23:57:38 2024 -0400
+| 
+|     scrum/backlog update
+| 
+* commit a40c0e814e109c79e0cc8e3d2f50b60ab07f8f1f
+| Author: chosun29 <sgmin.cho@mail.utoronto.ca>
+| Date:   Wed Oct 30 19:17:16 2024 -0400
+| 
+|     dailyscrum, product&sprintBacklog edited by sungmin
+| 
+* commit 771f18178ce0e704b6da52025369193a7332747d
+| Author: Hojun Lee <hoju.lee@mail.utoronto.ca>
+| Date:   Thu Oct 31 08:10:24 2024 +0900
+| 
+|      edit pullrequest
+|   
+*   commit ac85a32e71566ca87bd13994b1e7bd6472f63db6
+|\  Merge: 5477b52 a217069
+| | Author: Hojun Lee <hoju.lee@mail.utoronto.ca>
+| | Date:   Thu Oct 31 08:08:33 2024 +0900
+| | 
+| |     Merge branch 'US3.006'
+| | 
+| * commit a21706908fdfeff035a5cc0cbd920afd9deeab8e
+| | Author: chosun29 <sgmin.cho@mail.utoronto.ca>
+| | Date:   Wed Oct 30 19:05:45 2024 -0400
+| | 
+| |     add color change functionality by sungmin
+| | 
+| * commit 826be23a1961f04bd20d4cda18a00a8a99f22cc5
+| | Author: chosun29 <sgmin.cho@mail.utoronto.ca>
+| | Date:   Wed Oct 30 18:47:17 2024 -0400
+| | 
+| |     pullRequest for US3.006 by sungmin
+| |   
+| *   commit 34631e107213715bb44bdbecaef89af178cde019
+| |\  Merge: b18b073 eabc35f
+| | | Author: chosun29 <sgmin.cho@mail.utoronto.ca>
+| | | Date:   Wed Oct 30 15:58:49 2024 -0400
+| | | 
+| | |     Merge branch 'master' of https://mcsscm.utm.utoronto.ca:9999/git/207/24f/repo_a2_031
+| | | 
+| * | commit b18b073c8596e5e1267edb941eb1dde5464bf4e2
+| | | Author: chosun29 <sgmin.cho@mail.utoronto.ca>
+| | | Date:   Wed Oct 30 15:57:06 2024 -0400
+| | | 
+| | |     srintBacklog3 edited by sungmin
+| | | 
+| * | commit a64210487c4bc6068b0d28efb4828b2efb37e4fe
+| | | Author: chosun29 <sgmin.cho@mail.utoronto.ca>
+| | | Date:   Wed Oct 30 15:55:32 2024 -0400
+| | | 
+| | |     sprintBacklog3 edited by sungmin
+| | | 
+* | | commit 5477b5265188f8a264d87b59c3abd214812e3128
+| |/  Author: Hojun Lee <hoju.lee@mail.utoronto.ca>
+|/|   Date:   Thu Oct 31 07:55:46 2024 +0900
+| |   
+| |       edit scrum
+| | 
+* | commit eabc35f6004bdc6d8443ffc3eca47a22bad39685
+|/  Author: Hojun Lee <hoju.lee@mail.utoronto.ca>
+|   Date:   Thu Oct 31 04:53:40 2024 +0900
+|   
+|       edit scrum
+| 
+* commit 32c9d8f0c9b00b02e26f0bf8ddfe7128931208c2
+| Author: chosun29 <sgmin.cho@mail.utoronto.ca>
+| Date:   Wed Oct 30 15:51:32 2024 -0400
+| 
+|     pullRequests completed by sungmin
+|   
+*   commit 25cd4a0b8f976dc33d70502de07ee7b04c20aebd
+|\  Merge: e46e07b bb4187a
+| | Author: chosun29 <sgmin.cho@mail.utoronto.ca>
+| | Date:   Wed Oct 30 15:50:06 2024 -0400
+| | 
+| |     Merge branch 'US3.007'
+| | 
+| * commit bb4187a42da48d1e73d1e3355bc1b5a01257dae5
+| | Author: Hojun Lee <hoju.lee@mail.utoronto.ca>
+| | Date:   Wed Oct 30 14:48:17 2024 +0900
+| | 
+| |     completed US3.007
+| | 
+* | commit e46e07b21e3b7c2498cab47a2597c9a176cb673c
+| | Author: chosun29 <sgmin.cho@mail.utoronto.ca>
+| | Date:   Wed Oct 30 14:13:28 2024 -0400
+| | 
+| |     pullRequests edited by sungmin
+| | 
+* | commit 051c75085d0ef747ab2e9996f4224966426b392c
+| | Author: Hojun Lee <hoju.lee@mail.utoronto.ca>
+| | Date:   Thu Oct 31 03:04:32 2024 +0900
+| | 
+| |     editscrum
+| | 
+* | commit d61424d38eb8372bb9545caa5c953b035c5e144d
+|/  Author: Hojun Lee <hoju.lee@mail.utoronto.ca>
+|   Date:   Wed Oct 30 14:50:25 2024 +0900
+|   
+|       edited pull request for US3.007
+| 
+* commit 79a229528b46b364e4fffdadb335b982112f7eda
+| Author: Hojun Lee <hoju.lee@mail.utoronto.ca>
+| Date:   Wed Oct 30 13:51:00 2024 +0900
+| 
+|     edit scrum
+|   
+*   commit 419db946b0905943d472b4310ee7bdbba05545df
+|\  Merge: 32c0348 b61bc32
+| | Author: Hojun Lee <hoju.lee@mail.utoronto.ca>
+| | Date:   Wed Oct 30 13:42:18 2024 +0900
+| | 
+| |     Merge branch 'master' of https://mcsscm.utm.utoronto.ca:9999/git/207/24f/repo_a2_031
+| |   
+| *   commit b61bc320b0bb433c1dcb17cb795f02cd6d20f778
+| |\  Merge: 6c4edbe 1c57b27
+| | | Author: leerya41 <ryanlee.lee@mail.utoronto.ca>
+| | | Date:   Wed Oct 30 00:40:14 2024 -0400
+| | | 
+| | |     Merge branch 'BUG3.004local'
+| | |     merging factory pullreq
+| | | 
+| | * commit 1c57b2715c43dd20cd3079384114b2805ad8581a
+| | | Author: Hojun Lee <hoju.lee@mail.utoronto.ca>
+| | | Date:   Wed Oct 30 13:08:00 2024 +0900
+| | | 
+| | |     edit shapefactory
+| | | 
+* | | commit 32c0348568787c75428cf1abbb126c635d9eafd9
+|/ /  Author: Hojun Lee <hoju.lee@mail.utoronto.ca>
+| |   Date:   Wed Oct 30 13:41:53 2024 +0900
+| |   
+| |       edit scrum
+| | 
+* | commit 6c4edbe3cee3fa0f866c5656e04e49922be19bbd
+| | Author: leerya41 <ryanlee.lee@mail.utoronto.ca>
+| | Date:   Wed Oct 30 00:39:32 2024 -0400
+| | 
+| |     pullrequestComplete
+| | 
+* | commit 8ea1b1fcc30a0a8068b378688454d2727b5c4af0
+|/  Author: Hojun Lee <hoju.lee@mail.utoronto.ca>
+|   Date:   Wed Oct 30 13:36:57 2024 +0900
+|   
+|       edit pull request
+| 
+* commit 2ffbf18b3ad0f6b3ce9dc4526bd08574ddb03d03
+| Author: chosun29 <sgmin.cho@mail.utoronto.ca>
+| Date:   Tue Oct 29 23:13:12 2024 -0400
+| 
+|     dailyScrumMeeting edited by sungmin
+| 
+* commit 2d200a62ab3777ea5dcf6a9f1ebcb5da08cdaa93
+| Author: chosun29 <sgmin.cho@mail.utoronto.ca>
+| Date:   Tue Oct 29 23:11:41 2024 -0400
+| 
+|     sprintBacklog3 and productBacklog edited by sungmin
+| 
+* commit 81a31e3668a01e51269a13d190413a83e9fc26f0
+| Author: Hojun Lee <hoju.lee@mail.utoronto.ca>
+| Date:   Wed Oct 30 11:42:03 2024 +0900
+| 
+|     edit scrum / productbacklog
+| 
+* commit 4a7fc91ca99eea8e58063fa41e3473facb683cd0
+| Author: leerya41 <ryanlee.lee@mail.utoronto.ca>
+| Date:   Tue Oct 29 22:00:39 2024 -0400
+| 
+|     added pull req
+| 
+* commit 65c162ee63a3be7ed54f7adc83b02013f1ea81cf
+| Author: leerya41 <ryanlee.lee@mail.utoronto.ca>
+| Date:   Tue Oct 29 21:24:34 2024 -0400
+| 
+|     update backlog and scrum
+| 
+* commit d5e2e933b64e810abf3721a8dbc8f69be7332bab
+| Author: chosun29 <sgmin.cho@mail.utoronto.ca>
+| Date:   Tue Oct 29 01:28:05 2024 -0400
+| 
+|     scrum edited by sungmin
+| 
+* commit 009728c267e9522b0ca191c2056d685f34863793
+| Author: leerya41 <ryanlee.lee@mail.utoronto.ca>
+| Date:   Mon Oct 28 21:05:57 2024 -0400
+| 
+|     scrum update
+| 
+* commit 73ddbd644e719da837a856f693863ac9360c4647
+| Author: leerya41 <ryanlee.lee@mail.utoronto.ca>
+| Date:   Sun Oct 27 19:45:34 2024 -0400
+| 
+|     small change
+| 
+* commit 084286dc225e6bb043af8f810f0c90757b3159b3
+| Author: leerya41 <ryanlee.lee@mail.utoronto.ca>
+| Date:   Sun Oct 27 19:44:44 2024 -0400
+| 
+|     added prints
+| 
+* commit 2ab22653dc0eb89024ccc7200b613a5910712bc0
+| Author: leerya41 <ryanlee.lee@mail.utoronto.ca>
+| Date:   Sun Oct 27 19:42:45 2024 -0400
+| 
+|     fixed bug and updated scrum and cleaned up comments
+|   
+*   commit 06a84e6fe00712437bd6c2abaf350a56ceb9ba2f
+|\  Merge: 6914275 006f5d6
+| | Author: leerya41 <ryanlee.lee@mail.utoronto.ca>
+| | Date:   Sun Oct 27 19:34:32 2024 -0400
+| | 
+| |     Merge branch 'change/US2.005/directionchange/RL'
+| |     merge sqaure change
+| | 
+| * commit 006f5d6ecb7146580c8d8ebb4387805748546208
+| | Author: leerya41 <ryanlee.lee@mail.utoronto.ca>
+| | Date:   Sun Oct 27 19:33:54 2024 -0400
+| | 
+| |     finailized square implmentation
+| | 
+* | commit 69142751f5ebbc2c44ec0adbbdbc3dce692b5b16
+|/  Author: mbagayaa <alexia.mbagaya@mail.utoronto.ca>
+|   Date:   Sun Oct 27 19:03:23 2024 -0400
+|   
+|       The updated dailyScrumMeeting4.txt
+| 
+* commit 399ad7f522956c67082c223cf75d7d642ecc373f
+| Author: leerya41 <ryanlee.lee@mail.utoronto.ca>
+| Date:   Sun Oct 27 16:26:24 2024 -0400
+| 
+|     backlog changes
+| 
+* commit 5abd45f2054b47af1c7d4e905355477a59038af1
+| Author: leerya41 <ryanlee.lee@mail.utoronto.ca>
+| Date:   Sun Oct 27 16:24:03 2024 -0400
+| 
+|     update scrum
+| 
+* commit b21d1e762a85b83156f9586641c2fbd8b4c2c967
+| Author: leerya41 <ryanlee.lee@mail.utoronto.ca>
+| Date:   Sun Oct 27 16:23:10 2024 -0400
+| 
+|     2 new user stories
+|   
+*   commit db2fd2ded24f35971513bd070cc7bd4d24e55924
+|\  Merge: 66b9baa 6ac24c6
+| | Author: leerya41 <ryanlee.lee@mail.utoronto.ca>
+| | Date:   Sun Oct 27 16:18:41 2024 -0400
+| | 
+| |     Merge branch 'master' of https://mcsscm.utm.utoronto.ca:9999/git/207/24f/repo_a2_031
+| |     merge commit
+| | 
+| * commit 6ac24c6d8a2efafef56a2c0d600aa531fddf76b5
+| | Author: Hojun Lee <hoju.lee@mail.utoronto.ca>
+| | Date:   Mon Oct 28 03:03:02 2024 +0900
+| | 
+| |     edit scrum
+| |   
+* |   commit 66b9baa6ac37e72c9320b73ae0ce74c08ead17a9
+|\ \  Merge: 2e7703a 720969e
+| |/  Author: leerya41 <ryanlee.lee@mail.utoronto.ca>
+|/|   Date:   Sun Oct 27 16:17:10 2024 -0400
+| |   
+| |       B
+| |       Merge branch 'fix/BUG2.002/commandpattern/RL'
+| |       merge command pattern
+| | 
+| * commit 720969e963881765ddfbd04fb711736ae277250c
+| | Author: leerya41 <ryanlee.lee@mail.utoronto.ca>
+| | Date:   Sun Oct 27 16:16:47 2024 -0400
+| | 
+| |     changes
+| | 
+| * commit f66b7d39fe8460007f772a4512d3fcbd518e63ee
+| | Author: leerya41 <ryanlee.lee@mail.utoronto.ca>
+| | Date:   Sat Oct 26 23:15:13 2024 -0400
+| | 
+| |     command pattern V1 WIP
+| | 
+* | commit 2e7703ad5749f171ad5a086dbcec6a977a8cf307
+| | Author: chosun29 <sgmin.cho@mail.utoronto.ca>
+| | Date:   Sat Oct 26 22:43:51 2024 -0400
+| | 
+| |     dailyScrumMeeting 2 edited by sungmin
+| | 
+* | commit edb474ee26f01ce62b90f38d414a111e03baf1ce
+| | Author: Hojun Lee <hoju.lee@mail.utoronto.ca>
+| | Date:   Sun Oct 27 11:22:26 2024 +0900
+| | 
+| |     Edit scrum
+| | 
+* | commit 4f3b50f7bb33f959b2509ac94fdb801211e48592
+| | Author: leerya41 <ryanlee.lee@mail.utoronto.ca>
+| | Date:   Sat Oct 26 20:01:54 2024 -0400
+| | 
+| |     scrum update
+| | 
+* | commit 0008f2201a472ebb95a3eb2da7b739800f928283
+| | Author: chosun29 <sgmin.cho@mail.utoronto.ca>
+| | Date:   Sat Oct 26 02:16:37 2024 -0400
+| | 
+| |     dailyScrumMeeting edited by sungmin
+| | 
+* | commit 01aeaca98c1f07306dbac1ec74512c873a589f19
+| | Author: leerya41 <ryanlee.lee@mail.utoronto.ca>
+| | Date:   Fri Oct 25 21:33:44 2024 -0400
+| | 
+| |     scrum update
+| | 
+* | commit d5923710a48dc2a2b43dd8573e3df0b94c620c7d
+| | Author: Hojun Lee <hoju.lee@mail.utoronto.ca>
+| | Date:   Sat Oct 26 10:11:34 2024 +0900
+| | 
+| |     edit scrum
+| | 
+* | commit 355434fa940ffa271ae12b409638917b494444da
+| | Author: mbagayaa <alexia.mbagaya@mail.utoronto.ca>
+| | Date:   Fri Oct 25 18:05:24 2024 -0400
+| | 
+| |     Updating dailyScrumMeeting4
+| | 
+* | commit 3eb56c69eba0af55a2f95ee09addd01732f50deb
+|/  Author: Hojun Lee <hoju.lee@mail.utoronto.ca>
+|   Date:   Fri Oct 25 12:07:49 2024 +0900
+|   
+|       edit scrum
+| 
+* commit a1048b5dcdc4d38c2928281d2a6c7b6b178a36a4
+| Author: leerya41 <ryanlee.lee@mail.utoronto.ca>
+| Date:   Thu Oct 24 21:05:25 2024 -0400
+| 
+|     backlog changes
+| 
+* commit 3940539aff8e100988420883fd44437929d4f7b7
+| Author: leerya41 <ryanlee.lee@mail.utoronto.ca>
+| Date:   Thu Oct 24 20:55:10 2024 -0400
+| 
+|     scrum change
+| 
+* commit 13e7b5574ebcbb1607ce5f17ab7f7ac2bb04fac5
+| Author: chosun29 <sgmin.cho@mail.utoronto.ca>
+| Date:   Thu Oct 24 09:37:54 2024 -0400
+| 
+|     dailyScrumMeeting edited by sungmin
+| 
+* commit 6af229e6754c702883c38efc891b765cd94eccec
+| Author: chosun29 <sgmin.cho@mail.utoronto.ca>
+| Date:   Thu Oct 24 09:27:26 2024 -0400
+| 
+|     CircleDrawStrategy edited by sungmin
+| 
+* commit 37e7c08cb431db357dca1a33de3efab8bcb1458a
+| Author: leerya41 <ryanlee.lee@mail.utoronto.ca>
+| Date:   Wed Oct 23 21:07:09 2024 -0400
+| 
+|     updated scrum
+|   
+*   commit 0121d06e114be0a86321032a37d0a634332bdce3
+|\  Merge: 168da3b 24ce045
+| | Author: leerya41 <ryanlee.lee@mail.utoronto.ca>
+| | Date:   Wed Oct 23 21:04:36 2024 -0400
+| | 
+| |     merger
+| | 
+| * commit 24ce045433311ab1d2efaf82c047f328a5f91342
+| | Author: leerya41 <ryanlee.lee@mail.utoronto.ca>
+| | Date:   Wed Oct 23 20:57:09 2024 -0400
+| | 
+| |     square strategy
+| |   
+* |   commit 168da3b4d674452024facdde6f0ef3d1ee7e7cf6
+|\ \  Merge: cfa9fb7 a02ab4d
+| |/  Author: Hojun Lee <hoju.lee@mail.utoronto.ca>
+|/|   Date:   Thu Oct 24 09:52:25 2024 +0900
+| |   
+| |       Merge branch 'BUG2.001'
+| | 
+| * commit a02ab4d1c54002a7ccadd65108d8944f0c8011db
+| | Author: Hojun Lee <hoju.lee@mail.utoronto.ca>
+| | Date:   Thu Oct 24 09:51:37 2024 +0900
+| | 
+| |     created temp list
+| | 
+* | commit cfa9fb7c9f64f33f2cbbf5f93d2d0eb8b5cb6ee7
+| | Author: mbagayaa <alexia.mbagayaa@mail.utoronto.ca>
+| | Date:   Wed Oct 23 19:37:22 2024 -0400
+| | 
+| |     changed Trianglefeedback comment
+| | 
+* | commit a7a66f0d77e3a18954fe55d22f64eadc96719948
+| | Author: chosun29 <sgmin.cho@mail.utoronto.ca>
+| | Date:   Wed Oct 23 18:22:42 2024 -0400
+| | 
+| |     dailyScrum, productBacklog, sprintBacklog edited by sungmin
+| | 
+* | commit fca618549cbef4dacfc9da10289b94f4d4d83163
+|/  Author: chosun29 <sgmin.cho@mail.utoronto.ca>
+|   Date:   Wed Oct 23 18:15:29 2024 -0400
+|   
+|       Circle and CircleDrawStrategy added by sungmin
+| 
+* commit 752d18b2bc039dda949bd810ebd67004a5b11208
+| Author: Hojun Lee <hoju.lee@mail.utoronto.ca>
+| Date:   Thu Oct 24 04:50:39 2024 +0900
+| 
+|     Scribbles complete
+| 
+* commit 80b7223b69fcd282656c9758329191d84d334ced
+| Author: mbagayaa <alexia.mbagayaa@mail.utoronto.ca>
+| Date:   Wed Oct 23 14:50:01 2024 -0400
+| 
+|     mbagayaa Updated ProductBacklog.txt, Sprint2Backlog.txt and dailyScrumMeeting4.txt
+| 
+* commit 86862eed6dff1f68356278ce0e74d1b078c37b3c
+| Author: mbagayaa <alexia.mbagayaa@mail.utoronto.ca>
+| Date:   Wed Oct 23 14:32:52 2024 -0400
+| 
+|     Updated Draw Triangle and Draw Triangle feedback
+| 
+* commit 1230e03fdaf8ef744626e5eb669c3b40df545b96
+| Author: mbagayaa <alexia.mbagayaa@mail.utoronto.ca>
+| Date:   Wed Oct 23 11:54:41 2024 -0400
+| 
+|     Added Triangle Button
+| 
+* commit 57d0810d6bb082e6a9e346d88fe20918982cf2a4
+| Author: chosun29 <sgmin.cho@mail.utoronto.ca>
+| Date:   Wed Oct 23 11:02:30 2024 -0400
+| 
+|     dailyScrumMeeting2 edited by sungmin
+|   
+*   commit aa4d326f13aa767c74bf5e25ea32a435fa62dd60
+|\  Merge: 85876b3 0c324c8
+| | Author: chosun29 <sgmin.cho@mail.utoronto.ca>
+| | Date:   Wed Oct 23 10:54:44 2024 -0400
+| | 
+| |     Merge branch 'US2.003'
+| | 
+| * commit 0c324c80098dacd02748f3e6b681572d1f5b281c
+| | Author: chosun29 <sgmin.cho@mail.utoronto.ca>
+| | Date:   Wed Oct 23 10:49:30 2024 -0400
+| | 
+| |     Oval added and Shape, DrawStrategy, PainPanel, PaintModel edited by sungmin
+| | 
+* | commit 85876b3cf1926b9907028c10385f0c23854f398f
+|/  Author: mbagayaa <alexia.mbagayaa@mail.utoronto.ca>
+|   Date:   Wed Oct 23 10:39:30 2024 -0400
+|   
+|       Updated sprintBacklog2.txt and dailyScrumMeeting4.txt
+|   
+*   commit 0c114db2db306d63deacc0060aaf5b717de2c9d4
+|\  Merge: 18db493 a51d03b
+| | Author: chosun29 <sgmin.cho@mail.utoronto.ca>
+| | Date:   Wed Oct 23 00:37:55 2024 -0400
+| | 
+| |     Merge branch 'US2.003'
+| | 
+| * commit a51d03b8043d23ae811aebed24b6b90fe3889b89
+| | Author: chosun29 <sgmin.cho@mail.utoronto.ca>
+| | Date:   Wed Oct 23 00:37:25 2024 -0400
+| | 
+| |     xml
+| |   
+* |   commit 18db4930b4bc5079b13ff2711ab10f09c98f2654
+|\ \  Merge: e860f6f ca43d34
+| | | Author: leerya41 <ryanlee.lee@mail.utoronto.ca>
+| | | Date:   Wed Oct 23 00:10:10 2024 -0400
+| | | 
+| | |     Merge remote-tracking branch 'origin/master'
+| | |     updating
+| | |   
+| * |   commit ca43d343e538df640b6c7c533870bcbf54ea1e80
+| |\ \  Merge: a872078 116c961
+| | | | Author: Hojun Lee <hoju.lee@mail.utoronto.ca>
+| | | | Date:   Wed Oct 23 12:59:33 2024 +0900
+| | | | 
+| | | |     Merge branch 'BUG2.001'
+| | | | 
+| | * | commit 116c961c260d4dafb9a9ced4702538947b2d3c83
+| | | | Author: Hojun Lee <hoju.lee@mail.utoronto.ca>
+| | | | Date:   Wed Oct 23 12:59:00 2024 +0900
+| | | | 
+| | | |     edit strategy
+| | | | 
+* | | | commit e860f6f1837517a53dfbf5fdf5850dc8085d657f
+|/ / /  Author: leerya41 <ryanlee.lee@mail.utoronto.ca>
+| | |   Date:   Wed Oct 23 00:06:29 2024 -0400
+| | |   
+| | |       cleaning branches
+| | | 
+* | | commit a87207895633e0070b335ff65f3f133c69c7f2ea
+| | | Author: leerya41 <ryanlee.lee@mail.utoronto.ca>
+| | | Date:   Tue Oct 22 23:28:58 2024 -0400
+| | | 
+| | |     scrum update
+| | | 
+* | | commit 3acf4fed09f9c5ea35b16549b75f70225bf961d6
+| | | Author: leerya41 <ryanlee.lee@mail.utoronto.ca>
+| | | Date:   Tue Oct 22 23:19:32 2024 -0400
+| | | 
+| | |     scrum update
+| | | 
+* | | commit 0fe98d35b910f5783a2f5464bea092a582e0f109
+| |/  Author: leerya41 <ryanlee.lee@mail.utoronto.ca>
+|/|   Date:   Tue Oct 22 23:06:29 2024 -0400
+| |   
+| |       updated scrum
+| | 
+* | commit 55629f2d7c8220440bd3381ca954586e0501cbbb
+|/  Author: leerya41 <ryanlee.lee@mail.utoronto.ca>
+|   Date:   Tue Oct 22 22:44:17 2024 -0400
+|   
+|       updated scrum
+| 
+* commit 8d10734681b5fa3efaf8bbbf698827a1c76911e4
+| Author: Hojun Lee <hoju.lee@mail.utoronto.ca>
+| Date:   Wed Oct 23 11:39:04 2024 +0900
+| 
+|     edited many files
+| 
+* commit 6e57543fbede954594ae706856aa3a7c48af2553
+| Author: Hojun Lee <hoju.lee@mail.utoronto.ca>
+| Date:   Wed Oct 23 05:38:33 2024 +0900
+| 
+|      edited Strategy Class
+| 
+* commit d1ce2d9b3d9c283c48d7a18f5e982a86644dabd2
+| Author: Hojun Lee <hoju.lee@mail.utoronto.ca>
+| Date:   Wed Oct 23 05:10:19 2024 +0900
+| 
+|     BUG2.001 added classes
+| 
+* commit a82c87b20290b6621515724134e6a9c318463af5
+| Author: Hojun Lee <hoju.lee@mail.utoronto.ca>
+| Date:   Wed Oct 23 04:53:55 2024 +0900
+| 
+|     edit scrum
+| 
+* commit 08ae8024ff84f53867f285ebf80a88f26a94bce2
+| Author: Hojun Lee <hoju.lee@mail.utoronto.ca>
+| Date:   Wed Oct 23 04:53:06 2024 +0900
+| 
+|     edit scrum
+| 
+* commit b82c2bc078c68091cceb68db66ef6abfc44b2185
+| Author: chosun29 <sgmin.cho@mail.utoronto.ca>
+| Date:   Mon Oct 21 23:12:09 2024 -0400
+| 
+|     button for Oval added at ShapeChooserPanel by sungmin
+| 
+* commit db984a6d2db8c86ae132baa6f7bb70c460da5f43
+| Author: chosun29 <sgmin.cho@mail.utoronto.ca>
+| Date:   Mon Oct 21 22:35:20 2024 -0400
+| 
+|     sprintBackLog2 US2.003 edited by sungmin
+| 
+* commit de33aed24468b28df258a50e4b786e5683103ac4
+| Author: mbagayaa <alexia.mbagayaa@mail.utoronto.ca>
+| Date:   Mon Oct 21 22:29:01 2024 -0400
+| 
+|     ProductOwner mbagayaa has implemented productBacklog.txt and sprintBacklog2.txt
+| 
+* commit a846a74568d392bb2ca3761abd3f3b8534bbdc73
+| Author: leerya41 <ryanlee.lee@mail.utoronto.ca>
+| Date:   Mon Oct 21 21:11:00 2024 -0400
+| 
+|     user story name change
+|   
+*   commit 8747492de3967911afe903e5392c9ef134712602
+|\  Merge: 603b42e 8c6b307
+| | Author: Hojun Lee <hoju.lee@mail.utoronto.ca>
+| | Date:   Tue Oct 22 09:54:14 2024 +0900
+| | 
+| |     Merge branch 'Shape'
+| | 
+| * commit 8c6b30746ed3ee8fb6a71899d304608c95687294
+| | Author: Hojun Lee <hoju.lee@mail.utoronto.ca>
+| | Date:   Tue Oct 22 09:53:30 2024 +0900
+| | 
+| |     added shape, scribble class
+| | 
+* | commit 603b42e7fa86b65abd3903661f8d826c7e1f93bb
+|/  Author: chosun29 <sgmin.cho@mail.utoronto.ca>
+|   Date:   Mon Oct 21 20:44:35 2024 -0400
+|   
+|       dailyScrumMeeting edited by sungmin
+| 
+* commit cc11f3a4ff43e5a20c67e372d0e54c4fe69996a2
+| Author: leerya41 <ryanlee.lee@mail.utoronto.ca>
+| Date:   Mon Oct 21 19:00:25 2024 -0400
+| 
+|     fixed break bug
+| 
+* commit a867b46cbbc2a19c2515ecf1f4cefd2ff4eb59cc
+| Author: leerya41 <ryanlee.lee@mail.utoronto.ca>
+| Date:   Mon Oct 21 18:43:30 2024 -0400
+| 
+|     USER STORY US?.010 completed
+| 
+* commit 74f7c5401a4493137a348b9d45134134b58d7e43
+| Author: leerya41 <ryanlee.lee@mail.utoronto.ca>
+| Date:   Mon Oct 21 18:40:16 2024 -0400
+| 
+|     deploying square code
+| 
+* commit fc76c2f4f1a5d22bf213cc87d9774cad91c893ca
+| Author: mbagayaa <alexia.mbagayaa@mail.utoronto.ca>
+| Date:   Mon Oct 21 18:27:29 2024 -0400
+| 
+|     Added BUG and 1 UserStory to SprintBacklog2.txt
+| 
+* commit 4c3a4a52e050c0bac1a57154152d6dd90ac1bbdd
+| Author: mbagayaa <alexia.mbagayaa@mail.utoronto.ca>
+| Date:   Mon Oct 21 10:28:11 2024 -0400
+| 
+|     mbagayaa updated architecture.txt file
+| 
+* commit 019af7711f6762d6f0826204399ea30b4882df14
+| Author: leerya41 <ryanlee.lee@mail.utoronto.ca>
+| Date:   Sun Oct 20 23:27:02 2024 -0400
+| 
+|     small change
+| 
+* commit d3f48b722fcb55867e467f387b7eb55f3ae3300c
+| Author: leerya41 <ryanlee.lee@mail.utoronto.ca>
+| Date:   Sun Oct 20 23:23:46 2024 -0400
+| 
+|     small change
+| 
+* commit 80935d8b0f24dc805dd0eca527725bc610f077a3
+| Author: leerya41 <ryanlee.lee@mail.utoronto.ca>
+| Date:   Sun Oct 20 23:11:39 2024 -0400
+| 
+|     polishing user story
+| 
+* commit 0dcee73a34e00d79b1d9751e4ed0f9a00d094a21
+| Author: leerya41 <ryanlee.lee@mail.utoronto.ca>
+| Date:   Sun Oct 20 20:32:57 2024 -0400
+| 
+|     updated product backlog
+| 
+* commit b8fe23f0ca94b6e575e421ea5d497938c895cc5b
+| Author: leerya41 <ryanlee.lee@mail.utoronto.ca>
+| Date:   Sun Oct 20 20:12:06 2024 -0400
+| 
+|     scrum daily entry
+| 
+* commit 82329b636e3eef15c0f2c3c1c0b1a248d8009860
+| Author: chosun29 <sgmin.cho@mail.utoronto.ca>
+| Date:   Sun Oct 20 17:24:02 2024 -0400
+| 
+|     dailyScrumMeeting2, architecture.txt edited by sungmin
+| 
+* commit a19dd65c652553caf15f1333fbc21402a3ae2f9c
+| Author: Hojun Lee <hoju.lee@mail.utoronto.ca>
+| Date:   Mon Oct 21 05:46:09 2024 +0900
+| 
+|     edit architecture.txt
+| 
+* commit 77832e6f01da89a5571a4a851ef2858a223678a1
+| Author: Hojun Lee <hoju.lee@mail.utoronto.ca>
+| Date:   Mon Oct 21 05:40:52 2024 +0900
+| 
+|     edit product backlog
+| 
+* commit 081e41143597616ada282dad0b2f4676b6c67f49
+| Author: Hojun Lee <hoju.lee@mail.utoronto.ca>
+| Date:   Sun Oct 20 13:04:31 2024 +0900
+| 
+|     edited scrum oct19
+| 
+* commit 16b2e0d7da6de5da99a682413f1b551fd369d511
+| Author: leerya41 <ryanlee.lee@mail.utoronto.ca>
+| Date:   Sat Oct 19 23:50:04 2024 -0400
+| 
+|     dailyscrum
+| 
+* commit 652441cdeec9f3d210178a4475391a645e23069c
+| Author: chosun29 <sgmin.cho@mail.utoronto.ca>
+| Date:   Sat Oct 19 23:09:46 2024 -0400
+| 
+|     dailyScrumMeeting2 edited by sungmin
+| 
+* commit ba666e837aa700dda5116a50d79f7f3d4453ee8a
+| Author: frigeretta <123264113+frigeretta@users.noreply.github.com>
+| Date:   Sat Oct 19 18:21:11 2024 -0400
+| 
+|     mbagayaa Updated dailyScrumMeeting4.txt
+| 
+* commit 4ba2027efd47e84f15130b0433858a46d4a016dd
+| Author: chosun29 <sgmin.cho@mail.utoronto.ca>
+| Date:   Sat Oct 19 00:15:54 2024 -0400
+| 
+|     members.txt added to repo by sungmin
+| 
+* commit 24c94e839c22dd5c3c03de25df5ede68bc65e248
+| Author: Hojun Lee <hoju.lee@mail.utoronto.ca>
+| Date:   Sat Oct 19 12:03:42 2024 +0900
+| 
+|     edit scrum
+| 
+* commit d975da77382499bb209e7535b7014c47aed1d699
+| Author: chosun29 <sgmin.cho@mail.utoronto.ca>
+| Date:   Fri Oct 18 22:49:04 2024 -0400
+| 
+|     dailyScrumMeeting2 added by sungmin
+| 
+* commit 046552e8ca24057bf075c9a51e5fbe26fa1c2bf2
+| Author: leerya41 <ryanlee.lee@mail.utoronto.ca>
+| Date:   Fri Oct 18 20:05:32 2024 -0400
+| 
+|     added scrum2brainstorming and some ideas
+| 
+* commit 4cff7ad01e6a400246123273321260e723afa4d7
+| Author: frigeretta <123264113+frigeretta@users.noreply.github.com>
+| Date:   Thu Oct 17 23:59:42 2024 -0400
+| 
+|     mbagayaa Updated dailyScrumMeeting4.txt
+| 
+* commit 02097d7fdb2c9c9073190da9d786485d2527cc9c
+| Author: chosun29 <sgmin.cho@mail.utoronto.ca>
+| Date:   Thu Oct 17 23:49:38 2024 -0400
+| 
+|     dailyScrumMeeting2 added by sungmin
+| 
+* commit ae98891bfd823e52c0a1b08e66c43b12793df7e6
+| Author: Hojun Lee <hoju.lee@mail.utoronto.ca>
+| Date:   Fri Oct 18 12:28:39 2024 +0900
+| 
+|     editted scrum
+| 
+* commit f52f4edcceb09e4823bfc31b0e78cb1ee449bda4
+| Author: Hojun Lee <hoju.lee@mail.utoronto.ca>
+| Date:   Fri Oct 18 12:24:30 2024 +0900
+| 
+|     US1.003, US1.004 Done
+| 
+* commit 3d74ba4599cd8af59d20d15cbf4c92631fa82a97
+| Author: Hojun Lee <hoju.lee@mail.utoronto.ca>
+| Date:   Fri Oct 18 09:43:55 2024 +0900
+| 
+|     updated scrum
+| 
+* commit d4526e99eb84f439237d9da9a07f12b8cfcc5a8a
+| Author: leerya41 <ryanlee.lee@mail.utoronto.ca>
+| Date:   Thu Oct 17 16:22:03 2024 -0400
+| 
+|     commented out square for now
+| 
+* commit 40f63a41c449d2b3503624f4b3e941a585911bc5
+| Author: leerya41 <ryanlee.lee@mail.utoronto.ca>
+| Date:   Thu Oct 17 15:55:00 2024 -0400
+| 
+|     updated daily scrum and backlogs
+| 
+* commit ef66b4bf01aafaa373b7e49678924756242e827b
+| Author: leerya41 <ryanlee.lee@mail.utoronto.ca>
+| Date:   Thu Oct 17 15:48:48 2024 -0400
+| 
+|     done, but will go over design choice with group
+| 
+* commit 23772ad2d5e3e7e80f7090f0951a2779e2369b17
+| Author: leerya41 <ryanlee.lee@mail.utoronto.ca>
+| Date:   Thu Oct 17 15:13:43 2024 -0400
+| 
+|     square user story added to backlogs
+| 
+* commit f1eb5484efd626fa8bf59f151268fc5c4f65907f
+| Author: chosun29 <sgmin.cho@mail.utoronto.ca>
+| Date:   Thu Oct 17 00:18:26 2024 -0400
+| 
+|     US1.002 Completed by sungmin
+| 
+* commit e5e7dd5376fe43adabbaba309d9d2fc79c948e64
+| Author: leerya41 <ryanlee.lee@mail.utoronto.ca>
+| Date:   Wed Oct 16 23:45:54 2024 -0400
+| 
+|     configured global name and modified product back log
+| 
+* commit 25be784a0b22124e11c72cffcfcc8c32840053f2
+| Author: chosun29 <sgmin.cho@mail.utoronto.ca>
+| Date:   Wed Oct 16 23:42:21 2024 -0400
+| 
+|     dailScrumMeeting2, productBacklog, sprintBacklog1 updated by sungmin
+|   
+*   commit 4b333e5435e4f86c453095a3f6f9d72839a00339
+|\  Merge: 6deb44f ef5baa1
+| | Author: chosun29 <sgmin.cho@mail.utoronto.ca>
+| | Date:   Wed Oct 16 23:33:22 2024 -0400
+| | 
+| |     Merge branch 'master' of https://mcsscm.utm.utoronto.ca:9999/git/207/24f/repo_a2_031
+| |   
+| *   commit ef5baa195a5e81c192bdc6457d3a5bd4076dd89f
+| |\  Merge: 54e7e2b 0392bda
+| | | Author: leehoju7 <hoju.lee@mail.utoronto.ca>
+| | | Date:   Thu Oct 17 12:06:52 2024 +0900
+| | | 
+| | |     conflict resolved
+| | |   
+| | *   commit 0392bda7168149af92e5df6d01195da9fb708233
+| | |\  Merge: 53ede28 e38e603
+| | | | Author: frigeretta <123264113+frigeretta@users.noreply.github.com>
+| | | | Date:   Wed Oct 16 22:55:54 2024 -0400
+| | | | 
+| | | |     Merge branch 'master' of https://mcsscm.utm.utoronto.ca:9999/git/207/24f/repo_a2_031
+| | | | 
+| | * | commit 53ede2825894ee1d22da703eae5b864f4cab94c1
+| | | | Author: frigeretta <123264113+frigeretta@users.noreply.github.com>
+| | | | Date:   Wed Oct 16 22:55:11 2024 -0400
+| | | | 
+| | | |     updated dailyScrumMeeting4.txt mbagayaa
+| | | | 
+| | * | commit c2deca3a9a10cbb89e0b6abc00f8286c4e73d79a
+| | | | Author: frigeretta <123264113+frigeretta@users.noreply.github.com>
+| | | | Date:   Wed Oct 16 22:46:20 2024 -0400
+| | | | 
+| | | |     Completed fixing BUG1.002/IndicatorofShape
+| | | | 
+| * | | commit 54e7e2b4d0037fe5ff32b7e08a4860b0bede05d2
+| | |/  Author: leehoju7 <hoju.lee@mail.utoronto.ca>
+| |/|   Date:   Thu Oct 17 11:59:53 2024 +0900
+| | |   
+| | |       edited scrum
+| | |   
+| * |   commit e38e603cebf385800cf18c8f29449ac1573ade61
+| |\ \  Merge: 1d3c650 70e877b
+| | |/  Author: leehoju7 <hoju.lee@mail.utoronto.ca>
+| |/|   Date:   Thu Oct 17 11:53:53 2024 +0900
+| | |   
+| | |       Merge branch 'BUG1.005'
+| | | 
+| | * commit 70e877b4709d8294d366f7b4ec289e319c8beec3
+| | | Author: leehoju7 <hoju.lee@mail.utoronto.ca>
+| | | Date:   Thu Oct 17 11:51:42 2024 +0900
+| | | 
+| | |     commited scribble issue in PaintPanel, ScribblePanel
+| | | 
+* | | commit 6deb44f12ad1f2a87058bc4836cbcb5571573f07
+| | | Author: chosun29 <sgmin.cho@mail.utoronto.ca>
+| | | Date:   Wed Oct 16 23:33:03 2024 -0400
+| | | 
+| | |     Fixed misc.xml
+| | | 
+* | | commit ad72b5afb0e6dc29d185c5ac83057194bac9ecf1
+|/ /  Author: chosun29 <sgmin.cho@mail.utoronto.ca>
+| |   Date:   Wed Oct 16 23:15:27 2024 -0400
+| |   
+| |       BUG1.006 fixed by sungmin
+| | 
+* | commit 1d3c65024b846d3b73936e427f13d4bea7a6bd2c
+| | Author: leehoju7 <hoju.lee@mail.utoronto.ca>
+| | Date:   Thu Oct 17 10:39:22 2024 +0900
+| | 
+| |     'update scrum'
+| | 
+* | commit bb7cf009a1f5580a52950c00973256fadad54249
+|/  Author: leehoju7 <hoju.lee@mail.utoronto.ca>
+|   Date:   Thu Oct 17 10:34:28 2024 +0900
+|   
+|       update scrum
+| 
+* commit 78b488487472e672644383a089be4300082914c9
+| Author: chosun29 <sgmin.cho@mail.utoronto.ca>
+| Date:   Wed Oct 16 21:19:41 2024 -0400
+| 
+|     BUG1.006 in progress by sungmin
+| 
+* commit db6ad0e55a17b56a3fdf362759f78c0133668bd4
+| Author: chosun29 <sgmin.cho@mail.utoronto.ca>
+| Date:   Wed Oct 16 20:25:31 2024 -0400
+| 
+|     productBacklong.txt edited by Sungmin
+| 
+* commit 3fbe483014edbcb433256c3d914d3add8e604bd3
+| Author: leehoju7 <hoju.lee@mail.utoronto.ca>
+| Date:   Thu Oct 17 09:15:29 2024 +0900
+| 
+|     leehoju working on bug1.005
+| 
+* commit d825be6c53a26080c627e8e7e11539dd91d2e9f4
+| Author: leehoju7 <hoju.lee@mail.utoronto.ca>
+| Date:   Thu Oct 17 09:10:37 2024 +0900
+| 
+|     productBacklong.txt edited by hojun
+| 
+* commit 928b10e798f46e02d8ee2c6841a7d530f8f81cb6
+| Author: frigeretta <123264113+frigeretta@users.noreply.github.com>
+| Date:   Wed Oct 16 19:57:02 2024 -0400
+| 
+|     BUG1.002 in progress by mbagayaa
+| 
+* commit b17523fcd093b00e83dc5523741e4825f0969d67
+| Author: Ryan Lee <skyhopper@Ryans-MacBook-Pro.local>
+| Date:   Wed Oct 16 19:46:07 2024 -0400
+| 
+|     moved to completed section
+| 
+* commit c95e0bc092fe6739ed313a217481ab56dec41d31
+| Author: frigeretta <123264113+frigeretta@users.noreply.github.com>
+| Date:   Wed Oct 16 19:43:46 2024 -0400
+| 
+|     mbagayaa Updated 2 User stories
+| 
+* commit 529836e303e6ca0a248d6c58a1413e10fe6a01de
+| Author: Ryan Lee <skyhopper@Ryans-MacBook-Pro.local>
+| Date:   Wed Oct 16 18:51:10 2024 -0400
+| 
+|     updated backlogs and updated scrum meeting
+| 
+* commit bd78358462cbeadb2812c2fc0919657aabcbd976
+| Author: Ryan Lee <skyhopper@Ryans-MacBook-Pro.local>
+| Date:   Wed Oct 16 18:46:01 2024 -0400
+| 
+|     completed bug1.001
+| 
+* commit 0c6f41f82c4684da0d4e948ab1c36c428b373848
+| Author: Ryan Lee <skyhopper@Ryans-MacBook-Pro.local>
+| Date:   Wed Oct 16 18:21:04 2024 -0400
+| 
+|     selected bug1.001 to work on
+| 
+* commit 2a3cbe3fa73d7913dbefe7cd73ca479c663623d7
+| Author: Ryan Lee <skyhopper@Ryans-MacBook-Pro.local>
+| Date:   Wed Oct 16 18:05:20 2024 -0400
+| 
+|     added estimates on user stories I made
+| 
+* commit e193da52d22aa775db3271addafedb2d7848d76e
+| Author: Ryan Lee <skyhopper@Ryans-MacBook-Pro.local>
+| Date:   Wed Oct 16 17:58:47 2024 -0400
+| 
+|     added user stories
+| 
+* commit 16d272d7cb6ca14f87668ccd8b977ec82c712f95
+| Author: Ryan Lee <skyhopper@Ryans-MacBook-Pro.local>
+| Date:   Wed Oct 16 17:25:28 2024 -0400
+| 
+|     scrum meeting entry added
+|   
+*   commit bce1856f0ae806ac4f96cf8d6f548f259dec3515
+|\  Merge: 0b79851 e3bf46c
+| | Author: chosun29 <sgmin.cho@mail.utoronto.ca>
+| | Date:   Wed Oct 16 16:23:58 2024 -0400
+| | 
+| |     Merge branch 'Sungmin-Cho'
+| | 
+| * commit e3bf46cd5573b0fb834a72dcb3688ef7501ebc9b
+| | Author: chosun29 <sgmin.cho@mail.utoronto.ca>
+| | Date:   Wed Oct 16 16:11:24 2024 -0400
+| | 
+| |     dailyScrumMeeting updated
+| |   
+* |   commit 0b7985125206d7d7ddc916dc80a6f7ef5c5f84e3
+|\ \  Merge: 8a92639 13f365f
+| | | Author: leehoju7 <hoju.lee@mail.utoronto.ca>
+| | | Date:   Thu Oct 17 04:48:45 2024 +0900
+| | | 
+| | |     Merge branch 'hojun'
+| | | 
+| * | commit 13f365f8e52a236d6f26d7b11b8780971cb31aa0
+| | | Author: leehoju7 <hoju.lee@mail.utoronto.ca>
+| | | Date:   Thu Oct 17 04:47:13 2024 +0900
+| | | 
+| | |     edited dailyScrumMeeting1.txt
+| | | 
+* | | commit 8a926394bb2ce2d5403970ab1005fc414bbd3f35
+| | | Author: frigeretta <123264113+frigeretta@users.noreply.github.com>
+| | | Date:   Wed Oct 16 14:21:57 2024 -0400
+| | | 
+| | |     Member4 added contact information
+| | | 
+* | | commit 1f4ad0b8852e61fd940a58809a9e497a3b4e87b2
+| | | Author: Ryan Kin ho Lee <leerya41@dh2020pc13.utm.utoronto.ca>
+| | | Date:   Tue Oct 15 20:04:19 2024 -0400
+| | | 
+| | |     added member 3 entry
+| | | 
+* | | commit 2d72bfe59a00f721252eeda30feceb86127971b9
+|\| | Merge: 1bfa29d 1157402
+| | | Author: leehoju7 <hoju.lee@mail.utoronto.ca>
+| | | Date:   Wed Oct 16 07:43:00 2024 +0900
+| | | 
+| | |     Resolve merge conflict in members.txt
+| | | 
+| * | commit 11574023e9367e2424c6fa6c508d72d9d382f352
+| | | Author: leehoju7 <hoju.lee@mail.utoronto.ca>
+| | | Date:   Wed Oct 16 07:37:18 2024 +0900
+| | | 
+| | |     members.txt fixed
+| | |   
+* | |   commit 1bfa29dfff77d5be362d5686d5affd445e547c99
+|\ \ \  Merge: 4930db7 fca124f
+| | |/  Author: leehoju7 <hoju.lee@mail.utoronto.ca>
+| |/|   Date:   Wed Oct 16 07:35:27 2024 +0900
+| | |   
+| | |       resolve members.txt conflict
+| | | 
+| * | commit fca124ff3b0fa772cbf8c95b646b700c3139403f
+| | | Author: chosun29 <sgmin.cho@mail.utoronto.ca>
+| | | Date:   Tue Oct 15 18:24:45 2024 -0400
+| | | 
+| | |     members.txt added
+| | | 
+* | | commit 4930db737c337fc0394e794545a1658b2d82c1ce
+|/ /  Author: leehoju7 <hoju.lee@mail.utoronto.ca>
+| |   Date:   Wed Oct 16 07:30:38 2024 +0900
+| |   
+| |       edit memebers.txt
+| |   
+* |   commit 71fedd882c6157b424a802dc4ae1a1bf8d567a1d
+|\ \  Merge: c3100f6 47e80ab
+| |/  Author: leehoju7 <hoju.lee@mail.utoronto.ca>
+|/|   Date:   Wed Oct 16 06:52:11 2024 +0900
+| |   
+| |       Merge remote-tracking branch 'origin/master'
+| | 
+| * commit 47e80abfdd9eab801d8c2e44db631e4b8e5ecb6c
+| | Author: chosun29 <sgmin.cho@mail.utoronto.ca>
+| | Date:   Tue Oct 15 17:34:26 2024 -0400
+| | 
+| |     members.txt deleted from .idea
+| | 
+* | commit c3100f6fd0f42984c6e348c42b369867e1a335eb
+|/  Author: leehoju7 <hoju.lee@mail.utoronto.ca>
+|   Date:   Wed Oct 16 06:34:25 2024 +0900
+|   
+|       members.txt created in src/main/java/ca/utoronto/utm/assignment2/members.txt please check!
+| 
+* commit 55e8b5cd65631286a143f2287853f931dda933fb
+| Author: chosun29 <sgmin.cho@mail.utoronto.ca>
+| Date:   Tue Oct 15 17:25:36 2024 -0400
+| 
+|     Assignment2 starter code added to master
+| 
+* commit cab101af61547ace0d44dd384d686e4983a5b234
+| Author: chosun29 <sgmin.cho@mail.utoronto.ca>
+| Date:   Tue Oct 15 16:27:36 2024 -0400
+| 
+|     members.txt added
+| 
+* commit ce7b9be68cf950fd790010703bb1100bf6b51f54
+  Author: leehoju7 <hoju.lee@mail.utoronto.ca>
+  Date:   Wed Oct 16 05:11:54 2024 +0900
+  
+      hi everyone

@@ -1,0 +1,69 @@
+# Move User Stories from the ProductBacklog 
+# to the appropriate sprintBacklogN.txt after the 
+# Sprint Planning Meeting.
+
+# Sprint 4 Nov 10-Nov 10, 2024
+# Sprint 4 Backlog UserStories go below
+--------------------------------------------------------------------------
+TYPE     : USER STORY US4.001 : leehoju7 : Completed
+NAME     : change UI
+PRIORITY : 3
+ESTIMATE : 3 hours    ACTUAL : 3 hours
+AS A     : user
+I WANT   : Most features to appear on start screen ( shapes , color, thickness, undo, redo)
+SO THAT  : Users can access to features easily
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+TYPE     : BUG BUG4.002 : mbagayaa : In progress
+NAME     : Canvas Size
+PRIORITY : 2
+ESTIMATE : 4 hours    ACTUAL :
+ISSUE    : The drawable area of the canvas is too small and
+           it doesn't dynamically change with the increase of the window size. Need to
+           implement the canvas that is flexible and is able to change its size with
+           changes in the window size.
+SO THAT  : Users can expand the canvas by dragging the window.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+TYPE     : USER STORY US4.003 : chosun29 : Completed
+NAME     : Change Shape Colour
+PRIORITY : 3
+ESTIMATE : 1 day    ACTUAL : 1 hour
+ISSUE    : After having drawn a shape on the canvas a user is unable to
+           change its colour. Need to implement the option of selecting
+           the existing shape on the canvas and modifying its colour.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+TYPE     : USER STORY US4.004 : leehoju7 : Completed
+NAME     : Move shape
+PRIORITY : 3
+ESTIMATE : 1 day    ACTUAL : 2 days
+AS A     : user
+I WANT   : -select desired shape using select mode and enter move mode
+           -drag the shape to new location from its center
+           -the shape will relocate to new position when mouse is released
+                         results: in a relocated shape
+SO THAT  : Users can move shapes to wherever they want.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+TYPE     : USER STORY US4.005 : leehoju7 : Completed
+NAME     : Delete, Cut, Copy and Paste
+PRIORITY : 3
+ESTIMATE : 3 hours     ACTUAL : 3 hours
+SO THAT  : User can move or duplicate shapes without redrawing them. The cut option
+removes a selected shape from the canvas, the copy option makes a temporary copy of the shape
+and the paste option allows for the copied shape to be placed on the canvas.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+TYPE     : BUG BUG4.002 : mbagayaa : Completed
+NAME     : Canvas Size
+PRIORITY : 2
+ESTIMATE : 4 hours    ACTUAL : 4 hours
+ISSUE    : The drawable area of the canvas is too small and
+           it doesn't dynamically change with the increase of the window size. Need to
+           implement the canvas that is flexible and is able to change its size with
+           changes in the window size.
+SO THAT  : Users can expand the canvas by dragging the window.
+--------------------------------------------------------------------------
+
+

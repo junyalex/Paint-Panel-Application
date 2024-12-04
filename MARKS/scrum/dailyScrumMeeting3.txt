@@ -1,0 +1,137 @@
+# Fill in, commit and push each day.
+Member name: Ryan Lee     email: ryanlee.lee@mail.utoronto.ca    utorid: leerya41
+
+Oct 14,2024
+	What I did yesterday:
+	What I will do today:
+	Obstacles I face:
+
+Oct 15,2024
+	What I did yesterday:
+	What I will do today: add A2.zip and members.txt
+	Obstacles I face: None
+
+Oct 16,2024
+	What I did yesterday: added A2.zip and members.txt
+	What I will do today: add 5 user stories (1 big one broken into 5 parts)  and implemented
+	user story/bug with group fix BUG1.001 to complete lab07
+	Obstacles I face: None
+
+Oct 17,2024
+	What I did yesterday: added 5 user stories (1 big one broken into 5 parts) and
+	 implemented user story/bug with group fix BUG1.001 to complete lab07
+	What I will do today: add square user story finish square constructor
+	implementation (commented out since not part of this weeks scrum)
+	and added the square user story to product backlog
+	Obstacles I face: None
+
+Oct 18,2024
+	What I did yesterday:added square user story finish square constructor
+    implementation (commented out since not part of this weeks scrum will release next week)
+    and added the square user story to product backlog
+	What I will do today: Begin brainstorming for scrum 2 next week as scrum 1 is complete
+	Obstacles I face: None
+
+Oct 19,2024
+	What I did yesterday: Begin brainstorming for scrum 2 next week as scrum 1 is complete
+	What I will do today:Read through code and see if there is something to be fixed
+	Obstacles I face: None
+
+Oct 20,2024
+	What I did yesterday: Read through code and see if there is something to be fixed
+	What I will do today: Polish user stories
+	Obstacles I face: None
+
+Oct 21,2024
+	What I did yesterday: Polish user stories
+	What I will do today: Deployed my square implementation and fixed rectangle bug
+	Obstacles I face: None
+
+Oct 22,2024
+	What I did yesterday: Deployed my square implementation and fixed rectangle bug
+	What I will do today: Architecture discussions, getting ready to possibly implement a command pattern
+	to help deal with poor handling of events as at the moment issue exists when dragging a shape and the arraylist
+	and also possibly a factory pattern that will initilizes the shapes objects to help with scalibility etc
+	and modifying square implementation
+	Obstacles I face: Figuring out architecture
+
+Oct 23,2024
+	What I did yesterday:Architecture discussions, getting ready to possibly implement a command pattern
+    to help deal with poor handling of events as at the moment issue exists when dragging a shape and the arraylist
+    and also possibly a factory pattern that will initilizes the shapes objects to help with scalibility etc
+    and modifying square implementation
+	What I will do today: cleaned some branches from origin, added square strategy, but requires some logical changes
+	and will begin work on command pattern
+	Obstacles I face: Doctors and class so not alot of time to do what I wanted
+
+Oct 24,2024
+	What I did yesterday:cleaned some branches from origin, added square strategy, but requires some logical changes
+    and will begin work on command pattern
+	What I will do today: Finish drafting on how to implment the command pattern
+	Obstacles I face: None
+
+Oct 25,2024
+	What I did yesterday: Finish drafting on how to implment the command pattern
+	What I will do today: Begin first steps for command pattern
+	Obstacles I face: None
+
+Oct 26,2024
+	What I did yesterday: Begin first steps for command pattern
+	What I will do today: Complete command pattern
+	Obstacles I face: None
+
+Oct 27,2024
+	What I did yesterday: Complete command pattern
+	What I will do today: Merged command pattern, added 2 new user stories, polished square, removed
+	unnecessary comments, fixed bug with double print on selection mode, polish code
+	Obstacles I face: None
+
+Oct 28,2024
+	What I did yesterday:Merged command pattern, added 2 new user stories, polished square, removed
+    unnecessary comments, fixed bug with double print on selection mode, polish code
+	What I will do today: Await sprint 3 instructions while drafting design patterns to improve
+	scalability and increase cohesion and decrease coupling within code
+	Obstacles I face: None
+
+Oct 29,2024
+	What I did yesterday: Await sprint 3 instructions while drafting design patterns to improve
+    scalability and increase cohesion and decrease coupling within code
+	What I will do today: Met with team to discuss sprint 3 and plan and review pull request from
+	leehoju7, (BUG3.004)
+	Obstacles I face: None
+
+Oct 30,2024
+	What I did yesterday: Met with team to discuss sprint 3 and plan
+	What I will do today: Begin work on redo undo and refactoring of command pattern
+	Obstacles I face: None
+
+Oct 31,2024
+	What I did yesterday: Begin work on redo undo and refactoring of command pattern
+	What I will do today: finish work on redo undo and continue refactoring of command pattern
+	Obstacles I face: None
+
+Nov 1,2024
+	What I did yesterday:finish work on redo undo and continue refactoring of command pattern
+	What I will do today: review (BUG3.005) and continue refactoring command
+	Obstacles I face: None
+
+Nov 2,2024
+	What I did yesterday: review (BUG3.005) and continue refactoring command
+	What I will do today: review (BUG3.005_leehoju7) and merge and begin selector mode then refactor command pattern
+	Obstacles I face: None
+
+Nov 3,2024
+	What I did yesterday: review (BUG3.005_leehoju7) and merge and begin selector mode then refactor command pattern
+	What I will do today: finish selector mode
+	Obstacles I face: None
+
+Nov 4,2024
+	What I did yesterday: finish selector mode
+	What I will do today: begin work on US4.0022
+	Obstacles I face: None
+
+Nov 5,2024
+	What I did yesterday: Dropped course
+	What I will do today: Dropped course
+	Obstacles I face: Dropped course
+

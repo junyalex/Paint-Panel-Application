@@ -1,0 +1,144 @@
+# Fill in, commit and push each day.
+Member name: Hojun Lee email: hoju.lee@mail.utoronto.ca     utorid: leehoju7
+
+Oct 14,2024
+	What I did yesterday:
+	What I will do today:
+	Obstacles I face:
+
+Oct 15,2024
+	What I did yesterday:
+	What I will do today: added A2.zip and members.txt
+	Obstacles I face: No obstacles
+
+Oct 16,2024
+	What I did yesterday: added A2.zip and members.txt
+	What I will do today: work on BUG1.005
+	Obstacles I face: Is there an way to use ScribblePanel in PaintPanel?
+
+Oct 17,2024
+	What I did yesterday: Fixed Bug1.005
+	What I will do today: I am going to work on US1.003, US1.004
+	Obstacles I face: No obstacles yet
+
+Oct 18,2024
+	What I did yesterday: Implemented US1.003 & US1.004
+	What I will do today: Read through code and see if there is something to be fixed
+	Obstacles I face: No obstacles
+
+Oct 19,2024
+	What I did yesterday: Read current code and look for things to be fixed
+	What I will do today: Repeat what I did yesterday
+	Obstacles I face: No obstacles
+
+Oct 20,2024
+	What I did yesterday: Review codes
+	What I will do today: edit architecture.txt and think about design patterns
+	Obstacles I face: What design patterns would be the best??
+
+Oct 21,2024
+	What I did yesterday: Edit architecture.txt
+	What I will do today: Implement Scribble class and parent class Shape class
+	Obstacles I face: nothing
+
+Oct 22,2024
+	What I did yesterday: Implemented Scribble class and parent class Shape
+	What I will do today: I will start implementing BUG2.001
+	Obstacles I face: I have to think about the best architecture..
+
+Oct 23,2024
+	What I did yesterday: Applied Strategy pattern
+	What I will do today: Apply Scribble to strategy pattern
+	Obstacles I face: nothing
+
+Oct 24,2024
+	What I did yesterday: Applied Strategy pattern
+	What I will do today: Review code
+	Obstacles I face: Nothing
+
+Oct 25,2024
+	What I did yesterday: Review code
+	What I will do today: Revide code
+	Obstacles I face: nothing
+
+Oct 26,2024
+	What I did yesterday:  Review Code
+	What I will do today: review code
+	Obstacles I face: Nothing
+
+Oct 27,2024
+	What I did yesterday: Review code
+	What I will do today: review code
+	Obstacles I face: nothing
+
+Oct 28,2024
+	What I did yesterday: review code
+	What I will do today: review code
+	Obstacles I face: nothing
+
+Oct 29,2024
+	What I did yesterday: edit BUG3.004
+	What I will do today: edit BUG3.004
+	Obstacles I face: Should consider how to implement Factory pattern
+
+Oct 30,2024
+	What I did yesterday: finished US3.006
+	What I will do today: review code and merge teammate's code
+	Obstacles I face: nothing
+
+Oct 31,2024
+	What I did yesterday: review code
+	What I will do today: review code
+	Obstacles I face: nothing
+
+Nov 1,2024
+	What I did yesterday: review code
+	What I will do today: review code
+	Obstacles I face: nothing
+
+Nov 2,2024
+	What I did yesterday: review code
+	What I will do today: review code
+	Obstacles I face: nothing
+
+Nov 3,2024
+	What I did yesterday: review code
+	What I will do today: review code
+	Obstacles I face: nothing
+
+Nov 4,2024
+	What I did yesterday: review code
+	What I will do today: review code
+	Obstacles I face: nothing
+
+Nov 5,2024
+	What I did yesterday: review code
+	What I will do today: review code
+	Obstacles I face: nothing
+
+Nov 6,2024
+	What I did yesterday: review code
+	What I will do today: review code
+	Obstacles I face: nothing
+
+Nov 7,2024
+	What I did yesterday: review code
+	What I will do today: review code
+	Obstacles I face: nothing
+
+Nov 8,2024
+	What I did yesterday: review code
+	What I will do today: review code
+	Obstacles I face: nothing
+
+Nov 9,2024
+	What I did yesterday: review code
+	What I will do today: review code
+	Obstacles I face: nothing
+
+Nov 10,2024
+	What I did yesterday: review code
+	What I will do today: last day of A2
+	Obstacles I face: nothing
+
+
