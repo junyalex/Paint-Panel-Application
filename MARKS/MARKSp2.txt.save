@@ -3,6 +3,7 @@ Functionality Basics: Tested by running your code.
 	Mark with E for error
 	[0E] ERROR: 
 	
+	[E] Text is used instead of icons for the modes.
 	[N] Icons for drawing modes
 		BUG1.001 Icons instead of text for drawing mode selection
 
@@ -29,12 +30,12 @@ Functionality Basics: Tested by running your code.
 		US1.004 Draw Rectangle Feedback
 
 	[Y] Square 
-	[E] ERROR: Triangle does not track cursor left to right.
+	[E] ERROR: Triangle does not track the cursor left or right.
 	[Y] Triangle
 	[Y] Oval
 
 FUNCTIONALITY_END
-FUNCTIONALITY: 8/10
+FUNCTIONALITY: /10
 
 
 EXTRAFEATURES_START
@@ -52,34 +53,11 @@ EXTRAFEATURES_START
 		Mark with F for feature error
 		[0F] ERROR: 
 
-		[F] ERROR: New file and open fine buttons appear but do not work.
+		Feature: DIFFICULTY:[123] OUR_NAME
+		FeatureName: THEIR_NAME
 
-		DIFFICULTY:[2] Redo/Undo
-		FeatureName: Undo, Redo
-
-		DIFFICULTY:[2] Resize Canvas
-		FeatureName: Not indicated
-
-		DIFFICULTY:[3] Polyline
-		FeatureName: Draw Polyline
-		[F] ERROR: A polyline breaks and a new one starts randomly.
-
-		DIFFICULTY:[3] ColorXFillXStrokeXThickness
-		FeatureName: Thickness Selector
-		FeatureName: Select color
-		FeatureName: Fill Style selector
-		[F] if missing Color Stroke
-
-		DIFFICULTY:[2] ModifyColorXFillXStrokeXThickness
-		FeatureName: Change color on existing shape.
-
-		DIFFICULTY:[3] SelectXCutCopyXPasteXDrag
-		FeatureName: Delete, Cut, Copy and Paste
-		FeatureName: Move shape
-		FeatureName: Select Shape
-
-		TOTAL FEATURE SCORE: [15] = sum(difficulty)
-		TOTAL FEATURE ERRORS: [3] = sum(errors)
-		FEATURE SCORE: [12] = TOTAL FEATURE SCORE - TOTAL FEATURE ERRORS
+		TOTAL FEATURE SCORE: [] = sum(difficulty)
+		TOTAL FEATURE ERRORS: [] = sum(errors)
+		FEATURE SCORE: [] = TOTAL FEATURE SCORE - TOTAL FEATURE ERRORS
 EXTRAFEATURES_END
 EXTRAFEATURES: 000
