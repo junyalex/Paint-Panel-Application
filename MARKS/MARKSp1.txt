@@ -56,12 +56,12 @@ Code quality: Individual classes marked according to 5 mark grading scheme, code
 		The following is 3 marks, all or nothing. 
 		MARKER: Look for chained if statements/switch in code. Look for instance of or isinstance
 	
-		[N] No mention of isInstance/instanceof/switching on some class name
-		[N] No mention of isInstance/instanceof/switching on some class name
-		[N] No mention of isInstance/instanceof/switching on some class name
+		[Y] No mention of isInstance/instanceof/switching on some class name
+		[Y] No mention of isInstance/instanceof/switching on some class name
+		[Y] No mention of isInstance/instanceof/switching on some class name
 
 CODEQUALITY_END
-CODEQUALITY: 5/9
+CODEQUALITY: 8/9
 
 ARCHITECTURE_START
 Architecture: The extent to which you use Design Patterns to create simple, extendable, clear, concise code.
