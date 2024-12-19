@@ -71,7 +71,9 @@ Architecture: The extent to which you use Design Patterns to create simple, exte
 
 		BUG?.003 Architecture behind choosing selection mode is poor
 		[N] Factory: When the ShapeSelector Button is pressed
-		[Y] Strategy: Handling mouse events
+		[N] Strategy: Handling mouse events
+
+		COMMENT: Mixed purposes in your Strategies
 
 		BUG3.004 Architecture behind Model is poor
 		[Y] Command: For a stack of shape commands. 
@@ -99,7 +101,7 @@ Architecture: The extent to which you use Design Patterns to create simple, exte
 		[N] Additional DP
 
 ARCHITECTURE_END
-ARCHITECTURE: 3/6
+ARCHITECTURE: 2/6
 
 GIT_START
 Git: We expect to see simultaneous working branches merging into master, moving the project forward.
@@ -129,9 +131,10 @@ DOCUMENTATION_END
 DOCUMENTATION: 2/2
 
 MVCSEPARATION_START
-        [YN] MV separation: Check Circle.java for Graphics for example
-        [YN] VC separation: Check PaintPanel.java (Canvas) for MouseEvent for example
-        [YN] MC separation: Check Circle.java for MouseEvent for example
+        [Y] MV separation: Check Circle.java for Graphics for example
+        [N] VC separation: Check PaintPanel.java (Canvas) for MouseEvent for example
+        [N] MC separation: Check Circle.java for MouseEvent for example
+	COMMENT: MVC is actually mixed, so I gave 1/2 for this.
 MVCSEPARATION_END
-MVCSEPARATION: /3
+MVCSEPARATION: 1/3
 
