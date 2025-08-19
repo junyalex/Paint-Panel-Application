@@ -1,5 +1,10 @@
 package ca.utoronto.utm.assignment2.paint;
 
+import ca.utoronto.utm.assignment2.paint.eventhandler.*;
+import ca.utoronto.utm.assignment2.paint.panel.ColorChooserPanel;
+import ca.utoronto.utm.assignment2.paint.panel.PaintPanel;
+import ca.utoronto.utm.assignment2.paint.panel.ShapeChooserPanel;
+import ca.utoronto.utm.assignment2.paint.panel.UndoRedoPanel;
 import javafx.application.Platform;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
