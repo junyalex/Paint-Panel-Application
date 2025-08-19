@@ -41,4 +41,3 @@ buildNumber.properties
 scrum/**
 !scrum/dailyScrumMeeting4.txt
 !scrum/finalArchitecture/architecture.txt
-**/members.txt
