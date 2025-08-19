@@ -1,0 +1,96 @@
+# Move User Stories from the ProductBacklog
+# to the appropriate sprintBacklogN.txt after the 
+# Sprint Planning Meeting.
+
+# Sprint 2 Oct 20-Oct 27, 2024
+# Sprint 2 Backlog UserStories go below
+--------------------------------------------------------------------------
+TYPE     : USER STORY US2.001 : mbagayaa : Completed
+NAME     : Draw Triangle
+PRIORITY : 3
+ESTIMATE : 2 hours    ACTUAL :1 hour
+AS A     : user
+I WANT   : To will click three points on the canvas and lines will be extended
+joining the three vertices creating  a triangle.
+
+SO THAT  : Users can add triangles to my canvas
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+TYPE     : USER STORY US2.002 : mbagayaa : Completed
+NAME     : Draw Triangle Feedback
+PRIORITY : 3
+ESTIMATE : 2 hours)   ACTUAL : 2 days
+AS A     : user
+I WANT   : As a user is specifying a Triangle, during the drag of the shape
+a triangle should be on display. As the user is dragging, the 'current' state of
+the triangle changes in real time so that the desired triangle size can be seen before
+finishing the drawing.
+
+SO THAT  :Users can see the triangle they are about to build on release of the mouse button.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+TYPE     : USER STORY US2.003: chosun29 : Completed
+NAME     : Draw Oval
+PRIORITY : 3
+ESTIMATE : 2 hours    ACTUAL : 2 hours
+AS A     : user
+I WANT   :To click the centre of the oval and drag outwards either horizontally
+or vertically and release the oval onto the canvas to be drawn in the current
+style.
+
+SO THAT  : Users can add ovals to their canvas
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+TYPE     : USER STORY US2.004 : chosun29 : Completed
+NAME     : Draw Oval Feedback
+PRIORITY : 3
+ESTIMATE : 2 hours   ACTUAL : 2 hours
+AS A     : user
+I WANT   : As a user is specifying an Oval, during the drag of the shape
+an oval should be on display. As the user is dragging, the 'current' state of
+the oval changes in real time so that the desired oval size can be seen before
+finishing the drawing.
+
+SO THAT  : Users can see the oval they are about to build on release of the mouse button.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+TYPE     : USER STORY US2.005 : leerya41 : completed
+NAME     : Draw Square
+PRIORITY : 2
+ESTIMATE : 1 hour    ACTUAL : 30 minutes
+AS A     : user
+I WANT   : To click on one corner of a square, drag, and release to
+         specify dimensions of a square to be drawn in the current style.
+SO THAT  : User can add square to my canvas
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+TYPE     : USER STORY US2.006: leerya41 : completed
+NAME     : Draw Square Feedback
+PRIORITY : 2
+ESTIMATE : 1 hour    ACTUAL : 30 minutes
+AS A     : user
+I WANT   : Similarly to Draw Circle Feedback, display the square in mid-construction.
+SO THAT  : Users can see the square they are about to build on release of the mouse button.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+TYPE     : BUG BUG2.003 : leehoju7 : completed
+NAME     : Architecture behind choosing selection mode is poor
+PRIORITY : 3
+ESTIMATE : 1 day    ACTUAL : 1 day
+ISSUE    : Code is not modular and is difficult to expand. Need a better
+           architecture behind selecting a drawing mode, and handling
+           the drawing events. Consider some design patterns here.
+           Refactor ShapeChooserPanel and PaintPanel to get rid of the
+           'if' blocks in the PaintPanel mouse event code.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+TYPE     : BUG BUG2.003.1: leerya41 : completed
+NAME     : Architecture behind handling drawing events is poor
+PRIORITY : 3
+ESTIMATE : 1 day    ACTUAL : 1 day
+ISSUE    : Code is not modular and is difficult to expand. Need a better
+           architecture for handling the drawing events.
+           Consider some design patterns here.
+           (this is an extension of BUG2.001 which asked us to improve
+           the handling of the drawing events through a command pattern)
+--------------------------------------------------------------------------

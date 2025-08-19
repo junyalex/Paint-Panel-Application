@@ -1,0 +1,121 @@
+--------------------------------------------------------------------------------
+New Drawing Mode: Drawing shapes
+Description:
+
+	Shape buttons are displayed on the left side of the canvas. Users can pick the shape
+	they would like to draw by clicking on one of the shape buttons.
+
+	When users click shape button, it selects the mode and a strategy for handling
+	user input for drawing mode is installed.
+
+	PaintPanel class handles 3 types of mouse events. Pressed, Dragged and Released.
+	When users trigger mouse events, with selected strategy, it draws the shape on the canvas
+	users can see it. By using observer pattern, whenever there is a modification to the
+	PaintModel (Observable), it notifies to PaintPanel (Observer) that there was a modification
+	to the model, PaintPanel updates itself and users can see the changes they have made which means
+	they can see the shape they have drawn through the screen.
+
+Implementation:
+
+	image icon: Image icons are displayed by Strings that users can recognize. Buttons that show
+	different types of shape are added to ShapeChooserPanel.
+
+	Draw Strategy : Since different types of drawing technique is required for each shape,
+	Strategy pattern is used. Each shape has their own DrawStrategies when User chooses a shape,
+	it calls setMode() method in PaintPanel class. In setMode() method, it uses ShapeFactory class
+	which creates concrete classes of DrawStrategy class to create proper object of Strategy.
+	Once Strategy object is created, users can draw shapes by 3 steps.
+
+	1 : Once mouse is pressed, it creates new Shape object.
+
+	2 : While users are dragging, in order to let them see the current status of shape so users can
+	    see how it is being drawn, shape will be added to PreviewShapes, which is an ArrayList.
+
+	3. When mouse is released, it adds to Shapes ArrayList, and shapes created while dragging
+	   gets deleted.
+
+Example: for drawing circle :
+    PaintModel.java, PaintPanel.java, DrawStrategy.java, RectangleDrawStrategy.java, ShapeFactory.java
+    SelectMode.java
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+New Drawing Mode: Undo / Redo Operations (Command Pattern)
+Description:
+
+	The undo / redo functionality is implemented through command pattern, which allows users to
+	remove or restore the shape.
+
+Implementation:
+
+	UndoRedoPanel : There are two buttons on the left side of the canvas,
+	Button with '↶'  is for undo and  '↷' is for redo.
+
+	When user releases the mouse and finish drawing shape, it creates a new Command that stores
+	which shape is drawn. Command class has two methods, execute() and undo().
+
+    When mouse is released, it executes execute() method and the shape gets added to Shapes ArrayList in
+    PaintModel class. Also, a Command instance that is created in the DrawStrategy calls executeCommand()
+    to the PaintModel. Also, it will be added to commandHistory, which is a stack to have all commands
+    that are executed.
+
+    PaintModel has two different functions : undo and redo.
+
+    When undo() is called, if there is a commandHistory is not empty, it pops the last command
+    and push it to the other stack, which is undoHistory which stores commands that are undo by users.
+
+    Also, it calls undo() for popped command and the shape will be deleted from Shapes ArrayList.
+
+    When redo() is called, it pops a command from undoHistory, execute the command again so
+    the shape that was undo will be added to the shapes ArrayList again and will be restored.
+
+    Also, when command is redo, it adds back to commandHistory ArrayList.
+
+    By using command patterns, users can undo / redo shapes they have drawn.
+
+
+Example: for undo / redo  :
+    PaintModel.java, Command.java, Concrete command classes ( For example, DrawOvalCommand,
+    DrawTriangleCommand, etc.) UndoRedoPanel.java,  undoEventHandler, redoEventHandler,
+    DrawStrategy.
+--------------------------------------------------------------------------------
+New Drawing Mode: Change fill style
+Description:
+
+    Change fill style functionality is implemented through a singleton pattern, which allows the user to draw
+    shapes with the style that the user selected, until they change it to another style.
+
+Implementation:
+
+    You can change the fill style from the "Style" menu which is on the right side of the menu bar at the top of
+    the Paint app. From the "Style" menu, go to "Fill style", and there are two styles you can change which are
+    "Filled" and "Outlined".
+
+    FillStyleEventHandler:
+        The UI of the "Fill style" menu is implemented in the View class. When the user changes the style from the
+        "Fill style" menu, FillStyleEventHandler retrieves which style the user selected, and updates the currentStyle
+        of the FillStyleManager instance (using setStyle() method).
+
+    FillStyleManager:
+        This class is implemented based on a singleton pattern. Whenever a Shape class object is created,
+        the Shape class constructor retrieves the current style from the FillStyleManager singleton
+        instance (using the getStyle() method) and set it as a fillStyle of the Shape object. The default style is
+        set to "Outlined" in FillStyleManger.
+
+        Based on the fillStyle of the Shape object, each shape's draw strategy will draw the shape based on the current
+        fillStyle of the shape. Shape class is the superclass of all shapes(oval, circle, rectangle, etc.). Thus,
+        each shape will be drawn based on the current fill style set by the user, and this will remain the same
+        until the user changes the fill style.
+
+    By using a singleton pattern for FillStyleManager, a single instance of the class allows the fill style to be
+    consistently accessed and modified globally.
+
+
+Example: for changing fill style (let drawing shape is Oval):
+    User changed fill style:
+        View.java -> FillStyleEventHandler.java (handle()) -> FillStyleManager.java (setStyle())
+
+    User draw Oval shape with changed fill style:
+        Based on "Drawing shapes", Oval.java will be added to "shapes" Arraylist in PaintModel.java, using addShape() ->
+        PaintPanel.java (update())  ->  PaintModel.java (drawAllShapes()) ->  Shape.java (getFillStyle()) ->
+        Oval.java (getDrawStrategy()) -> OvalDrawStrategy (draw())
+--------------------------------------------------------------------------------

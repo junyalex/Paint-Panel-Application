@@ -1,0 +1,126 @@
+--------------------------------------------------------------------
+ Top Files To Check: large files as well as 
+ ShapeChooserPanel.java PaintModel.java View.java PaintPanel.java 
+--------------------------------------------------------------------
+--------------------------------------------------------------------
+ ls -lS * 
+--------------------------------------------------------------------
+-rw------- 1 csc207ta student 7104 Nov 20 18:16 View.java
+-rw------- 1 csc207ta student 3360 Nov 20 18:16 ShapeChooserPanel.java
+-rw------- 1 csc207ta student 3078 Nov 20 18:16 PaintModel.java
+-rw------- 1 csc207ta student 3027 Nov 20 18:16 PaintPanel.java
+-rw------- 1 csc207ta student 2956 Nov 20 18:16 OvalDrawStrategy.java
+-rw------- 1 csc207ta student 2783 Nov 20 18:16 SelectStrategy.java
+-rw------- 1 csc207ta student 2745 Nov 20 18:16 TriangleDrawStrategy.java
+-rw------- 1 csc207ta student 2711 Nov 20 18:16 Polyline.java
+-rw------- 1 csc207ta student 2688 Nov 20 18:16 SquareDrawStrategy.java
+-rw------- 1 csc207ta student 2616 Nov 20 18:16 PolylineDrawStrategy.java
+-rw------- 1 csc207ta student 2594 Nov 20 18:16 Triangle.java
+-rw------- 1 csc207ta student 2388 Nov 20 18:16 Scribble.java
+-rw------- 1 csc207ta student 2378 Nov 20 18:16 ColorChooserPanel.java
+-rw------- 1 csc207ta student 2354 Nov 20 18:16 RectangleDrawStrategy.java
+-rw------- 1 csc207ta student 2266 Nov 20 18:16 ScribbleDrawStrategy.java
+-rw------- 1 csc207ta student 2251 Nov 20 18:16 CircleDrawStrategy.java
+-rw------- 1 csc207ta student 2149 Nov 20 18:16 Oval.java
+-rw------- 1 csc207ta student 1853 Nov 20 18:16 Rectangle.java
+-rw------- 1 csc207ta student 1825 Nov 20 18:16 Circle.java
+-rw------- 1 csc207ta student 1355 Nov 20 18:16 Shape.java
+-rw------- 1 csc207ta student 1337 Nov 20 18:16 Square.java
+-rw------- 1 csc207ta student 1238 Nov 20 18:16 SelectMode.java
+-rw------- 1 csc207ta student 1233 Nov 20 18:16 ColorEventHandler.java
+-rw------- 1 csc207ta student 1010 Nov 20 18:16 UndoRedoPanel.java
+-rw------- 1 csc207ta student  985 Nov 20 18:16 ShapeFactory.java
+-rw------- 1 csc207ta student  941 Nov 20 18:16 CutCommand.java
+-rw------- 1 csc207ta student  776 Nov 20 18:16 DeleteSelectedCommand.java
+-rw------- 1 csc207ta student  748 Nov 20 18:16 PasteEventHandler.java
+-rw------- 1 csc207ta student  635 Nov 20 18:16 CutEventHandler.java
+-rw------- 1 csc207ta student  590 Nov 20 18:16 CopyEventHandler.java
+-rw------- 1 csc207ta student  548 Nov 20 18:16 PasteCommand.java
+-rw------- 1 csc207ta student  546 Nov 20 18:16 Paint.java
+-rw------- 1 csc207ta student  528 Nov 20 18:16 DrawStrategy.java
+-rw------- 1 csc207ta student  526 Nov 20 18:16 FillStyleManager.java
+-rw------- 1 csc207ta student  500 Nov 20 18:16 DrawPolylineCommand.java
+-rw------- 1 csc207ta student  487 Nov 20 18:16 DrawTriangleCommand.java
+-rw------- 1 csc207ta student  485 Nov 20 18:16 Point.java
+-rw------- 1 csc207ta student  467 Nov 20 18:16 DrawRectangleCommand.java
+-rw------- 1 csc207ta student  467 Nov 20 18:16 FillStyleEventHandler.java
+-rw------- 1 csc207ta student  458 Nov 20 18:16 DrawScribbleCommand.java
+-rw------- 1 csc207ta student  440 Nov 20 18:16 DrawCircleCommand.java
+-rw------- 1 csc207ta student  440 Nov 20 18:16 DrawSquareCommand.java
+-rw------- 1 csc207ta student  422 Nov 20 18:16 DrawOvalCommand.java
+-rw------- 1 csc207ta student  420 Nov 20 18:16 ThicknessEventHandler.java
+-rw------- 1 csc207ta student  378 Nov 20 18:16 undoEventHandler.java
+-rw------- 1 csc207ta student  377 Nov 20 18:16 redoEventHandler.java
+-rw------- 1 csc207ta student  357 Nov 20 18:16 MoveShapeCommand.java
+-rw------- 1 csc207ta student  355 Nov 20 18:16 CopyCommand.java
+-rw------- 1 csc207ta student  112 Nov 20 18:16 Command.java
+--------------------------------------------------------------------
+ grep -r -ie GraphicsContext 
+--------------------------------------------------------------------
+Rectangle.java:import javafx.scene.canvas.GraphicsContext;
+Oval.java:import javafx.scene.canvas.GraphicsContext;
+Circle.java:import javafx.scene.canvas.GraphicsContext;
+TriangleDrawStrategy.java:import javafx.scene.canvas.GraphicsContext;
+TriangleDrawStrategy.java:    public void draw(Shape shape, GraphicsContext g2d, String currStyle) {
+DrawStrategy.java:import javafx.scene.canvas.GraphicsContext;
+DrawStrategy.java:    //void draw(PaintModel model, GraphicsContext g2d);
+DrawStrategy.java:    void draw(Shape shape, GraphicsContext g2d, String currStyle);
+SelectStrategy.java:import javafx.scene.canvas.GraphicsContext;
+SelectStrategy.java:            public void draw (Shape shape, GraphicsContext g2d, String currStyle){
+SquareDrawStrategy.java:import javafx.scene.canvas.GraphicsContext;
+SquareDrawStrategy.java:    public void draw(Shape shape, GraphicsContext g2d, String currStyle) {
+ScribbleDrawStrategy.java:import javafx.scene.canvas.GraphicsContext;
+ScribbleDrawStrategy.java:    public void draw(Shape shape, GraphicsContext g2d, String currStyle) {
+RectangleDrawStrategy.java:import javafx.scene.canvas.GraphicsContext;
+RectangleDrawStrategy.java:    public void draw(Shape shape, GraphicsContext g2d, String currStyle) {
+OvalDrawStrategy.java:import javafx.scene.canvas.GraphicsContext;
+OvalDrawStrategy.java:    public void draw(Shape shape, GraphicsContext g2d, String currStyle) {
+PolylineDrawStrategy.java:import javafx.scene.canvas.GraphicsContext;
+PolylineDrawStrategy.java:    public void draw(Shape shape, GraphicsContext g2d, String currStyle){
+Scribble.java:import javafx.scene.canvas.GraphicsContext;
+Triangle.java:import javafx.scene.canvas.GraphicsContext;
+PaintPanel.java:import javafx.scene.canvas.GraphicsContext;
+PaintPanel.java:        GraphicsContext g2d = this.getGraphicsContext2D();
+PaintPanel.java:       GraphicsContext g2d = this.getGraphicsContext2D();
+CircleDrawStrategy.java:import javafx.scene.canvas.GraphicsContext;
+CircleDrawStrategy.java:    public void draw(Shape shape, GraphicsContext g2d, String currStyle) {
+Shape.java:import javafx.scene.canvas.GraphicsContext;
+Square.java:import javafx.scene.canvas.GraphicsContext;
+PaintModel.java:import javafx.scene.canvas.GraphicsContext;
+PaintModel.java:        public void drawAllShapes(GraphicsContext g2d) {
+--------------------------------------------------------------------
+ grep -r -e 'else' 
+--------------------------------------------------------------------
+Oval.java://        else{
+TriangleDrawStrategy.java:        else if(currStyle.equals("Filled")) {
+SelectStrategy.java:                else {
+SquareDrawStrategy.java:        } else {
+SquareDrawStrategy.java:        } else {
+SquareDrawStrategy.java:        else if(currStyle.equals("Filled")) {
+RectangleDrawStrategy.java:        else if(r.getFillStyle().equals("Filled")) {
+Polyline.java:        } else if (t > 1) {
+Polyline.java:        } else {
+OvalDrawStrategy.java:        else if (o.getFillStyle().equals("Filled")) {
+PaintPanel.java:        else if (mouseEvent.getEventType() == MouseEvent.MOUSE_RELEASED) {
+PaintPanel.java:        else if (mouseEvent.getEventType() == MouseEvent.MOUSE_DRAGGED) {
+CircleDrawStrategy.java:        else if(currStyle.equals("Filled")) {
+ShapeChooserPanel.java:                } else {Polyline.newPoly = false;}
+--------------------------------------------------------------------
+ grep -r -e 'case' 
+--------------------------------------------------------------------
+--------------------------------------------------------------------
+ grep -r -e 'instance' 
+--------------------------------------------------------------------
+FillStyleEventHandler.java:        FillStyleManager.getInstance().setStyle(currentMode);
+SelectMode.java:    private static SelectMode instance;
+SelectMode.java:    public static SelectMode getInstance(){
+SelectMode.java:        if(instance==null){
+SelectMode.java:            instance=new SelectMode();
+SelectMode.java:        return instance;
+FillStyleManager.java:    private static FillStyleManager instance;
+FillStyleManager.java:    public static FillStyleManager getInstance() {
+FillStyleManager.java:        if (instance == null) {
+FillStyleManager.java:            instance = new FillStyleManager();
+FillStyleManager.java:        return instance;
+SelectStrategy.java:        this.mode = SelectMode.getInstance();
+Shape.java:        fillStyle = FillStyleManager.getInstance().getStyle();

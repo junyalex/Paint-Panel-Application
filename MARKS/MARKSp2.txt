@@ -1,0 +1,85 @@
+FUNCTIONALITY_START
+Functionality Basics: Tested by running your code.
+	Mark with E for error
+	[0E] ERROR:
+
+	[N] Icons for drawing modes
+		BUG1.001 Icons instead of text for drawing mode selection
+
+	[Y] Very easy to see which drawing mode is selected
+		BUG1.002 Drawing selection mode not indicated
+
+	[Y] Can create multiple, disconnected squiggles
+		without clicking on the drawing mode again.
+
+		BUG1.005 Squiggle is broken
+		Fix was to create multiple squiggle objects
+
+	[Y] Draw a circle by clicking on center and dragging radius.
+		BUG1.006 Circle drawing is broken
+
+	[Y] Feedback as drag on radius happen
+		US1.002 Draw Circle Feedback
+		Show drag on circle radius.
+
+	[Y] Rectangle drawing works, with second corner in any location
+		US1.003 Draw Rectangle
+
+	[Y] Feedback as dragging second point
+		US1.004 Draw Rectangle Feedback
+
+	[Y] Square
+	[E] ERROR: Triangle does not track cursor left to right.
+	[Y] Triangle
+	[Y] Oval
+
+FUNCTIONALITY_END
+FUNCTIONALITY:8/10
+
+
+EXTRAFEATURES_START
+10% of the mark will be competitive, for the collection of interesting features your group comes up with.
+	This will appear in sprints 2,3,4.
+
+	See: https://docs.google.com/document/d/1Nffz_hrN4fhQdobX7iOFBK0gVWbhKdwFUOtqgywxi48/edit?tab=t.0
+
+	1) repo_a2_XXX/Assignment2/scrum/extraFeatures.txt
+		Categorize these and check each for whether they have
+		effectively implemented the feature.
+
+		MARKER: Look up in shared google doc and write down its difficulty and name below.
+
+		Mark with F for feature error
+		[0F] ERROR:
+
+		[F] ERROR: New file and open fine buttons appear but do not work.
+
+		DIFFICULTY:[2] Redo/Undo
+		FeatureName: Undo, Redo
+
+		DIFFICULTY:[2] Resize Canvas
+		FeatureName: Not indicated
+
+		DIFFICULTY:[3] Polyline
+		FeatureName: Draw Polyline
+		[F] ERROR: A polyline breaks and a new one starts randomly.
+
+		DIFFICULTY:[3] ColorXFillXStrokeXThickness
+		FeatureName: Thickness Selector
+		FeatureName: Select color
+		FeatureName: Fill Style selector
+		[F] if missing Color Stroke
+
+		DIFFICULTY:[2] ModifyColorXFillXStrokeXThickness
+		FeatureName: Change color on existing shape.
+
+		DIFFICULTY:[3] SelectXCutCopyXPasteXDrag
+		FeatureName: Delete, Cut, Copy and Paste
+		FeatureName: Move shape
+		FeatureName: Select Shape
+
+TOTAL FEATURE SCORE:15
+TOTAL FEATURE ERRORS:3
+FEATURE SCORE:12 = TOTAL FEATURE SCORE - TOTAL FEATURE ERRORS
+EXTRAFEATURES_END
+EXTRAFEATURES:12

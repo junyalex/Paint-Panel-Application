@@ -1,0 +1,82 @@
+--------------------------------------------------------------------
+ chosun29 
+--------------------------------------------------------------------
+CONTRIBUTION TO sprint1 
+TYPE     : BUG BUG1.006 : chosun29 : Completed
+TYPE     : USER STORY US1.002 : chosun29 : Completed
+CONTRIBUTION TO sprint2 
+TYPE     : USER STORY US2.003: chosun29 : Completed
+TYPE     : USER STORY US2.004 : chosun29 : Completed
+CONTRIBUTION TO sprint3 
+TYPE     : USER STORY US3.006 : chosun29 : Completed
+TYPE     : USER STORY US3.0010 : chosun29 : Completed
+CONTRIBUTION TO sprint4 
+TYPE     : USER STORY US4.003 : chosun29 : Completed
+SPRINT_CONTRIBUTION:chosun29:(2, 2, 2, 1)
+CONTRIBUTION TO project 
+TYPE     : BUG BUG1.006 : chosun29 : Completed
+TYPE     : USER STORY US1.002 : chosun29 : Completed
+TYPE     : USER STORY US2.003: chosun29 : Completed
+TYPE     : USER STORY US2.004 : chosun29 : Completed
+TYPE     : USER STORY US3.006 : chosun29 : Completed
+TYPE     : USER STORY US3.0010 : chosun29 : Completed
+TYPE     : USER STORY US3.0022 : chosun29 : Completed
+TYPE     : USER STORY US4.003 : chosun29 : Completed
+PRODUCT_CONTRIBUTION:chosun29:8
+--------------------------------------------------------------------
+ leehoju7 
+--------------------------------------------------------------------
+CONTRIBUTION TO sprint1 
+TYPE     : BUG BUG1.005 : leehoju7 : completed
+TYPE     : USER STORY US1.003 : leehoju7 : Completed
+TYPE     : USER STORY US1.004 : leehoju7 : Completed
+CONTRIBUTION TO sprint2 
+TYPE     : BUG BUG2.003 : leehoju7 : completed
+CONTRIBUTION TO sprint3 
+TYPE     : BUG BUG3.004 : leehoju7 : Completed
+TYPE     : USER STORY US3.007 : leehoju7: Completed
+TYPE     : BUG BUG3.005 : mbagayaa, leehoju7 : Completed
+TYPE     : USER STORY US3.009 : leehoju7 : Completed
+CONTRIBUTION TO sprint4 
+TYPE     : USER STORY US4.001 : leehoju7 : Completed
+TYPE     : USER STORY US4.004 : leehoju7 : Completed
+TYPE     : USER STORY US4.005 : leehoju7 : Completed
+SPRINT_CONTRIBUTION:leehoju7:(3, 1, 4, 3)
+CONTRIBUTION TO project 
+TYPE     : BUG BUG1.005 : leehoju7 : Completed
+TYPE     : USER STORY US1.003 : leehoju7 : Completed
+TYPE     : USER STORY US1.004 : leehoju7 : Completed
+TYPE     : BUG BUG2.003: leehoju7 : completed
+TYPE     : BUG BUG3.004 : leehoju7 : Completed
+TYPE     : USER STORY US3.007 : leehoju7: Completed
+TYPE     : BUG BUG3.005 : mbagayaa, leehoju7 : Completed
+TYPE     : USER STORY US3.009 : leehoju7 : Completed
+TYPE     : USER STORY US4.001 : leehoju7 : Completed
+TYPE     : USER STORY US4.004 : leehoju7 : Completed
+TYPE     : USER STORY US4.005 : leehoju7 : Completed
+PRODUCT_CONTRIBUTION:leehoju7:11
+--------------------------------------------------------------------
+ mbagayaa 
+--------------------------------------------------------------------
+CONTRIBUTION TO sprint1 
+TYPE     : BUG BUG1.002 : mbagayaa : completed
+CONTRIBUTION TO sprint2 
+TYPE     : USER STORY US2.001 : mbagayaa : Completed
+TYPE     : USER STORY US2.002 : mbagayaa : Completed
+CONTRIBUTION TO sprint3 
+TYPE     : BUG BUG3.005 : mbagayaa, leehoju7 : Completed
+CONTRIBUTION TO sprint4 
+TYPE     : BUG BUG4.002 : mbagayaa : Completed
+SPRINT_CONTRIBUTION:mbagayaa:(1, 2, 1, 1)
+CONTRIBUTION TO project 
+TYPE     : BUG BUG1.002 : mbagayaa: Completed
+TYPE     : USER STORY US2.001 : mbagayaa : Completed
+TYPE     : USER STORY US2.002 : mbagayaa : Completed
+TYPE     : BUG BUG3.005 : mbagayaa, leehoju7 : Completed
+TYPE     : BUG BUG4.002 : mbagayaa : Completed
+PRODUCT_CONTRIBUTION:mbagayaa:5
+--------------------------------------------------------------------
+ TOTALS 
+--------------------------------------------------------------------
+TOTAL_SPRINT:(6, 5, 7, 5)
+TOTAL_WORK:24

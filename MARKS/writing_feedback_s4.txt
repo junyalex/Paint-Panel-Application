@@ -1,0 +1,11 @@
+S&O: 4
+WM: 3.5
+AE: 4
+
+Feedback:
+- [S&O] Good structure on architecture file & productbacklog, clear sections like MVC, design patterns, etc.
+
+- [WM] Watch out for unclear or incomplete sentences such as line 411 of productbacklog.txt.
+ Be consistent with the use of punctuation/s, especially on the productBacklog.txt.
+
+- [AE] The level of detail provided is appropriate enough so that a new team member can understand your project status. Make sure to finish some last few details, such as some bugs and/or user stories in the productBacklog.txt.
