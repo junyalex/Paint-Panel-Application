@@ -1,5 +1,6 @@
 package ca.utoronto.utm.assignment2.paint;
 
+import ca.utoronto.utm.assignment2.paint.strategy.*;
 import javafx.scene.paint.Color;
 
 import java.util.HashMap;

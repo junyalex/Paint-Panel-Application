@@ -1,5 +1,7 @@
 package ca.utoronto.utm.assignment2.paint;
 
+import ca.utoronto.utm.assignment2.paint.shape.Shape;
+
 public class SelectMode {
     private static SelectMode instance;
     private static Shape selectedShape;

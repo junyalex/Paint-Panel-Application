@@ -1,5 +1,7 @@
 package ca.utoronto.utm.assignment2.paint;
 
+import ca.utoronto.utm.assignment2.paint.command.Command;
+import ca.utoronto.utm.assignment2.paint.shape.Shape;
 import javafx.scene.canvas.GraphicsContext;
 
 import java.util.ArrayList;
